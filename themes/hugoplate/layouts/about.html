@@ -1,0 +1,35 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="content mb-16">
+        {{ .Content | markdownify }}
+      </div>
+
+      {{ range $i, $e := .Params.sections }}
+      <div class="flex flex-wrap items-center py-12 {{ if modBool $i 2 }}flex-row-reverse{{ end }}">
+        <div class="w-full md:w-1/2 p-4">
+          {{ if .image }}
+          <img 
+            src="{{ .image | relURL }}" 
+            class="rounded-lg shadow-lg max-h-[250px] w-auto object-contain"
+            alt="{{ .title }}"
+          >
+          {{ end }}
+        </div>
+        
+        <div class="w-full md:w-1/2 p-4">
+          <h2 class="h3 mb-4">{{ .title }}</h2>
+          <p class="mb-6">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          <a href="{{ .button.link | relURL }}" class="btn btn-primary">
+            {{ .button.label }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
