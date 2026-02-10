@@ -1,20 +1,8 @@
 ---
 title: Dr. Hephzibah Israel
-email: samwilson@email.com
+email: 
 image: "/images/2025/s200_hephzibah.israel.webp"
-description: "Senior Lecturer in Translation Studies The University of Edinburgh"
-social:
-  - name: github
-    icon: fa-brands fa-github
-    link: https://github.com
-
-  - name: twitter
-    icon: fa-brands fa-twitter
-    link: https://twitter.com
-
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: https://linkedin.com
+summary: "Senior Lecturer in Translation Studies The University of Edinburgh"
 ---
 
 I study intersections between translation, religion, history, and postcolonial studies. I have a keen interest in the way ideas, texts or objects considered sacred are translated across language cultures; and an equally keen interest in translation in archives. I teach translation theory and methods with a particular focus on literary translation and the sacred in translation. I retain a strong research interest in South Asian literary and translation cultures and contribute to teaching team-taught courses offered by the Centre for South Asian Studies, University of Edinburgh.
