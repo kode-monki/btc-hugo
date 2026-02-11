@@ -1,1 +1,30 @@
 /* Add your own custom styles here */
+
+
+/* Custom Conference Card Hover */
+.conference-card {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+/* Force the Conference Card to lift and shadow */
+.conference-card-link {
+  display: flex !important;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  transform: translateY(0) !important;
+  
+  &:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    border-color: var(--color-primary) !important; /* Uses your theme's primary color */
+  }
+}
+
+/* Ensure the image zooms slightly */
+.conference-card-link:hover img {
+  transform: scale(1.05) !important;
+}

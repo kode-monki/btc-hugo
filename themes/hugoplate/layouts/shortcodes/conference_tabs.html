@@ -1,0 +1,27 @@
+<div class="tab" data-tab-group="conference">
+  <ul class="tab-nav">
+    <li class="tab-nav-item active" data-tab="0">Theme</li>
+    <li class="tab-nav-item" data-tab="1">Speakers</li>
+    <li class="tab-nav-item" data-tab="2">Schedule</li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-content-panel active" data-tab="0">
+      {{ .Inner | markdownify }}
+    </div>
+    <div class="tab-content-panel" data-tab="1">
+      <div class="row">
+        {{ range .Page.Params.plenaries }}
+        <div class="col-md-6 mb-4">
+          <div class="bg-white dark:bg-darkmode-body p-4 rounded shadow-sm border border-border">
+            <h5 class="text-primary mb-1">{{ .name }}</h5>
+            <p class="text-sm italic mb-0">"{{ .topic }}"</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="tab-content-panel" data-tab="2">
+       <p>Details for the schedule will be updated shortly.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+{{ define "main" }}
+<section class="section-sm pb-0">
+  <div class="container">
+    <div class="row justify-between">
+      
+      <div class="lg:col-4 mb-10 lg:mb-0">
+        <div class="sticky top-24">
+          <div class="rounded-2xl overflow-hidden shadow-lg mb-6">
+            {{ if .Params.image }}
+              {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full h-auto") }}
+            {{ end }}
+          </div>
+          
+          <h1 class="h3 mb-4">{{ .Title }}</h1>
+          
+          <div class="bg-theme-light dark:bg-darkmode-theme-light p-6 rounded-xl">
+            <h4 class="h5 mb-3 text-primary">Conference Theme</h4>
+            <p class="text-sm italic border-l-4 border-primary pl-4">
+              "{{ .Params.theme }}"
+            </p>
+            <hr class="my-4 border-border dark:border-darkmode-border">
+            <div class="text-sm font-medium">
+              <p><strong>Location:</strong> {{ .Params.location }}</p>
+              <p><strong>Date:</strong> 
+                {{ if .Params.date_start }}
+                  {{ $start := time .Params.date_start }}
+                  {{ if .Params.date_end }}
+                    {{ $end := time .Params.date_end }}
+                    
+                    {{ if eq ($start.Format "Jan") ($end.Format "Jan") }}
+                      {{ $start.Format "January 2" }}–{{ $end.Format "2, 2006" }}
+                    
+                    {{ else }}
+                      {{ $start.Format "Jan 2" }} – {{ $end.Format "Jan 2, 2006" }}
+                    {{ end }}
+
+                  {{ else }}
+                    {{ $start.Format "January 2, 2006" }}
+                  {{ end }}
+                {{ else }}
+                  {{ .Date.Format "January 2, 2006" }}
+                {{ end }}
+              <br><br>
+                <a href="{{ "conferences/" | relURL }}" class="btn btn-outline-primary btn-sm">
+                  &larr; Back to all Conferences
+                </a>
+              </p>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-7">
+        <div class="content">
+          <div class="plenaries-section mt-8">
+
+          {{ .Content }}
+
+        </div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

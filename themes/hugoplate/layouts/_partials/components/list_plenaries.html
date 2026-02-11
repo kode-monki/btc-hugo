@@ -1,0 +1,8 @@
+<div class="plenary-list">
+  {{ range .Page.Params.plenaries }}
+  <div class="mb-4 p-4 border rounded bg-light dark:bg-darkmode-theme-light">
+    <h4 class="h5 text-primary mb-1">{{ .name }}</h4>
+    <p class="small italic mb-0">"{{ .topic }}"</p>
+  </div>
+  {{ end }}
+</div>

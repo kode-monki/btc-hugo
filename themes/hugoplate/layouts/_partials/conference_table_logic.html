@@ -1,0 +1,57 @@
+
+<div class="presentation-archive">
+  <input type="text" id="presentationSearch" onkeyup="filterTable()" placeholder="Search papers, authors, or years..." class="form-control mb-4 w-full p-3 border border-border rounded bg-theme-light dark:bg-darkmode-theme-light">
+
+  <div class="overflow-x-auto">
+    <table class="sortable-table w-full text-left border-separate border-spacing-0 border border-border mt-1" id="presentationTable">
+        <thead class="bg-theme-light dark:bg-darkmode-theme-light font-bold">
+        <tr>
+          <th class="p-3 border border-border cursor-pointer" onclick="sortTable(0)">Paper Title <i class="fas fa-sort text-xs opacity-40"></i></th>
+          <th class="p-3 border border-border cursor-pointer" onclick="sortTable(1)">Author <i class="fas fa-sort text-xs opacity-40"></i></th>
+          <th class="p-3 border border-border cursor-pointer" onclick="sortTable(2)">Year <i class="fas fa-sort text-xs opacity-40"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ $csv := resources.Get "presentations.csv" | transform.Unmarshal (dict "delimiter" ",") }}
+        {{ range after 1 $csv }}
+          {{ $title := index . 0 }}{{ $author_name := index . 1 }}{{ $author_id := index . 2 }}{{ $year := index . 3 }}{{ $slug := index . 4 }}
+          <tr class="hover:bg-theme-light/30 dark:hover:bg-darkmode-theme-light/10">
+            <td class="p-3 border border-border">
+              {{ $paper := site.GetPage (printf "/proceedings/%s" $slug) }}
+              {{ if $paper }}<a href="{{ $paper.RelPermalink }}" class="text-primary font-semibold hover:underline">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}
+            </td>
+            <td class="p-3 border border-border">
+              {{ $authorPage := site.GetPage (printf "/authors/%s" $author_id) }}
+              {{ if $authorPage }}<a href="{{ $authorPage.RelPermalink }}" class="hover:underline">{{ $author_name }}</a>{{ else }}{{ $author_name }}{{ end }}
+            </td>
+            <td class="p-3 border border-border text-center">{{ $year }}</td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+function filterTable() {
+  let input = document.getElementById("presentationSearch");
+  let filter = input.value.toLowerCase();
+  let tr = document.getElementById("presentationTable").getElementsByTagName("tr");
+  for (let i = 1; i < tr.length; i++) {
+    tr[i].style.display = tr[i].textContent.toLowerCase().includes(filter) ? "" : "none";
+  }
+}
+function sortTable(n) {
+  const table = document.getElementById("presentationTable");
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.rows);
+  const isAscending = table.dataset.sortDir === "asc";
+  rows.sort((a, b) => {
+    const aText = a.cells[n].textContent.trim().toLowerCase();
+    const bText = b.cells[n].textContent.trim().toLowerCase();
+    return isAscending ? aText.localeCompare(bText) : bText.localeCompare(aText);
+  });
+  table.dataset.sortDir = isAscending ? "desc" : "asc";
+  tbody.append(...rows);
+}
+</script>

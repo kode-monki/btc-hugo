@@ -1,0 +1,28 @@
+<div class="proceedings-card border border-border rounded-lg overflow-hidden my-8 shadow-sm">
+  <div class="bg-theme-light dark:bg-darkmode-theme-light p-4 border-b border-border">
+    <span class="text-xs font-bold uppercase tracking-widest text-primary">Official Publication</span>
+  </div>
+  
+  <div class="p-6 bg-white dark:bg-darkmode-body">
+    <div class="row items-center">
+      <div class="col-sm-2 text-center mb-4 mb-sm-0">
+        <i class="fas fa-book-open fa-3x text-light"></i>
+      </div>
+      
+      <div class="col-sm-7">
+        <h3 class="h4 mb-2">{{ .Get "title" }}</h3>
+        <p class="mb-1"><strong>Editor:</strong> {{ .Get "editor" }}</p>
+        <p class="text-sm text-light mb-0">
+          <strong>ISBN:</strong> {{ .Get "isbn" }} <br>
+          <strong>Publisher:</strong> {{ .Get "publisher" }}
+        </p>
+      </div>
+      
+      <div class="col-sm-3 text-sm-end">
+        <a href="{{ .Get "link" | relURL }}" class="btn btn-outline-primary btn-sm mt-3 mt-sm-0">
+          <i class="fas fa-download mr-2"></i> Full PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

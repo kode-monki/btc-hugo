@@ -27,30 +27,9 @@ url = "/faqs"
 weight = 3
 
 [[main]]
-weight = 4
-name = "Pages"
-
-##[[main]]
-##parent = "Pages"
-##name = "Blog"
-##url = "/blog"
-
-[[main]]
   name = "Proceedings"
   url = "/proceedings"
   weight = 2
-
-
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
 
 # footer menu
 [[footer]]
