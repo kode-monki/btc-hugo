@@ -44,7 +44,7 @@
 
   <script>
     const currentAuthorId = "{{ .File.ContentBaseName }}"; // e.g., "john-doe"
-    const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSmlApPlHI0wZmDVfFQiOq4lA4OJVICOPwYB3lyK0WX9PKmvKaX-kiNUULlAxM07cu4QlwrYZzeFc9V/export?format=csv";
+    const sheetUrl = "https://docs.google.com/spreadsheets/d/YOUR_ID/export?format=csv";
 
     fetch(sheetUrl)
       .then(res => res.text())

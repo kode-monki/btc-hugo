@@ -2,9 +2,16 @@
 <section class="section">
   <div class="container">
     <div class="row">
+      <div class="col-12 text-center mb-10">
+        <h1 class="h2 mb-4">{{ .Title }}</h1>
+        
+        {{ if .Description }}
+          <p>{{ .Description }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
       <div class="col-12">
-        <div class="content mb-8">
-          {{ .Content }} </div>
         
         {{ partial "conference_table_logic.html" . }}
       </div>

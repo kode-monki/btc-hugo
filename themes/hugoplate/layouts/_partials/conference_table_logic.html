@@ -1,56 +1,162 @@
 
-<div class="presentation-archive">
-  <input type="text" id="presentationSearch" onkeyup="filterTable()" placeholder="Search papers, authors, or years..." class="form-control mb-4 w-full p-3 border border-border rounded bg-theme-light dark:bg-darkmode-theme-light">
+<style>
+  .presentation-archive .overflow-x-auto {
+    padding: 2px;
+    margin: -2px;
+  }
+  .sortable-table {
+    border-collapse: collapse !important;
+    width: 100%;
+    border: 1px solid #e5e7eb;
+  }
+  .sortable-table th, .sortable-table td {
+    border: 1px solid #e5e7eb !important;
+    padding: 12px;
+  }
+  .dark .sortable-table, .dark .sortable-table th, .dark .sortable-table td {
+    border-color: #374151 !important;
+  }
+  /* Ensure the sidebar stays put while scrolling */
+  .sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+  }
+  .active-track {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+</style>
 
-  <div class="overflow-x-auto">
-    <table class="sortable-table w-full text-left border-separate border-spacing-0 border border-border mt-1" id="presentationTable">
+{{ $url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSmlApPlHI0wZmDVfFQiOq4lA4OJVICOPwYB3lyK0WX9PKmvKaX-kiNUULlAxM07cu4QlwrYZzeFc9V/pub?gid=0&single=true&output=csv" }}
+{{ $csv := resources.GetRemote $url | transform.Unmarshal (dict "delimiter" ",") }}
+
+<div class="flex flex-wrap lg:flex-nowrap gap-8 presentation-archive mt-8">
+  
+  <aside class="w-full lg:w-1/4 sticky-sidebar">
+    <div class="bg-theme-light dark:bg-darkmode-theme-light p-6 rounded border border-border">
+      <h4 class="h5 mb-4 border-b border-border pb-2">Filter by Track</h4>
+        <ul class="list-none p-0 m-0" id="trackFilters">
+  <li class="mb-2">
+    <button onclick="filterByTrack('all', this)" class="text-primary font-bold active-track text-left w-full block">All Tracks</button>
+  </li>
+
+  {{/* 1. Define your specific allowed tags here */}}
+  {{ $allowedTracks := slice "AI Panel" "Plenary" }}
+
+  {{/* 2. Range through your whitelist instead of the whole CSV */}}
+  {{ range (sort $allowedTracks) }}
+  <li class="mb-2">
+    <button onclick="filterByTrack('{{ . }}', this)" class="text-muted hover:text-primary transition-colors text-left w-full block">{{ . }}</button>
+  </li>
+  {{ end }}
+</ul>
+    </div>
+  </aside>
+
+  <div class="w-full lg:w-3/4">
+    <div class="mb-4">
+      <input type="text" id="presentationSearch" onkeyup="filterTable()" placeholder="Search by title, author, or year..." class="form-control w-full p-3 border border-border rounded bg-theme-light dark:bg-darkmode-theme-light focus:ring-1 focus:ring-primary">
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="sortable-table" id="presentationTable">
         <thead class="bg-theme-light dark:bg-darkmode-theme-light font-bold">
-        <tr>
-          <th class="p-3 border border-border cursor-pointer" onclick="sortTable(0)">Paper Title <i class="fas fa-sort text-xs opacity-40"></i></th>
-          <th class="p-3 border border-border cursor-pointer" onclick="sortTable(1)">Author <i class="fas fa-sort text-xs opacity-40"></i></th>
-          <th class="p-3 border border-border cursor-pointer" onclick="sortTable(2)">Year <i class="fas fa-sort text-xs opacity-40"></i></th>
-        </tr>
-      </thead>
-      <tbody>
-        {{ $csv := resources.Get "presentations.csv" | transform.Unmarshal (dict "delimiter" ",") }}
-        {{ range after 1 $csv }}
-          {{ $title := index . 0 }}{{ $author_name := index . 1 }}{{ $author_id := index . 2 }}{{ $year := index . 3 }}{{ $slug := index . 4 }}
-          <tr class="hover:bg-theme-light/30 dark:hover:bg-darkmode-theme-light/10">
-            <td class="p-3 border border-border">
-              {{ $paper := site.GetPage (printf "/proceedings/%s" $slug) }}
-              {{ if $paper }}<a href="{{ $paper.RelPermalink }}" class="text-primary font-semibold hover:underline">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}
-            </td>
-            <td class="p-3 border border-border">
-              {{ $authorPage := site.GetPage (printf "/authors/%s" $author_id) }}
-              {{ if $authorPage }}<a href="{{ $authorPage.RelPermalink }}" class="hover:underline">{{ $author_name }}</a>{{ else }}{{ $author_name }}{{ end }}
-            </td>
-            <td class="p-3 border border-border text-center">{{ $year }}</td>
+          <tr>
+            <th class="p-3 cursor-pointer" onclick="sortTable(0)">Paper Title <i class="fas fa-sort text-xs opacity-40"></i></th>
+            <th class="p-3 cursor-pointer" onclick="sortTable(1)">Author <i class="fas fa-sort text-xs opacity-40"></i></th>
+            <th class="p-3 cursor-pointer" onclick="sortTable(2)">Year <i class="fas fa-sort text-xs opacity-40"></i></th>
           </tr>
+        </thead>
+        <tbody>
+  {{ range after 1 $csv }}
+    {{/* 1. MAP COLUMNS BASED ON YOUR GOOGLE SHEET */}}
+    {{ $year    := index . 1 }}  {{/* Col B */}}
+    {{ $title   := index . 2 }}  {{/* Col C */}}
+    {{ $author  := index . 5 }}  {{/* Col F */}}
+    {{ $track   := index . 7 }}  {{/* Col H - Ensure this matches your Track column */}}
+    {{ $slug    := index . 12 | urlize }} {{/* Col M - The unique filename */}}
+    {{ $authorID:= index . 6 | urlize }}  {{/* Col G - For Author Bio links */}}
+
+    <tr class="hover:bg-theme-light/30 transition-colors" data-track="{{ $track }}">
+      <td class="p-3 border border-border">
+        {{/* 2. LOOKUP THE FILE BY SLUG */}}
+        {{/* Looks in content/proceedings/slug-name.md */}}
+        {{ $paper := site.GetPage (printf "/proceedings/%s" $slug) }}
+        <a href="/proceedings/presentation/?id={{ $slug }}" class="text-primary font-bold hover:underline">
+          {{ $title }}
+        </a>
+      </td>
+      
+      <td class="p-3 border border-border">
+        {{ $authorPage := site.GetPage (printf "/authors/%s" $authorID) }}
+        {{ if $authorPage }}
+          <a href="{{ $authorPage.RelPermalink }}" class="hover:underline text-primary/80">{{ $author }}</a>
+        {{ else }}
+          {{ $author }}
         {{ end }}
-      </tbody>
-    </table>
+      </td>
+      
+      <td class="p-3 border border-border text-center">{{ $year }}</td>
+    </tr>
+  {{ end }}
+</tbody>
+      </table>
+    </div>
   </div>
 </div>
 
 <script>
+let currentTrack = 'all';
+
+function filterByTrack(track, btn) {
+  currentTrack = track;
+  
+  // Update UI Sidebar selection
+  document.querySelectorAll('#trackFilters button').forEach(b => {
+    b.classList.remove('active-track', 'text-primary', 'font-bold');
+    b.classList.add('text-muted');
+  });
+  btn.classList.add('active-track', 'text-primary', 'font-bold');
+  btn.classList.remove('text-muted');
+  
+  applyAllFilters();
+}
+
 function filterTable() {
-  let input = document.getElementById("presentationSearch");
-  let filter = input.value.toLowerCase();
-  let tr = document.getElementById("presentationTable").getElementsByTagName("tr");
-  for (let i = 1; i < tr.length; i++) {
-    tr[i].style.display = tr[i].textContent.toLowerCase().includes(filter) ? "" : "none";
+  applyAllFilters();
+}
+
+function applyAllFilters() {
+  const searchText = document.getElementById("presentationSearch").value.toLowerCase();
+  const rows = document.getElementById("presentationTable").getElementsByTagName("tr");
+
+  for (let i = 1; i < rows.length; i++) {
+    const rowTracks = rows[i].getAttribute("data-track") || "";
+    const rowText = rows[i].textContent.toLowerCase();
+    
+    const trackArray = rowTracks.split("|");
+    const matchesTrack = (currentTrack === 'all' || trackArray.includes(currentTrack));
+    const matchesSearch = rowText.includes(searchText);
+
+    rows[i].style.display = (matchesTrack && matchesSearch) ? "" : "none";
   }
 }
+
 function sortTable(n) {
   const table = document.getElementById("presentationTable");
   const tbody = table.tBodies[0];
   const rows = Array.from(tbody.rows);
   const isAscending = table.dataset.sortDir === "asc";
+  
   rows.sort((a, b) => {
     const aText = a.cells[n].textContent.trim().toLowerCase();
     const bText = b.cells[n].textContent.trim().toLowerCase();
     return isAscending ? aText.localeCompare(bText) : bText.localeCompare(aText);
   });
+
   table.dataset.sortDir = isAscending ? "desc" : "asc";
   tbody.append(...rows);
 }
