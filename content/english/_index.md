@@ -9,6 +9,6 @@ banner:
   image: "/images/2025/BTC25-Logo.webp"
   button:
     enable: true
-    label: "Go to the Proceedings 🚀"
+    label: "Go to the Proceedings"
     link: "/proceedings"
 ---
