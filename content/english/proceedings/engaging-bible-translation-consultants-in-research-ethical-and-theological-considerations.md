@@ -1,0 +1,13 @@
+---
+title: "Engaging Bible Translation Consultants in Research: Ethical and Theological Considerations"
+date: 2025-10-30T10:15:00Z
+author: ""
+author_id: "#N/A"
+year: "2025"
+track: ["Technology and Resources", "AI Panel", "Live Only"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>As artificial intelligence becomes integrated into Bible translation workflows, questions emerge regarding theological integrity, cultural sensitivity, and the evolving role of translation consultants. Though AI tools offer efficiencies in drafting and quality assessment, their adoption requires critical examination within translation philosophy and consultant oversight frameworks. <br>  <br> This study presents a comprehensive literature review drawing from translation studies, AI ethics, and consultant perspectives. The research examines established translation theories—dynamic versus formal equivalence, domestication versus foreignization, and relevance theory—to understand AI's interaction with human decision-making processes. By comparing Bible translation to other high-ethics fields like healthcare, this research explores how different domains balance automation while maintaining ethical integrity. <br>  <br> My analysis identifies substantial gaps in understanding how AI aligns with various translation approaches, including AI’s influence on domestication approaches, its ability to maintain theological integrity, and the evolving role of the consultant’s expertise in the translation process. <br>  <br> These gaps highlight the need for direct consultant engagement in technology adoption decisions. This paper is not just a summary of research—it’s an open invitation for Bible translation consultants to help shape the next research step. Through interviews, group discussions, and real-world examples, I want to capture firsthand BT consultants’ perspectives and/or experiences with AI in translation. By involving consultants directly in this research, I hope to ensure that technology adoption remains guided by those who safeguard scriptural fidelity and cultural relevance.  <br> </p>

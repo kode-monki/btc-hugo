@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      <h1>Track: {{ .Title }}</h1>
+      <p>Here are all the proceedings associated with this track:</p>
+      
+      <ul>
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}

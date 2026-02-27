@@ -1,0 +1,13 @@
+---
+title: "Storming the Kingdom: Evidence for Koine Mother Tongue Exegesis of Matthew 11:12"
+date: 2025-10-30T10:15:00Z
+author: "Philip W. Hawke"
+author_id: "philip-w-hawke"
+year: "2025"
+track: ["Theology, Hermeneutics, and Exegesis"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=oprPgLZyp80"
+---
+
+<p> <br> Could all known Koine speaking exegetes be wrong about common vocabulary items in Matthew 11:12?   <br>  <br> 1. We examine the writings of these highly literate teachers, leaders and theologians from 180–450 CE. They unanimously agree that the kingdom of heaven was being stormed (“biazetai”) and taken by those strongly responding (biastais) to the message of John and Jesus. There is no recorded debate. This consensus held until 1836.  <br>  <br> 2.The new scholarly consensus beginning in 1984 holds that violent persecutors are assaulting the kingdom. These commentators, quoting TDNT and BDAG teach that the words βιἀζεται and βιασταὶς are innately pejorative and necessitate a ‘negative’ interpretation.  <br>  <br> 3. This paper presents ten years of diachronic research from Homer (c. 750 BCE) through Cyril (c. 430 CE), to conclude:  <br>  <br> -The Koine era exegetes did indeed correctly exegete Jesus’s saying.  <br> -TDNT and BDAG presented flawed lexicography which influenced recent commentators to produce an untenable, mistaken consensus.  <br>  <br> 4. TDNT’s thesis citation is shown to be a misreading taken out of context. The context itself, a Roman trial of a victorious general who disobeyed orders, demonstrates that genre, topic or context reveal a usage’s meaning.  <br>  <br> 5. Quotations from Koine lexicographers (Hesychius, Pollux) and a linguist (Apollonius Dyscolos) buttress the idea that Bia vocabulary is polysemous and not universally pejorative.   <br>  <br> 6. Discourse features of Jesus's sermon also support the original reading of Matthew's text <br> </p>

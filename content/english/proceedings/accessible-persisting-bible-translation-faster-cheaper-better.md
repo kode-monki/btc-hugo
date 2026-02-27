@@ -1,0 +1,13 @@
+---
+title: "Accessible, Persisting Bible Translation:  Faster. Cheaper. Better."
+date: 2025-10-29T10:15:00Z
+author: "Robin Rempel"
+author_id: "robin-rempel"
+year: "2025"
+track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Training and Mentoring"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=tzNrF9DSApA"
+---
+
+<p>“Getting to zero” is a clever marketing strategy, but is it obtainable? Is it the right goal? Will getting to zero accomplish what is really needed? <br> <br> Rosa’s Iatmul-Palimbe community used to have some Scriptures for a few decades, but now, due to destructive white ants they have none left. Are they being counted, or have they been “ticked off the list” and discounted? What about the many language communities with multiple dialects? BT organizations count the related Petats-Majungan-Pororan languages as one language with three dialects, but these separate island communities (with less than 85% lexical cognates) do not consider themselves as speaking the same language. And, what about the thousands of un-surveyed Bibleless communities in South Asia, most unreached and unengaged? Are these people accounted for in the “race to zero”? <br> <br> Although we have our criteria for how to count “engaged” communities, would those communities consider themselves to be sustainably empowered to do Bible translation, or only temporarily engaged? Perhaps “empowering persisting BT for all” would be a more proper and ethical objective. <br> <br> This paper introduces a free, nonproprietary BT model that empowers persisting BT for everybody. It is accessible to and usable by any situational language community, enabling them to affordably persist in publishing oral Scripture translations. This paper presents how this accessible, digital OBS + OBT model is systemically faster – cheaper – better than traditional and current models. Or, described without comparatives, it is locally ownable, affordable, sustainable, and able to persist. This paper introduces the SPadv+HBobt apps “wildfire” BT model</p>

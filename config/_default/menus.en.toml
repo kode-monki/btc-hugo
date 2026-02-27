@@ -18,13 +18,13 @@ url = "/lecture-series"
 
 [[main]]
 parent = "About"
-name = "Contact"
-url = "/contact"
+name = "Frequently Asked Questions"
+url = "/faqs"
 
 [[main]]
-name = "FAQs"
-url = "/faqs"
-weight = 3
+parent = "About"
+name = "Contact"
+url = "/contact"
 
 [[main]]
   name = "Proceedings"

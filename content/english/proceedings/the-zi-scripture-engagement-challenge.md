@@ -1,0 +1,13 @@
+---
+title: "The Zi Scripture Engagement Challenge"
+date: 2025-10-31T10:15:00Z
+author: "Laurence B"
+author_id: "laurence-b"
+year: "2025"
+track: ["Methodologies, Media, and Multimodality", "Remote Presenter", "Live Only"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>Ethical considerations when devising a culturally-relevant, worldview-based, Scripture Engagement strategy for an ethnoreligious group. <br>  <br> The Zi Scripture Engagement Challenge <br>  <br> This presentation explores the complexities of engaging the Zi  people, an ethnoreligious group with a worldview rooted in a strong sense of belonging. The Zi see their religion as God-given and share oral traditions that resonate with biblical narratives, such as stories of Adam and Eve, Noah, and Abraham. However, their worldview diverges significantly from the Christian Scriptures. <br>  <br> Key Considerations: <br> 1.        Zi Values: <br> o        Beliefs: Christianity prioritizes beliefs; the Zi prioritise behaviour and belonging. <br> o        Behaviour: Conformance to Zi practices ensures God’s acceptance at death. <br> o        Belonging: Demonstrably less important to Christianity; central to Zi identity. <br> 2.        Scripture Engagement Challenges: <br> o        Strategies ignoring the Zi worldview risk irrelevance and ineffectiveness. <br> o        Non-Zi Christians face language barriers in Scripture engagement. <br> 3.        Ethical Dilemmas: <br> o        Should Christians encourage the Zi people to study their worldview? <br> o        Could Zi worldview studies confuse or inhibit Gospel acceptance? <br> o        Do non-Zi Christians have the right to critique the Zi worldview? <br> o        Can Zi individuals unfamiliar with their worldview traditions become strong Christians? <br>  <br> Proposed Approach: <br>  <br> The presentation suggests a worldview-based Scripture Engagement strategy that respects Zi values and offers a culturally sensitive pathway to presenting the Gospel. It seeks to address the ethical and practical challenges of introducing Christian Scripture in a meaningful way to the Zi. <br> </p>

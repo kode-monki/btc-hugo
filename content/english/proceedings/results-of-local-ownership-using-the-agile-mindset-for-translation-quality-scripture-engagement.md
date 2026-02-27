@@ -1,0 +1,13 @@
+---
+title: "Results of Local Ownership: Using the Agile Mindset for Translation Quality & Scripture Engagement"
+date: 2025-10-31T11:45:00Z
+author: "Ruthie Wagner"
+author_id: "ruthie-wagner"
+year: "2025"
+track: ["Church and Community", "Communication and Context", "Training and Mentoring", "Remote Presenter"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=l40OXWCB4Ho"
+---
+
+<p>Can the principles that refined IT from a technical to a dynamic, people-centered process also reshape Bible translation? How can we balance innovation while respecting the communities we serve? The Agile mindset, initially a software development approach from 2001, prioritizes team self-organization and customer collaboration. Using iterative cycles to deliver smaller, usable products quickly, a team can respond to more frequent customer feedback.  <br>  <br> This unique experiment applied the Agile mindset to a traditional Bible translation project in rural Tanzania, shifting focus from conventional methods to community-driven priorities. The Kerewe translation team adopted greater collaboration and iterative delivery to serve end-user priorities over those of translators, advisors, consultants, and other stakeholders. The Agile mindset reshaped team roles, streamlined workflows, and fostered transparency and accountability, even in their hierarchical, honor-shame culture. It presented challenges, such as cultural adaptation, ongoing learning curves, and discomfort with vulnerability, but greatly improved team dynamics and quality assurance. <br>  <br> The result? The Agile mindset has stretched the team to adapt and increase trust while offering a path to more responsive and effective processes, leading to real-time Scripture engagement with the community. The team grew in energy, joy, and motivation and turned innovative, transforming obstacles like translation dilemmas or power outages into opportunities for change and growth. They have eased bottlenecks in reviewing and consultant checking and have frequently delivered Scripture to their communities for engagement and feedback. <br>  <br> Aligned with the vision of Lutheran Bible Translators “to see vibrant Christian communities, deeply rooted in God’s Word, engaging fully in God’s mission, in this generation,” the Agile mindset accelerates the delivery of smaller portions of Scripture to end-users. It continuously responds to change, providing frequent opportunities for translators, advisors, consultants, technologists, and, most importantly, community and church members to discover better ways to provide Bible translation and Scripture engagement.  <br> </p>

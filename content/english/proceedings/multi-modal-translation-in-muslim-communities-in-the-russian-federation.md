@@ -1,0 +1,13 @@
+---
+title: "Multi-Modal Translation in Muslim Communities in the Russian Federation"
+date: 2025-10-28T16:25:00Z
+author: "Bronwen Cleaver"
+author_id: "bronwen-cleaver"
+year: "2025"
+track: ["Methodologies, Media, and Multimodality"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=IC2SXR6Awu4"
+---
+
+<p>This presentation proposes an interdisciplinary approach involving the areas of multi-modal translation and machine translation among Muslim communities. This includes a description and assessment of the ethical issues involved in this approach. The Institute for Bible Translation in Russia has recently started ten new multi-modal translation projects in Dagestan, Russia among minority language communities. Through these projects IBT is helping these communities to preserve their minority languages which are slowly becoming extinct due to their assimilation with the Russian language and community. There are very few known Christians and no churches among these language communities.  <br>  <br> This research describes how these projects began and the context in which they are continuing, their progress, the use of machine translation in these projects, and the ethical challenges that both IBT and the communities are facing. Through interviews with the Muslim translators and communities, the author of this paper demonstrates how these oral Bible translation projects are contributing to the preservation of both the language and culture of these communities, while preserving ethical boundaries. It highlights some of the reservations and concerns of the Muslim Bible translators in their community, while also focusing on the advantages that they perceive are given to their communities through these projects. This research provides a model for others involved in multi-modal translation including machine translation among Muslim communities.   <br> </p>

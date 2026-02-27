@@ -1,21 +1,56 @@
 {{ define "main" }}
 <section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mb-10">
-        <h1 class="h2 mb-4">{{ .Title }}</h1>
-        
-        {{ if .Description }}
-          <p>{{ .Description }}</p>
-        {{ end }}
-      </div>
+    <h1 class="h2 mb-8">All Proceedings</h1>
+
+    <div class="mb-6">
+      <input type="text" id="searchInput" 
+             placeholder="Search by title, author, or year..." 
+             class="w-full p-3 border border-border rounded shadow-sm focus:ring-2 focus:ring-primary outline-none">
     </div>
-    <div class="row">
-      <div class="col-12">
-        
-        {{ partial "conference_table_logic.html" . }}
-      </div>
+
+    <div class="table-container overflow-x-auto">
+      <table class="table w-full border-collapse">
+        <thead>
+          <tr class="border-b-2 border-primary text-left">
+            <th class="p-3">Title</th>
+            <th class="p-3">Author</th>
+            <th class="p-3">Year</th>
+          </tr>
+        </thead>
+        <tbody id="papersTable">
+  {{ $papers := where .Site.RegularPages "Section" "proceedings" }}
+  {{ $byTitle := sort $papers "Params.sort_title" "asc" }}
+  {{ $finalList := sort $byTitle "Params.year" "desc" }}
+
+  {{ range $finalList }}
+    <tr class="table-row">
+      <td class="p-3 font-medium">
+        <a href="{{ .RelPermalink }}" class="text-primary hover:underline">
+          {{ .Title }}
+        </a>
+      </td>
+  
+      <td class="p-3">{{ .Params.author }}</td>
+      <td class="p-3">{{ .Params.year }}</td>
+    </tr>
+   
+  {{ end }}
+</tbody>
+      </table>
     </div>
   </div>
 </section>
+
+<script>
+  document.getElementById('searchInput').addEventListener('keyup', function() {
+    let filter = this.value.toLowerCase();
+    let rows = document.querySelectorAll('#papersTable .table-row');
+    
+    rows.forEach(row => {
+      let text = row.textContent.toLowerCase();
+      row.style.display = text.includes(filter) ? '' : 'none';
+    });
+  });
+</script>
 {{ end }}

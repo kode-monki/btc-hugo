@@ -30,7 +30,7 @@
   }
 </style>
 
-{{ $url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSmlApPlHI0wZmDVfFQiOq4lA4OJVICOPwYB3lyK0WX9PKmvKaX-kiNUULlAxM07cu4QlwrYZzeFc9V/pub?gid=0&single=true&output=csv" }}
+{{ $url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSmlApPlHI0wZmDVfFQiOq4lA4OJVICOPwYB3lyK0WX9PKmvKaX-kiNUULlAxM07cu4QlwrYZzeFc9V/pub?gid=1226309152&single=true&output=csv" }}
 {{ $csv := resources.GetRemote $url | transform.Unmarshal (dict "delimiter" ",") }}
 
 <div class="flex flex-wrap lg:flex-nowrap gap-8 presentation-archive mt-8">
@@ -73,22 +73,30 @@
         <tbody>
   {{ range after 1 $csv }}
     {{/* 1. MAP COLUMNS BASED ON YOUR GOOGLE SHEET */}}
-    {{ $year    := index . 1 }}  {{/* Col B */}}
-    {{ $title   := index . 2 }}  {{/* Col C */}}
-    {{ $author  := index . 5 }}  {{/* Col F */}}
-    {{ $track   := index . 7 }}  {{/* Col H - Ensure this matches your Track column */}}
-    {{ $slug    := index . 12 | urlize }} {{/* Col M - The unique filename */}}
-    {{ $authorID:= index . 6 | urlize }}  {{/* Col G - For Author Bio links */}}
+    {{ $year    := index . 3 }}  {{/* Col D */}}
+    {{ $title   := index . 0 }}  {{/* Col A */}}
+    {{ $author  := index . 1 }}  {{/* Col B */}}
+    {{ $track   := index . 5 }}  {{/* Col F - Ensure this matches your Track column */}}
+    {{ $slug    := index . 4 | urlize }} {{/* Col E - The unique filename */}}
+    {{ $authorID:= index . 2 | urlize }}  {{/* Col C - For Author Bio links */}}
 
     <tr class="hover:bg-theme-light/30 transition-colors" data-track="{{ $track }}">
       <td class="p-3 border border-border">
-        {{/* 2. LOOKUP THE FILE BY SLUG */}}
-        {{/* Looks in content/proceedings/slug-name.md */}}
-        {{ $paper := site.GetPage (printf "/proceedings/%s" $slug) }}
-        <a href="/proceedings/presentation/?id={{ $slug }}" class="text-primary font-bold hover:underline">
-          {{ $title }}
-        </a>
-      </td>
+
+  {{/* 2. Find the actual Hugo Page created by your Content Adapter */}}
+  {{/* Note: We use the full path to ensure Hugo finds it */}}
+  {{ $targetPage := site.GetPage (printf "/proceedings/%s" $slug) }}
+
+  {{ if $targetPage }}
+    <a href="{{ $targetPage.RelPermalink }}" class="text-primary font-bold hover:underline">
+      {{ $title }}
+    </a>
+  {{ else }}
+    {{/* Fallback if the Page hasn't been created yet */}}
+    <span class="text-muted">{{ $title }}</span> 
+    <small class="block text-red-500">(Page not found for slug: {{ $slug }})</small>
+  {{ end }}
+</td>
       
       <td class="p-3 border border-border">
         {{ $authorPage := site.GetPage (printf "/authors/%s" $authorID) }}

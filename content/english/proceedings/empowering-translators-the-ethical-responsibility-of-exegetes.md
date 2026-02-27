@@ -1,0 +1,19 @@
+---
+title: "Empowering Translators: The Ethical Responsibility of Exegetes"
+date: 2025-10-30T15:00:00Z
+author: "Peter Kamande Thuo"
+author_id: "kamande-thuo"
+year: "2025"
+track: ["Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Training and Mentoring"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=tloyZ6vOsKE"
+---
+
+<p>A central challenge in Bible translation is how to strengthen translators’ ability to do exegesis—independently discerning the biblical author’s intended meaning as the first step in translation. Traditionally, this gap has been addressed by assigning an exegete or translation advisor to review drafts at later stages. While effective in safeguarding meaning, this model raises ethical questions. Does it unintentionally foster dependency on external specialists? Is it a just use of limited financial and human resources in contexts where translators themselves could be equipped to handle exegesis from the beginning?</p>
+<br>
+<p>At a 2022 workshop in Mukono, Uganda, exegetes were challenged to “work themselves out of their jobs” by passing on their skills directly to translators. This reframing positions the exegete not as controller but as enabler, honoring translators as the primary custodians of their languages and cultures. Such an approach resonates with ethical imperatives of empowerment, collaboration, and sustainability.</p>
+<br>
+<p>Follow-up research highlights both strengths and weaknesses in this shift. On the positive side, translators are gaining confidence, asking deeper questions, applying contextual insights, and producing clearer, more accurate translations. Trainers report observable improvements in accuracy, naturalness, and consistency. Yet challenges persist: infrastructure barriers (poor internet, power cuts), uneven educational backgrounds, limited training time, doctrinal influences, and resistance to learning from younger or female trainers. These weaknesses and threats underscore the need for ongoing mentorship, contextualized resources, and equitable access to study tools.</p>
+<br>
+<p>This paper argues that ethically sound practice requires embedding exegesis at the drafting stage, supported by practical tools and sustained coaching. Such an approach reduces financial strain from repeated late-stage checks, fosters ownership among translators, and prepares exegetes to transition into consultant roles. Ultimately, the ethics of translation demand not only fidelity to Scripture but also fairness in capacity building, wise stewardship of resources, and empowerment of translators as co-creators in the global mission of Bible translation.</p>

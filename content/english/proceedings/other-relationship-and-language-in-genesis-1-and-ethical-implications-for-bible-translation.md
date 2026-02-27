@@ -1,0 +1,13 @@
+---
+title: "Other, Relationship, and Language in Genesis 1 and Ethical Implications for Bible Translation"
+date: 2025-10-28T15:40:00Z
+author: "Graham Scott & David Nicholls"
+author_id: "#N/A"
+year: "2025"
+track: ["Theology, Hermeneutics, and Exegesis"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>Genesis 1 establishes a vital yet under-examined paradigm wherein ethical relationship emerges as a primary reality, and language is purposed to serve this relationship. This paper explores how the opening verses depict YHWH engaging with matter — the primordial Other — thus establishing relationship as the first reality emerging from creation. Through divine address, the essential ontological triad is depicted: Other, Relationship, and Language. This triad provides a theological foundation for ethics in Bible translation by emphasising that the relationship with the Other, facilitated through language reflects the very structure of reality established at creation. <br>  <br> Engaging this theological framework in dialogue with key philosophical perspectives illuminates contemporary relevance. Levinas's ethics of the face-to-face encounter emphasises our infinite responsibility toward alterity, where language functions not representationally but relationally. Husserl and Heidegger’s phenomenological approaches  invite us to consider translation as a socially constructed phenomenon, validating lived experience and relational knowing. Medina's postcolonial epistemology highlights how inequality produces epistemic injustice affecting both oppressors and oppressed. <br>  <br> These perspectives demand prioritising the Other and elevating emic perspectives. The theological framework affirms and elevates these as an act of love. For Bible translation ethics, this means embracing community-based approaches that recognise God’s prior relationship with communities. This framework challenges prevailing methodologies by repositioning translation as an act of hospitality rather than appropriation, demanding an open epistemological approach to textual decisions and program planning, avoiding further acts of colonisation and oppression. <br>  <br> In this context, ethical language use acknowledges that how we communicate is as important as what we communicate, while creation of ethical knowledge dignifies the Other without coercion or exclusion. Furthermore through the embrace of the Other and ethical Bible translation methodologies, possibilities for healing will emerge for both oppressor and oppressed ushering in new prospects for realising the vision of Genesis 1. </p>

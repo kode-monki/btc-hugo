@@ -1,0 +1,26 @@
+---
+title: "“Isn't Bible translation all done now?!”:  Tracking Activities and Needs Beyond ISO 639-3"
+date: 2025-10-30T10:15:00Z
+author: "Paing, et al"
+author_id: "#N/A"
+year: "2025"
+track: ["Church and Community", "Technology and Resources"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=uRD4leOOiLc"
+---
+
+<p>Despite significant progress in Bible translation, with initiatives like Vision 2025 and All Access Goals 2033 aiming to cover all languages, many languages are not included. This presentation examines the reliance on ISO 639-3 as the primary language inventory, highlighting its limitations for Bible translation purposes. ISO 639-3, historically derived from Ethnologue&#x27;s focus on translation needs but now taking a different focus, excludes potentially 500–1,000 spoken languages worldwide, as evidenced by India&#x27;s 200+ non-ISO languages.</p>
+<br>
+<p>We trace the evolution from early Ethnologue editions (1950s–1980s), which explicitly served church needs by defining languages based on material requirements and listing agency activities, to the ISO 639-3 era (post-2005), where academic, tech, and government priorities overshadow community and translation demands. Progress.Bible, a collaborative platform aggregating data from Bible agencies, in its monthly Snapshot publications, tracks ETEN goals using ISO 639-3 and omits non-ISO languages except for sign languages, leading to incomplete global tracking.</p>
+<br>
+<p>Challenges include slow recognition processes, lack of funding for research, and agency distrust in sharing needs. Post-2025, identifying, tracking, and funding remaining needs will intensify. </p>
+<br>
+<p>We recommend that:</p>
+<ul>
+<li><strong>communities </strong>continue to advocate for their recognition, </li>
+<li><strong>ETEN and Progress.Bible </strong>design project-centric coding and tracking mechanisms to allow the movement to better see the scope of need and activity.</li>
+<li><strong>Bible agencies and media platforms like DBL and YouVersion </strong>accommodate non-ISO code strategies like [mis] with private use BCP47 codes and more community-responsive naming practices to more respectfully handle these languages, and </li>
+<li><strong>Bible agencies </strong>encourage ISO 639-3 toward more community responsiveness. </li>
+</ul>
+<p>We need a community-driven approach to ensure equitable Scripture access.</p>

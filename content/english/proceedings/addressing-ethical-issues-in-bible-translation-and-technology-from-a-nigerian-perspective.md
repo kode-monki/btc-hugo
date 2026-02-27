@@ -1,0 +1,13 @@
+---
+title: "Addressing Ethical Issues in Bible Translation and Technology from a Nigerian Perspective"
+date: 2025-10-31T15:00:00Z
+author: "Oluwapelumi Bankole"
+author_id: "oluwapelumni-bankole"
+year: "2025"
+track: ["Church and Community", "Technology and Resources", "Theology, Hermeneutics, and Exegesis"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=0EGzDwKNMgE"
+---
+
+<p>The advancement of technology has now come to a point where people are suggesting that artificial intelligence (AI afterward) could translate the Bible such that even veteran missionaries are now asking whether there are technologies that can translate the Bible more quickly. This may be a great disadvantage not only to the receptor community, but to the source text itself. Bible translation experts and people in general translation have been addressing these issues over the years. This paper delves into works like Nord (2001), Pym (2003), Warren-Rothlin (2011) and Blois et al (2024). Blois et al (2024) list the available Bible translation computer programs as ranging from Type I to Type IV of which AI is type IV. One of the problems this poses is the rendering of figures of speech which differ in communities. For example, the rendering of חָדַל֙ לִהְי֣וֹת לְשָׂרָ֔ה אֹ֖רַח כַּנָּשִֽׁים, “the way of women had ceased with Sarah” is a euphemism that needs to be rendered using a Yoruba euphemism. Assuming an AI program is used to generate a translation from Hebrew to Yoruba, the meaning attached will lead to ‘disloyalty’ to the source text.  Even though computer programs such as Paratext have helped to improve translation a great deal , it should not be surprising that technology could also make a Bible translation end up on the shelf because it boycotts teamwork, violates local ownership rights, and causes the receptor community to not have a sense of belonging in the translation. What are the ethical issues that arise in Bible translation work? What ethics are we ready to violate if we give in to machine translation in Nigeria? </p>

@@ -1,87 +1,36 @@
 {{ define "main" }}
-  <section class="section-sm pb-0">
-    <div class="container">
-      <div class="flex flex-col md:flex-row border-border border-b pb-14 items-start">
-        <div class="flex-shrink-0 mx-auto md:mx-0 mb-8 md:mb-0 md:mr-10">
-          {{ $image:= .Params.image }}
-          {{ if $image }}
-            <div class="w-[200px] h-[200px] overflow-hidden rounded-lg">
-               {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "object-cover w-full h-full" "Size" "200x200") }}
-            </div>
-          {{ else if .Params.Email }}
-            <img class="rounded-lg object-cover w-[200px] h-[200px]" alt="{{ .Title }}"
-              src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=200&pg&d=identicon" />
-          {{ end }}
-        </div>
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="max-w-3xl">
+      <h1 class="h1 mb-2">{{ .Title }}</h1>
+      
+      {{ if .Params.affiliation }}
+        <h2 class="h3 text-muted mb-6">{{ .Params.affiliation }}</h2>
+      {{ end }}
 
-        <div class="flex-grow text-center md:text-left">
-          <h1 class="h3">{{ .Title }}</h1>
-          <h2 class="h5 font-light text-muted">{{ .Summary }}</h2>
-          <div class="content mt-4">{{ .Content }}</div>
-          
-          <ul class="social-icons mt-6">
-            {{ range .Params.social }}
-              <li class="inline-block mr-4">
-                <a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+      <div class="content text-lg leading-relaxed">
+        {{ .Content }}
       </div>
 
-      <div class="py-16">
-        <h3 class="h4 mb-8">Presentations by {{ .Title }}</h3>
+      {{ $currentAuthorID := .Params.author_id }}
+      {{ if $currentAuthorID }}
+        {{ $myPapers := where (where .Site.RegularPages "Section" "proceedings") "Params.author_id" $currentAuthorID }}
         
-        <div id="loading-status" class="text-center py-10">
-          <div class="spinner-border text-primary" role="status"></div>
-          <p class="mt-2">Fetching presentations...</p>
-        </div>
-
-        <div id="author-presentations" class="row"></div>
-      </div>
+        {{ if $myPapers }}
+          <div class="mt-12 border-t pt-8">
+            <h3 class="h4 mb-4">Presentations</h3>
+            <ul>
+              {{ range $myPapers }}
+                <li class="mb-2">
+                  <a href="{{ .RelPermalink }}" class="text-primary hover:underline font-medium">{{ .Title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      {{ end }}
+      
     </div>
-  </section>
-
-  <script>
-    const currentAuthorId = "{{ .File.ContentBaseName }}"; // e.g., "john-doe"
-    const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSmlApPlHI0wZmDVfFQiOq4lA4OJVICOPwYB3lyK0WX9PKmvKaX-kiNUULlAxM07cu4QlwrYZzeFc9V/export?format=csv";
-
-    fetch(sheetUrl)
-      .then(res => res.text())
-      .then(csvText => {
-        // Simple CSV Parser (handling quotes)
-        const rows = csvText.split(/\r?\n/).map(row => 
-          row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(cell => cell.replace(/^"|"$/g, '').trim())
-        );
-
-        // Filter: Look for Author ID in Col W (Index 22)
-        const myPapers = rows.filter(r => r[22] && r[22].toLowerCase() === currentAuthorId.toLowerCase());
-        
-        const container = document.getElementById('author-presentations');
-        const loading = document.getElementById('loading-status');
-        loading.style.display = 'none';
-
-        if (myPapers.length > 0) {
-          myPapers.forEach(paper => {
-            const card = `
-              <div class="md:col-6 lg:col-4 mb-8">
-                <div class="p-6 bg-theme-light rounded shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-                  <span class="text-xs font-bold text-primary uppercase">${paper[1]}</span> <h4 class="h5 mt-2 mb-4 flex-grow">
-                    <a href="/presentation/?id=${paper[12]}" class="hover:underline">${paper[2]}</a>
-                  </h4>
-                  <div class="mt-auto">
-                    <span class="text-xs bg-white px-2 py-1 rounded border">${paper[7]}</span> </div>
-                </div>
-              </div>`;
-            container.innerHTML += card;
-          });
-        } else {
-          container.innerHTML = `<p class="text-muted">No presentations found for this author yet.</p>`;
-        }
-      })
-      .catch(err => {
-        console.error(err);
-        document.getElementById('loading-status').innerText = "Failed to load data.";
-      });
-  </script>
+  </div>
+</section>
 {{ end }}

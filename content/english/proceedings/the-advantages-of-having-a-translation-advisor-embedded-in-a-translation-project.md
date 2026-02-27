@@ -1,0 +1,13 @@
+---
+title: "The Advantages of Having a Translation Advisor Embedded in a Translation Project"
+date: 2025-10-28T11:00:00Z
+author: "Stephen Doty & Douglas Inglis"
+author_id: "stephen-doty-douglas-ingles"
+year: "2025"
+track: ["Methodologies, Media, and Multimodality", "Remote Presenter"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=8lISlrsh0ds"
+---
+
+<p>This paper describes the improvement to the quality of a Bible translation that a Translation Advisor (TA) can make. A TA is a person trained in the Bible, exegesis, linguistics, and translation principles. A TA is typically not a mother-tongue speaker of the receptor language but is assigned to the translation project and learns that language. The TA’s responsibilities include training mother-tongue translators (MTTs), analyzing the language, and helping in the translation process including exegesis, drafting, editing, back translating, and checking. Many TAs eventually go on to become Translation Consultants. <br>  <br> In an environment in which some translation organizations prioritize speed over quality in translation, many projects are initiated without any plan to assign a TA. Unless the receptor language community has people available for such high-level training, such a strategy will result in a compromise in quality, since there will be no one with advanced training in the project to either train MTTs or help them improve the quality of their work. <br>  <br> This paper compares two drafts of a translation in a project in Southeast Asia that has a well-trained TA assigned to it. One of the drafts examined in the paper had no input from the TA. The other draft included the TA’s input. The comparison shows the kinds of improvements that the TA made to the translation. <br>  <br> The paper concludes with an encouragement to Bible translation organizations to give a high priority to recruiting, training, and assigning TAs to translation projects. Such a strategy would ensure a better-quality translation with a high degree of confidence that it is faithful to the original source.         <br> </p>

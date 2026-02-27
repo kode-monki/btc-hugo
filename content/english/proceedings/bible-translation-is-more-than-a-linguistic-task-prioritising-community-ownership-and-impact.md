@@ -1,0 +1,31 @@
+---
+title: "Bible Translation is More Than a Linguistic Task: Prioritising Community Ownership and Impact"
+date: 2025-10-30T15:00:00Z
+author: "Jennifer Brassington"
+author_id: "jennifer-brassington"
+year: "2025"
+track: ["Church and Community", "Communication and Context"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=Nt9C5wB3GFo"
+---
+
+<p>Significant resources are invested in translating the Bible into languages identified as ‘needing’ a translation. However, ethical concerns arise regarding decision-making processes, community agency, and the intended versus actual outcomes of translation projects. Who determines a community’s needs? How are cost-benefit analyses conducted? And how is the long-term use and impact of a translation considered throughout the project?</p>
+<br>
+<p>This paper argues that if the goal of Bible translation is not merely to produce a text but to facilitate individual, family, and community transformation through engagement with God using Scripture, then the communities themselves must take a central role in shaping the translation goals, process and associated activities. Ethical and strategic considerations necessitate shifting to an outcome-focused approach rather than an output-focused one, ensuring those who will use the translation are guiding the process and outcomes of any translation project.</p>
+<br>
+<p>Key topics explored include:</p>
+<ul>
+<li>Community agency in defining project goals and activities</li>
+<li>Funding priorities that focus on product, process, and use</li>
+<li>Assessing needs and preferences for translation products</li>
+<li>Investing in relationships for sustainable engagement</li>
+<li>Decision-making in multilingual and multiethnic contexts</li>
+<li>Addressing indigeneity, theological and denominational diversity</li>
+<li>Integrating an asset-based approach while fostering local capacity</li>
+</ul>
+<p>By critically examining these factors, the BT movement can adopt a more ethical and effective approach to Bible translation that prioritises the needs, agency, and long-term flourishing of the communities it seeks to serve.</p>
+<br>
+<p>Non-community partners have a moral duty to work in partnership—equipping, encouraging, and empowering others—rather than solely focusing on their technical contribution.</p>
+<br>
+<p>While community engagement and good quality translation are essential components, they alone do not always guarantee use. Success requires acknowledging the complex interplay of numerous additional factors that influence use, including language vitality, attitudes towards languages, and the strong influence of local church leaders in advocating for and fluently using vernacular Scriptures in collective worship<strong>.</strong></p>
