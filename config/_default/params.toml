@@ -63,10 +63,9 @@ content = "<span class='text-center block'>📅 Next BT Conference coming in Oct
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Bible translation", "Hugo"]
+keywords = ["Bible translation", "BT"]
 description = "Bible Translation Conference"
-author = "zeon.studio"
-twitter = "zeon_studio"
+author = "SIL Global"
 image = "images/og-image.png"
 
 
