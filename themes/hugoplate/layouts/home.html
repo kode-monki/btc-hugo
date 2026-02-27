@@ -38,29 +38,46 @@
 {{ end }}
   <!-- /Banner -->
 
+  <section class="py-12">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+      
+      {{ $targetYear := 2025 }}
+      {{ $allPlenaries := where .Site.RegularPages "Section" "plenaries" }}
+      {{ $thisYear := where $allPlenaries "Params.year" $targetYear }}
 
-<section class="py-12">
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-    {{/* Get all plenary pages */}}
-    {{ $allPlenaries := where .Site.RegularPages "Section" "plenaries" }}
-    
-    {{/* Filter by the current year */}}
-    {{ $thisYear := where $allPlenaries "Params.year" 2025 }}
+      {{ range sort $thisYear "Weight" "asc" }}
+        {{/* 1. Card container: Overflow hidden clips the image corners */}}
+        <div class="bg-white rounded-lg shadow-md text-center pb-6 overflow-hidden">
+                      <a href="{{ .Params.author_link }}" class="text-primary hover:underline font-semibold text-sm">
 
-    {{ range $thisYear }}
-      <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <h4>{{ .Params.lecture }}</h4>
-          <a href="{{ .Params.author_link }}" class="text-primary hover:underline font-semibold text-sm">
+          {{/* 2. Image: Full width, fixed height (h-48), object-cover prevents stretching */}}
 
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-full mx-auto mb-1 object-cover">
-        <h3 class="font-bold text-lg">{{ .Title }}</h3> 
-        <p class="text-sm text-gray-500 mb-2">{{ .Params.affiliation | replaceRE "\n" "<br>" | safeHTML }}</p>
-        </a>
-      </div>
-    {{ end }}
+
+  
+
+{{ with .Params.image }}
+  <img src="{{ . | relURL }}" alt="{{ $.Title }}"                class="w-full h-48 object-cover mb-4">
+
+{{ end }}
+          
+          {{/* 3. Text container: Add padding here to keep text from hitting edges */}}
+          <div class="px-6">
+            <h3 class="font-bold text-lg mb-1">{{ .Title }}</h3>
+            
+            <p class="text-sm text-gray-500 mb-3 leading-tight">
+              {{ .Params.affiliation | replaceRE "\n" "<br>" | safeHTML }}
+            </p>
+            </a>
+              <h4>{{ .Params.lecture }}</h4>
+            
+          </div>
+        </div>
+      {{ end }}
+
+    </div>
   </div>
 </section>
-
   
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}

@@ -2,7 +2,7 @@
 title: "Dr. Hephzibah Israel"
 year: 2025
 affiliation: |
-  Senior Lecturer in Translation Studies 
+  Translation Studies 
   The University of Edinburgh
 lecture: "Nida Lecture"
 image: "/images/s200_hephzibah.israel.webp"
