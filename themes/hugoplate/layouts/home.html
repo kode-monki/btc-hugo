@@ -38,7 +38,7 @@
 {{ end }}
   <!-- /Banner -->
 
-  <section class="py-12">
+  <section class="py-12" style="background-color: #f8f8f8;">
   <div class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
       
@@ -51,13 +51,9 @@
         <div class="bg-white rounded-lg shadow-md text-center pb-6 overflow-hidden">
                       <a href="{{ .Params.author_link }}" class="text-primary hover:underline font-semibold text-sm">
 
-          {{/* 2. Image: Full width, fixed height (h-48), object-cover prevents stretching */}}
-
-
-  
 
 {{ with .Params.image }}
-  {{ partial "image" (dict "Src" . "Alt" $.Title) }}
+{{ partial "image" (dict "Src" . "Alt" $.Title "Class" "w-full h-48 object-cover") }}
 {{ end }}
 
           
