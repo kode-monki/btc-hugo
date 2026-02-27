@@ -14,7 +14,7 @@ weight = 5
 [[main]]
 parent = "About"
 name = "Lecture Series"
-url = "/lecture-series"
+url = "/about/lecture-series"
 
 [[main]]
 parent = "About"

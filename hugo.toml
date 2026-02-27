@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://kode-monki.github.io/btc-hugo/"
 # Title of your website (required).
 title = "Bible Translation Conference"
 # Your theme name

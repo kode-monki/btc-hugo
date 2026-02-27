@@ -11,6 +11,14 @@
         </a>
       </div>
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
+        <strong>Official Website of the Bible Translation Conference</strong>
+
+        <p>
+        The biennial Bible Translation Conference is dedicated to advancing the theory and practice of Bible Translation. The Conference strives to promote engagement from a variety of perspectives and to foster a respectful environment that rejects all forms of discrimination and harassment
+          </p>
+        
+      </div>
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
         <ul>
           {{ range site.Menus.footer }}
             <li class="m-3 inline-block">
@@ -27,21 +35,6 @@
                 {{ end }}"
                 >{{ .Name }}</a
               >
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
-        <ul class="social-icons">
-          {{ range site.Data.social.main }}
-            <li>
-              <a
-                target="_blank"
-                aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
-                <i class="{{ .icon }}"></i>
-              </a>
             </li>
           {{ end }}
         </ul>
