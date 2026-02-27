@@ -57,10 +57,9 @@
   
 
 {{ with .Params.image }}
-{{ . | relURL }}
-  <img src="{{ . | relURL }}" alt="{{ $.Title }}"                class="w-full h-48 object-cover mb-4">
-
+  {{ partial "image" (dict "Src" . "Alt" $.Title) }}
 {{ end }}
+
           
           {{/* 3. Text container: Add padding here to keep text from hitting edges */}}
           <div class="px-6">
