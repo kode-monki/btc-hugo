@@ -5,37 +5,63 @@
   <p>Hugo says: This page has no physical file!</p>
 {{ end }}
 {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1>{{ .title | markdownify }}</h1> 
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                </a>
-              {{ end }}
-            {{ end }}
-          </div>
-          <div class="col-12">
-            {{/* image modules comes from https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
-          </div>
-        </div>
+<section class="section pt-8" style="padding-bottom: 10px !important;">
+  <div class="container">
+    <div class="row items-center">
+      
+      <div class="lg:col-8 col-12 mb-8 lg:mb-0">
+        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "w-full" "DisplayXL" "800x" ) }}
       </div>
-    </section>
-  {{ end }}
+
+      <div class="lg:col-4 col-12 text-left">
+        <h1>{{ .title | markdownify }}</h1> 
+        <p class="mb-8">
+          {{ .content | markdownify }}
+        </p>
+        {{ with .button }}
+          {{ if .enable }}
+            <a
+              class="btn btn-primary"
+              href="{{ .link | absURL }}"
+              {{ if strings.HasPrefix .link `http` }}
+                target="_blank" rel="noopener"
+              {{ end }}>
+              {{ .label }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+      
+    </div>
+  </div>
+</section>
+{{ end }}
   <!-- /Banner -->
 
+
+<section class="py-12">
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+    {{/* Get all plenary pages */}}
+    {{ $allPlenaries := where .Site.RegularPages "Section" "plenaries" }}
+    
+    {{/* Filter by the current year */}}
+    {{ $thisYear := where $allPlenaries "Params.year" 2025 }}
+
+    {{ range $thisYear }}
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h4>{{ .Params.lecture }}</h4>
+          <a href="{{ .Params.author_link }}" class="text-primary hover:underline font-semibold text-sm">
+
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-full mx-auto mb-1 object-cover">
+        <h3 class="font-bold text-lg">{{ .Title }}</h3> 
+        <p class="text-sm text-gray-500 mb-2">{{ .Params.affiliation | replaceRE "\n" "<br>" | safeHTML }}</p>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+  
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
