@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Bible Translation Conference"
+title = "BTC"
 
 [taxonomies]
   track = "tracks"
