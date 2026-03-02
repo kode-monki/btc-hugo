@@ -69,12 +69,6 @@ source = 'hugo_stats.json'
 target = 'assets/notwatching/hugo_stats.json'
 
 
-# This fetches your CSV and treats it as a 'Resource' Hugo can use during build
-[[resources]]
-  src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSmlApPlHI0wZmDVfFQiOq4lA4OJVICOPwYB3lyK0WX9PKmvKaX-kiNUULlAxM07cu4QlwrYZzeFc9V/pub?gid=1226309152&single=true&output=csv"
-  name = "proceedings-data"
-
-
 ############################# Outputs ############################
 [outputs]
 home = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "JSON"]
