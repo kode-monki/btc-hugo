@@ -7,6 +7,7 @@ affiliation: |
 lecture: "Sanneh Lecture"
 image: "/images/2025/Rux-Prompalit.webp"
 author_link: "/authors/rux-prompalit/"  # Link to their permanent bio
+plenary_id: "rux-prompalit"
 weight: 4
 ---
 

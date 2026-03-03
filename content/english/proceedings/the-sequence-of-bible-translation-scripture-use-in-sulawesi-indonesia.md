@@ -1,0 +1,13 @@
+---
+title: "The Sequence of Bible Translation: Scripture use in Sulawesi, Indonesia"
+date: 2025-10-28T13:50:00Z
+author: "Stan Anonby & Dave Eberhard"
+author_id: "stan-anonby-dave-eberhard"
+year: "2025"
+track: ["Church and Community"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>Around the globe, in a disconcerting number of minority language communities, there are reports of vernacular language Bibles not being used. The primary research question of this paper is, Do vernacular Scriptures become the/a normative text for public reading in public worship after national language Scriptures have filled that role? Sulawesi, Indonesia, was chosen as the area for this pilot study as it is a region where a considerable number of vernacular Scriptures are now available, and the majority of minority peoples were already literate in a national language – in this case, Indonesian (Valkama 1987). This paper is the result of surveying 19 language communities that were predominantly Christian, already had a NT or full Bible translation in their mother tongue, and had relatively high vernacular language vitality (EGIDS 6b or stronger). Our methods were threefold. First, we had a list of interview questions that asked how frequently they had used the vernacular Bible in the previous year. We also took pictures of their vernacular and Indonesian Bibles, and compared how well worn they were. Finally, we attended and recorded several services in each language community, both at homes and in churches. By analyzing these three probes, we were able to come up with a clear idea of how many times each people group used their vernacular Bibles throughout the year. The data led us to conclude that on Sulawesi, vernacular Scriptures did not become the normative text for public reading in any of the language communities studied once the Indonesian Bible was made available. In the conclusion we address the implications of this research within the BT world, and propose a possible cause for such low levels of use – the diglossic compartmentalizing of language functions in multilingual language ecologies. <br> </p>
