@@ -7,7 +7,7 @@ year: "2025"
 track: ["Church and Community", "Communication and Context", "Live Only"]
 slides_url: ""
 paper_url: ""
-video_url: "https://www.youtube.com/watch?v=Not Available"
+video_url: ""
 ---
 
 <p>The names of Bible translations have not been discussed from an ethical standpoint. Hence, a new Bible translation’s name may become an unrestricted branding tool creatively used to target a wide or specific demographic. Conventionally, in Malaysia and Indonesia, Bible translations are named based on their language, translation philosophy, or the model translation they refer to. Recently, a new Bible translation in Standard Malay (zsm), Malaysia&#x27;s national language (from the <em>West Malaysian</em> Johor-Riau dialect), has been published with an unusual subtitle: the name of a region in <em>East Malaysia </em>(i.e., Bible: Beta Version). For security and sensitivity reasons unique to Malaysia’s socio-political climate, this Bible will be identified in this abstract as Alpha, whereas the region will be referred to as Beta.</p>

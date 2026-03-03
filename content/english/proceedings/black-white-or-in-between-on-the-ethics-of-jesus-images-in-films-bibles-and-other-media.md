@@ -7,7 +7,7 @@ year: "2025"
 track: ["Communication and Context", "Methodologies, Media, and Multimodality", "Live Only"]
 slides_url: ""
 paper_url: ""
-video_url: "https://www.youtube.com/watch?v=Not Available"
+video_url: ""
 ---
 
 <p>Everybody knows what Jesus looks like. In this presentation we discuss Jesus’ portrayal as a white man, which has become his globally recognised “true” likeness. This distorts the gospel on both biblical and historical grounds and affects people’s understanding of Christianity. We discuss where white Jesus images come from, how they developed over the centuries and why they continue to be perpetuated in films, illustrated Bibles, apps and other media. Each image of a white Jesus contributes to maintaining Jesus’ “true” likeness.</p>
