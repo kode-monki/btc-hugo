@@ -10,7 +10,8 @@
         <h4 class="text-sm uppercase tracking-wider text-muted mb-4">Details</h4>
         <p class="mb-2"><strong>Author:</strong> 
         {{ if .Params.author_id }}
-          <a href="{{ (printf "/authors/%s/" .Params.author_id) | relURL }}" class="text-primary hover:underline">
+
+               <a href="{{ `authors/` | relLangURL }}{{ .Params.author_id | urlize }}/" class="text-primary hover:underline">
             {{ .Params.author }}
           </a>
         {{ else }}

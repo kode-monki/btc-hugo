@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="max-w-3xl">
+      <h1 class="h1 mb-2">{{ .Title }}</h1>
+      
+      {{ if .Params.affiliation }}
+        <h2 class="h3 text-muted mb-6">{{ .Params.affiliation }}</h2>
+      {{ end }}
+
+      <div class="content text-lg leading-relaxed">
+        {{ .Content }}
+      </div>
+
+      {{ $currentAuthorID := .Params.author_id }}
+      {{ if $currentAuthorID }}
+        {{ $myPapers := where (where .Site.RegularPages "Section" "proceedings") "Params.author_id" $currentAuthorID }}
+        
+        {{ if $myPapers }}
+          <div class="mt-12 border-t pt-8">
+            <h3 class="h4 mb-4">Presentations</h3>
+            <ul>
+              {{ range $myPapers }}
+                <li class="mb-2">
+                  <a href="{{ .RelPermalink }}" class="text-primary hover:underline font-medium">{{ .Title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      {{ end }}
+      
+    </div>
+  </div>
+</section>
+{{ end }}

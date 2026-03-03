@@ -5,7 +5,10 @@ affiliation: |
   Translation Studies 
   The University of Edinburgh
 lecture: "Nida Lecture"
-image: "/images/2025/s200_hephzibah.israel.webp"
-author_link: "/authors/hephzibah-israel/"  # Link to their permanent bio
+image: "images/2025/s200_hephzibah.israel.webp"
+author_link: "authors/hephzibah-israel"  # Link to their permanent bio
+plenary_id: "hephzibah-israel"
 weight: 3
 ---
+
+about the topic

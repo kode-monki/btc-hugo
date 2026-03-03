@@ -10,5 +10,5 @@ banner:
   button:
     enable: true
     label: "Go to the Proceedings"
-    link: "/proceedings"
+    link: "proceedings"
 ---

@@ -1,36 +1,48 @@
 {{ define "main" }}
-<section class="section" style="padding-top:20px;">
-  <div class="container">
-    <div class="max-w-3xl">
-      <h1 class="h1 mb-2">{{ .Title }}</h1>
-      
-      {{ if .Params.affiliation }}
-        <h2 class="h3 text-muted mb-6">{{ .Params.affiliation }}</h2>
-      {{ end }}
-
-      <div class="content text-lg leading-relaxed">
-        {{ .Content }}
+  <section class="section-sm pb-0">
+    <div class="container">
+      <div
+        class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
+        <div class="lg:col-4 text-center">
+          {{ $image:= .Params.image }}
+          {{ if $image }}
+            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
+          {{ else if .Params.Email }}
+            <img
+              class="mx-auto"
+              alt="{{ .Title }}"
+              height="200"
+              width="200"
+              src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
+          {{ end }}
+          <h1 class="h3 mt-10">{{ .Title }}</h1>
+          <div class="content mt-6">
+            {{ .Content }}
+          </div>
+          <ul class="social-icons ml-4 mt-10 text-center">
+            {{ range .Params.social }}
+              <li>
+                <a
+                  href="{{ .link | safeURL }}"
+                  target="_blank"
+                  rel="noopener nofollow">
+                  <span class="sr-only">{{ .title }}</span>
+                  <i class="{{ .icon }}"></i>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
       </div>
 
-      {{ $currentAuthorID := .Params.author_id }}
-      {{ if $currentAuthorID }}
-        {{ $myPapers := where (where .Site.RegularPages "Section" "proceedings") "Params.author_id" $currentAuthorID }}
-        
-        {{ if $myPapers }}
-          <div class="mt-12 border-t pt-8">
-            <h3 class="h4 mb-4">Presentations</h3>
-            <ul>
-              {{ range $myPapers }}
-                <li class="mb-2">
-                  <a href="{{ .RelPermalink }}" class="text-primary hover:underline font-medium">{{ .Title }}</a>
-                </li>
-              {{ end }}
-            </ul>
+      <div class="row pb-16 pt-14">
+        {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
+        {{ range $filterByAuthor }}
+          <div class="md:col-6 lg:col-4 mb-12">
+            {{ partial "components/blog-card" . }}
           </div>
         {{ end }}
-      {{ end }}
-      
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 {{ end }}

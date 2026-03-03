@@ -8,15 +8,6 @@ theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
 # post excerpt
-summaryLength = 10 # see https://gohugo.io/content-management/summaries/#automatic-summary
-# disable language
-disableLanguages = [
-] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
-hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
-# default language
-defaultContentLanguage = 'en'
-# defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
-defaultContentLanguageInSubdir = false
 
 
 [languages]
@@ -26,25 +17,11 @@ defaultContentLanguageInSubdir = false
     contentDir = "content/english"
     weight = 1
 
-########################### Services #############################
-[services]
-[services.googleAnalytics]
-ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-google-analytics
-
-[services.disqus]
-# shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 
 ########################## Permalinks ############################
 [permalinks.page]
 "pages" = "/:slugorcontentbasename/"
 "proceedings" = "/proceedings/:slug/"
-
-
-########################## Pagination ############################
-[pagination]
-disableAliases = false
-pagerSize = 10
-path = 'page'
 
 
 ############################# Build ##############################
@@ -68,7 +45,7 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "JSON"]
+home = ["HTML", "SearchIndex", "JSON"]
 
 ############################# Imaging ############################
 [imaging]

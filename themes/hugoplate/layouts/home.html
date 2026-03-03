@@ -52,8 +52,7 @@
       {{ range sort $thisYear "Weight" "asc" }}
         {{/* 1. Card container: Overflow hidden clips the image corners */}}
         <div class="bg-white rounded-lg shadow-md text-center pb-6 overflow-hidden">
-                      <a href="{{ .Params.author_link | relURL }}" class="text-primary hover:underline font-semibold text-sm">
-
+<a href="{{ (print "plenaries/" $targetYear "/" (.Params.plenary_id | urlize) "/") | relLangURL }}" class="text-primary hover:underline">
 
 {{ with .Params.image }}
 {{ partial "image" (dict "Src" . "Alt" $.Title "Class" "w-full h-48 object-cover") }}
