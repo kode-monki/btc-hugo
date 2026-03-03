@@ -13,6 +13,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 👇 Install Node (required for Tailwind)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 👇 Install dependencies (must have package.json in repo)
+      - name: Install NPM dependencies
+        run: npm ci
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -31,5 +41,10 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync public/ s3://${{ secrets.S3_BUCKET }} \
-            --delete
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET }} --delete
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
