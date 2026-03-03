@@ -1,0 +1,13 @@
+---
+title: "Beyond Ethics: Character, Virtue, and Relationship in the Biblical Walking Conceptual Metaphor"
+date: 2025-10-30T11:45:00Z
+author: "Baruch B. Kvansnica"
+author_id: "baruch-kvasnica"
+year: "2025"
+track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>A key Hebraic metaphor, that of “walking with God” or “walking in the ways of God,” was used throughout biblical literature to convey not only moral behavior and covenantal faithfulness but also a relational journey.  This metaphor captured aspects of life beyond ethics because it conveyed the idea of imitatio dei rather than a system of ethics or moral platitudes.  The metaphor had a unique character in late Second Temple Judaic Greek writings such as the New Testament, but was not natively used in ancient Greek. Additionally, certain Second Temple Judaic Greek texts shifted from the expected use of πορεύομαι (poreuomai, “to go”), as in the Septuagint, to convey the metaphorical use of the root הלך (halakh), to a marked preference for the use of περιπατεῖν (peripatein, “to walk/to walk about”). Through linguistic analysis, it will be shown that this preference for περιπατεῖν better conveys the manner of the motion verb (as opposed to directed motion) than πορεύομαι, and thus better reflects the Hebraic conceptual metaphor. This sense, as conveyed for example in the Israelite wilderness wanderings and in shepherding (which provide the source of the conceptual metaphor), places the destination as secondary and the journey as primary. This remarkable Hebraic metaphor helps us understand central aspects of the biblical message as going beyond ethics into character and virtue as part of an ongoing relational journey.</p>

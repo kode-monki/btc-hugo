@@ -1,0 +1,13 @@
+---
+title: "A Strategy for Improving the Quality of Target Language Structures in Bible Translation"
+date: 2025-10-31T15:00:00Z
+author: "Andreas Joswig"
+author_id: "andreas-joswig"
+year: "2025"
+track: ["Technology and Resources", "Training and Mentoring"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=KD7rvC-Cwq0"
+---
+
+<p>Goal statement: <br> The assumption that mother-tongue translators will automatically get their language structures right has led to neglecting target-language grammar in translation projects. But a moderate investment in understanding target-language structures will have a significant impact on the naturalness, clarity and accuracy of the translated Scriptures. Translations that follow the structures of the target language have a better chance of being accepted and used by the language community. <br> <br> Proposed strategy: <br> 1. Awareness raising: Through training translation consultants in grammar-for-translation workshops, consultants and decision-makers are made aware of the huge positive impact that understanding target-language structures has on the quality of translations and therefore on the lives of their readers. <br> 2. Creating short grammar summaries: An increasing corps of trained volunteer linguists provides summaries of features that are important for individual languages. These are made available for translation consultants to inform their checking sessions with mother tongue translation teams. In this way the knowledge filters down to the translators, who become more successful in applying the correct language structures. <br> 3. Academic linguists are attracted to provide full-scale language descriptions for languages with ongoing or planned translation projects. Such grammars are indispensable for writing the summaries mentioned under 2. <br> <br> Such measures contribute to improving the situation in many projects, making use of procedures and personnel that are involved in the process anyway. <br> </p>

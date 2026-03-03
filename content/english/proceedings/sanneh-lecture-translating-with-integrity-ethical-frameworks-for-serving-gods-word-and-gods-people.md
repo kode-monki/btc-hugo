@@ -1,0 +1,13 @@
+---
+title: "SANNEH LECTURE: Translating with Integrity: Ethical Frameworks for Serving God’s Word and God’s People"
+date: 2025-10-31T08:35:00Z
+author: "Dr. Rux Prompalit"
+author_id: "rux-prompalit"
+year: "2025"
+track: ["Plenary"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>Bible translation is not merely a linguistic or theological activity—it is an ethical endeavor that shapes interpretive frameworks and community identity. This presentation examines the ethical principles and dilemmas inherent in the translation of Scripture, drawing on historical analysis, field observation, and applied translation ethics within the context of northern Thailand.From the Septuagint to modern vernacular versions, translators have faced enduring questions of faithfulness, interpretation, and ideology. Four central ethical principles are explored: accuracy and faithfulness, transparency, respect for theological diversity, and cultural sensitivity. Case studies on gendered language, political influence, and slavery texts reveal the constant negotiation between textual integrity and social responsibility. These ethical tensions become even more pronounced in translation among minority and indigenous groups, where local participation, cultural resonance, and theological expression are essential.The discussion further addresses the rise of Artificial Intelligence in translation—highlighting the need for human oversight, disclosure, and protection of indigenous voices—as well as issues of financial ethics, including donor influence, equitable pay, and open access to Scripture.Ultimately, ethical Bible translation requires humility, justice, and collaboration. Translators serve not only as linguistic mediators but as moral agents accountable to the communities they serve, ensuring contextual and ethical accessibility for diverse audiences.</p>

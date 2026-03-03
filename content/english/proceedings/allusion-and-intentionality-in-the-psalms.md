@@ -1,0 +1,13 @@
+---
+title: "Allusion and Intentionality in the Psalms"
+date: 2025-10-31T11:00:00Z
+author: "Rhoda Leach"
+author_id: "rhoda-leach"
+year: "2025"
+track: ["Church and Community", "Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+slides_url: ""
+paper_url: ""
+video_url: "https://www.youtube.com/watch?v=frNLjNXNbFo"
+---
+
+<p>This paper presents the poetic device of allusion in Hebrew poetry, and considers some of the difficulties inherent for the translator in handling allusion. The paper focuses on clarifying what is meant by the poetic device of allusion, focussing on examples from Psalms 103, 29 and 19. The poetic devices of simile and metaphor are compared and contrasted with both direct quotation and also with allusion in Ps 103, with examples illustrating the different purpose of each device, the existence of a point of comparison, and the level of hiddenness. The way in which the allusions highlight the intention of the author are examined. The overlapping but distinct roles of allusion and of Biblical intertextuality are then shown, with non-intertextual ANE allusions shown in Ps 29; the insights that these give into the poet&#x27;s intentions in writing and structuring the psalm are discussed. The way in which allusion can also be used by the author to prime the psalm-audience for understanding the link between following juxtaposed stanzas, and to give unity and coherence to the psalm, is examined with reference to Ps 19. Practical pointers are given to enable translators to identify allusions as they work with the psalms, with examples. The paper finishes by considering how allusion has traditionally been handled in Bible translation, and the constraints which are experienced in translating allusion in poetry, and goes on to show how recent developments in multimodal community-based translation may be able to help reduce some of these difficulties for future translators. Why is this important? If audiences cannot access allusions, they are denied a deeper understanding of Biblical poetry. And if translators can engage with the allusions in a text, the result will be a richer and more poetic translation, more readily gripping the audience’s hearts and minds.</p>

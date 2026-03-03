@@ -1,0 +1,13 @@
+---
+title: "Ethical Considerations in Translation of Symbols: Case of ‘Oil’ and ‘Wine’ in Kitaita and Kitharaka"
+date: 2025-10-29T11:45:00Z
+author: "Edward Kireti & Onesmus Kamwara"
+author_id: "kireti-kamwara"
+year: "2025"
+track: ["Communication and Context", "Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>This paper explores the complex decisions that translators have to make when translating Biblical symbols that have rich cultural implications such as wine and oil. Symbols are often based on well-entrenched metaphors in a culture, and understanding them provides access to the conceptual structures that they can evoke or are meant to evoke (Kövecses 2002: 59). The paper further argues that for effective and ethical translation to be achieved, translators need to understand the conceptual structure of the target language and intricately position the symbols to fit in while maintaining faithfulness to the source text, cultural relevance and ethical integrity. Inappropriate or inadequate translation of symbols can mislead or deny the audience an opportunity to draw rich inferences from them. Since our conceptual system that governs how we experience the world, think or act is partly metaphorical, then conceptual metaphors must be realized not only in language but also in many areas of human experience. Such areas include parables which are often replete with symbols placed strategically so that in translating and interpreting them correctly, they contribute to the general understanding of the message and the persuasive communication of a central truth (Cotterell &amp; Turner 1989: 307). By translators employing different strategies including the use of extra textual helps, especially diagrams to represent concepts, they can unravel rich inferences that can inform the process of translation and deliver Biblical messages that are not only comprehensible but also meaningful to different audiences. This ensures that the translators do not “impose” an understanding informed either by the original languages or other mediating languages. This study will contribute to broader discussions on contextualization, translation strategies and ethical considerations in Biblical translation. <br> </p>

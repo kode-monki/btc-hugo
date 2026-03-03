@@ -1,0 +1,15 @@
+---
+title: "Translating From a Translation? Practical and Ethical Considerations"
+date: 2025-10-31T15:00:00Z
+author: "Sebastian Floor"
+author_id: "sebastian-floor"
+year: "2025"
+track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Live Only"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>Translating from translations has become widespread in the current Bible translation movement. There is the ideological assumption that deep knowledge of the original languages is not so necessary any more, we now have enough knowledge of the meaning through centuries of studies and resources. However, translation consultants are still required to have at least a working knowledge of the Greek or the Hebrew to be able to authenticate a translation. But a church or community without the ability to translate from the original is also not able to fulfill its role as the rightful authenticator of its own translations. And what is more, it is not able to do that for revisions or new translations over the long term, all of which in turn exposes the community to ongoing dependence on outside expertise and limits their own processes of ongoing theologizing and revising/re-translating needs.
+ <br> 
+ <br> The long-term solution is clear: develop local source language expertise within the language community. But that will take significant time and funds. The question is how to effectively redeem this situation over the short term. The Psalms that Sing working group, promoting the translation of Psalms from Hebrew poetry into local poetry, has wrestled with a way to give translators and ethno-poets access to the Hebrew in spite of a lack of Hebrew proficiency among them. This paper will report on our pilot and our findings and explain the tool of juxta linear layouts of the Hebrew, accompanied by so-called Hebrew-mirror translations and Hebrew-tight translations used in our guides for each psalm, as an intermediate step towards developing local expertise in the original languages.</p>

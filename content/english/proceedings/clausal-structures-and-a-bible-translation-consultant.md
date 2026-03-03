@@ -1,0 +1,13 @@
+---
+title: "Clausal Structures and a Bible Translation Consultant"
+date: 2025-10-29T10:15:00Z
+author: "Vinod Wilson Varkey & Dhulipala Balaji"
+author_id: "#N/A"
+year: "2025"
+track: ["Communication and Context", "Other", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+slides_url: ""
+paper_url: ""
+video_url: ""
+---
+
+<p>Indian languages are primarily OV (Object-Verb) languages, while Biblical languages such as Greek  and Hebrew  are VO (Verb-Object) languages. OV and VO languages differ significantly in their inter-clausal structures, which stem from the fundamental difference in intra-clausal word order. However, when the Bible was translated into Hindi, an Indo-Aryan language, translators largely overlooked the natural structures of Hindi and imposed the Greek and Hebrew word orders, particularly in terms of clausal structures. <br>  <br> Hindi serves as the lingua franca for most Indo-Aryan language speakers in North India. Consequently, the Hindi Bible became the base text for many Bible translations into Indo-Aryan minority languages. As a result, there is a natural tendency to carry forward the underlying Greek structure from the Hindi Bible in their draft translations. While it is the translator's responsibility to use natural structures in their work, mother-tongue translators without adequate knowledge of cross-language family features may not be entirely at fault for this issue. Quality checkers and consultants play a crucial role in overseeing the translation's quality, with the ultimate responsibility resting with the translation consultants. <br>  <br> In the fast-paced environment of modern Bible translation, many consultants and mid-stage quality checkers tend to overlook this issue. This has led to some unnatural translations in minority languages from the Indo-Aryan belt being approved for publication. This needs to be evaluated and brought to the attention of the current Bible Translation consultants and mid-stage quality checkers so that these errors may be avoided in the future.</p>
