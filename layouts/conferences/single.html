@@ -3,23 +3,29 @@
   <div class="container">
     <div class="row justify-between">
       
-      <div class="lg:col-4 mb-10 lg:mb-0">
+      <div class="lg:col-4 mb-8 lg:mb-0">
         <div class="sticky top-24">
-          <div class="rounded-2xl overflow-hidden shadow-lg mb-6">
+          <div class="rounded-2xl overflow-hidden shadow-lg mb-4">
             {{ if .Params.image }}
               {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full h-auto") }}
             {{ end }}
           </div>
           
-          <h1 class="h3 mb-4">{{ .Title }}</h1>
           
           <div class="bg-theme-light dark:bg-darkmode-theme-light p-6 rounded-xl">
-            <h4 class="h5 mb-3 text-primary">Conference Theme</h4>
-            <p class="text-sm italic border-l-4 border-primary pl-4">
-              "{{ .Params.theme }}"
-            </p>
+            <h4 class="h5 mb-3 text-primary">BTC  {{ .Params.year }}</h4>
+        
             <hr class="my-4 border-border dark:border-darkmode-border">
             <div class="text-sm font-medium">
+<p>
+<a href="#theme" class="btn btn-outline-primary btn-sm">
+                  Theme
+                </a> <a href="#plenaries" class="btn btn-outline-primary btn-sm">
+                  Plenaries
+                </a>
+
+                </p>
+                <br>
               <p><strong>Location:</strong> {{ .Params.location }}</p>
               <p><strong>Date:</strong> 
                 {{ if .Params.date_start }}

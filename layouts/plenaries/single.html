@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="section" style="padding-top:20px;">
+  <div class="w-full lg:w-4/5 mx-auto">
+        <h1 class="h2 mb-2">{{ .Params.lecture }}:</h2>
+
+      <h1 class="h1 mb-2">{{ .Title }}</h1>
+
+      <div class="flex items-center gap-8 mb-6">
+  
+  {{ if .Params.image }}
+    <img 
+      src="{{ .Params.image | relURL }}" 
+      alt="{{ .Params.author }}" 
+      class="w-24 h-24 rounded-full object-cover border border-gray-200"
+    >
+  {{ end }}
+
+  <div>
+    <h3 class="h3 text-muted">{{ .Params.author }}</h3>
+    {{ if .Params.affiliation }}
+      <h4 class="h4 text-muted">{{ .Params.affiliation }}</h4>
+    {{ end }}
+  </div>
+
+</div>
+
+      <div class="content text-lg leading-relaxed">
+        {{ .Content }}
+      </div>
+
+      {{ $currentAuthorID := .Params.author_id }}
+      {{ if $currentAuthorID }}
+        {{ $myPapers := where (where .Site.RegularPages "Section" "proceedings") "Params.author_id" $currentAuthorID }}
+        
+        {{ if $myPapers }}
+          <div class="mt-12 border-t pt-8">
+            <h3 class="h4 mb-4">Presentations</h3>
+            <ul>
+              {{ range $myPapers }}
+                <li class="mb-2">
+                  <a href="{{ .RelPermalink }}" class="text-primary hover:underline font-medium">{{ .Title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      {{ end }}
+      
+    </div>
+</section>
+{{ end }}

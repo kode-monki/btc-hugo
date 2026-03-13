@@ -1,0 +1,25 @@
+{{/* 1. Get the year and cast to int */}}
+{{ $targetYear := .Get "year" | int }}
+
+{{/* 2. Access the 'plenaries' section */}}
+{{ $plenarySection := site.GetPage "section" "plenaries" }}
+
+<div class="plenary-list">
+  {{ if $plenarySection }}
+    {{/* 3. Filter the pages within that section by year */}}
+    {{ $filtered := where $plenarySection.Pages "Params.year" $targetYear }}
+    
+    {{ if $filtered }}
+      {{ range $filtered }}
+        <div class="mb-4 p-4 border rounded bg-light dark:bg-darkmode-theme-light">
+          <h4 class="h5 text-primary mb-1">{{ .Params.author }}</h4>
+          <p class="small italic mb-0">{{ .Params.lecture }}</p>
+        </div>
+      {{ end }}
+    {{ else }}
+      <p>No plenaries found for the year {{ $targetYear }}.</p>
+    {{ end }}
+  {{ else }}
+    <p>Error: Could not find the 'plenaries' section.</p>
+  {{ end }}
+</div>
