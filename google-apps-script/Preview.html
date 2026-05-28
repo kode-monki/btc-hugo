@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; padding: 16px; margin: 0; color: #333; background: #f8f8f8; }
+    .file { background: white; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 16px; overflow: hidden; }
+    .file-header {
+      background: #262e6b; color: white;
+      padding: 8px 14px; font-size: 12px; font-family: monospace;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .copy-btn {
+      background: rgba(255,255,255,0.2); border: none; color: white;
+      padding: 2px 8px; border-radius: 3px; cursor: pointer; font-size: 11px;
+    }
+    .copy-btn:hover { background: rgba(255,255,255,0.35); }
+    pre {
+      margin: 0; padding: 14px; font-size: 11px; font-family: monospace;
+      overflow-x: auto; white-space: pre-wrap; word-break: break-word;
+      max-height: 300px; overflow-y: auto;
+    }
+    .empty { text-align: center; color: #888; padding: 40px; }
+    .loading { text-align: center; color: #888; padding: 40px; }
+  </style>
+</head>
+<body>
+  <div id="container" class="loading">Loading preview…</div>
+
+  <script>
+    google.script.run
+      .withSuccessHandler(function(files) {
+        var container = document.getElementById('container');
+        if (!files || files.length === 0) {
+          container.className = 'empty';
+          container.textContent = 'No files to preview.';
+          return;
+        }
+        container.className = '';
+        container.innerHTML = files.map(function(f, idx) {
+          return (
+            '<div class="file">' +
+              '<div class="file-header">' +
+                '<span>' + escHtml(f.path) + '</span>' +
+                '<button class="copy-btn" onclick="copyFile(' + idx + ')">Copy</button>' +
+              '</div>' +
+              '<pre id="file-' + idx + '">' + escHtml(f.content) + '</pre>' +
+            '</div>'
+          );
+        }).join('');
+        window._files = files;
+      })
+      .withFailureHandler(function(e) {
+        document.getElementById('container').textContent = 'Error: ' + e.message;
+      })
+      .getPreviewData();
+
+    function escHtml(s) {
+      return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function copyFile(idx) {
+      var text = window._files[idx].content;
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = document.querySelectorAll('.copy-btn')[idx];
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Copy'; }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{{ $targetYear := .year | int }}
+{{ $allSponsors := where site.RegularPages "Section" "sponsors" }}
+{{ $filtered := where $allSponsors "Params.year" $targetYear }}
+{{ $sponsors := where $filtered "Params.level" "sponsor" }}
+{{ $exhibitors := where $filtered "Params.level" "exhibitor" }}
+
+{{ if or $sponsors $exhibitors }}
+<section class="section pt-8 pb-8 bg-dark">
+  <div class="container">
+    {{ if $sponsors }}
+    <div class="flex flex-wrap justify-center items-center gap-8 mb-8">
+      {{ range sort $sponsors "Weight" "asc" }}
+        <div class="flex items-center justify-center">
+          {{ if .Params.website }}
+            <a href="{{ .Params.website }}" target="_blank" rel="noopener">
+          {{ end }}
+          {{ $imgRes := "" }}
+          {{ with .Params.image }}{{ $imgRes = resources.Get . }}{{ end }}
+          {{ $h := .Params.logo_height | default 80 }}
+          {{ if $imgRes }}
+            {{ $resized := $imgRes.Resize (printf "x%d" $h) }}
+            <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" style="height:{{ $h }}px;width:auto;">
+          {{ else }}
+            <span class="text-lg font-semibold text-white">{{ .Title }}</span>
+          {{ end }}
+          {{ if .Params.website }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if $exhibitors }}
+    <div class="text-center">
+      <h4 class="mb-4 text-white">Exhibitors</h4>
+      <div class="flex flex-wrap justify-center items-center gap-8">
+        {{ range sort $exhibitors "Weight" "asc" }}
+          <div class="flex items-center justify-center">
+            {{ if .Params.website }}
+              <a href="{{ .Params.website }}" target="_blank" rel="noopener">
+            {{ end }}
+            {{ $imgRes := "" }}
+            {{ with .Params.image }}{{ $imgRes = resources.Get . }}{{ end }}
+            {{ if $imgRes }}
+              {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "max-h-12 w-auto object-contain") }}
+            {{ else }}
+              <span class="text-lg font-semibold text-white">{{ .Title }}</span>
+            {{ end }}
+            {{ if .Params.website }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}

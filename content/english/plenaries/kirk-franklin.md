@@ -4,7 +4,7 @@ year: 2025
 affiliation: |
   Associate Faculty
   Global Missional Leadership
-lecture: "Beekman"
+lecture: "Beekman 2"
 image: "/images/2025/Kirk-Franklin.webp"
 author: "Dr. Kirk Franklin"
 author_link: "/authors/kirk-franklin/"  # Link to their permanent bio

@@ -41,7 +41,8 @@
 {{ end }}
   <!-- /Banner -->
   
-{{ partial "plenaries.html" (dict "year" 2025 "layout" "horizontal") }}
+{{ partial "plenaries.html" (dict "year" site.Params.current_year "layout" "horizontal") }}
+{{ partial "sponsors.html" (dict "year" site.Params.current_year) }}
 
 
   

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; padding: 24px; margin: 0; color: #333; }
+    h2  { margin: 0 0 16px; font-size: 16px; color: #262e6b; }
+    label { display: block; font-weight: bold; font-size: 13px; margin-bottom: 4px; }
+    input { width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; margin-bottom: 8px; }
+    .hint { font-size: 11px; color: #666; margin-bottom: 16px; }
+    .hint a { color: #262e6b; }
+    .current { font-size: 12px; color: #444; background: #f4f4f4; padding: 6px 10px; border-radius: 4px; margin-bottom: 16px; }
+    button { background: #262e6b; color: white; padding: 9px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; }
+    button:hover { background: #1a2050; }
+    .status { margin-top: 10px; font-size: 12px; color: #444; }
+  </style>
+</head>
+<body>
+  <h2>BTC Website Settings</h2>
+  <div class="current" id="current">Loading current token...</div>
+
+  <label for="pat">GitHub Personal Access Token</label>
+  <input type="password" id="pat" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+  <div class="hint">
+    Requires the <strong>repo</strong> scope (or <strong>contents: write</strong> for fine-grained tokens).<br>
+    Generate one at <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a>.
+  </div>
+
+  <button onclick="save()">Save Token</button>
+  <div class="status" id="status"></div>
+
+  <script>
+    google.script.run
+      .withSuccessHandler(function(s) {
+        document.getElementById('current').textContent =
+          s.pat ? 'Current token: ' + s.pat : 'No token saved yet.';
+      })
+      .getSettings();
+
+    function save() {
+      var pat = document.getElementById('pat').value.trim();
+      if (!pat) { alert('Please enter a token.'); return; }
+      document.getElementById('status').textContent = 'Saving…';
+      google.script.run
+        .withSuccessHandler(function(msg) {
+          document.getElementById('status').textContent = msg;
+          setTimeout(function() { google.script.host.close(); }, 800);
+        })
+        .withFailureHandler(function(e) {
+          document.getElementById('status').textContent = 'Error: ' + e.message;
+        })
+        .saveSettings(pat);
+    }
+  </script>
+</body>
+</html>
