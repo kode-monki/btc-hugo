@@ -19,6 +19,7 @@ defaults:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   HUGO_ENV: production
   HUGO_VERSION: "0.151.0"
   GO_VERSION: "1.23.3"
