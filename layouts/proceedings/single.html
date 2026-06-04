@@ -63,6 +63,19 @@
         {{ .Content }}
       </div>
     </div>
+
+    {{- $authorPage := site.GetPage (printf "/authors/%s" (.Params.author_id | urlize)) -}}
+    {{ if and $authorPage $authorPage.Content }}
+    <div class="border-t border-border pt-8 mt-8">
+      <h3 class="h4 mb-1">About the Author</h3>
+      {{ if $authorPage.Params.affiliation }}
+        <p class="text-sm text-muted mb-4">{{ $authorPage.Params.affiliation }}</p>
+      {{ end }}
+      <div class="content">
+        {{ $authorPage.Content }}
+      </div>
+    </div>
+    {{ end }}
   </div>
 </section>
 {{ end }}
