@@ -186,7 +186,7 @@
 </style>
 
 <script>
-const SCHEDULE = {{ $items | jsonify }};
+const SCHEDULE = {{ $items | jsonify | safeJS }};
 
 const TRACK_STYLES = {
   'Theology, Hermeneutics, and Exegesis': { bg:'#dbeafe', text:'#1e40af', border:'#3b82f6' },
