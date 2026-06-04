@@ -5,7 +5,7 @@ author: "Jabaraj Koilpillai"
 author_id: "jabaraj-koilpillai"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1j_-PEwzeoCuIMAeYm7OlXNTqEjfTNr6Q/view?usp=drive_link"
 paper_url: "https://drive.google.com/file/d/1oxfFcLaQVij--oKfYg50kt4_dAQnpr71/view?usp=drive_link"
 video_url: "https://www.youtube.com/watch?v=XwRGXG7-Wto"
 ---

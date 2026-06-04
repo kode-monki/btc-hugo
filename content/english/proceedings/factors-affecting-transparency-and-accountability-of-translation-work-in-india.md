@@ -5,7 +5,7 @@ author: "Chris"
 author_id: "chris"
 year: "2025"
 track: ["Communication and Context", "Methodologies, Media, and Multimodality"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1xhhwVAv0BgvMLqGggi8ESf_t06xhG9F9/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=f2JXPrYBeLg"
 ---

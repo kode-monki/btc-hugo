@@ -5,7 +5,7 @@ author: "Dr. Kirk Franklin"
 author_id: "kirk-franklin"
 year: "2025"
 track: ["Plenary"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/18VtbZTkNQzVnLIoJzhQcgCJwS9utqdtx/view?usp=drive_link"
 paper_url: ""
 video_url: ""
 ---

@@ -5,7 +5,7 @@ author: "Prof. dr. Matthijs J. de Jong"
 author_id: "matthijs-de-jong"
 year: "2025"
 track: ["Plenary"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1svxfdL8jBXiW3ZfLBsOUaf6lzBUV1rJE/view?usp=drive_link"
 paper_url: ""
 video_url: ""
 ---

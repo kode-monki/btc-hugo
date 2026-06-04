@@ -5,7 +5,7 @@ author: "Peter Kamande Thuo"
 author_id: "kamande-thuo"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Training and Mentoring"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1iOlpd9cq7IFFq6e2Cvyj7miB2RGEnr90/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=tloyZ6vOsKE"
 ---

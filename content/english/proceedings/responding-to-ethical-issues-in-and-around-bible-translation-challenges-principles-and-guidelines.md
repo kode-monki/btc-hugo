@@ -5,7 +5,7 @@ author: "Dick Kroneman"
 author_id: "dick-kroneman"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality", "Training and Mentoring", "Live Only"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1B4ZI40HIlyjJt0d_aR670QzRrQY9-iiF/view?usp=drive_link"
 paper_url: ""
 video_url: ""
 ---

@@ -5,7 +5,7 @@ author: "David Duncan, et al - Part of AI Panel"
 author_id: "david-duncan"
 year: "2025"
 track: ["Technology and Resources", "AI Panel"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1Di8yfW0qAaj27lo_NZbZ6HJ6W5ux_LUd/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=_HmmTOkoyuU"
 ---
