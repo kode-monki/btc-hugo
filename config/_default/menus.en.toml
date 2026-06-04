@@ -31,6 +31,11 @@ url = "/contact"
   url = "/proceedings"
   weight = 2
 
+[[main]]
+  name = "Schedule"
+  url = "/schedule"
+  weight = 3
+
 # footer menu
 [[footer]]
 name = "About"
