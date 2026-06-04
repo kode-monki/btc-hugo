@@ -5,7 +5,7 @@ author: "Richard Brown"
 author_id: "richard-brown"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1HsgxSw7Rjo0fswLkAr7Djt0D7kwnbZZI/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=3u4eBtwV5Lc"
 ---
