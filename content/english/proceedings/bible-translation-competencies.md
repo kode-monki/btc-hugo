@@ -1,6 +1,10 @@
 ---
 title: "Bible Translation Competencies"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Phil King"
 author_id: "#N/A"
 year: "2023"
@@ -18,4 +22,3 @@ In many approaches, translation ‘consultants’ play a significant role in the
 This paper reflects on the process over the past five years of seeking broad consensus on the competencies for such consultants and developing tools to support their development.  The focus is specifically on the ecosystem surrounding the Competency-Based Certification (CBC) approach to consultant growth plans, including the sets of competencies that have been identified, the Competency Manager software developed to track professional development, and the resources being collated to support this through the bibletranslationcompetencies.org website. 
 
 As well as introducing the resources that are currently available, the paper will reflect on some of the challenges that have been identified during the development and pilot stages, (such as balancing broad-based global cohesion with local flexibility), and the lessons that have been learned in the process. 
-

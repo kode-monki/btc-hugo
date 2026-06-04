@@ -1,6 +1,10 @@
 ---
 title: "The Task of Putting Together a Team for Quality Oral Bible Translation - BiLTA Experience"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Jackson Katete"
 author_id: "#N/A"
 year: "2023"
@@ -17,4 +21,3 @@ In our community, it is always important to have community awareness before unde
 Continuous monitoring and evaluation is an important aspect of quality team management leading to quality translation work.
 Every dark cloud has a silver lining. Our failures in starting translation works helped us to build up our faith to depend on God’s timing.
 The result was a reinforced and diligent team which produced quality oral Bible translation, leading to community acceptance of the translation and life transformation of the people.
-

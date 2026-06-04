@@ -1,10 +1,14 @@
 ---
 title: "The Referent of ‘The Elements of the World’ in Galatians 4:1–11"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 5"
 author: "Benjamin"
 author_id: "benjamin-pearce"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=pv1qSg3a8H0"

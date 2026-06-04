@@ -1,6 +1,10 @@
 ---
 title: "Peer Review and Quality Assurance: A Case for Programmatic Accreditation"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Scott Berthiaume"
 author_id: "#N/A"
 year: "2023"
@@ -17,4 +21,3 @@ This quantitative benefit has created a wide variety of training programs for th
 Programmatic accreditation is common for academic disciplines (e.g., engineering, health sciences, business administration), particularly those that lead to certification. Bible Translation has proven to be a rigorous and sustainable discipline with applications both in Scripture as well as Scripture-Based initiatives; it would benefit from having its own program-level accreditation.
 
 In this paper, I provide an overview of BT quality assurance both as a discipline and in training.  Looking at recent proposals for collegial review, I compare and contrast the current BT training to existing programmatic-accreditors and show that program-accreditation would improve BT training in several key areas: transferability of credit across programs, academic recognition and professional development for consultants, peer-review assessment for improvement of the BT discipline, and maximal networking among agencies and schools on a global scale.
-

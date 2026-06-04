@@ -1,10 +1,14 @@
 ---
 title: "Bible Translation as Theological and Ecclesiological Change – Transparency and Mismatches"
-date: 2025-10-29T15:40:00Z
+date: "2025-10-29T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 5"
 author: "Timothy Hatcher"
 author_id: "timothy-hatcher"
 year: "2025"
-track: ["Church and Community", "Theology, Hermeneutics, and Exegesis", "Training and Mentoring", "Remote Presenter"]
+track: ["Church and Community;Theology, Hermeneutics, and Exegesis;Training and Mentoring;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=d1Zr1UiZfeU"

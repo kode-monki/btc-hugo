@@ -1,10 +1,14 @@
 ---
 title: "Translation Approaches of the Jesus Film"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 3"
 author: "Jon Haahr, Elly Gudo, Tano Emboc"
 author_id: "jon-haahr-elly-gudo-tano-emboc"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Training and Mentoring", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;Training and Mentoring;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

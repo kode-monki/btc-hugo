@@ -1,6 +1,10 @@
 ---
 title: "Theology and Hermeneutics: From Translation Challenge to Unrealized Potential"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Alice Reed"
 author_id: "alice-reed"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "BEEKMAN LECTURE 2: Job’s Missional Ethic in the Context of God’s Mission and Bible Translation"
-date: 2025-10-29T08:35:00Z
+date: "2025-10-29T08:35:00Z"
+start_time: "7:35 AM"
+end_time: "8:45 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Dr. Kirk Franklin"
 author_id: "kirk-franklin"
 year: "2025"

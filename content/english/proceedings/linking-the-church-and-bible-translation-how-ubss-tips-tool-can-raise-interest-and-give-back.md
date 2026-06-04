@@ -1,6 +1,10 @@
 ---
 title: "Linking the Church and Bible Translation: How UBS's TIPs Tool Can Raise Interest and Give Back"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Jost Zetzsche"
 author_id: "#N/A"
 year: "2023"

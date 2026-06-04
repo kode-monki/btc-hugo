@@ -1,10 +1,14 @@
 ---
 title: "Providing Implicit Information in a Translation, With Particular Focus on Oral Bible Translations"
-date: 2025-10-31T11:00:00Z
+date: "2025-10-31T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 1"
 author: "Swapna Anna Alexander"
 author_id: "swapna-anna-alexander"
 year: "2025"
-track: ["Communication and Context", "Methodologies, Media, and Multimodality", "Live Only"]
+track: ["Communication and Context;Methodologies, Media, and Multimodality;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=OhPxAm8QQLs"

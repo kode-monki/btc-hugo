@@ -1,10 +1,14 @@
 ---
 title: "Ethical Considerations in Translation of Symbols: Case of ‘Oil’ and ‘Wine’ in Kitaita and Kitharaka"
-date: 2025-10-29T11:45:00Z
+date: "2025-10-29T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 1"
 author: "Edward Kireti & Onesmus Kamwara"
 author_id: "kireti-kamwara"
 year: "2025"
-track: ["Communication and Context", "Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis"]
+track: ["Communication and Context;Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: ""

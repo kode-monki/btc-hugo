@@ -1,6 +1,10 @@
 ---
 title: "Exegeting Emotions in the Bible for Translation: Toward a Comprehensive Method"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Joshua Frost"
 author_id: "#N/A"
 year: "2023"

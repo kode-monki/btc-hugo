@@ -1,6 +1,10 @@
 ---
 title: "Ethics of Using Tools That Focus on Community Engagement in Bible Translation"
-date: 2025-10-31T11:00:00Z
+date: "2025-10-31T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Ken Decker, Maik Gibson"
 author_id: "ken-decker-maik-gibson"
 year: "2025"

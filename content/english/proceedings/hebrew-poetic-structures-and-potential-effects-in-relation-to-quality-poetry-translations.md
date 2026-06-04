@@ -1,6 +1,10 @@
 ---
 title: "Hebrew Poetic Structures and Potential Effects in Relation to Quality Poetry Translations"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Emmylou Grosser"
 author_id: "emmylou-grosser"
 year: "2023"

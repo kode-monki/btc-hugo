@@ -1,10 +1,14 @@
 ---
 title: "Ethics in a Checking Session"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 4"
 author: "Rita Fotso"
 author_id: "rita-fotso"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Church and Community;Communication and Context;Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Z2J3-OObDN8"

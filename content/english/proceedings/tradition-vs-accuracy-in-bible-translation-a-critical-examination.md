@@ -1,6 +1,10 @@
 ---
 title: "Tradition vs. Accuracy in Bible Translation: A Critical Examination"
-date: 2025-10-31T10:15:00Z
+date: "2025-10-31T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 4"
 author: "Joshy Abraham"
 author_id: "joshy-abraham"
 year: "2025"

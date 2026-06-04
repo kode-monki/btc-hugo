@@ -1,10 +1,14 @@
 ---
 title: "Bible Translation and Literacy: Can We Ethically Deprioritize the Latter?"
-date: 2025-10-31T11:45:00Z
+date: "2025-10-31T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 4"
 author: "Diane Dekker, Kristine Trammell"
 author_id: "diane-dekker-kristine-trammell"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Training and Mentoring"]
+track: ["Church and Community;Communication and Context;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=1114313763"

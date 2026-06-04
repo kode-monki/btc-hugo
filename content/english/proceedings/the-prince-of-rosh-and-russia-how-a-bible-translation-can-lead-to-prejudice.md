@@ -1,6 +1,10 @@
 ---
 title: "The Prince of Rosh and Russia: How a Bible Translation Can Lead to Prejudice"
-date: 2025-10-31T15:00:00Z
+date: "2025-10-31T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: "Public"
+location: "Room 2"
 author: "Alexander Kondakov"
 author_id: "alexander-kondakov"
 year: "2025"

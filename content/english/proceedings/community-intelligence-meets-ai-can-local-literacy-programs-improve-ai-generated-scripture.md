@@ -1,10 +1,14 @@
 ---
 title: "Community Intelligence Meets AI: Can Local Literacy Programs Improve AI-Generated Scripture?"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Taeho Jang, et al - Part of AI Panel"
 author_id: "taeho-jang"
 year: "2025"
-track: ["Church and Community", "Methodologies, Media, and Multimodality", "Technology and Resources", "AI Panel"]
+track: ["Church and Community;Methodologies, Media, and Multimodality;Technology and Resources;AI Panel"]
 slides_url: ""
 paper_url: "https://drive.google.com/file/d/1zXrgngH3tVlxrV1OimlPfos_IdhxmPPH/view?usp=drive_link"
 video_url: ""

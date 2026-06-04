@@ -1,6 +1,10 @@
 ---
 title: "A Balanced View of Interpreting the Psalms in Light of their Sitz im Leben"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Milton Watt"
 author_id: "#N/A"
 year: "2023"

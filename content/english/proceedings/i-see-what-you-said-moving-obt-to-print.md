@@ -1,6 +1,10 @@
 ---
 title: "I See What You Said: Moving OBT to Print"
-date: 2025-10-30T11:45:00Z
+date: "2025-10-30T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 5"
 author: "Robin Green Ulibarri, Swapna Alexander"
 author_id: "#N/A"
 year: "2025"

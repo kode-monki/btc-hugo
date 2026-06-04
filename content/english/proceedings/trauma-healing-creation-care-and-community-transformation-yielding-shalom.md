@@ -1,6 +1,10 @@
 ---
 title: "Trauma Healing, Creation Care, and Community Transformation Yielding Shalom"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "John Ommani; Tizita Zenebe; Simret Fekadu; Clene Nyiramahoro"
 author_id: "#N/A"
 year: "2023"

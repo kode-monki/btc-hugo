@@ -1,6 +1,10 @@
 ---
 title: "Outcome Based Consultant Training: Lessons from CanIL’s M.A. in the Translation of Scripture"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Joost Pikkert"
 author_id: "joost-pikkert"
 year: "2023"
@@ -23,4 +27,3 @@ This presentation will discuss how CanIL and Northwest Seminary negotiated the f
 7.       What issues need further research?
 
 The presentation is based on a case study research methodology (the MATS program being the case study) with data being collected through: (a) interviews with mentors, students and administrators; (b) analysis of key documents used in designing the program; and (c) interaction with the literature related to competency-based theological education.
-

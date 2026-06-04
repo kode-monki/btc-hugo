@@ -1,6 +1,10 @@
 ---
 title: "Imago Dei and Identity: Theological and Ethical Dimensions"
-date: 2025-10-28T16:25:00Z
+date: "2025-10-28T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Bryan Harmelink"
 author_id: "bryan-harmelink"
 year: "2025"

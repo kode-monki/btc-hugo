@@ -1,10 +1,14 @@
 ---
 title: "AI and Mother-Tongue Translators: Navigating Ethical and Practical Challenges in Bible Translation"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Margaret Muthwii - Part of AI Panel"
 author_id: "margaret-muthwii"
 year: "2025"
-track: ["Technology and Resources", "Training and Mentoring", "AI Panel"]
+track: ["Technology and Resources;Training and Mentoring;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: ""

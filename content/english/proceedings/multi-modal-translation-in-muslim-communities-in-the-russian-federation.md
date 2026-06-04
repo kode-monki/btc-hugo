@@ -1,6 +1,10 @@
 ---
 title: "Multi-Modal Translation in Muslim Communities in the Russian Federation"
-date: 2025-10-28T16:25:00Z
+date: "2025-10-28T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 1"
 author: "Bronwen Cleaver"
 author_id: "bronwen-cleaver"
 year: "2025"

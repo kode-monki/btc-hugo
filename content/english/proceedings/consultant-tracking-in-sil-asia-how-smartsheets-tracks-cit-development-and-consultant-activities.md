@@ -1,6 +1,10 @@
 ---
 title: "Consultant Tracking in SIL Asia: How Smartsheets Tracks CiT Development and Consultant Activities"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Amber Jasa"
 author_id: "amber-jasa"
 year: "2023"
@@ -23,4 +27,3 @@ This paper will also briefly look at some benefits this Smartsheets system does,
 -	collect project’s checking requests
 -	assign a consultant for checking requests
 This paper will primarily describe the Smartsheets system we have designed.  However, it will briefly look at the data gathered in 2022 and propose some reasons for the consultant shortage across SIL Asia.
-

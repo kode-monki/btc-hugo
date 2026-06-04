@@ -1,6 +1,10 @@
 ---
 title: "Old Testament Textual Choices: Quality through Consensus and (Worldwide?) Consistency"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "S. C. Daley"
 author_id: "#N/A"
 year: "2023"
@@ -17,4 +21,3 @@ Why not simply follow the Masoretic text? If two translations both follow MT pre
 Considering MT, however, we often think of the Leningrad Codex, which dates from about a thousand years after Christ. A lot can happen to a text across many hundreds of years of hand copying, and careful study of ancient evidence seems promising as an approach to reversing scribal error and more. If so, however, is it necessary for each team to make their own text-critical choices? Would it not be possible to do the work proactively and collaboratively? Ideally, the result, built around scholarly consensus and shared widely, would also solve the problem of inadvertent variety.
 
 This paper will thus explore the potential of three models: two (current) possibilities and one (future) ideal. It will also reveal a source for the statement, “The translator has to decide.”
-

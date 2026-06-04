@@ -1,10 +1,14 @@
 ---
 title: "Why Bible Translation Organizations Need Digital Literacy Training with Biblical Ethics"
-date: 2025-10-28T16:25:00Z
+date: "2025-10-28T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 5"
 author: "Sheryl Silzer"
 author_id: "#N/A"
 year: "2025"
-track: ["Technology and Resources", "Remote Presenter"]
+track: ["Technology and Resources;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=LjxTRSlVXiY"

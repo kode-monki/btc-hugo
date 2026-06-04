@@ -1,7 +1,10 @@
 ---
-title: "Translation Based on Performance, from Greek Performance to Target Performance
-"
-date: 1899-12-30T00:00:00Z
+title: "Translation Based on Performance, from Greek Performance to Target Performance"
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Randall Buth"
 author_id: "#N/A"
 year: "2023"

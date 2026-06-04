@@ -1,10 +1,14 @@
 ---
 title: "Allusion and Intentionality in the Psalms"
-date: 2025-10-31T11:00:00Z
+date: "2025-10-31T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 4"
 author: "Rhoda Leach"
 author_id: "rhoda-leach"
 year: "2025"
-track: ["Church and Community", "Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Church and Community;Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=frNLjNXNbFo"

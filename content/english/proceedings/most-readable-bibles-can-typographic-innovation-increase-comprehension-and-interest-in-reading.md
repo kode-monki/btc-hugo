@@ -1,10 +1,14 @@
 ---
 title: "Most Readable Bibles: Can Typographic Innovation Increase Comprehension and Interest in Reading?"
-date: 2025-10-29T16:25:00Z
+date: "2025-10-29T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 4"
 author: "Roger Stone"
 author_id: "roger-stone"
 year: "2025"
-track: ["Communication and Context", "Methodologies, Media, and Multimodality"]
+track: ["Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=U8E7MDwR0DI"

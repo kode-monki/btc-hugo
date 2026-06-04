@@ -1,10 +1,14 @@
 ---
 title: "Economics, Ethics and Theology: Engaging Decision Processes  in Bible Translation"
-date: 2025-10-31T10:15:00Z
+date: "2025-10-31T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 3"
 author: "Roman Stefaniw"
 author_id: "roman-stefaniw"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

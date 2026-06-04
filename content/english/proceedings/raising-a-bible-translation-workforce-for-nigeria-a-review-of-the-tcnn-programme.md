@@ -1,6 +1,10 @@
 ---
 title: "Raising a Bible Translation Workforce for Nigeria: a Review of the TCNN Programme"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Oluwapelumi Bankole"
 author_id: "oluwapelumni-bankole"
 year: "2023"

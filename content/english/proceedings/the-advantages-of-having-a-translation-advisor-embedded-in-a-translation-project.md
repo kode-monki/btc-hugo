@@ -1,10 +1,14 @@
 ---
 title: "The Advantages of Having a Translation Advisor Embedded in a Translation Project"
-date: 2025-10-28T11:00:00Z
+date: "2025-10-28T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 4"
 author: "Stephen Doty & Douglas Inglis"
 author_id: "stephen-doty-douglas-ingles"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Remote Presenter"]
+track: ["Methodologies, Media, and Multimodality;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=8lISlrsh0ds"

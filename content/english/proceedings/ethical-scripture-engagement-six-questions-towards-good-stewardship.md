@@ -1,12 +1,16 @@
 ---
 title: "Ethical Scripture Engagement: Six Questions Towards Good Stewardship"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 5"
 author: "Andreas Ernst"
 author_id: "andreas-ernst"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Methodologies, Media, and Multimodality", "Remote Presenter"]
+track: ["Church and Community;Communication and Context;Methodologies, Media, and Multimodality;Remote Presenter"]
 slides_url: ""
-paper_url: ""
+paper_url: "https://drive.google.com/file/d/1lhmCEuIk5qdD8Zeia1m3jC4XNuX2EskX/view?usp=drive_link"
 video_url: "https://www.youtube.com/watch?v=f8j5J37gGtU"
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: "A Case Study of Church Bible Translation: Ethics of Hospitality"
-date: 2025-10-29T16:25:00Z
+date: "2025-10-29T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Grand Hall"
 author: "James Maxey"
 author_id: "james-maxey"
 year: "2025"

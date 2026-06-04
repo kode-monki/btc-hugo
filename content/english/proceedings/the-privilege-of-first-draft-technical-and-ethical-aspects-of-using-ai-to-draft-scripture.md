@@ -1,10 +1,14 @@
 ---
 title: "The Privilege of First Draft: Technical and Ethical Aspects of Using AI to Draft Scripture"
-date: 2025-10-31T11:45:00Z
+date: "2025-10-31T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 2"
 author: "Judy Heath, et al"
 author_id: "judy-heath"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Theology, Hermeneutics, and Exegesis"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=xtLGYkvVnIE"

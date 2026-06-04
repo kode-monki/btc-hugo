@@ -1,10 +1,14 @@
 ---
 title: "Witness Protection Program: Implications of a Theocentric View of Creation"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 5"
 author: "Sharon Nordley"
 author_id: "sharon-nordley"
 year: "2025"
-track: ["Church and Community", "Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Church and Community;Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=iB6tcBjRNWM"

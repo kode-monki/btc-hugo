@@ -1,10 +1,14 @@
 ---
 title: "Finding a Place for Computer Generated Drafts in the Scripture Drafting Process"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Roger Stone & David Duncan - Part of AI Panel"
 author_id: "#N/A"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "AI Panel"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=LChNneDTBqM"

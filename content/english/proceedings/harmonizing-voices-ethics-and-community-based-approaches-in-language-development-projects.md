@@ -1,10 +1,14 @@
 ---
 title: "Harmonizing Voices: Ethics and Community-Based Approaches in Language Development Projects"
-date: 2025-10-29T14:35:00Z
+date: "2025-10-29T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 2"
 author: "David Troolin"
 author_id: "david-troolin"
 year: "2025"
-track: ["Church and Community", "Communication and Context"]
+track: ["Church and Community;Communication and Context"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=bkV0WbxsmCI"

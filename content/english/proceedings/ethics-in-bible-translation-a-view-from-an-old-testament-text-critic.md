@@ -1,10 +1,14 @@
 ---
 title: "Ethics in Bible Translation: A View From an Old Testament Text Critic"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 2"
 author: "Bradley Marsh, Jr."
 author_id: "bradley-marsh-jr"
 year: "2025"
-track: ["Church and Community", "Theology, Hermeneutics, and Exegesis", "Training and Mentoring"]
+track: ["Church and Community;Theology, Hermeneutics, and Exegesis;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: ""

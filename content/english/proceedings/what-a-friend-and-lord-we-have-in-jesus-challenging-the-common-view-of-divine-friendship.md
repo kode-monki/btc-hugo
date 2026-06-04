@@ -1,10 +1,14 @@
 ---
 title: "What a Friend and Lord We Have in Jesus: Challenging the Common View of Divine Friendship"
-date: 2025-10-28T11:45:00Z
+date: "2025-10-28T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 5"
 author: "S.E. Doi"
 author_id: "se-doi"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter", "Live Only"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

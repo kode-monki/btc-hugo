@@ -1,11 +1,15 @@
 ---
 title: "A Study of Equivalence in Methods of Using AI-Generated Drafts in Bible Translation"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "David Duncan, et al - Part of AI Panel"
 author_id: "david-duncan"
 year: "2025"
-track: ["Technology and Resources", "AI Panel"]
-slides_url: "https://drive.google.com/file/d/1Di8yfW0qAaj27lo_NZbZ6HJ6W5ux_LUd/view?usp=drive_link"
+track: ["Technology and Resources;AI Panel"]
+slides_url: "https://drive.google.com/file/d/1Di8yfW0qAaj27lo_NZbZ6HJ6W5ux_LUd/view"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=_HmmTOkoyuU"
 ---

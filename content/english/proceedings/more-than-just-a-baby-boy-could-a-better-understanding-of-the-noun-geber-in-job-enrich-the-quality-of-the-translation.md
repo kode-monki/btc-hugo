@@ -1,6 +1,10 @@
 ---
 title: "More than Just a Baby Boy! Could a Better Understanding of the Noun גבר (geber) in Job Enrich the Quality of the Translation?"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Roelie Van der Spuy"
 author_id: "#N/A"
 year: "2023"

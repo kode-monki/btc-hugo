@@ -1,10 +1,14 @@
 ---
 title: "Beyond Accuracy: Incarnational Mentoring for Locally Led and Sustainable OBT"
-date: 2025-10-31T11:00:00Z
+date: "2025-10-31T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 5"
 author: "Misikir Mulugeta, John Ferch"
 author_id: "mulugeta-ferch"
 year: "2025"
-track: ["Church and Community", "Methodologies, Media, and Multimodality", "Training and Mentoring"]
+track: ["Church and Community;Methodologies, Media, and Multimodality;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=HGDSk942cmk"

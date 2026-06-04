@@ -1,6 +1,10 @@
 ---
 title: "Pah! Deaf-Developed Video Resources in a Sign Language for Training Deaf Translators"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "RuthAnna Spooner"
 author_id: "#N/A"
 year: "2023"

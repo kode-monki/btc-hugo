@@ -1,6 +1,10 @@
 ---
 title: "Discussion Group: Multicultural Teamwork"
-date: 2025-10-30T13:50:00Z
+date: "2025-10-30T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:50 PM"
+publicity: ""
+location: "Room 3"
 author: "In-person only"
 author_id: "#N/A"
 year: "2025"

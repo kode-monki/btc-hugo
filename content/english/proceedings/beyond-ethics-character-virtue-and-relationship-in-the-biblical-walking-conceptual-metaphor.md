@@ -1,10 +1,14 @@
 ---
 title: "Beyond Ethics: Character, Virtue, and Relationship in the Biblical Walking Conceptual Metaphor"
-date: 2025-10-30T11:45:00Z
+date: "2025-10-30T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 1"
 author: "Baruch B. Kvansnica"
 author_id: "baruch-kvasnica"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Church and Community;Communication and Context;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

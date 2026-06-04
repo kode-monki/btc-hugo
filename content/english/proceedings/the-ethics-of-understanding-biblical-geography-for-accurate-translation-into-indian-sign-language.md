@@ -1,10 +1,14 @@
 ---
 title: "The Ethics of Understanding Biblical Geography for Accurate Translation into Indian Sign Language"
-date: 2025-10-29T11:45:00Z
+date: "2025-10-29T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 2"
 author: "Praveen Kumar"
 author_id: "praveen-kumar"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: ""

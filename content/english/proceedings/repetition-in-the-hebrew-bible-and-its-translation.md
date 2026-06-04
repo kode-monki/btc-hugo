@@ -1,6 +1,10 @@
 ---
 title: "Repetition in the Hebrew Bible and Its Translation"
-date: 2025-10-31T10:15:00Z
+date: "2025-10-31T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 1"
 author: "Noah Lee"
 author_id: "noah-lee"
 year: "2025"

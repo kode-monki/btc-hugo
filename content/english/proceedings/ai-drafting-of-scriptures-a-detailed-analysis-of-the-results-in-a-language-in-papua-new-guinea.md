@@ -1,10 +1,14 @@
 ---
 title: "AI Drafting of Scriptures: A Detailed Analysis of the Results in a Language in Papua New Guinea"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Martha Wade - Part of AI Panel"
 author_id: "#N/A"
 year: "2025"
-track: ["Technology and Resources", "AI Panel"]
+track: ["Technology and Resources;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=zgxpb229LnQ"

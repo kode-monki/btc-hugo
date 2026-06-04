@@ -1,6 +1,10 @@
 ---
 title: "Translating the Bible with People for People: How Current Anthropological Insights contribute to Quality"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Johannes Merz; Sharon Merz; Michael Jemphrey; David Troolin"
 author_id: "#N/A"
 year: "2023"

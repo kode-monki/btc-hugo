@@ -1,10 +1,14 @@
 ---
 title: "Theological Bias in AI-Generated and AI-Checked Translations: Ethical Implications"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Ian Lindsley - Part of AI Panel"
 author_id: "ian-lindsley"
 year: "2025"
-track: ["Technology and Resources", "AI Panel"]
+track: ["Technology and Resources;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=fkcvMUJr58c"

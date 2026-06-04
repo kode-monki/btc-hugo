@@ -1,10 +1,14 @@
 ---
 title: "Clausal Structures and a Bible Translation Consultant"
-date: 2025-10-29T10:15:00Z
+date: "2025-10-29T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 3"
 author: "Vinod Wilson Varkey & Dhulipala Balaji"
 author_id: "#N/A"
 year: "2025"
-track: ["Communication and Context", "Other", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Communication and Context;Other;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

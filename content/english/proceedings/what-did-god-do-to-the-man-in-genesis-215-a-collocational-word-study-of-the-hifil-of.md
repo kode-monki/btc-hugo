@@ -1,6 +1,10 @@
 ---
 title: "What Did God Do to the Man in Genesis 2:15?: A Collocational Word Study of the Hifil of נוח"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Nathan Michael"
 author_id: "#N/A"
 year: "2023"

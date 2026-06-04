@@ -1,10 +1,14 @@
 ---
 title: "Biblical Sarcasm (As If That's A Thing)"
-date: 2025-10-30T16:05:00Z
+date: "2025-10-30T16:05:00Z"
+start_time: "3:05 PM"
+end_time: "3:40 PM"
+publicity: ""
+location: "Room 1"
 author: "Glenn Machlan"
 author_id: "glenn-machlan"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=BZAoYkIKxXI"

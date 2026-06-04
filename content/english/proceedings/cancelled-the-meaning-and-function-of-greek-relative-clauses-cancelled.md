@@ -1,10 +1,14 @@
 ---
 title: "CANCELLED The Meaning and Function of Greek Relative Clauses CANCELLED"
-date: 2025-10-28T11:00:00Z
+date: "2025-10-28T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 5"
 author: "John Tuggy"
 author_id: "john-tuggy"
 year: "2025"
-track: ["Communication and Context", "Remote Presenter"]
+track: ["Communication and Context;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: ""

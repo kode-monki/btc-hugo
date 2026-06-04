@@ -1,10 +1,14 @@
 ---
 title: "The Greek New Testament by Biblica: An Introduction"
-date: 2025-10-29T11:00:00Z
+date: "2025-10-29T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 4"
 author: "Johan de Joode"
 author_id: "johan-de-joode"
 year: "2025"
-track: ["Church and Community", "Technology and Resources", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Church and Community;Technology and Resources;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

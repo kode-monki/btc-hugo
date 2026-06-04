@@ -1,10 +1,14 @@
 ---
 title: "Ethical Considerations in Translating Metaphors"
-date: 2025-10-31T11:45:00Z
+date: "2025-10-31T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 3"
 author: "Paulian T. Petric"
 author_id: "paulian-t-petric"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

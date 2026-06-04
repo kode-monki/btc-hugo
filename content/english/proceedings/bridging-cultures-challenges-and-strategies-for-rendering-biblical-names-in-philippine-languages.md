@@ -1,10 +1,14 @@
 ---
 title: "Bridging Cultures: Challenges and Strategies for Rendering Biblical Names in Philippine Languages"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 4"
 author: "Levi Cruz"
 author_id: "levi-cruz"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

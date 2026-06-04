@@ -1,6 +1,10 @@
 ---
 title: "What Kind of Quality? Differentiating Three Categories of Computer-Assisted Translation"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Beth Bryson"
 author_id: "#N/A"
 year: "2023"

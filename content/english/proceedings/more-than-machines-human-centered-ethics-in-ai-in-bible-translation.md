@@ -1,6 +1,10 @@
 ---
 title: "More Than Machines: Human-Centered Ethics in AI in Bible Translation"
-date: 2025-10-29T11:45:00Z
+date: "2025-10-29T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Joshua Nemecek & Cassie Weishaupt"
 author_id: "nemecek-weishaupt"
 year: "2025"

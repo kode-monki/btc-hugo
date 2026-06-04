@@ -1,6 +1,10 @@
 ---
 title: "Listen! Here’s how to (accurately) Translate the Shema (Deut 6:4)"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Kevin Grasso"
 author_id: "#N/A"
 year: "2023"

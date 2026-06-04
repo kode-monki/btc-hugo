@@ -1,6 +1,10 @@
 ---
 title: "Responding to Language Death: An Emergent Interpretation of the Plant in Jonah 4"
-date: 2025-10-29T15:40:00Z
+date: "2025-10-29T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 2"
 author: "Nathan Esala"
 author_id: "nathan-esala"
 year: "2025"

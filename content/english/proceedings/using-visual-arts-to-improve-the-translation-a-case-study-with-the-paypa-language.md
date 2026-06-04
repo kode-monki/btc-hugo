@@ -1,6 +1,10 @@
 ---
 title: "Using Visual Arts to Improve the Translation: A Case Study with the Paypa Language"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Heber Negrao"
 author_id: "#N/A"
 year: "2023"

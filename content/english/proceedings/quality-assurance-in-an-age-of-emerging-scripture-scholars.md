@@ -1,6 +1,10 @@
 ---
 title: "Quality Assurance in an Age of Emerging Scripture Scholars"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Doulo Dasia"
 author_id: "#N/A"
 year: "2023"
@@ -17,5 +21,4 @@ With the global movement of church-led Bible translation projects expanding, the
 This presentation gives evidence supporting the conclusion that confidence can be placed in translation models which prioritize urgency of access to Scripture, local ownership, and on-the-job training of local practitioners.
 
 Finally, the paper explores how the global pool of Bible translation experts can work alongside emerging practitioners and church network leaders to multiply their impact and see the global task completed within our lifetimes.
-
 

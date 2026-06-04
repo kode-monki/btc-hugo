@@ -1,6 +1,10 @@
 ---
 title: "Section Headings as a Quality Issue? An exegetical study of the Toledot Formula in Genesis"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "George Payton"
 author_id: "#N/A"
 year: "2023"

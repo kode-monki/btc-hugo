@@ -1,6 +1,10 @@
 ---
 title: "SANNEH LECTURE: Translating with Integrity: Ethical Frameworks for Serving God’s Word and God’s People"
-date: 2025-10-31T08:35:00Z
+date: "2025-10-31T08:35:00Z"
+start_time: "7:35 AM"
+end_time: "8:45 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Dr. Rux Prompalit"
 author_id: "rux-prompalit"
 year: "2025"

@@ -1,6 +1,10 @@
 ---
 title: "Exploring the intent of the use of the different names of God in the Old Testament and what they add to the meaning of the text"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Deborah Conwell"
 author_id: "#N/A"
 year: "2023"
@@ -17,4 +21,3 @@ The names God has used for himself and the names the writers of Scripture have c
 As we translate, we should be careful to consistently use the appropriate names that have been chosen in each language for Elohim and YHWH and the other Hebrew names of God. Moreover, an increasing appreciation of the literary care and skill used by writers of the Old Testament should prompt a consideration of the reason for the placement and repetition of those names. At least in some cases, the choice, positioning and reiteration is done for rhetorical effect. A good, sympathetic translation will seek to discern these literary devices and attempt to convey their weight, just as a translation seeks to accurately convey the meaning of the text.
 
 Each name is important and its translation is carefully chosen, but equally important is beginning to see how and when, to whom and for whom the names are used. The choice of name, how it is placed in the text, and how often it is repeated in the original language can add insight, structure, and emphasis as we seek to dig more deeply into the Word of God and its hidden depths. This paper builds on my experience with language teams in the Solomon Islands.
-

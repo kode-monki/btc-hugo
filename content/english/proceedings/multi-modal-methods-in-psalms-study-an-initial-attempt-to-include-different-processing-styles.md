@@ -1,10 +1,14 @@
 ---
 title: "Multi-Modal Methods in Psalms-Study: An Initial Attempt to Include Different Processing Styles"
-date: 2025-10-28T14:35:00Z
+date: "2025-10-28T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 4"
 author: "June Dickie & Mainor Mora Rodriguez"
 author_id: "mainor-mora-rodriguez-june-dickie"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Methodologies, Media, and Multimodality", "Neurodiversity"]
+track: ["Church and Community;Communication and Context;Methodologies, Media, and Multimodality;Neurodiversity"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Vsv2JFWGkd4"

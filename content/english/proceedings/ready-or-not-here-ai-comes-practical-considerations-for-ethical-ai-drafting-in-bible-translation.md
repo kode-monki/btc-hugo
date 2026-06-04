@@ -1,10 +1,14 @@
 ---
 title: "Ready or Not, Here AI Comes! Practical Considerations for Ethical AI Drafting in Bible Translation"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Taeho Jang, et al - Part of AI Panel"
 author_id: "taeho-jang"
 year: "2025"
-track: ["Technology and Resources", "AI Panel"]
+track: ["Technology and Resources;AI Panel"]
 slides_url: "https://drive.google.com/file/d/1ZVUKSTaMd39m7TDDAs1R9MgFouAMzH8N/view?usp=drive_link"
 paper_url: "https://drive.google.com/file/d/1zXrgngH3tVlxrV1OimlPfos_IdhxmPPH/view?usp=drive_link"
 video_url: "https://www.youtube.com/watch?v=7_HXHKcRQd4"

@@ -1,6 +1,10 @@
 ---
 title: "An Analysis of Performances Based on the Oral Translation of Psalms and Judges 4-5 into Altai."
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Bronwen Cleaver"
 author_id: "bronwen-cleaver"
 year: "2023"

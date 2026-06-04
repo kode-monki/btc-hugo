@@ -1,10 +1,14 @@
 ---
 title: "Holistic Bible Translation Approach for Sustainable Community Transformation"
-date: 2025-10-28T11:00:00Z
+date: "2025-10-28T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 2"
 author: "Reuben Muraguri & Irene Chemaiyek"
 author_id: "muraguyi-chemaiyek"
 year: "2025"
-track: ["Church and Community", "Technology and Resources"]
+track: ["Church and Community;Technology and Resources"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=CNgchY2-VBU"

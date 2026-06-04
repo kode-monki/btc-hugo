@@ -1,6 +1,10 @@
 ---
 title: "The Effect of Early Input from Consultants and End Users on the Quality of Oral Bible Translations"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Swapna Anna Alexander"
 author_id: "swapna-anna-alexander"
 year: "2023"

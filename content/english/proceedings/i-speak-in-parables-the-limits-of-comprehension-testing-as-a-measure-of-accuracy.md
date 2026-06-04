@@ -1,6 +1,10 @@
 ---
 title: "I Speak In Parables”: The Limits of Comprehension Testing as a Measure of Accuracy"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Seth Vitrano-Wilson"
 author_id: "seth-vitrano-wilson"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "Insights From MAT Workshops Into Motivations for Bible Translation – Instruments or Symbols?"
-date: 2025-10-28T14:35:00Z
+date: "2025-10-28T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Maik Gibson & Ken Dekker"
 author_id: "ken-decker-maik-gibson"
 year: "2025"

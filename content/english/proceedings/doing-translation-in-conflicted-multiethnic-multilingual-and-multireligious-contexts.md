@@ -1,6 +1,10 @@
 ---
 title: "Doing Translation in Conflicted Multiethnic Multilingual and Multireligious Contexts"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Nathan Esala"
 author_id: "nathan-esala"
 year: "2023"

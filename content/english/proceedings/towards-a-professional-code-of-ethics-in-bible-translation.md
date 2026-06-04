@@ -1,10 +1,14 @@
 ---
 title: "Towards a Professional Code of Ethics in Bible Translation"
-date: 2025-10-30T16:05:00Z
+date: "2025-10-30T16:05:00Z"
+start_time: "3:05 PM"
+end_time: "3:40 PM"
+publicity: ""
+location: "Room 3"
 author: "Linus Otronyi"
 author_id: "louis-otronyi"
 year: "2025"
-track: ["Communication and Context", "Other"]
+track: ["Communication and Context;Other"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=zWviHPpKlRA"

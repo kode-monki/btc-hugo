@@ -1,10 +1,14 @@
 ---
 title: "Imperative for Engagement Domains With Minority Languages"
-date: 2025-10-29T10:15:00Z
+date: "2025-10-29T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 5"
 author: "JF"
 author_id: "jf"
 year: "2025"
-track: ["Church and Community", "Remote Presenter"]
+track: ["Church and Community;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=IK2HDonKlLM"

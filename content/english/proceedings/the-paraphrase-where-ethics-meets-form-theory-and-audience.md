@@ -1,6 +1,10 @@
 ---
 title: "The Paraphrase: Where Ethics Meets Form, Theory, and Audience"
-date: 2025-10-30T15:00:00Z
+date: "2025-10-30T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 3"
 author: "Dr. Freddy Boswell"
 author_id: "freddy-boswell"
 year: "2025"

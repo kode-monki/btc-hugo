@@ -1,6 +1,10 @@
 ---
 title: "Cognitive Bias and the Quality of Translation"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Sheryl Takagi Silzer"
 author_id: "sheryl-takagi-silzer"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "Reading the Scriptures, or Performing Them? Authoritative Reading versus Dramatic Expression"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Dick Kroneman"
 author_id: "dick-kroneman"
 year: "2023"

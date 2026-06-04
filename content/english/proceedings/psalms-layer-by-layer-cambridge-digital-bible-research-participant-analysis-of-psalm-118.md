@@ -1,6 +1,10 @@
 ---
 title: "Psalms: Layer-by-Layer (Cambridge Digital Bible Research): Participant Analysis of Psalm 118"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Oobie Weinberg"
 author_id: "#N/A"
 year: "2023"
@@ -21,7 +25,6 @@ The purpose of Psalms: Layer-by-Layer (a project by Cambridge Digital Bible Rese
 Participant analysis is one of the important discourse layers which asks, "What story do the characters of this psalm tell?" The answer to this question begins by identifying the main participants in the psalm, along with their grammatical function. The relationships between these participants is then analysed, leading to a final summary of the "story" the participants of the story tell. 
 
 Perhaps one of the most interesting Psalms of the Psalter for participant analysis is Psalm 118. This famous Psalm describes a leader or king of Israel coming to the holy place, accompanied by the priests, Levites, and all the nation, to celebrate God's deliverance from enemies and perform a thanksgiving ceremony. Detailed analysis of the interplay between the psalm's participants yields fascinating insights and brings this psalm to life in a unique way. 
-
 
 
 

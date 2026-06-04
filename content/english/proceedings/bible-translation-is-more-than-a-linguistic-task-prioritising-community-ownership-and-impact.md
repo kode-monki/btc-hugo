@@ -1,10 +1,14 @@
 ---
 title: "Bible Translation is More Than a Linguistic Task: Prioritising Community Ownership and Impact"
-date: 2025-10-30T15:00:00Z
+date: "2025-10-30T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Jennifer Brassington"
 author_id: "jennifer-brassington"
 year: "2025"
-track: ["Church and Community", "Communication and Context"]
+track: ["Church and Community;Communication and Context"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Nt9C5wB3GFo"

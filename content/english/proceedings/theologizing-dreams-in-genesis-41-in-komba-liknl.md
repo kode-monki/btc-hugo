@@ -1,10 +1,14 @@
 ---
 title: "Theologizing Dreams in Genesis 41 in Komba (Likɔɔnl)"
-date: 2025-10-28T16:25:00Z
+date: "2025-10-28T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 2"
 author: "Michael Ersland"
 author_id: "michael-ersland"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=0aCLF8VmVsI"

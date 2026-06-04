@@ -1,10 +1,14 @@
 ---
 title: "Knowing and Being Known: Pauline Epistemology and Ethics"
-date: 2025-10-30T11:45:00Z
+date: "2025-10-30T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 3"
 author: "Daniel Rodriguez"
 author_id: "daniel-rodriguez"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Church and Community;Communication and Context;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

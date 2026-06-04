@@ -1,6 +1,10 @@
 ---
 title: "Relative Clauses That Can Create Problems"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Glenn Machlan"
 author_id: "glenn-machlan"
 year: "2023"

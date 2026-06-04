@@ -1,6 +1,10 @@
 ---
 title: "Communication Efficacy for an Impactful Bible Translation. An Ethical Evaluation of Translation Strategies Across Four Indian Languages"
-date: 2025-10-28T13:50:00Z
+date: "2025-10-28T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 3"
 author: "Sunil Kurien Mathew"
 author_id: "sunil-kurien-mathew"
 year: "2025"

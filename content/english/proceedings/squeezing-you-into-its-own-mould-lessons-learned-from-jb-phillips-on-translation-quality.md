@@ -1,6 +1,10 @@
 ---
 title: "“Squeezing You into its own Mould”: Lessons Learned from J.B. Phillips on Translation Quality"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Freddy Boswell"
 author_id: "#N/A"
 year: "2023"
@@ -15,4 +19,3 @@ Anglican priest J.B. Phillips was the solo translator of The New Testament in Mo
 The reason for his translation was marked by clear and consistent motivation to communicate the message of hope in the New Testament to his church youth group, living in London during bombing raids in World War II. This paper builds on that skopos, and catalogues his use of various techniques to deliver a quality translation. Among these were:  1) communicative and common British English vocabulary choices and figures of speech, such as “hole and corner”, “sixes and sevens”, and “not but what”; 2) liberal use of expansive and instructive subject headings and book titles; 3) consistent use of italics for speaker-intent emphasis; 4) interpretive comments interspersed within the text; 5) surprising KJV form-renderings of OT quotations; and, 6) omission of verse numbers (a technique copied by Peterson decades later in The Message). 
 
 The paper concludes with the response of the public to his efforts and the subsequent personal struggles he faced emotionally and mentally as a well-known, celebrity Bible translator. The current BT community would do well to note his journey and his translation quality and communication techniques.
-

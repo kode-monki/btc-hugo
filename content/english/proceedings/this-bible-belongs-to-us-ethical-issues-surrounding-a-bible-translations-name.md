@@ -1,10 +1,14 @@
 ---
 title: "“This Bible belongs to us!” Ethical Issues Surrounding A Bible Translation’s Name"
-date: 2025-10-28T13:50:00Z
+date: "2025-10-28T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 2"
 author: "Edwin Poh"
 author_id: "edwin-poh"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Live Only"]
+track: ["Church and Community;Communication and Context;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

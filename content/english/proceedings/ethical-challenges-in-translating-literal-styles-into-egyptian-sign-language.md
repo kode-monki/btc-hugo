@@ -1,6 +1,10 @@
 ---
 title: "Ethical Challenges in Translating Literal Styles Into Egyptian Sign Language"
-date: 2025-10-28T15:40:00Z
+date: "2025-10-28T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 1"
 author: "Rijo Mathew"
 author_id: "rijo-mathew"
 year: "2025"

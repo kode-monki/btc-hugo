@@ -1,6 +1,10 @@
 ---
 title: "Different Models of Translation Projects for Different Language Group Capacities"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 4"
 author: "Mark Wannemacher & Steve Doty"
 author_id: "#N/A"
 year: "2025"

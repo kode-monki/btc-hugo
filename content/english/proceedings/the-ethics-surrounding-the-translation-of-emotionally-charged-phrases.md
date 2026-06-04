@@ -1,10 +1,14 @@
 ---
 title: "The Ethics Surrounding the Translation of Emotionally Charged Phrases"
-date: 2025-10-29T14:35:00Z
+date: "2025-10-29T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 1"
 author: "Hikaru Kumon"
 author_id: "hikaru-kumon"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis", "Live Only"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

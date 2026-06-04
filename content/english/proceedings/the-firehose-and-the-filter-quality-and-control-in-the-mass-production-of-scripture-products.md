@@ -1,6 +1,10 @@
 ---
 title: "The Firehose and the Filter - Quality and Control in the Mass Production of Scripture Products"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Peter Brassington"
 author_id: "peter-brassington"
 year: "2023"
@@ -22,4 +26,3 @@ But Jesus said, “Don’t stop him! Anyone who is not against you is for you.�
 Luke 9:49-50 (NLT)
 
 In writing his gospel Luke carefully investigated his content with a view to writing an orderly account for his intended audience but includes the parable of the sower liberally scattering seed in places where it would not grow. This paper will explore how to develop strategies rather than just products, and discuss the issues involved in both sowing widely and filtering wisely.
-

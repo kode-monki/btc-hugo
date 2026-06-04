@@ -1,10 +1,14 @@
 ---
 title: "Persuasive Technology for Bible Translators: TheWell with BibleOL"
-date: 2025-10-31T15:00:00Z
+date: "2025-10-31T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 1"
 author: "Nicolai Winther-Nielsen and Ephrem Tariku"
 author_id: "#N/A"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Training and Mentoring"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=VvAEsVeU3uY"

@@ -1,6 +1,10 @@
 ---
 title: "Performance as an Integral Part of Translating Psalms"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "June Dickie"
 author_id: "june-dickie"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "Translating the Cultural-Specific Concept ‘manna’ into West Bengal Sign Language"
-date: 2025-10-28T11:00:00Z
+date: "2025-10-28T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 1"
 author: "Jabaraj Koilpillai"
 author_id: "jabaraj-koilpillai"
 year: "2025"

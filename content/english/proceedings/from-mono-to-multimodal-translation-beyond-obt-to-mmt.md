@@ -1,6 +1,10 @@
 ---
 title: "From Mono to Multimodal Translation: Beyond OBT to MMT"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "James Maxey"
 author_id: "james-maxey"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "Sorry, the Chickens Are Too Loud! The Challenges of Checking for Quality When Working Remotely"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Kathy Taber"
 author_id: "#N/A"
 year: "2023"
@@ -17,4 +21,3 @@ Have you ever struggled with doing comprehension checking by Zoom or stopped try
 This presentation will provide insights on how to sharpen our consulting skill to deal with these challenges. By analyzing the results of previous consultant checks, we can discern potential blind spots and develop practices to address those. 
 
 We will look at some creative ways when working remotely to check people’s understanding of a text, and spend some time allowing for ideas from the floor as well. 
-

@@ -1,10 +1,14 @@
 ---
 title: "Aligning Translation Projects with Wycliffe Philosophy on Bible Translation: Bridging Impact"
-date: 2025-10-28T13:50:00Z
+date: "2025-10-28T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 1"
 author: "Paul Kawuldim Kimbi"
 author_id: "paul-kimbi"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Methodologies, Media, and Multimodality"]
+track: ["Church and Community;Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=qtRaAlKwXiI"

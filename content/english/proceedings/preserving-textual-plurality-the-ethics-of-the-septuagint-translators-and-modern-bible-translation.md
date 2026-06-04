@@ -1,6 +1,10 @@
 ---
 title: "Preserving Textual Plurality: The Ethics of the Septuagint Translators and Modern Bible Translation"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 1"
 author: "B. Christopher Adams"
 author_id: "b-christopher-adams"
 year: "2025"

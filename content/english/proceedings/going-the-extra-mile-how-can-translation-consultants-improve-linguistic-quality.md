@@ -1,6 +1,10 @@
 ---
 title: "Going the Extra Mile: How Can Translation Consultants Improve Linguistic Quality"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Christopher Vaz"
 author_id: "#N/A"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "How Two Famous Robots Can Help Us Figure Out Tricky Verses in the Psalms"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Murray Salisbury"
 author_id: "#N/A"
 year: "2023"
@@ -23,4 +27,3 @@ C-3PO stands for...
  - Commentaries, including the Bible itself, to find answers to your questions 
  - Poetic analysis – uncover the functions of imagery, repetition, and other poetic devices
  - Overview (big picture) – synthesize all the above to choose the option that best fits the context, and the message and purpose of the poem as a whole.
-

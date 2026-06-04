@@ -1,10 +1,14 @@
 ---
 title: "Computer Assisted Adaptive Translation for the Neurodiverse and Other Audiences"
-date: 2025-10-28T16:25:00Z
+date: "2025-10-28T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 4"
 author: "Harry Harm"
 author_id: "harry-harm"
 year: "2025"
-track: ["Technology and Resources", "Theology, Hermeneutics, and Exegesis", "Remote Presenter", "Neurodiversity"]
+track: ["Technology and Resources;Theology, Hermeneutics, and Exegesis;Remote Presenter;Neurodiversity"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=lcMRJTol3f4"

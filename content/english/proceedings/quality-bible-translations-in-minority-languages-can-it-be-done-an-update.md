@@ -1,6 +1,10 @@
 ---
 title: "Quality Bible Translations in Minority Languages. Can it be done? An update."
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Nico Daams"
 author_id: "#N/A"
 year: "2023"

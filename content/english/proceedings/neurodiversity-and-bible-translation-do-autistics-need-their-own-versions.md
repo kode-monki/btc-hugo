@@ -1,10 +1,14 @@
 ---
 title: "Neurodiversity and Bible Translation: Do Autistics Need Their Own Versions?"
-date: 2025-10-28T13:50:00Z
+date: "2025-10-28T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 4"
 author: "Peter Brassington"
 author_id: "peter-brassington"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Neurodiversity"]
+track: ["Church and Community;Communication and Context;Neurodiversity"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=NYTtE9MJrn8"
