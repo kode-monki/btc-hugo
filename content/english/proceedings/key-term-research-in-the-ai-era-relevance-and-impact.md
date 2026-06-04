@@ -1,10 +1,14 @@
 ---
 title: "Key Term Research in the AI Era: Relevance and Impact"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Minie Mathew- Part of AI Panel"
 author_id: "minie-mathew"
 year: "2025"
-track: ["Communication and Context", "Technology and Resources", "Training and Mentoring", "AI Panel"]
+track: ["Communication and Context;Technology and Resources;Training and Mentoring;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=03TMdsVKjlw"

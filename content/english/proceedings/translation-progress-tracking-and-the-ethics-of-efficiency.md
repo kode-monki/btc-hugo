@@ -1,10 +1,14 @@
 ---
 title: "Translation Progress Tracking and the Ethics of Efficiency"
-date: 2025-10-29T15:40:00Z
+date: "2025-10-29T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 4"
 author: "Jeff Webster"
 author_id: "jeff-webster"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

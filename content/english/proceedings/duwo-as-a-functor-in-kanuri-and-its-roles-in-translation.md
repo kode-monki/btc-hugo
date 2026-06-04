@@ -1,10 +1,14 @@
 ---
 title: "Duwo as a Functor in Kanuri and its Roles in Translation"
-date: 2025-10-31T11:45:00Z
+date: "2025-10-31T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 1"
 author: "Plangtong Joshua"
 author_id: "#N/A"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=FcLto6x2mpk"

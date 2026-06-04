@@ -1,10 +1,14 @@
 ---
 title: "People, Process, and Product: A Trauma-Informed Bible Translation: Kenyan, Oasis Community Network"
-date: 2025-10-29T16:25:00Z
+date: "2025-10-29T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 3"
 author: "Jacob Njagi & Dr. Mercy Mauki"
 author_id: "mjagi-mauki"
 year: "2025"
-track: ["Communication and Context", "Live Only"]
+track: ["Communication and Context;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

@@ -1,10 +1,14 @@
 ---
 title: "The Clash of the Ideals of the BT Strategy and the On-The-Ground Realities of Language Diversity"
-date: 2025-10-29T15:40:00Z
+date: "2025-10-29T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Stephen Watters"
 author_id: "stephen-watters"
 year: "2025"
-track: ["Church and Community", "Other"]
+track: ["Church and Community;Other"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=_pye9_soTQs"

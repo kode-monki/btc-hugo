@@ -1,6 +1,10 @@
 ---
 title: "Facilitating Scripture Engagement in Multilingual Contexts"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Michelle Petersen"
 author_id: "#N/A"
 year: "2023"

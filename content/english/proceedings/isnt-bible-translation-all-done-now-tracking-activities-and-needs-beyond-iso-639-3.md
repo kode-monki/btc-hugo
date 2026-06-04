@@ -1,10 +1,14 @@
 ---
 title: "“Isn't Bible translation all done now?!”:  Tracking Activities and Needs Beyond ISO 639-3"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 2"
 author: "Paing, et al"
 author_id: "#N/A"
 year: "2025"
-track: ["Church and Community", "Technology and Resources"]
+track: ["Church and Community;Technology and Resources"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=uRD4leOOiLc"

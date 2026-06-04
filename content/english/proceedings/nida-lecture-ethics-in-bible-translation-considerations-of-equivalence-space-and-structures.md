@@ -1,12 +1,16 @@
 ---
 title: "NIDA LECTURE: Ethics in Bible Translation: Considerations of Equivalence, Space and Structures"
-date: 2025-10-30T08:35:00Z
+date: "2025-10-30T08:35:00Z"
+start_time: "7:35 AM"
+end_time: "8:45 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Dr. Hephzibah Israel"
 author_id: "hephzibah-israel"
 year: "2025"
 track: ["Plenary"]
 slides_url: ""
-paper_url: ""
+paper_url: "https://drive.google.com/file/d/1BcPzQb1IZEKApYeBTHTxgnk575nItAW0/view?usp=drive_link"
 video_url: ""
 ---
 

@@ -1,10 +1,14 @@
 ---
 title: "Ethical Pitfalls of AI Drafting: Insights from Cognitive Linguistics & Philosophy of Mind"
-date: 2025-10-28T15:40:00Z
+date: "2025-10-28T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 5"
 author: "Ryan Douglas Kopke"
 author_id: "ryan-doublas-kopke"
 year: "2025"
-track: ["Communication and Context", "Methodologies, Media, and Multimodality", "Technology and Resources", "Remote Presenter"]
+track: ["Communication and Context;Methodologies, Media, and Multimodality;Technology and Resources;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=yEK0zuJ-dLg"

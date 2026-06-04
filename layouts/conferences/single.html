@@ -23,6 +23,11 @@
                 </a> <a href="#plenaries" class="btn btn-outline-primary btn-sm">
                   Plenaries
                 </a>
+                {{ if .Params.schedule_url }}
+                <a href="{{ .Params.schedule_url }}" class="btn btn-outline-primary btn-sm">
+                  Schedule
+                </a>
+                {{ end }}
 
                 </p>
                 <br>

@@ -1,6 +1,10 @@
 ---
 title: "Artificial Intelligence Tools as Quality Assessment Copilots"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Daniel Whitenack; Gary Simons; Joshua Nemecek; Cassie Weishaupt; Mark Woodward"
 author_id: "#N/A"
 year: "2023"

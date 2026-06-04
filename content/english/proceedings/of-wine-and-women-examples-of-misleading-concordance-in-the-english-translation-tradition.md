@@ -1,6 +1,10 @@
 ---
 title: "Of Wine and Women: Examples of Misleading Concordance in the English Translation Tradition"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Richard Brown"
 author_id: "richard-brown"
 year: "2023"

@@ -1,6 +1,10 @@
 ---
 title: "Holistic Training and Support for Bible Translation Teams: Insights from Cameroon"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Eszter Ernst-Kurdi"
 author_id: "eszter-ernst-kurdi"
 year: "2023"

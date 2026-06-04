@@ -1,6 +1,10 @@
 ---
 title: "Benefits and Ethical Considerations Involved Using Complementary Theoretical Frameworks in Bible Translation"
-date: 2025-10-29T15:40:00Z
+date: "2025-10-29T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 3"
 author: "Onesmus Kamwara & Helga Schroeder"
 author_id: "kamwara-schroder"
 year: "2025"

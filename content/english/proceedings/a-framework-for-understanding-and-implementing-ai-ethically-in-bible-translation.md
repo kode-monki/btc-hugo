@@ -1,10 +1,14 @@
 ---
 title: "A Framework for Understanding and Implementing AI Ethically in Bible Translation"
-date: 2025-10-29T16:25:00Z
+date: "2025-10-29T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:10 PM"
+publicity: ""
+location: "Room 5"
 author: "Joe Burgin"
 author_id: "joe-burgin"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Remote Presenter"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=nsxtGuUyF28"

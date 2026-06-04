@@ -31,6 +31,12 @@ url = "/contact"
   url = "/proceedings"
   weight = 2
 
+# Uncomment to show schedule in main nav:
+# [[main]]
+#   name = "Schedule"
+#   url = "/conferences/2025/schedule"
+#   weight = 3
+
 # footer menu
 [[footer]]
 name = "About"

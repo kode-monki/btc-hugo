@@ -1,10 +1,14 @@
 ---
 title: "Exegeting and Translating Ethical Terms in the Bible: A Comprehensive Approach"
-date: 2025-10-30T16:05:00Z
+date: "2025-10-30T16:05:00Z"
+start_time: "3:05 PM"
+end_time: "3:40 PM"
+publicity: ""
+location: "Room 5"
 author: "Dogara Ishaya Manomi"
 author_id: "dogara-ishaya-manomi"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Tr5vtV3AptU"

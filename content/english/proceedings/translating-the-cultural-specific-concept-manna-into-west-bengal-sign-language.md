@@ -1,11 +1,15 @@
 ---
 title: "Translating the Cultural-Specific Concept ‘manna’ into West Bengal Sign Language"
-date: 2025-10-28T11:00:00Z
+date: "2025-10-28T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 1"
 author: "Jabaraj Koilpillai"
 author_id: "jabaraj-koilpillai"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1j_-PEwzeoCuIMAeYm7OlXNTqEjfTNr6Q/view?usp=drive_link"
 paper_url: "https://drive.google.com/file/d/1oxfFcLaQVij--oKfYg50kt4_dAQnpr71/view?usp=drive_link"
 video_url: "https://www.youtube.com/watch?v=XwRGXG7-Wto"
 ---

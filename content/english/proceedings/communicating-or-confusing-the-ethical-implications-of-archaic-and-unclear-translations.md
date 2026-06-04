@@ -1,10 +1,14 @@
 ---
 title: "Communicating or Confusing: The Ethical Implications of Archaic and Unclear Translations"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 1"
 author: "Rev. G. B. Amar"
 author_id: "gb-amar"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Church and Community;Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=qTQSonEosoo"

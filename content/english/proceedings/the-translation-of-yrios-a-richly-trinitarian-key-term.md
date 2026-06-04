@@ -5,7 +5,7 @@ author: "Seth Vitrano-Wilson"
 author_id: "seth-vitrano-wilson"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1bvnrI8-gTNXuQgBs8K7rMakVSNpFjNZx/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=eRcUbOK1zT8"
 ---

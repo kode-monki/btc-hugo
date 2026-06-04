@@ -1,6 +1,10 @@
 ---
 title: "The Sequence of Bible Translation: Scripture use in Sulawesi, Indonesia"
-date: 2025-10-28T13:50:00Z
+date: "2025-10-28T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Stan Anonby & Dave Eberhard"
 author_id: "stan-anonby-dave-eberhard"
 year: "2025"

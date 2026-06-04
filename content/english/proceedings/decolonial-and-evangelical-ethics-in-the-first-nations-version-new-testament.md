@@ -1,10 +1,14 @@
 ---
 title: "Decolonial and Evangelical: Ethics in the First Nations Version New Testament"
-date: 2025-10-28T10:15:00Z
+date: "2025-10-28T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 3"
 author: "Alice Reed"
 author_id: "alice-reed"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Church and Community;Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=WfF1g3cPI_A"

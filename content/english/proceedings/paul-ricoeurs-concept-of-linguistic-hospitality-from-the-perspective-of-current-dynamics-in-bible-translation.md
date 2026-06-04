@@ -1,6 +1,10 @@
 ---
 title: "Paul Ricoeur’s concept of ‘linguistic hospitality’ from the perspective of current dynamics in Bible translation"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Paulian Timotei Petric"
 author_id: "#N/A"
 year: "2023"

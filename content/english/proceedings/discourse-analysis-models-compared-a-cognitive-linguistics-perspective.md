@@ -1,10 +1,14 @@
 ---
 title: "Discourse Analysis Models Compared – a Cognitive Linguistics Perspective"
-date: 2025-10-30T11:00:00Z
+date: "2025-10-30T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 5"
 author: "Eric Fields"
 author_id: "eric-fields"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=uAjRQHuLWwE"

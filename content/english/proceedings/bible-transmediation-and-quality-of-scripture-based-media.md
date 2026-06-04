@@ -1,6 +1,10 @@
 ---
 title: "Bible Transmediation and Quality of Scripture-based Media"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Johannes Merz"
 author_id: "johannes-merz"
 year: "2023"

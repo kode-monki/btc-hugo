@@ -1,10 +1,14 @@
 ---
 title: "Yes, You Can!: Listening to the Voice of the Community by Prioritizing Psalms in BT Projects"
-date: 2025-10-30T11:00:00Z
+date: "2025-10-30T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 4"
 author: "Nikki Mustin, Ervais Fotso"
 author_id: "mustin-fotso"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Methodologies, Media, and Multimodality"]
+track: ["Church and Community;Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=_Z8p9zcaEz8"

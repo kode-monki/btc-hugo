@@ -1,6 +1,10 @@
 ---
 title: "Towards a Model for “Loyal Bible Translation”: Maintaining Quality Despite Competing Concerns"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Tobias Houston"
 author_id: "#N/A"
 year: "2023"

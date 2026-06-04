@@ -1,6 +1,10 @@
 ---
 title: "Felt Needs in Folk Islamic Societies - How this affects quality in Scripture engagement programmes and activities"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "David Gray"
 author_id: "david-gray"
 year: "2023"

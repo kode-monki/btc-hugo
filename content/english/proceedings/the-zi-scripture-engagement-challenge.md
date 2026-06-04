@@ -1,10 +1,14 @@
 ---
 title: "The Zi Scripture Engagement Challenge"
-date: 2025-10-31T10:15:00Z
+date: "2025-10-31T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 5"
 author: "Laurence B"
 author_id: "laurence-b"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Remote Presenter", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Remote Presenter;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

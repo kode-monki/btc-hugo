@@ -1,10 +1,14 @@
 ---
 title: "Principles of Co-Creativity in Bible Translation"
-date: 2025-10-28T11:45:00Z
+date: "2025-10-28T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 3"
 author: "Rich Rudowski"
 author_id: "#N/A"
 year: "2025"
-track: ["Church and Community", "Communication and Context"]
+track: ["Church and Community;Communication and Context"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=lSozEAdLQXg"

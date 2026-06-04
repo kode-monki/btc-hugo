@@ -1,10 +1,14 @@
 ---
 title: "Should Dying Languages Be Excluded from the List of Bible Translation Needs? A Kwak’wela Case Study"
-date: 2025-10-28T16:25:00Z
+date: "2025-10-28T16:25:00Z"
+start_time: "3:25 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 3"
 author: "Joost Pikkert"
 author_id: "joost-pikkert"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Church and Community;Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: "https://drive.google.com/file/d/1C1hGvmuqdzRkIqGFNEgNv7_PtUAdO8hk/view?usp=drive_link"
 video_url: ""

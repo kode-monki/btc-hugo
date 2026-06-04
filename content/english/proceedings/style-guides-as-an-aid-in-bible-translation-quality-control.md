@@ -1,6 +1,10 @@
 ---
 title: "Style Guides as an Aid in Bible Translation Quality Control"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Peggy Connett; Kent Spielmann"
 author_id: "#N/A"
 year: "2023"
@@ -25,4 +29,3 @@ Having the translation team take the time early in the process to come to a shar
 •        Be leveraged to guide AI translation and Quality Assurance 
 •        Provide guidance for subsequent revisions and other documents in the language
 This presentation will discuss Style Guide and their development and implementation in a Biblica context. The principles can be adapted into other Bible translation settings.
-

@@ -1,6 +1,10 @@
 ---
 title: "Widening the Table: An Ethics of Accessible Exegesis and Interpretation"
-date: 2025-10-28T15:40:00Z
+date: "2025-10-28T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Stephen Stringer & Elisabeth Stringer"
 author_id: "#N/A"
 year: "2025"

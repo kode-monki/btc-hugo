@@ -1,10 +1,14 @@
 ---
 title: "Acrostic Artistry: Stanza Formation in the Acrostic Psalms"
-date: 2025-10-30T16:05:00Z
+date: "2025-10-30T16:05:00Z"
+start_time: "3:05 PM"
+end_time: "3:40 PM"
+publicity: ""
+location: "Room 4"
 author: "Benjie Leach"
 author_id: "menjie-leach"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=sf58VJ7ZXbg"

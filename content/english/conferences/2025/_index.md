@@ -7,9 +7,11 @@ image: "/images/2025/BTC25-Logo.webp"
 location: "Chiang Mai, Thailand"
 status: "Past Event"
 theme: "Ethics in Bible Translation"
-proceedings_url: "/proceedings/2025"
+proceedings_url: "/proceedings/"
+schedule_url: "/conferences/2025/schedule/"
 weight: 10
 year: 2025
+layout: "single"
 menu:
   main:
     parent: "conferences"

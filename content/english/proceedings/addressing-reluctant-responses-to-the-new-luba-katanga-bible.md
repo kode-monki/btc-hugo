@@ -1,6 +1,10 @@
 ---
 title: "Addressing Reluctant Responses to the New Luba-Katanga Bible"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Kanonge Dichk Mwamba"
 author_id: "#N/A"
 year: "2023"

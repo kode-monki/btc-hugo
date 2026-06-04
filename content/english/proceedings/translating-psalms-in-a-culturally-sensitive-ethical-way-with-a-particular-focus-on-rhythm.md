@@ -1,10 +1,14 @@
 ---
 title: "Translating Psalms in a Culturally-Sensitive (Ethical) Way, With a Particular Focus on Rhythm"
-date: 2025-10-30T11:45:00Z
+date: "2025-10-30T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 4"
 author: "June Dickie"
 author_id: "june-dickie"
 year: "2025"
-track: ["Communication and Context", "Methodologies, Media, and Multimodality"]
+track: ["Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=pfCFSqPrzfQ"

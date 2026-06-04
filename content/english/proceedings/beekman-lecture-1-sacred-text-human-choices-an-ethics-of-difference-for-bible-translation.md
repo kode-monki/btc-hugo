@@ -1,11 +1,15 @@
 ---
-title: "BEEKMAN LECTURE 1: Sacred Text, Human Choices: An Ethics of Difference for Bible Translation "
-date: 2025-10-28T08:35:00Z
+title: "BEEKMAN LECTURE 1: Sacred Text, Human Choices: An Ethics of Difference for Bible Translation"
+date: "2025-10-28T08:35:00Z"
+start_time: "7:35 AM"
+end_time: "8:35 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Prof. dr. Matthijs J. de Jong"
 author_id: "matthijs-de-jong"
 year: "2025"
 track: ["Plenary"]
-slides_url: ""
+slides_url: "https://drive.google.com/file/d/1svxfdL8jBXiW3ZfLBsOUaf6lzBUV1rJE/view?usp=drive_link"
 paper_url: ""
 video_url: ""
 ---

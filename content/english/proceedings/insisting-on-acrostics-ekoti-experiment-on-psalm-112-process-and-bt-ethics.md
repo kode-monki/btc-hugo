@@ -1,10 +1,14 @@
 ---
 title: "Insisting on Acrostics: Ekoti Experiment on Psalm 112, Process, and BT Ethics"
-date: 2025-10-30T15:00:00Z
+date: "2025-10-30T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 5"
 author: "Manuel Calaza Schenkel, Sebastian Floor"
 author_id: "#N/A"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=xQ3xM7U1lgE"

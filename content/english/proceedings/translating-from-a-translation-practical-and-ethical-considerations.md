@@ -1,10 +1,14 @@
 ---
 title: "Translating From a Translation? Practical and Ethical Considerations"
-date: 2025-10-31T15:00:00Z
+date: "2025-10-31T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Sebastian Floor"
 author_id: "sebastian-floor"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

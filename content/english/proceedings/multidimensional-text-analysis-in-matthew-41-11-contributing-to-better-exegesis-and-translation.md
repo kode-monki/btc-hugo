@@ -1,7 +1,10 @@
 ---
-title: "Multidimensional Text Analysis in Matthew 4:1-11 Contributing to Better Exegesis and Translation
-"
-date: 1899-12-30T00:00:00Z
+title: "Multidimensional Text Analysis in Matthew 4:1-11 Contributing to Better Exegesis and Translation"
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Dick Kroneman"
 author_id: "dick-kroneman"
 year: "2023"

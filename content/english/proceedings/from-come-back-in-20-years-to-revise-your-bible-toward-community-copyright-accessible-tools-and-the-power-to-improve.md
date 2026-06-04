@@ -1,10 +1,14 @@
 ---
 title: "From \"Come back in 20 years to revise your Bible\" Toward Community Copyright, Accessible Tools, and the Power to Improve"
-date: 2025-10-28T15:40:00Z
+date: "2025-10-28T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 2"
 author: "Nathaniel Statezni"
 author_id: "nathaniel-statenzi"
 year: "2025"
-track: ["Church and Community", "Technology and Resources"]
+track: ["Church and Community;Technology and Resources"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=n1hNWdE48uQ"

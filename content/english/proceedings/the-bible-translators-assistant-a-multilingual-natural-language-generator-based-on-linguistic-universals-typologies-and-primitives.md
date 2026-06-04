@@ -1,6 +1,10 @@
 ---
 title: "The Bible Translator's Assistant: A Multilingual Natural Language Generator based on Linguistic Universals, Typologies, and Primitives"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Tod Allman"
 author_id: "#N/A"
 year: "2023"

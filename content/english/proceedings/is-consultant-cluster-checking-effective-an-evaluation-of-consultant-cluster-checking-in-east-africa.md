@@ -1,6 +1,10 @@
 ---
 title: "Is Consultant Cluster Checking Effective?:  An Evaluation of Consultant Cluster Checking in East Africa"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Martha Wade"
 author_id: "martha-wade"
 year: "2023"

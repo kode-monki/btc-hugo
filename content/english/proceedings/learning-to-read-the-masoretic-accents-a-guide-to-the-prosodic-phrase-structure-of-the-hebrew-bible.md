@@ -1,6 +1,10 @@
 ---
 title: "Learning to Read the Masoretic Accents: A Guide to the Prosodic Phrase Structure of the Hebrew Bible"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Sophia Pitcher"
 author_id: "sophia-pitcher"
 year: "2023"

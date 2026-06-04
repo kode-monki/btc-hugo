@@ -1,6 +1,10 @@
 ---
 title: "Ethics, the Apostles and the Old Testament"
-date: 2025-10-28T11:45:00Z
+date: "2025-10-28T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 1"
 author: "Stuart Foster"
 author_id: "stuart-foster"
 year: "2025"

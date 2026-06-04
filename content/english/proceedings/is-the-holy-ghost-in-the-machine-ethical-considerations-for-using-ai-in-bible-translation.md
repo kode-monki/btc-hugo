@@ -1,10 +1,14 @@
 ---
 title: "Is the Holy Ghost in the Machine? Ethical Considerations for Using AI in Bible Translation"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Damien Daspit, et al - Part of AI Panel"
 author_id: "damien-daspit"
 year: "2025"
-track: ["Technology and Resources", "AI Panel"]
+track: ["Technology and Resources;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Y4r8ToPiqLA"

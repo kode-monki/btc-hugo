@@ -1,10 +1,14 @@
 ---
 title: "The Ethics of Word Choice in Bible Translation: A Socio-Scientific Approach"
-date: 2025-10-28T11:45:00Z
+date: "2025-10-28T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 2"
 author: "David Gray"
 author_id: "david-gray"
 year: "2025"
-track: ["Communication and Context", "Theology, Hermeneutics, and Exegesis"]
+track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=r1G5qTvytiI"

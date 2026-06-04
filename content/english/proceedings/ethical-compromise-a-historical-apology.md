@@ -1,6 +1,10 @@
 ---
 title: "Ethical Compromise: A Historical Apology"
-date: 2025-10-30T16:05:00Z
+date: "2025-10-30T16:05:00Z"
+start_time: "3:05 PM"
+end_time: "3:40 PM"
+publicity: ""
+location: "Room 2"
 author: "Doug Liao"
 author_id: "doug-liao"
 year: "2025"

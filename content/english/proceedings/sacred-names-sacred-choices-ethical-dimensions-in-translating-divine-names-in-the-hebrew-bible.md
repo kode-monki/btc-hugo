@@ -1,6 +1,10 @@
 ---
 title: "Sacred Names, Sacred Choices: Ethical Dimensions in Translating Divine Names in the Hebrew Bible"
-date: 2025-10-28T14:35:00Z
+date: "2025-10-28T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 3"
 author: "Manie Van den Heever"
 author_id: "manie-van-den-heever"
 year: "2025"

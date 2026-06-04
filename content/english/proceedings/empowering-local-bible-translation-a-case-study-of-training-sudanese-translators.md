@@ -1,10 +1,14 @@
 ---
 title: "Empowering Local Bible Translation: A Case Study of Training Sudanese Translators"
-date: 2025-10-30T15:00:00Z
+date: "2025-10-30T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 1"
 author: "Connie Champeon, et al"
 author_id: "connie-champeon"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Training and Mentoring", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exegesis;Training and Mentoring;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

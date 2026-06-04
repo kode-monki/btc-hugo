@@ -1,6 +1,10 @@
 ---
 title: "A Tale of Two Proposals: How Effective is Enforcing Process in Translation?"
-date: 2025-10-29T14:35:00Z
+date: "2025-10-29T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 4"
 author: "Todd Bequette & Becky Bequette"
 author_id: "todd-becky-bequette"
 year: "2025"

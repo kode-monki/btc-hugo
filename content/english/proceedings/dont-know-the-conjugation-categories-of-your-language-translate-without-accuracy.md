@@ -1,6 +1,10 @@
 ---
 title: "(Don't) know the conjugation categories of your language, translate with(out) accuracy."
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Thomas Blecke"
 author_id: "#N/A"
 year: "2023"

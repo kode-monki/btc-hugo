@@ -1,10 +1,14 @@
 ---
 title: "Accessible, Persisting Bible Translation:  Faster. Cheaper. Better."
-date: 2025-10-29T10:15:00Z
+date: "2025-10-29T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 4"
 author: "Robin Rempel"
 author_id: "robin-rempel"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Technology and Resources", "Training and Mentoring"]
+track: ["Methodologies, Media, and Multimodality;Technology and Resources;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=tzNrF9DSApA"

@@ -1,10 +1,14 @@
 ---
 title: "Addressing Ethical Issues in Bible Translation and Technology from a Nigerian Perspective"
-date: 2025-10-31T15:00:00Z
+date: "2025-10-31T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 3"
 author: "Oluwapelumi Bankole"
 author_id: "oluwapelumni-bankole"
 year: "2025"
-track: ["Church and Community", "Technology and Resources", "Theology, Hermeneutics, and Exegesis"]
+track: ["Church and Community;Technology and Resources;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=0EGzDwKNMgE"

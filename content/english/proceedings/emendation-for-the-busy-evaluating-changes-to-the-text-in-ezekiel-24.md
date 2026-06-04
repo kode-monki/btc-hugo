@@ -1,6 +1,10 @@
 ---
 title: "Emendation for the Busy: Evaluating Changes to the Text in Ezekiel 24"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Sam George"
 author_id: "#N/A"
 year: "2023"

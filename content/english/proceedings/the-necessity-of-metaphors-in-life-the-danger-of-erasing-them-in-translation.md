@@ -1,6 +1,10 @@
 ---
 title: "The Necessity of Metaphors in Life & the Danger of Erasing Them in Translation"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Stephanie Wong"
 author_id: "#N/A"
 year: "2023"

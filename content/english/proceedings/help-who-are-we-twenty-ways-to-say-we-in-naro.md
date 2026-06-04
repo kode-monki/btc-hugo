@@ -1,6 +1,10 @@
 ---
 title: "Help! Who are We? Twenty Ways to Say 'We' in Naro"
-date: 2025-10-31T11:00:00Z
+date: "2025-10-31T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 2"
 author: "Hessel Visser"
 author_id: "hessel-visser"
 year: "2025"

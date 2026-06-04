@@ -1,10 +1,14 @@
 ---
 title: "Awe before the Holy: In Search of a Normative Perspective for the Ethics of Bible Translation"
-date: 2025-10-29T14:35:00Z
+date: "2025-10-29T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 5"
 author: "Paul Morgan"
 author_id: "paul-morgan"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=o9633bG5e2c"

@@ -1,10 +1,14 @@
 ---
 title: "Engaging Bible Translation Issues in 2025: A Round Table Discussion"
-date: 2025-10-29T15:40:00Z
+date: "2025-10-29T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "4:00 PM"
+publicity: ""
+location: "Room 1"
 author: ""
 author_id: "#N/A"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Training and Mentoring"]
+track: ["Church and Community;Communication and Context;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: ""

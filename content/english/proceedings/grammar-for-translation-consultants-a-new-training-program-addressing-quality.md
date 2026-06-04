@@ -1,6 +1,10 @@
 ---
 title: "Grammar for Translation Consultants – A new Training Program Addressing Quality"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Andreas Joswig"
 author_id: "andreas-joswig"
 year: "2023"

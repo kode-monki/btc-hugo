@@ -1,12 +1,16 @@
 ---
 title: "Translating Passages on Which the Historic Doctrine of the Trinity Is Based"
-date: 2025-10-29T11:00:00Z
+date: "2025-10-29T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 2"
 author: "Richard Brown"
 author_id: "richard-brown"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
-paper_url: ""
+paper_url: "https://drive.google.com/file/d/1HsgxSw7Rjo0fswLkAr7Djt0D7kwnbZZI/view?usp=drive_link"
 video_url: "https://www.youtube.com/watch?v=3u4eBtwV5Lc"
 ---
 

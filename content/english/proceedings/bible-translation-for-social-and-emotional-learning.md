@@ -1,6 +1,10 @@
 ---
 title: "Bible Translation for Social and Emotional Learning"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Harry Harm"
 author_id: "harry-harm"
 year: "2023"

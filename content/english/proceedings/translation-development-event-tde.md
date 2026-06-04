@@ -1,6 +1,10 @@
 ---
 title: "Translation Development Event (TDE)"
-date: 2025-10-31T15:00:00Z
+date: "2025-10-31T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 4"
 author: "Amber Jasa, Thomas Hemphill"
 author_id: "jasa-hemphill"
 year: "2025"

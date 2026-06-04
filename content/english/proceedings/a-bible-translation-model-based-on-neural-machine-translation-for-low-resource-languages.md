@@ -1,6 +1,10 @@
 ---
 title: "A Bible Translation Model Based on Neural Machine Translation for Low-Resource Languages"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Sangrok Lee; David Hwang; Taeho Jang"
 author_id: "#N/A"
 year: "2023"

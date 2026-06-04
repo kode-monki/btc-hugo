@@ -1,6 +1,10 @@
 ---
 title: "Tension Between Acceptability and Accuracy in the Amharic Addisu Medebegna Tirgum Revision Project"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Zetseat Mulugeta"
 author_id: "#N/A"
 year: "2023"

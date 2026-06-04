@@ -1,6 +1,10 @@
 ---
 title: "From Agency-centered to Church-centered Quality Assurance: A Case Study"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Benjamin Matawal; Benjamin Wright; Teryl Gonzalez"
 author_id: "#N/A"
 year: "2023"

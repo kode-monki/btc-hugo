@@ -1,10 +1,14 @@
 ---
 title: "Faith + Virtue: Facilitating Character Formation in Translator Training"
-date: 2025-10-28T13:50:00Z
+date: "2025-10-28T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 5"
 author: "Eszter Ernst-Kurdi"
 author_id: "eszter-ernst-kurdi"
 year: "2025"
-track: ["Training and Mentoring", "Remote Presenter"]
+track: ["Training and Mentoring;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=wiKgYakv46I"

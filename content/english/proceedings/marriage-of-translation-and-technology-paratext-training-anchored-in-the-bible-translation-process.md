@@ -1,6 +1,10 @@
 ---
 title: "Marriage of Translation and Technology - Paratext Training Anchored in the Bible Translation Process"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Judy Heath; Jeff Heath"
 author_id: "#N/A"
 year: "2023"
@@ -21,4 +25,3 @@ Computer specialists may be tempted to teach Paratext by focusing on the mechani
 Just as the Bible translation process impacts our Paratext courses, we ensure that Paratext is integral to our ongoing translation courses (e.g. Exegesis, One-Book workshops), which intentionally focus on using Paratext to carry out translation tasks.
 
 This marriage of Language Technology and Bible Translation proves to be a fruitful union that anchors technology in service to quality Bible translation.
-

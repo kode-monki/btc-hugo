@@ -1,6 +1,10 @@
 ---
 title: "Quality in Media: Technical excellence or meaningful engagement?"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Andreas Ernst"
 author_id: "andreas-ernst"
 year: "2023"

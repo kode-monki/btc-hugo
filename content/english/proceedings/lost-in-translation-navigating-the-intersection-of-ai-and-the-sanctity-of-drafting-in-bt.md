@@ -1,6 +1,10 @@
 ---
 title: "Lost in Translation: Navigating the Intersection of AI and the Sanctity of Drafting in BT"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Larry Hayashi; Reinier De Blois; Paul Unger; Matt Merritt"
 author_id: "#N/A"
 year: "2023"

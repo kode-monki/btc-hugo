@@ -1,6 +1,10 @@
 ---
 title: "Enhancing Community Engagement in Translation: The Development of the Multilingual Assessment Tool"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Maik Gibson"
 author_id: "maik-gibson"
 year: "2023"

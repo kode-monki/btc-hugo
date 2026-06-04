@@ -1,6 +1,10 @@
 ---
 title: "Quality Translator Training: Recent Experience in Mozambique"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Justino Alfredo; Stuart Foster"
 author_id: "#N/A"
 year: "2023"
@@ -28,4 +32,3 @@ Evaluations:
 	Perspective of the teachers
 
 Reflections for the future.
-

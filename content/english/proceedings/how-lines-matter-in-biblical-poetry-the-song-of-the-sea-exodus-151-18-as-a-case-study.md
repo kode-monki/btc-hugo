@@ -1,6 +1,10 @@
 ---
 title: "How Lines Matter in Biblical Poetry: The Song of the Sea (Exodus 15:1-18) as a Case Study"
-date: 2025-10-29T11:45:00Z
+date: "2025-10-29T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 5"
 author: "Emmylou Grosser"
 author_id: "emmylou-grosser"
 year: "2025"

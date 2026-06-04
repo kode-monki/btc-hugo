@@ -1,10 +1,14 @@
 ---
 title: "Breaking the Literate Bias: Exploring the Sufficiency of Oral Bible Translation"
-date: 2025-10-30T16:05:00Z
+date: "2025-10-30T16:05:00Z"
+start_time: "3:05 PM"
+end_time: "3:40 PM"
+publicity: ""
+location: "Grand Hall"
 author: "Kris Toler, Susan Toler"
 author_id: "#N/A"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Live Only"]
+track: ["Methodologies, Media, and Multimodality;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

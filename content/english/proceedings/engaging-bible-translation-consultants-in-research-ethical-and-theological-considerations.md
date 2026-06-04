@@ -1,10 +1,14 @@
 ---
 title: "Engaging Bible Translation Consultants in Research: Ethical and Theological Considerations"
-date: 2025-10-30T10:15:00Z
+date: "2025-10-30T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Grand Hall"
 author: ""
 author_id: "#N/A"
 year: "2025"
-track: ["Technology and Resources", "AI Panel", "Live Only"]
+track: ["Technology and Resources;AI Panel;Live Only"]
 slides_url: ""
 paper_url: ""
 video_url: ""

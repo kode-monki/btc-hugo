@@ -1,10 +1,14 @@
 ---
 title: "A New Engagement: The Case for Ethical, Trauma-informed Bible Translation"
-date: 2025-10-29T10:15:00Z
+date: "2025-10-29T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 2"
 author: "Tricia Stringer"
 author_id: "tricia-stringer"
 year: "2025"
-track: ["Church and Community", "Communication and Context"]
+track: ["Church and Community;Communication and Context"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=4OvWAc5UAV0"

@@ -1,6 +1,10 @@
 ---
 title: "Local Ownership, Community Consensus and Quality in Bible Translation: A Case Study from West Asia"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Daniel Paul"
 author_id: "#N/A"
 year: "2023"
@@ -19,5 +23,4 @@ This paper draws from a case study to survey a decade of input from church leade
 	national mission strategy
 	style of relationship-building and use of power
 Since these parameters generate feedback and activity which transcend questions of accuracy, naturalness and clarity of the translation, attention is also given to consensus-building strategies additional to simply redrafting the text. The Bible translation process can then offer a meeting point for the speech community to develop and harmonise its own indigenous theology, hosting dialogue (Rodriguez 2018) and providing a rich menu of possibilities for theological expression.
-
 

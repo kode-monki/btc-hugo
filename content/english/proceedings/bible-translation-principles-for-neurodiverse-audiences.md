@@ -1,10 +1,14 @@
 ---
 title: "Bible Translation Principles for Neurodiverse Audiences"
-date: 2025-10-28T15:40:00Z
+date: "2025-10-28T15:40:00Z"
+start_time: "2:40 PM"
+end_time: "3:15 PM"
+publicity: ""
+location: "Room 4"
 author: "Andy Warren-Rothlin"
 author_id: "andy-warren-rothlin"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Neurodiversity"]
+track: ["Theology, Hermeneutics, and Exegesis;Neurodiversity"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=UWCkRgF6pBo"

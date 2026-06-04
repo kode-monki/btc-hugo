@@ -1,6 +1,10 @@
 ---
 title: "Involving Hearing People and Organizations in Sign Language Translations: Some Ethical Considerations"
-date: 2025-10-29T13:50:00Z
+date: "2025-10-29T13:50:00Z"
+start_time: "12:50 PM"
+end_time: "1:25 PM"
+publicity: ""
+location: "Room 1"
 author: "Bernadet van der Louw"
 author_id: "bernadet-van-der-louw"
 year: "2025"

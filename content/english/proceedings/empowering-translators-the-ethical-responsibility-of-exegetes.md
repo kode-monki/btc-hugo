@@ -1,11 +1,15 @@
 ---
 title: "Empowering Translators: The Ethical Responsibility of Exegetes"
-date: 2025-10-30T15:00:00Z
+date: "2025-10-30T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 2"
 author: "Peter Kamande Thuo"
 author_id: "kamande-thuo"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Theology, Hermeneutics, and Exegesis", "Training and Mentoring"]
-slides_url: ""
+track: ["Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exegesis;Training and Mentoring"]
+slides_url: "https://drive.google.com/file/d/1iOlpd9cq7IFFq6e2Cvyj7miB2RGEnr90/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=tloyZ6vOsKE"
 ---

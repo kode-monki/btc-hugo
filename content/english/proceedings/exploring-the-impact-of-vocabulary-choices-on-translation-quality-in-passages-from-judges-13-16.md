@@ -1,6 +1,10 @@
 ---
 title: "Exploring the Impact of Vocabulary Choices on Translation Quality in Passages from Judges 13-16"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Mary Brown"
 author_id: "#N/A"
 year: "2023"

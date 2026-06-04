@@ -1,6 +1,10 @@
 ---
 title: "Translating the Psalms from Oral to Print to Performance: A Report on the Work of PsalmsThatSing"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Sebastian Floor; Peter Yuh"
 author_id: "#N/A"
 year: "2023"

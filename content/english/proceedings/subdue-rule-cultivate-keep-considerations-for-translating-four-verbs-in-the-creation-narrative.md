@@ -1,10 +1,14 @@
 ---
 title: "Subdue, Rule, Cultivate, & Keep: Considerations for Translating Four Verbs in the Creation Narrative"
-date: 2025-10-28T14:35:00Z
+date: "2025-10-28T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 5"
 author: "Michael Jemphrey"
 author_id: "michael-jemphrey"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=1iWy7Ui3jJ8"

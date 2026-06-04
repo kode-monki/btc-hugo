@@ -1,10 +1,14 @@
 ---
 title: "Common Misconceptions About the Masoretic Accents"
-date: 2025-10-29T11:00:00Z
+date: "2025-10-29T11:00:00Z"
+start_time: "10:00 AM"
+end_time: "10:35 AM"
+publicity: ""
+location: "Room 5"
 author: "Sophia Pitcher"
 author_id: "sophia-pitcher"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Remote Presenter"]
+track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=LYWEP5E-TFQ"

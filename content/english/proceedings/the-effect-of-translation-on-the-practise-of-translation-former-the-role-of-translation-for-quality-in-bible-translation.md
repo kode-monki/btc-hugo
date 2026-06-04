@@ -1,6 +1,10 @@
 ---
 title: "The effect of translation on the practise of translation (former The role of translation for quality in bible translation"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Helga  Schr√∂der"
 author_id: "#N/A"
 year: "2023"
@@ -21,5 +25,4 @@ My presentation will briefly touch upon different translation frameworks: Nida‚Ä
 The paper will present a poll asking Bible translators what theory and practical principles they use in their daily work, what they perceive as the most difficult areas in translation, and where they look for answers when solving problems.
 
 Regarding the quality of a translation, the presentation concludes that the translation theory adopted does not matter as much as (a) the practical translation principles applied, and (b) the linguistic awareness of the translator (and also that of the advisor/consultant). 
-
 

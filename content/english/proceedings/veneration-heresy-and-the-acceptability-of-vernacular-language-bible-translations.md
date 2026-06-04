@@ -1,6 +1,10 @@
 ---
 title: "Veneration, Heresy, and the Acceptability of Vernacular Language Bible Translations"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Timothy Hatcher"
 author_id: "timothy-hatcher"
 year: "2023"

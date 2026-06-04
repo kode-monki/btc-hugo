@@ -1,10 +1,14 @@
 ---
 title: "Results of Local Ownership: Using the Agile Mindset for Translation Quality & Scripture Engagement"
-date: 2025-10-31T11:45:00Z
+date: "2025-10-31T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 5"
 author: "Ruthie Wagner"
 author_id: "ruthie-wagner"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Training and Mentoring", "Remote Presenter"]
+track: ["Church and Community;Communication and Context;Training and Mentoring;Remote Presenter"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=l40OXWCB4Ho"

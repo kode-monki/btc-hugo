@@ -1,6 +1,10 @@
 ---
 title: "On the Ethical Dilemma of Analytic Versus Ontonic Views of Words in Translation Practice and Theory"
-date: 2025-10-29T14:35:00Z
+date: "2025-10-29T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 3"
 author: "Sharon Merz & Johannes Merz"
 author_id: "merz-merz"
 year: "2025"

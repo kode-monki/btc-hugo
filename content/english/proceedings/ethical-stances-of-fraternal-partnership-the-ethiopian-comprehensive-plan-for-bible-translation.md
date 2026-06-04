@@ -1,10 +1,14 @@
 ---
 title: "Ethical Stances of Fraternal Partnership: The Ethiopian Comprehensive Plan for Bible Translation"
-date: 2025-10-31T10:15:00Z
+date: "2025-10-31T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Room 2"
 author: "Tesfaye Yacob Baffa"
 author_id: "tesfaye-yacob-baffa"
 year: "2025"
-track: ["Church and Community", "Communication and Context", "Training and Mentoring"]
+track: ["Church and Community;Communication and Context;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=WO-4AwPq_hM"

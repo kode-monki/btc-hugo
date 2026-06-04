@@ -1,6 +1,10 @@
 ---
 title: "Translation Ethics of the Bible Society of Nigeria: A Critical Examination"
-date: 2025-10-28T14:35:00Z
+date: "2025-10-28T14:35:00Z"
+start_time: "1:35 PM"
+end_time: "2:10 PM"
+publicity: ""
+location: "Room 2"
 author: "Olalekan Bamidele"
 author_id: "olalekan-bamidele"
 year: "2025"

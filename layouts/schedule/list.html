@@ -1,0 +1,331 @@
+{{ define "main" }}
+
+{{/* ── Collect & sort 2025 proceedings ── */}}
+{{- $all := where site.RegularPages "Section" "proceedings" -}}
+{{- $y25 := where $all "Params.year" "2025" -}}
+{{- $sched := where $y25 "Params.start_time" "!=" "" -}}
+{{- $sorted := sort $sched "Date" -}}
+
+{{/* ── Build JSON payload ── */}}
+{{- $items := slice -}}
+{{- range $sorted -}}
+  {{- $tracks := slice -}}
+  {{- range .Params.track -}}
+    {{- range split . ";" -}}
+      {{- $t := trim . " " -}}
+      {{- if $t -}}{{- $tracks = $tracks | append $t -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $authorURL := printf "%s%s/" (absLangURL "authors/") (.Params.author_id | urlize) -}}
+  {{- $item := dict
+      "title"      .Title
+      "url"        .RelPermalink
+      "author"     .Params.author
+      "author_url" $authorURL
+      "date"       (.Date.Format "2006-01-02")
+      "start"      .Params.start_time
+      "end"        .Params.end_time
+      "room"       .Params.location
+      "tracks"     $tracks
+      "canceled"   (or (hasPrefix .Title "CANCELED") (hasPrefix .Title "CANCELLED"))
+  -}}
+  {{- $items = $items | append $item -}}
+{{- end -}}
+
+<section class="section pt-8 pb-16">
+  <div class="container">
+    <h1 class="h2 mb-2">2025 Schedule</h1>
+    <p class="text-sm text-gray-500 mb-8">October 28–31 · Chiang Mai, Thailand</p>
+
+    {{/* ── Day tabs ── */}}
+    <div class="flex flex-wrap gap-2 mb-6" id="dayTabs">
+      <button class="day-tab active" data-day="2025-10-28">Tue Oct 28</button>
+      <button class="day-tab" data-day="2025-10-29">Wed Oct 29</button>
+      <button class="day-tab" data-day="2025-10-30">Thu Oct 30</button>
+      <button class="day-tab" data-day="2025-10-31">Fri Oct 31</button>
+    </div>
+
+    {{/* ── Filters ── */}}
+    <div class="flex flex-wrap gap-3 mb-8 items-center">
+      <select id="trackFilter" class="filter-select">
+        <option value="">All Tracks</option>
+      </select>
+      <select id="roomFilter" class="filter-select">
+        <option value="">All Rooms</option>
+        <option value="Grand Hall">Grand Hall</option>
+        <option value="Room 1">Room 1</option>
+        <option value="Room 2">Room 2</option>
+        <option value="Room 3">Room 3</option>
+        <option value="Room 4">Room 4</option>
+        <option value="Room 5">Room 5</option>
+      </select>
+      <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer select-none">
+        <input type="checkbox" id="hideCanceled" checked class="rounded">
+        Hide canceled
+      </label>
+      <span id="sessionCount" class="text-sm text-gray-400 ml-auto"></span>
+    </div>
+
+    {{/* ── Schedule output ── */}}
+    <div id="scheduleGrid"></div>
+  </div>
+</section>
+
+<style>
+.day-tab {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 2px solid #262e6b;
+  color: #262e6b;
+  background: white;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.day-tab.active, .day-tab:hover {
+  background: #262e6b;
+  color: white;
+}
+.filter-select {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background: white;
+  cursor: pointer;
+  outline: none;
+}
+.filter-select:focus { border-color: #262e6b; }
+
+.time-block { margin-bottom: 2rem; }
+.time-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.time-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #262e6b;
+  white-space: nowrap;
+  min-width: 9rem;
+}
+.time-line {
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+.sessions-grid.plenary-only {
+  grid-template-columns: 1fr;
+}
+.session-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.875rem;
+  background: white;
+  border-left-width: 4px;
+  transition: box-shadow 0.15s;
+  position: relative;
+}
+.session-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.session-card.canceled { opacity: 0.45; }
+.room-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background: #f3f4f6;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+.session-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+.session-title a { color: inherit; text-decoration: none; }
+.session-title a:hover { color: #262e6b; text-decoration: underline; }
+.session-author {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.session-author a { color: #4b5563; text-decoration: none; }
+.session-author a:hover { text-decoration: underline; }
+.track-badges { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+.track-badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+.canceled-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #ef4444;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+</style>
+
+<script>
+const SCHEDULE = {{ $items | jsonify | safeJS }};
+
+const TRACK_STYLES = {
+  'Theology, Hermeneutics, and Exegesis': { bg:'#dbeafe', text:'#1e40af', border:'#3b82f6' },
+  'Church and Community':                  { bg:'#d1fae5', text:'#065f46', border:'#10b981' },
+  'Technology and Resources':              { bg:'#ede9fe', text:'#5b21b6', border:'#8b5cf6' },
+  'Communication and Context':             { bg:'#fef3c7', text:'#92400e', border:'#f59e0b' },
+  'Methodologies, Media, and Multimodality': { bg:'#cffafe', text:'#164e63', border:'#06b6d4' },
+  'Training and Mentoring':                { bg:'#fef9c3', text:'#713f12', border:'#eab308' },
+  'Plenary':                               { bg:'#e0e7ff', text:'#3730a3', border:'#262e6b' },
+  'Discussion Group (Onsite only)':        { bg:'#f3f4f6', text:'#374151', border:'#9ca3af' },
+  'AI Panel':                              { bg:'#fee2e2', text:'#991b1b', border:'#ef4444' },
+  'Remote Presenter':                      { bg:'#f1f5f9', text:'#475569', border:'#94a3b8' },
+  'Live Only':                             { bg:'#fdf4ff', text:'#6b21a8', border:'#c084fc' },
+};
+const DEFAULT_STYLE = { bg:'#f3f4f6', text:'#374151', border:'#d1d5db' };
+
+function trackStyle(name) {
+  for (const key of Object.keys(TRACK_STYLES)) {
+    if (name.toLowerCase().includes(key.toLowerCase())) return TRACK_STYLES[key];
+  }
+  return DEFAULT_STYLE;
+}
+
+function primaryBorderColor(tracks) {
+  if (!tracks || !tracks.length) return '#d1d5db';
+  return trackStyle(tracks[0]).border;
+}
+
+function toMinutes(timeStr) {
+  if (!timeStr) return 9999;
+  const m = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i);
+  if (!m) return 9999;
+  let h = parseInt(m[1]), min = parseInt(m[2]);
+  const ampm = m[3].toUpperCase();
+  if (ampm === 'PM' && h !== 12) h += 12;
+  if (ampm === 'AM' && h === 12) h = 0;
+  return h * 60 + min;
+}
+
+// Populate track filter
+const allTracks = new Set();
+SCHEDULE.forEach(s => s.tracks.forEach(t => allTracks.add(t)));
+const trackFilter = document.getElementById('trackFilter');
+[...allTracks].sort().forEach(t => {
+  const opt = document.createElement('option');
+  opt.value = t; opt.textContent = t;
+  trackFilter.appendChild(opt);
+});
+
+let currentDay = '2025-10-28';
+
+function render() {
+  const selTrack = trackFilter.value;
+  const selRoom  = document.getElementById('roomFilter').value;
+  const hideCanceled = document.getElementById('hideCanceled').checked;
+
+  let items = SCHEDULE.filter(s => {
+    if (s.date !== currentDay) return false;
+    if (hideCanceled && s.canceled) return false;
+    if (selRoom && s.room !== selRoom) return false;
+    if (selTrack && !s.tracks.includes(selTrack)) return false;
+    return true;
+  });
+
+  document.getElementById('sessionCount').textContent =
+    items.length + ' session' + (items.length !== 1 ? 's' : '');
+
+  // Group by start time
+  const byTime = {};
+  items.forEach(s => {
+    const key = s.start + (s.end ? ' – ' + s.end : '');
+    if (!byTime[key]) byTime[key] = { start: s.start, sessions: [] };
+    byTime[key].sessions.push(s);
+  });
+
+  const slots = Object.entries(byTime)
+    .sort((a, b) => toMinutes(a[1].start) - toMinutes(b[1].start));
+
+  const grid = document.getElementById('scheduleGrid');
+
+  if (!slots.length) {
+    grid.innerHTML = '<div class="no-results">No sessions match your filters.</div>';
+    return;
+  }
+
+  grid.innerHTML = slots.map(([timeLabel, slot]) => {
+    const isPlenary = slot.sessions.every(s => s.room === 'Grand Hall');
+    const cards = slot.sessions.map(s => {
+      const border = primaryBorderColor(s.tracks);
+      const trackBadges = s.tracks.map(t => {
+        const st = trackStyle(t);
+        return `<span class="track-badge" style="background:${st.bg};color:${st.text}">${t}</span>`;
+      }).join('');
+      const canceledLabel = s.canceled ? '<span class="canceled-label">Canceled</span> ' : '';
+      const titleContent = s.url
+        ? `<a href="${s.url}">${canceledLabel}${escHtml(s.title)}</a>`
+        : `${canceledLabel}${escHtml(s.title)}`;
+      const authorContent = s.author
+        ? `<a href="${s.author_url}">${escHtml(s.author)}</a>`
+        : '';
+      return `
+        <div class="session-card${s.canceled ? ' canceled' : ''}" style="border-left-color:${border}">
+          <div class="room-badge">${escHtml(s.room)}</div>
+          <div class="session-title">${titleContent}</div>
+          ${authorContent ? `<div class="session-author">${authorContent}</div>` : ''}
+          ${trackBadges ? `<div class="track-badges">${trackBadges}</div>` : ''}
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="time-block">
+        <div class="time-heading">
+          <span class="time-label">${escHtml(timeLabel)}</span>
+          <div class="time-line"></div>
+        </div>
+        <div class="sessions-grid${isPlenary ? ' plenary-only' : ''}">${cards}</div>
+      </div>`;
+  }).join('');
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Wire up controls
+document.getElementById('dayTabs').addEventListener('click', e => {
+  const btn = e.target.closest('.day-tab');
+  if (!btn) return;
+  document.querySelectorAll('.day-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentDay = btn.dataset.day;
+  render();
+});
+trackFilter.addEventListener('change', render);
+document.getElementById('roomFilter').addEventListener('change', render);
+document.getElementById('hideCanceled').addEventListener('change', render);
+
+render();
+</script>
+
+{{ end }}

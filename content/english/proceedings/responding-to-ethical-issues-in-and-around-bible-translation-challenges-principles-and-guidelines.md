@@ -1,12 +1,16 @@
 ---
 title: "Responding to Ethical Issues In and Around Bible Translation: Challenges, Principles and Guidelines"
-date: 2025-10-31T10:15:00Z
+date: "2025-10-31T10:15:00Z"
+start_time: "9:15 AM"
+end_time: "9:50 AM"
+publicity: ""
+location: "Grand Hall"
 author: "Dick Kroneman"
 author_id: "dick-kroneman"
 year: "2025"
-track: ["Methodologies, Media, and Multimodality", "Training and Mentoring", "Live Only"]
-slides_url: ""
-paper_url: ""
+track: ["Methodologies, Media, and Multimodality;Training and Mentoring;Live Only"]
+slides_url: "https://drive.google.com/file/d/1B4ZI40HIlyjJt0d_aR670QzRrQY9-iiF/view"
+paper_url: "https://drive.google.com/file/d/1thHrdHFbZzxRqqynZYiz-eScVwI8W44a/view?usp=drive_link"
 video_url: ""
 ---
 

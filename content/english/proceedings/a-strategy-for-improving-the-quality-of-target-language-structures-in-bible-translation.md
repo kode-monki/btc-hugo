@@ -1,10 +1,14 @@
 ---
 title: "A Strategy for Improving the Quality of Target Language Structures in Bible Translation"
-date: 2025-10-31T15:00:00Z
+date: "2025-10-31T15:00:00Z"
+start_time: "2:00 PM"
+end_time: "2:35 PM"
+publicity: ""
+location: "Room 5"
 author: "Andreas Joswig"
 author_id: "andreas-joswig"
 year: "2025"
-track: ["Technology and Resources", "Training and Mentoring"]
+track: ["Technology and Resources;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=KD7rvC-Cwq0"

@@ -1,10 +1,14 @@
 ---
 title: "Who is the Dumb Consultant Who Approved This? (Oh, It Was Me!) How Ethical is Parachute Consulting?"
-date: 2025-10-28T11:45:00Z
+date: "2025-10-28T11:45:00Z"
+start_time: "10:45 AM"
+end_time: "11:20 AM"
+publicity: ""
+location: "Room 4"
 author: "Randy Groff"
 author_id: "randy-groff"
 year: "2025"
-track: ["Theology, Hermeneutics, and Exegesis", "Training and Mentoring"]
+track: ["Theology, Hermeneutics, and Exegesis;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=iaOqaAjS92U"

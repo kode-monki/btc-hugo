@@ -1,6 +1,10 @@
 ---
 title: "Biblical Language Grammars and the Barriers They Create"
-date: 1899-12-30T00:00:00Z
+date: "1899-12-30T00:00:00Z"
+start_time: ""
+end_time: ""
+publicity: ""
+location: ""
 author: "Michael Aubrey"
 author_id: "#N/A"
 year: "2023"
