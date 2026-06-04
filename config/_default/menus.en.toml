@@ -33,7 +33,7 @@ url = "/contact"
 
 [[main]]
   name = "Schedule"
-  url = "/schedule"
+  url = "/conferences/2025/schedule"
   weight = 3
 
 # footer menu

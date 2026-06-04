@@ -8,8 +8,10 @@ location: "Chiang Mai, Thailand"
 status: "Past"
 theme: "Ethics in Bible Translation"
 proceedings_url: "/proceedings/"
+schedule_url: "/conferences/2025/schedule/"
 weight: 50
 year: 2025
+layout: "single"
 menu:
   main:
     parent: "conferences"
