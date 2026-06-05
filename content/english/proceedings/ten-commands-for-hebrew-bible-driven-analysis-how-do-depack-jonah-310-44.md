@@ -11,7 +11,7 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=FmA1KPSnK0U"
 ---
 
 How can translators and interpreters mine the Biblical text for all there is and make new discoveries? 

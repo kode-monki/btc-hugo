@@ -11,7 +11,7 @@ year: "2023"
 track: ["Quality in Translation Symposium"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=jwj2eIm1r6s"
 ---
 
 The Bible Translation Movement is at a unique juncture in time as the Task receives unprecedented awareness and growing worldwide effort. One focus in this juncture is the effort to accelerate the pace at which translations are completed with much attention given to innovative ways of translation. These innovative efforts are often helpful, but they force us to reconsider certain ideas about translation. One of these ideas is translation quality. Although those in the Movement agree that translation quality is important, there are various perspectives about translation quality and its practical application in field projects.

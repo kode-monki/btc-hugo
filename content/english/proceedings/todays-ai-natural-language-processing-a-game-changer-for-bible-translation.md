@@ -11,7 +11,7 @@ year: "2023"
 track: ["Language technology and Artificial Intelligence"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=ktyhcCG_prk"
 ---
 
 Automated Bible translation has been attempted by many people over the last nearly five decades. Early attempts used rule-based learning, and that had some positive results with closely related dialect adaptations. Google’s statistical approach to translation requires a very large corpus, usually millions of words. 

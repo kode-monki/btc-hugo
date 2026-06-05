@@ -11,7 +11,7 @@ year: "2023"
 track: ["Linguistics"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=L7D_A9u4zEg"
 ---
 
 A widely neglected aspect of quality in Bible translation is the role of target language structures. When checking translations, consultants use to focus on exegetical adequacy and lexical equivalence, but they tend to have no way of checking whether the translation adheres to the grammatical rules of the target language. This paper presents experiences with a new type of workshop trying to address this gap, targeting translation consultants and consultants-in-training. In four weeks a wide range of grammatical phenomena is presented that have an impact on the accuracy and naturalness of the translation.

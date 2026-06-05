@@ -11,7 +11,7 @@ year: "2023"
 track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=b3xwE2E5dJM"
 ---
 
 Performance Criticism is a promising new development in Biblical exegesis and Scripture engagement. It highlights the importance of the oral-aural nature of the Biblical texts and the interaction between oral and written communication in their original settings. The oral and dramatic dimensions of the Biblical texts are not just optional additions to a written source text, but they are part and parcel of the Biblical texts that have been handed down to our communities of faith in a diverse process of oral and written transmission. 

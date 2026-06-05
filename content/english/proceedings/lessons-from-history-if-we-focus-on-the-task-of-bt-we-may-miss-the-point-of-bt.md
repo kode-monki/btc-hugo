@@ -11,7 +11,7 @@ year: "2023"
 track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=udwdX_Dw4tE"
 ---
 
 “It was a truly excellent translation …but nobody really used it.”

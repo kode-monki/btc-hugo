@@ -11,7 +11,7 @@ year: "2023"
 track: ["Linguistics"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=SZwPrtWJuSg"
 ---
 
 In the 21st century, the rise in mother-tongue speaker driven projects has led to the downplaying of the

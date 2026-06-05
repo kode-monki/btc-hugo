@@ -7,7 +7,7 @@ year: "2023"
 track: ["Biblical key terms"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=MMptNsXZWoc"
 ---
 
 William Tyndale had a deep impact on English Bible translations, with later translations like the Geneva Bible or the King James Version incorporating a majority of his translation decisions. However, one particular decision Tyndale made that met stiff resistance from the church hierarchy of his day was his translation of ἐκκλησία as "congregation" rather than "church," following Martin Luther's translation of ἐκκλησία as "Gemeinde" rather than "Kirche." The Catholic statesman Sir Thomas More vehemently criticized Tyndale's translation, especially his translation of ἐκκλησία as "congregation." When King James authorized a new English Bible translation, he specified that "church" must be used instead of "congregation" for ἐκκλησία. Since then, nearly every English Bible has followed this 17th century monarch's decree.

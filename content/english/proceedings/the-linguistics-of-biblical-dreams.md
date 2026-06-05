@@ -11,7 +11,7 @@ year: "2023"
 track: ["Linguistics"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=2Qk8EYNbeeI"
 ---
 
 Dreams play an important role in the Bible. They have been studied extensively from theological, exegetical and hermeneutical perspectives, and with regard to their cultural particularities in their ancient Near Eastern context. However, biblical dreams have received little attention from the perspective of linguistics and discourse. 

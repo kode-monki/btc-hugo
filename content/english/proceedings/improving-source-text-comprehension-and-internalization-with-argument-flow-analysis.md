@@ -11,7 +11,7 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=hSLT4ocoEhw"
 ---
 
 Higher-level discourse structuring features are commonly acknowledged; however, few translators possess the expertise to analyze grounding features like Robert Longacre's mainline and support in source languages. Clear Bible has developed digital tools that allow knowledge experts to annotate source language texts for features like these, which can then be made available to translation teams by displaying the source language analysis on an aligned translation.

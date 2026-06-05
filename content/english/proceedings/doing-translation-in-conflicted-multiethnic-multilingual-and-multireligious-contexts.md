@@ -11,7 +11,7 @@ year: "2023"
 track: ["Theology and hermeneutics"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=JmIvbDvRb2M"
 ---
 
 Many Bible translation projects are initiated in multiethnic, multilingual, and multi-religious contexts. Colonization has affected each of these 'multi' dynamics. Quality Bible translation processes and outcomes depend upon navigating these dynamics in ways that seek to transform colonial legacies.

@@ -11,7 +11,7 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=7wdo_1k9ONc"
 ---
 
 The name we choose when we address a family member or friend, a colleague, associate or stranger reflects our relationship with that person. Not everyone is entitled to call someone else ‘son’ or ‘darling’. The way we refer to someone may also indicate something about who they are. Not very many are entitled to be referred to as ‘doctor’ or ‘sir’. Names, often used without conscious thought, can indicate a surprising amount of information.

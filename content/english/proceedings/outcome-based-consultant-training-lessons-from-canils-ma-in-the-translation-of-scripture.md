@@ -11,7 +11,7 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=9yeEMn1MR-g"
 ---
 
 Quality in translation requires quality translators and translation consultants – those who have mastered and demonstrated competency in various areas related to Bible translation.  As a result, there has been a push to train Bible translation consultants to  standards based upon an agreed set of competencies.  This approach has been embraced by SIL as well as the Northwest Seminary and the Canada Institute of Linguistics (CanIL).

@@ -11,7 +11,7 @@ year: "2023"
 track: ["Quality in Translation Symposium"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=zKWazk615Yc"
 ---
 
 Mental models of translation, and the underlying conceptual metaphors used to build them (Lakoff and Johnson 2003, Kovecses 2010), drive how we problematize the translation task and the values we prioritize as we assess quality. The problems the twentieth century Bible translation movement identified and addressed typically flowed from understanding translation as a scientific endeavor, as did metrics for achieving something valuable, a quality product. These metrics continue to influence the movement today.

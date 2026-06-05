@@ -11,7 +11,7 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=iQF2ESTK8D0"
 ---
 
 It is commonly perceived that the matter of Style is totally different from the matter of Quality in translation. But choice of style also can be a deciding factor which can contribute to the quality of a translation. 

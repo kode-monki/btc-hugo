@@ -11,7 +11,7 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=a-Xbyt8nKJI"
 ---
 
 The three main goals of this presentation are:

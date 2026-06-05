@@ -11,7 +11,7 @@ year: "2023"
 track: ["Language technology and Artificial Intelligence"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=ziyO-_L34kk"
 ---
 
 There are many low-resource languages around the world that have yet to receive a translation of the Bible. Specifically, while the New Testament has been translated into 1,617 languages, the Old Testament has not. To address this gap, we are working on a year-long project to build an NMT model that can automatically translate the Old Testament using data from existing New Testament translations. To achieve high-quality translation, we are using the state-of-the-art Transformer natural language processing technique. However, building an NMT model requires a vast amount of sentence-pairs, and the dataset generated from translating 7,959 verses of the New Testament is not enough. Therefore, we will utilize data augmentation, sub-word tokenization, and transfer learning with multi-NMT techniques to build an NMT model that can produce a good draft translation of the Old Testament.

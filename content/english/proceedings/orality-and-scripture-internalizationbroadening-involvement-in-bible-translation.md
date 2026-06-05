@@ -11,7 +11,7 @@ year: "2023"
 track: ["Translation resources"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=4OMvd3a2wx8"
 ---
 
 Well-informed heart-language translators provide the most faithful, trustworthy, understandable, and appropriate Scripture translations. A key task and challenge for these translators is to internalize Scripture well enough to express the meaning of Scripture faithfully and naturally in their language. This is true for every translation method, including oral Bible translation, church-based translation, and oral drafting of written translation.  

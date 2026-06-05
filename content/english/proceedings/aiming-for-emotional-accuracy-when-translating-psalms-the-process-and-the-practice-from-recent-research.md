@@ -11,7 +11,7 @@ year: "2023"
 track: ["Storying and Oral Bible Translation"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=-e9o9jCbeKM"
 ---
 
 Poems (such as psalms) lend themselves to oral translation as, in poetry, sounds play as large a role as words, and sounds are aurally received. Through their sounds and their words, psalms are able to convey and evoke emotion. Thus, for an authentic translation of a psalm, the translator needs to feel the poet’s emotions, and enter as fully as possible into his thinking, i.e. to internalize the poem. 

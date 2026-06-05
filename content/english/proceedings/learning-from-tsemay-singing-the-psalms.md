@@ -11,7 +11,7 @@ year: "2023"
 track: ["Storying and Oral Bible Translation"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=xbA-GjHCkLw"
 ---
 
 Singing is a big part of the Tsemay culture. Recently, through the Singing the Psalms initiative, the Tsemay people are singing the Psalms, which are a collection of poems of praise, prayers and teachings. In this initiative, in addition to translating the content of the Psalms, the poetic features of the psalms that significantly convey the meaning of the psalms are translated into Tsemay.

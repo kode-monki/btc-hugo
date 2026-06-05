@@ -11,7 +11,7 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=CRQi-ZrC1L8"
 ---
 
 A common question in Bible translation is, “Can a translation be accurate if it is unnatural and unclear, leading to misunderstanding?” Nida and Taber answered this by saying that accuracy should be measured by the degree to which a translation gives the “average reader” not just the possibility, but the “overwhelming likelihood” of understanding the text correctly, and that translators should “aim to make certain” that the reader understands (TAPOT 173). Comprehension testing became the primary tool for measuring readers’ understanding of the text, and thereby, of accuracy according to Nida and Taber’s definition.

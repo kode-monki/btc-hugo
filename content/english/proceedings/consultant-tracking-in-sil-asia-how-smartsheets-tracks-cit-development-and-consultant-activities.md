@@ -11,7 +11,7 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=L28S6yBQBtk"
 ---
 
 Keeping track of consultants, their training, and their work is a difficult task for any entity.  SIL Asia has developed a Smartsheets system to keep track of this information.  

@@ -11,7 +11,7 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=whkEEVB5FZE"
 ---
 
 Bible translations do not appear ready for use. Bible translations are produced by people. A dedicated Bible translation team and capable Bible translation consultants cooperate to produce them.

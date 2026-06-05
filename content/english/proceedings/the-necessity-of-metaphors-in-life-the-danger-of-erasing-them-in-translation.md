@@ -11,7 +11,7 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=IVzMsoLT1zg"
 ---
 
    Metaphors are necessities, not frivolities. We depend on them in everyday life (i.e., to discuss emotions). Also, metaphors are liberally sprinkled throughout the Old & New Testaments quite purposefully. Literalizing them in Bible translation blinds us to the connected themes in God's story and even obstructs nuances of meaning. 

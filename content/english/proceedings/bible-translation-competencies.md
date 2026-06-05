@@ -11,7 +11,7 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=npXwSoD9X1o"
 ---
 
 

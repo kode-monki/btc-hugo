@@ -11,7 +11,7 @@ year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=R4OOj4GAMxw"
 ---
 
 The effort to translate the Bible into the world’s smaller languages has accelerated remarkably in the last twenty years. In addition to the work of Bible agencies, there have been a number of translation efforts, disconnected to Bible agency efforts, conducted by churches or general mission agencies. These efforts are gaining traction because of a general rising interest in Bible translation ministry.
