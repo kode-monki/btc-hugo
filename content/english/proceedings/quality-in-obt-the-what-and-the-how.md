@@ -11,7 +11,7 @@ year: "2023"
 track: ["Storying and Oral Bible Translation"]
 slides_url: ""
 paper_url: ""
-video_url: "https://www.youtube.com/watch?v=fjQEawf-lXw"
+video_url: "https://www.youtube.com/watch?v=8HFjxdviWzs"
 ---
 
      Oral (and signed) translations include meaning derived as much from how words are delivered as from the words themselves. Many consultants for written translation have no formal training in orality and little practice deciphering its nuances. What should constitute quality in Oral Bible Translations and how can a consultant check for it? 
