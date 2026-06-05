@@ -20,7 +20,7 @@
         </thead>
         <tbody id="papersTable">
   {{ $papers := where .Site.RegularPages "Section" "proceedings" }}
-  {{ $byTitle := sort $papers "Params.sort_title" "asc" }}
+  {{ $byTitle := sort $papers "Title" "asc" }}
   {{ $finalList := sort $byTitle "Params.year" "desc" }}
 
   {{ range $finalList }}
