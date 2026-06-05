@@ -53,13 +53,17 @@
         <div class="ratio ratio-16x9 bg-black rounded shadow-lg overflow-hidden" style="aspect-ratio: 16 / 9;">
           <iframe src="https://www.youtube.com/embed/{{ replaceRE `.*v=([a-zA-Z0-9_-]+).*` "$1" .Params.video_url }}" allowfullscreen class="w-full h-full border-0"></iframe>
         </div>
+        {{ if .Content }}
         <div class="border-t border-border pt-8 mt-8">
           <h3 class="h4 mb-4">Abstract</h3>
           <div class="content text-lg">{{ .Content }}</div>
         </div>
+        {{ end }}
         {{ else }}
+        {{ if .Content }}
         <h3 class="h4 mb-4">Abstract</h3>
         <div class="content text-lg">{{ .Content }}</div>
+        {{ end }}
         {{ end }}
       </div>
     </div>
