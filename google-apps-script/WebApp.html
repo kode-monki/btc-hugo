@@ -211,18 +211,47 @@ var allFiles    = [];
 var rawSponsors   = [];
 var mdeInstances  = {};
 
+// ─── TABLE COLUMN DEFINITIONS ────────────────────────────────────────────────
+var TABLE_COLS = {
+  conferences: [
+    { label:'Year',     fn: function(f) { return eh(f.fm.year || ''); } },
+    { label:'Theme',    fn: function(f) { var t = f.fm.theme || ''; return eh(t.length > 50 ? t.substring(0,50)+'…' : t); } },
+    { label:'Location', fn: function(f) { return eh(f.fm.location || ''); } },
+    { label:'Status',   fn: function(f) { var s = f.fm.status || ''; return s ? '<span class="badge ' + (s==='published'?'bg-success':'bg-secondary') + '">' + eh(s) + '</span>' : ''; } }
+  ],
+  proceedings: [
+    { label:'Title',  fn: function(f) { return eh(f.fm.title || f.name.replace(/\.md$/,'').replace(/-/g,' ')); } },
+    { label:'Author', fn: function(f) { return eh(f.fm.author || ''); } },
+    { label:'Year',   fn: function(f) { return eh(String(f.fm.year || '')); } }
+  ],
+  plenaries: [
+    { label:'Speaker',    fn: function(f) { return eh(f.fm.author || f.name.replace(/\.md$/,'').replace(/-/g,' ')); } },
+    { label:'Year',       fn: function(f) { return eh(String(f.fm.year || '')); } },
+    { label:'Talk Title', fn: function(f) { var t = f.fm.title || ''; return eh(t.length > 60 ? t.substring(0,60)+'…' : t); } }
+  ],
+  authors: [
+    { label:'Name',        fn: function(f) { return eh(f.fm.title || f.name.replace(/\.md$/,'').replace(/-/g,' ')); } },
+    { label:'Affiliation', fn: function(f) { var a = f.fm.affiliation || ''; return eh(a.length > 50 ? a.substring(0,50)+'…' : a); } }
+  ],
+  pages: [
+    { label:'Title', fn: function(f) { return eh(f.fm.title || f.name.replace(/\.md$/,'')); } },
+    { label:'Date',  fn: function(f) { return eh(f.fm.date || ''); } },
+    { label:'',      fn: function(f) { return f.fm.draft === 'true' ? '<span class="badge bg-warning text-dark">draft</span>' : ''; } }
+  ]
+};
+
 // ─── FORM DEFINITIONS ────────────────────────────────────────────────────────
 var FORM_DEFS = {
   conferences: [
-    { id:'year',            label:'Year',             type:'text',     required:true, hint:'e.g. 2026' },
-    { id:'date_start',      label:'Start Date',       type:'date' },
-    { id:'date_end',        label:'End Date',         type:'date' },
-    { id:'location',        label:'Location',         type:'text',     hint:'City, Country' },
+    { id:'year',            label:'Year',             type:'text',     required:true, hint:'e.g. 2026',            col:'col-sm-2' },
+    { id:'date_start',      label:'Start Date',       type:'date',                                                 col:'col-sm-3' },
+    { id:'date_end',        label:'End Date',         type:'date',                                                 col:'col-sm-3' },
+    { id:'location',        label:'Location',         type:'text',     hint:'City, Country',                       col:'col-sm-4' },
     { id:'theme',           label:'Conference Theme', type:'text' },
-    { id:'status',          label:'Status',           type:'select',   options:['published','draft'] },
+    { id:'status',          label:'Status',           type:'toggle',   options:['published','draft'],              col:'col-auto' },
     { id:'image',           label:'Banner Image URL', type:'url' },
     { id:'proceedings_url', label:'Proceedings URL',  type:'url' },
-    { id:'weight',          label:'Sort Weight',      type:'number',   hint:'Lower = appears first. Default: 10' },
+    { id:'weight',          label:'Sort Weight',      type:'number',   hint:'Lower = appears first. Default: 10',  col:'col-sm-3' },
     { id:'description',     label:'Description',      type:'textarea', rows:5 }
   ],
   plenaries: [
@@ -325,22 +354,35 @@ function loadList(type) {
 }
 
 function renderFileList(files, type) {
-  var el = document.getElementById('list-items');
+  var el   = document.getElementById('list-items');
+  var cols = TABLE_COLS[type];
   if (!files || !files.length) {
     el.innerHTML = '';
     document.getElementById('list-empty').classList.remove('d-none');
     return;
   }
   document.getElementById('list-empty').classList.add('d-none');
-  el.innerHTML = files.map(function(f) {
-    var primary = getPrimaryLabel(f, type);
-    var badges  = getMetaBadges(f, type);
-    return '<div class="list-row" onclick="loadFileForEdit(\'' + ea(f.path) + '\')">' +
-           '<span class="fw-medium">' + eh(primary) + '</span>' +
-           '<div class="d-flex align-items-center gap-2 flex-shrink-0 ms-2">' + badges +
-           '<span class="text-muted small font-monospace d-none d-md-inline">' + eh(f.name) + '</span>' +
-           '</div></div>';
-  }).join('');
+  if (cols) {
+    var thead = '<thead class="table-light"><tr>' +
+      cols.map(function(c) { return '<th class="small fw-semibold py-2">' + eh(c.label) + '</th>'; }).join('') +
+      '</tr></thead>';
+    var tbody = '<tbody>' + files.map(function(f) {
+      return '<tr style="cursor:pointer" onclick="loadFileForEdit(\'' + ea(f.path) + '\')">' +
+        cols.map(function(c) { return '<td class="small py-2">' + c.fn(f) + '</td>'; }).join('') +
+        '</tr>';
+    }).join('') + '</tbody>';
+    el.innerHTML = '<table class="table table-hover table-sm mb-0">' + thead + tbody + '</table>';
+  } else {
+    el.innerHTML = files.map(function(f) {
+      var primary = getPrimaryLabel(f, type);
+      var badges  = getMetaBadges(f, type);
+      return '<div class="list-row" onclick="loadFileForEdit(\'' + ea(f.path) + '\')">' +
+             '<span class="fw-medium">' + eh(primary) + '</span>' +
+             '<div class="d-flex align-items-center gap-2 flex-shrink-0 ms-2">' + badges +
+             '<span class="text-muted small font-monospace d-none d-md-inline">' + eh(f.name) + '</span>' +
+             '</div></div>';
+    }).join('');
+  }
 }
 
 function getPrimaryLabel(file, type) {
@@ -446,16 +488,22 @@ function renderSponsorRows(sponsors) {
     el.innerHTML = ''; document.getElementById('list-empty').classList.remove('d-none'); return;
   }
   document.getElementById('list-empty').classList.add('d-none');
-  el.innerHTML = sponsors.map(function(s, i) {
-    var idx = rawSponsors.indexOf(s);
-    var levelColor = { Gold:'warning', Silver:'secondary', Bronze:'warning', Partner:'info', Exhibitor:'light' }[s.level] || 'secondary';
-    return '<div class="list-row" onclick="editSponsor(' + idx + ')">' +
-           '<span>' + eh(s.name || '(unnamed)') + '</span>' +
-           '<div class="d-flex align-items-center gap-2">' +
-           (s.level ? '<span class="badge bg-' + levelColor + ' badge-level text-dark">' + eh(s.level) + '</span>' : '') +
-           '<span class="text-muted small">' + eh(s._year || '') + '</span>' +
-           '</div></div>';
-  }).join('');
+  var levelColor = { Gold:'warning', Silver:'secondary', Bronze:'warning', Partner:'info', Exhibitor:'light' };
+  var thead = '<thead class="table-light"><tr>' +
+    '<th class="small fw-semibold py-2">Name</th>' +
+    '<th class="small fw-semibold py-2">Year</th>' +
+    '<th class="small fw-semibold py-2">Level</th>' +
+    '</tr></thead>';
+  var tbody = '<tbody>' + sponsors.map(function(s) {
+    var idx   = rawSponsors.indexOf(s);
+    var color = levelColor[s.level] || 'secondary';
+    return '<tr style="cursor:pointer" onclick="editSponsor(' + idx + ')">' +
+           '<td class="small py-2">' + eh(s.name || '(unnamed)') + '</td>' +
+           '<td class="small py-2">' + eh(s._year || '') + '</td>' +
+           '<td class="small py-2">' + (s.level ? '<span class="badge bg-' + color + ' text-dark">' + eh(s.level) + '</span>' : '') + '</td>' +
+           '</tr>';
+  }).join('') + '</tbody>';
+  el.innerHTML = '<table class="table table-hover table-sm mb-0">' + thead + tbody + '</table>';
 }
 
 function editSponsor(idx) {
@@ -511,8 +559,9 @@ function renderForm(type, data) {
   var defs = FORM_DEFS[type];
   if (!defs) return;
 
-  var html = defs.map(function(f) {
-    var val = data[f.id] !== undefined ? data[f.id] : '';
+  var html = '<div class="row g-2">' + defs.map(function(f) {
+    var val      = data[f.id] !== undefined ? data[f.id] : '';
+    var colClass = f.col || 'col-12';
     var inp = '';
 
     if (f.type === 'textarea') {
@@ -521,8 +570,15 @@ function renderForm(type, data) {
       inp = '<select id="f_' + f.id + '" class="form-select form-select-sm">' +
             (f.options||[]).map(function(o){ return '<option' + (val==o?' selected':'') + '>' + eh(o) + '</option>'; }).join('') +
             '</select>';
+    } else if (f.type === 'toggle') {
+      inp = '<div class="btn-group btn-group-sm" role="group">' +
+            (f.options||[]).map(function(o) {
+              var btnClass = o === 'published' ? 'btn-outline-success' : 'btn-outline-secondary';
+              return '<input type="radio" class="btn-check" name="f_' + f.id + '" id="f_' + f.id + '_' + o + '" value="' + ea(o) + '" autocomplete="off"' + (String(val) === o ? ' checked' : '') + '>' +
+                     '<label class="btn btn-sm ' + btnClass + '" for="f_' + f.id + '_' + o + '">' + eh(o) + '</label>';
+            }).join('') + '</div>';
     } else if (f.type === 'checkbox') {
-      return '<div class="mb-3"><div class="form-check">' +
+      return '<div class="mb-3 ' + colClass + '"><div class="form-check mt-4">' +
              '<input type="checkbox" id="f_' + f.id + '" class="form-check-input"' + (val?' checked':'') + '>' +
              '<label class="form-check-label" for="f_' + f.id + '">' + eh(f.label) + '</label></div></div>';
     } else {
@@ -530,13 +586,13 @@ function renderForm(type, data) {
             (f.required?' required':'') + '>';
     }
 
-    return '<div class="mb-3">' +
-           '<label class="form-label fw-semibold small" for="f_' + f.id + '">' + eh(f.label) +
+    return '<div class="mb-3 ' + colClass + '">' +
+           '<label class="form-label fw-semibold small"' + (f.type !== 'toggle' ? ' for="f_' + f.id + '"' : '') + '>' + eh(f.label) +
            (f.required ? ' <span class="text-danger">*</span>' : '') + '</label>' +
            inp +
            (f.hint ? '<div class="form-text">' + eh(f.hint) + '</div>' : '') +
            '</div>';
-  }).join('');
+  }).join('') + '</div>';
 
   document.getElementById('form-fields').innerHTML = html;
 
@@ -570,11 +626,14 @@ function collectFormData() {
   var defs = FORM_DEFS[currentType] || [];
   var data = {};
   defs.forEach(function(f) {
-    var el = document.getElementById('f_' + f.id);
-    if (!el) return;
-    if (f.editor && mdeInstances[f.id]) {
+    if (f.type === 'toggle') {
+      var checked = document.querySelector('input[name="f_' + f.id + '"]:checked');
+      data[f.id] = checked ? checked.value : '';
+    } else if (f.editor && mdeInstances[f.id]) {
       data[f.id] = mdeInstances[f.id].value();
     } else {
+      var el = document.getElementById('f_' + f.id);
+      if (!el) return;
       data[f.id] = f.type === 'checkbox' ? el.checked : el.value.trim();
     }
   });
