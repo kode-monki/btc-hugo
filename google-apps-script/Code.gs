@@ -747,3 +747,56 @@ function getWebAppSettings() {
     emails:  getAllowedEmails()
   };
 }
+
+// ─── RICH LIST WITH METADATA ─────────────────────────────────────────────────
+
+// Fetches all files in a content directory in parallel and returns frontmatter
+// metadata for each so the list view can show real names, years, etc.
+function listContentFilesWithMeta(type) {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
+  if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
+
+  var files = listContentFiles(type);
+  if (!files.length) return [];
+
+  var requests = files.map(function (f) {
+    return {
+      url: API_BASE + '/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+           '/contents/' + f.path + '?ref=main',
+      headers: makeHeaders(pat),
+      muteHttpExceptions: true
+    };
+  });
+
+  var responses = UrlFetchApp.fetchAll(requests);
+
+  return files.map(function (f, i) {
+    var fm = {};
+    try {
+      if (responses[i].getResponseCode() === 200) {
+        var data = JSON.parse(responses[i].getContentText());
+        if (data.content) {
+          var decoded = Utilities.newBlob(
+            Utilities.base64Decode(data.content.replace(/\n/g, ''))
+          ).getDataAsString();
+          var fmMatch = decoded.match(/^---\n([\s\S]*?)\n---/);
+          if (fmMatch) fm = parseSimpleYaml(fmMatch[1]);
+        }
+      }
+    } catch (e) {}
+    return { name: f.name, path: f.path, fm: fm };
+  });
+}
+
+// Minimal YAML key:value parser — handles the flat scalar fields we need.
+// Skips multiline blocks (| and >) and nested keys.
+function parseSimpleYaml(text) {
+  var result = {};
+  text.split('\n').forEach(function (line) {
+    var m = line.match(/^([\w_]+):\s*(.*?)\s*$/);
+    if (!m) return;
+    var v = m[2].replace(/^["'](.*)["']$/, '$1').trim();
+    if (v !== '|' && v !== '>') result[m[1]] = v;
+  });
+  return result;
+}

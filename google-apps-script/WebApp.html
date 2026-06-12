@@ -281,21 +281,20 @@ function navigate(type) {
 // ─── LIST VIEW ───────────────────────────────────────────────────────────────
 function loadList(type) {
   showSpinner();
-  google.script.run
-    .withSuccessHandler(function(files) {
-      hideSpinner();
-      allFiles = files;
-      if (type === 'sponsors') {
-        loadSponsorDetails(files);
-      } else {
-        renderFileList(files);
-      }
-    })
-    .withFailureHandler(onError)
-    .listContentFiles(type);
+  if (type === 'sponsors') {
+    google.script.run
+      .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; loadSponsorDetails(files); })
+      .withFailureHandler(onError)
+      .listContentFiles(type);
+  } else {
+    google.script.run
+      .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; renderFileList(files, type); })
+      .withFailureHandler(onError)
+      .listContentFilesWithMeta(type);
+  }
 }
 
-function renderFileList(files) {
+function renderFileList(files, type) {
   var el = document.getElementById('list-items');
   if (!files || !files.length) {
     el.innerHTML = '';
@@ -304,26 +303,64 @@ function renderFileList(files) {
   }
   document.getElementById('list-empty').classList.add('d-none');
   el.innerHTML = files.map(function(f) {
-    var label = f.name.replace(/\.md$/, '').replace(/-/g, ' ');
+    var primary = getPrimaryLabel(f, type);
+    var badges  = getMetaBadges(f, type);
     return '<div class="list-row" onclick="loadFileForEdit(\'' + ea(f.path) + '\')">' +
-           '<span>' + eh(label) + '</span>' +
-           '<span class="text-muted small font-monospace">' + eh(f.name) + '</span></div>';
+           '<span class="fw-medium">' + eh(primary) + '</span>' +
+           '<div class="d-flex align-items-center gap-2 flex-shrink-0 ms-2">' + badges +
+           '<span class="text-muted small font-monospace d-none d-md-inline">' + eh(f.name) + '</span>' +
+           '</div></div>';
   }).join('');
+}
+
+function getPrimaryLabel(file, type) {
+  var fm = file.fm || {};
+  var slug = file.name.replace(/\.md$/, '').replace(/-/g, ' ');
+  if (type === 'conferences') return fm.year   || slug;
+  if (type === 'plenaries')   return fm.author || slug;
+  if (type === 'authors')     return fm.title  || slug;
+  if (type === 'pages')       return fm.title  || slug;
+  return slug;
+}
+
+function getMetaBadges(file, type) {
+  var fm = file.fm || {};
+  var parts = [];
+  if (type === 'conferences') {
+    if (fm.location) parts.push('<span class="text-muted small">' + eh(fm.location) + '</span>');
+    if (fm.status)   parts.push('<span class="badge badge-level ' + (fm.status === 'published' ? 'bg-success' : 'bg-secondary') + '">' + eh(fm.status) + '</span>');
+  } else if (type === 'plenaries') {
+    if (fm.year)  parts.push('<span class="badge bg-secondary badge-level">' + eh(String(fm.year)) + '</span>');
+    if (fm.title) parts.push('<span class="text-muted small d-none d-lg-inline">' + eh(fm.title.substring(0, 50)) + (fm.title.length > 50 ? '…' : '') + '</span>');
+  } else if (type === 'authors') {
+    if (fm.affiliation) parts.push('<span class="text-muted small d-none d-md-inline">' + eh(fm.affiliation.substring(0, 40)) + (fm.affiliation.length > 40 ? '…' : '') + '</span>');
+  } else if (type === 'pages') {
+    if (fm.date)             parts.push('<span class="text-muted small">' + eh(fm.date) + '</span>');
+    if (fm.draft === 'true') parts.push('<span class="badge bg-warning text-dark badge-level">draft</span>');
+  }
+  return parts.join('');
 }
 
 function filterList() {
   var q = document.getElementById('search-input').value.toLowerCase();
+  if (!q) { renderFileList(allFiles, currentType); return; }
   if (currentType === 'sponsors') {
-    var filtered = rawSponsors.filter(function(s) {
-      return eh(s.name||'').toLowerCase().includes(q) ||
+    renderSponsorRows(rawSponsors.filter(function(s) {
+      return (s.name||'').toLowerCase().includes(q) ||
              String(s.year||'').includes(q) ||
-             (s.level||'').toLowerCase().includes(q);
-    });
-    renderSponsorRows(filtered);
+             (s.level||'').toLowerCase().includes(q) ||
+             (s.description||'').toLowerCase().includes(q);
+    }));
     return;
   }
-  var filtered = allFiles.filter(function(f){ return f.name.toLowerCase().includes(q); });
-  renderFileList(filtered);
+  var filtered = allFiles.filter(function(f) {
+    if (f.name.toLowerCase().includes(q)) return true;
+    var fm = f.fm || {};
+    return Object.keys(fm).some(function(k) {
+      return String(fm[k] || '').toLowerCase().includes(q);
+    });
+  });
+  renderFileList(filtered, currentType);
 }
 
 // ─── SPONSOR LIST (special case: load YAML per year) ─────────────────────────
