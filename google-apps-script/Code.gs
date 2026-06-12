@@ -311,6 +311,7 @@ function generateConference(d) {
     'location: "' + esc(d.location) + '"',
     'status: "' + esc(d.status) + '"',
     'theme: "' + esc(d.theme) + '"',
+    'description: "' + esc(d.description) + '"',
     'proceedings_url: "' + esc(d.proceedings_url) + '"',
     'weight: ' + (d.weight || 10),
     'year: ' + year,
@@ -511,4 +512,238 @@ function formatTime(val) {
 
 function esc(val) {
   return toStr(val).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+}
+
+// ─── WEB APP ─────────────────────────────────────────────────────────────────
+
+var CONTENT_DIRS = {
+  conferences: 'content/english/conferences',
+  plenaries:   'content/english/plenaries',
+  authors:     'content/english/authors',
+  pages:       'content/english/pages'
+};
+
+function doGet(e) {
+  var email   = Session.getActiveUser().getEmail();
+  var allowed = getAllowedEmails();
+  if (allowed.length > 0 && allowed.indexOf(email) === -1) {
+    return HtmlService.createHtmlOutput(
+      '<html><body style="font-family:sans-serif;padding:2rem;max-width:480px;margin:auto">' +
+      '<h2>Access Denied</h2><p>Your account (<b>' + email + '</b>) is not authorized.</p>' +
+      '<p>Contact the site administrator to request access.</p></body></html>'
+    ).setTitle('BTC CMS — Access Denied');
+  }
+  return HtmlService.createHtmlOutputFromFile('WebApp')
+    .setTitle('BTC Website Admin')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+// ─── ACCESS CONTROL ──────────────────────────────────────────────────────────
+
+function getAllowedEmails() {
+  var stored = PropertiesService.getScriptProperties().getProperty('ALLOWED_EMAILS');
+  if (!stored) return [];
+  try { return JSON.parse(stored); } catch (e) { return []; }
+}
+
+function saveAllowedEmails(emails) {
+  if (!Array.isArray(emails)) throw new Error('Expected array of emails.');
+  PropertiesService.getScriptProperties().setProperty('ALLOWED_EMAILS', JSON.stringify(emails));
+  return 'Saved ' + emails.length + ' email(s).';
+}
+
+function getCurrentUserEmail() {
+  return Session.getActiveUser().getEmail();
+}
+
+// ─── SHEET SYNC ──────────────────────────────────────────────────────────────
+
+function getSheetId() {
+  return PropertiesService.getScriptProperties().getProperty('SHEET_ID') || '';
+}
+
+function saveSheetId(id) {
+  PropertiesService.getScriptProperties().setProperty('SHEET_ID', (id || '').trim());
+  return 'Sheet ID saved.';
+}
+
+function getLinkedSpreadsheet() {
+  var id = getSheetId();
+  if (!id) return null;
+  try { return SpreadsheetApp.openById(id); } catch (e) { return null; }
+}
+
+function syncRowToSheet(type, data, keyField) {
+  var ss = getLinkedSpreadsheet();
+  if (!ss) return;
+  var sheet = findSheet(ss, type);
+  if (!sheet) return;
+
+  var headers = getHeaders(sheet);
+  var keyIdx  = headers.indexOf(keyField);
+  if (keyIdx === -1) return;
+
+  var keyVal  = toStr(data[keyField] || '').toLowerCase();
+  var allRows = sheet.getDataRange().getValues();
+  var values  = headers.map(function (h) { return data[h] !== undefined ? data[h] : ''; });
+
+  for (var i = 1; i < allRows.length; i++) {
+    if (toStr(allRows[i][keyIdx]).toLowerCase() === keyVal) {
+      sheet.getRange(i + 1, 1, 1, values.length).setValues([values]);
+      return;
+    }
+  }
+  sheet.appendRow(values);
+}
+
+// ─── GITHUB READ FUNCTIONS ────────────────────────────────────────────────────
+
+function listContentFiles(type) {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
+  if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
+
+  if (type === 'sponsors') {
+    var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                         '/contents/data/sponsors?ref=main', pat);
+    if (resp.status === 404 || !Array.isArray(resp)) return [];
+    return resp
+      .filter(function (f) { return f.type === 'file' && /\.ya?ml$/.test(f.name); })
+      .map(function (f) { return { name: f.name, path: f.path, sha: f.sha }; })
+      .sort(function (a, b) { return b.name.localeCompare(a.name); });
+  }
+
+  var dir = CONTENT_DIRS[type];
+  if (!dir) throw new Error('Unknown content type: ' + type);
+  var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                       '/contents/' + dir + '?ref=main', pat);
+  if (resp.status === 404 || !Array.isArray(resp)) return [];
+  return resp
+    .filter(function (f) { return f.type === 'file' && f.name !== '_index.md'; })
+    .map(function (f) { return { name: f.name, path: f.path, sha: f.sha }; })
+    .sort(function (a, b) { return a.name.localeCompare(b.name); });
+}
+
+function getContentFile(filePath) {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
+  if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
+  var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                       '/contents/' + filePath + '?ref=main', pat);
+  if (resp.status === 404 || !resp.content) throw new Error('File not found: ' + filePath);
+  return Utilities.newBlob(
+    Utilities.base64Decode(resp.content.replace(/\n/g, ''))
+  ).getDataAsString();
+}
+
+// ─── WEB SAVE WRAPPERS ────────────────────────────────────────────────────────
+
+function webSaveConference(data, branch) {
+  branch = branch || 'dev';
+  var file = generateConference(data);
+  if (!file) throw new Error('Year is required.');
+  commitFiles([file], branch, 'Update conference (' + (data.year || '') + ') via web CMS');
+  syncRowToSheet('conferences', data, 'year');
+  return file.path;
+}
+
+function webSavePlenary(data, branch) {
+  branch = branch || 'dev';
+  data.abstract = data.abstract || data.body || '';
+  var file = generatePlenary(data);
+  if (!file) throw new Error('Speaker name (Author) is required.');
+  commitFiles([file], branch, 'Update plenary (' + (data.author || '') + ') via web CMS');
+  syncRowToSheet('plenaries', data, 'author_id');
+  return file.path;
+}
+
+function webSaveAuthor(data, branch) {
+  branch = branch || 'dev';
+  data.bio = data.bio || data.body || '';
+  var file = generateAuthor(data);
+  if (!file) throw new Error('Author name is required.');
+  commitFiles([file], branch, 'Update author (' + (data.title || '') + ') via web CMS');
+  syncRowToSheet('authors', data, 'author_id');
+  return file.path;
+}
+
+function webSaveSponsor(data, branch) {
+  branch = branch || 'dev';
+  var year = String(data.year || '');
+  if (!year || !data.name) throw new Error('Sponsor name and year are required.');
+  var sponsorPath = 'data/sponsors/' + year + '.yaml';
+
+  var existing = [];
+  try {
+    existing = parseSponsorYaml(getContentFile(sponsorPath));
+  } catch (e) {}
+
+  var found = false;
+  for (var i = 0; i < existing.length; i++) {
+    if ((existing[i].name || '').toLowerCase() === data.name.toLowerCase()) {
+      existing[i] = data;
+      found = true;
+      break;
+    }
+  }
+  if (!found) existing.push(data);
+
+  var lines = existing.map(function (s) {
+    return (
+      '- name: "' + esc(s.name || '') + '"\n' +
+      '  year: ' + (s.year || year) + '\n' +
+      '  level: "' + esc(s.level || '') + '"\n' +
+      '  website: "' + esc(s.website || '') + '"\n' +
+      '  logo: "' + esc(s.logo || '') + '"\n' +
+      '  description: "' + esc(s.description || '') + '"'
+    );
+  });
+
+  commitFiles([{ path: sponsorPath, content: lines.join('\n') }], branch,
+              'Update sponsors (' + year + ') via web CMS');
+  syncRowToSheet('sponsors', data, 'name');
+  return sponsorPath;
+}
+
+function parseSponsorYaml(content) {
+  var sponsors = [], current = null;
+  content.split('\n').forEach(function (line) {
+    var t = line.trim();
+    if (!t) return;
+    if (t.startsWith('- name:')) {
+      if (current) sponsors.push(current);
+      current = { name: t.replace(/^-\s*name:\s*["']?(.*?)["']?\s*$/, '$1') };
+    } else if (current) {
+      var m = t.match(/^(\w+):\s*["']?(.*?)["']?\s*$/);
+      if (m) current[m[1]] = m[2];
+    }
+  });
+  if (current) sponsors.push(current);
+  return sponsors;
+}
+
+function webSavePage(data, branch) {
+  branch = branch || 'dev';
+  var slug = slugify(data.title || '');
+  if (!slug) throw new Error('Title is required.');
+  var content = [
+    '---',
+    'title: "' + esc(data.title) + '"',
+    'date: "' + esc(data.date || toStr(new Date())) + '"',
+    'description: "' + esc(data.description || '') + '"',
+    'draft: ' + (data.draft ? 'true' : 'false'),
+    '---',
+    '',
+    data.body || ''
+  ].join('\n');
+  commitFiles([{ path: 'content/english/pages/' + slug + '.md', content: content }],
+              branch, 'Update page (' + data.title + ') via web CMS');
+  return 'content/english/pages/' + slug + '.md';
+}
+
+function getWebAppSettings() {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT') || '';
+  return {
+    pat:     pat ? '••••' + pat.slice(-4) : '(not set)',
+    sheetId: getSheetId(),
+    emails:  getAllowedEmails()
+  };
 }
