@@ -347,15 +347,6 @@ function loadList(type) {
       .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; loadSponsorDetails(files); })
       .withFailureHandler(onError)
       .listContentFiles(type);
-  } else if (type === 'proceedings') {
-    google.script.run
-      .withSuccessHandler(function(files) {
-        hideSpinner();
-        allFiles = files.map(function(f) { return { name: f.name, path: f.path, fm: {} }; });
-        renderFileList(allFiles, type);
-      })
-      .withFailureHandler(onError)
-      .listContentFiles(type);
   } else {
     google.script.run
       .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; renderFileList(files, type); })
