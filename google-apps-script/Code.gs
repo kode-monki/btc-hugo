@@ -525,15 +525,6 @@ var CONTENT_DIRS = {
 };
 
 function doGet(e) {
-  var email   = Session.getActiveUser().getEmail();
-  var allowed = getAllowedEmails();
-  if (allowed.length > 0 && allowed.indexOf(email) === -1) {
-    return HtmlService.createHtmlOutput(
-      '<html><body style="font-family:sans-serif;padding:2rem;max-width:480px;margin:auto">' +
-      '<h2>Access Denied</h2><p>Your account (<b>' + email + '</b>) is not authorized.</p>' +
-      '<p>Contact the site administrator to request access.</p></body></html>'
-    ).setTitle('BTC CMS — Access Denied');
-  }
   return HtmlService.createHtmlOutputFromFile('WebApp')
     .setTitle('BTC Website Admin')
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
@@ -618,9 +609,13 @@ function listContentFiles(type) {
   var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
                        '/contents/' + dir + '?ref=main', pat);
   if (resp.status === 404 || !Array.isArray(resp)) return [];
-  return resp
+  var files = resp
     .filter(function (f) { return f.type === 'file' && f.name !== '_index.md'; })
-    .map(function (f) { return { name: f.name, path: f.path, sha: f.sha }; })
+    .map(function (f) { return { name: f.name, path: f.path, sha: f.sha }; });
+  var dirs = resp
+    .filter(function (f) { return f.type === 'dir'; })
+    .map(function (f) { return { name: f.name + '.md', path: f.path + '/_index.md', sha: f.sha }; });
+  return files.concat(dirs)
     .sort(function (a, b) { return a.name.localeCompare(b.name); });
 }
 
@@ -641,6 +636,18 @@ function webSaveConference(data, branch) {
   branch = branch || 'dev';
   var file = generateConference(data);
   if (!file) throw new Error('Year is required.');
+
+  // If editing a branch bundle (_index.md), preserve the existing body
+  var currentPath = data._currentPath || '';
+  if (currentPath.indexOf('/_index.md') !== -1) {
+    var bundlePath   = 'content/english/conferences/' + data.year + '/_index.md';
+    var existing     = '';
+    try { existing = getContentFile(currentPath); } catch (e) {}
+    var existingBody = existing ? existing.replace(/^---[\s\S]*?\n---\n?/, '') : '';
+    var fmEnd        = file.content.indexOf('\n---\n');
+    file = { path: bundlePath, content: file.content.substring(0, fmEnd + 5) + '\n' + existingBody };
+  }
+
   commitFiles([file], branch, 'Update conference (' + (data.year || '') + ') via web CMS');
   syncRowToSheet('conferences', data, 'year');
   return file.path;
