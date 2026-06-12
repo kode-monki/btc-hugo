@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BTC Website Admin</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css" rel="stylesheet">
   <style>
     :root { --sidebar: 230px; --brand: #1c2951; }
     body { background: #f1f5f9; min-height: 100vh; margin: 0; }
@@ -63,7 +64,8 @@
   </div>
   <div class="flex-grow-1">
     <div class="pt-2 pb-1 px-3 text-uppercase" style="font-size:.68rem;color:rgba(255,255,255,.35);letter-spacing:.07em;">Content</div>
-    <a href="#" class="nav-link" id="nav-conferences" onclick="navigate('conferences');return false;">Conferences</a>
+    <a href="#" class="nav-link" id="nav-conferences"  onclick="navigate('conferences');return false;">Conferences</a>
+    <a href="#" class="nav-link" id="nav-proceedings" onclick="navigate('proceedings');return false;">Proceedings</a>
     <a href="#" class="nav-link" id="nav-plenaries"   onclick="navigate('plenaries');return false;">Plenaries</a>
     <a href="#" class="nav-link" id="nav-sponsors"    onclick="navigate('sponsors');return false;">Sponsors</a>
     <a href="#" class="nav-link" id="nav-authors"     onclick="navigate('authors');return false;">Authors</a>
@@ -89,6 +91,7 @@
     <p class="text-muted mb-4">Select a content type from the sidebar to browse and edit entries. Changes are committed directly to GitHub and trigger a site rebuild (~2 min to go live).</p>
     <div class="row g-3">
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('conferences')"><div class="fw-semibold">Conferences</div><div class="text-muted small mt-1">Conference year pages</div></div></div>
+      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('proceedings')"><div class="fw-semibold">Proceedings</div><div class="text-muted small mt-1">Session papers &amp; abstracts</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('plenaries')"><div class="fw-semibold">Plenaries</div><div class="text-muted small mt-1">Keynote speaker entries</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('sponsors')"><div class="fw-semibold">Sponsors</div><div class="text-muted small mt-1">Sponsor listings by year</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('authors')"><div class="fw-semibold">Authors</div><div class="text-muted small mt-1">Speaker &amp; author profiles</div></div></div>
@@ -199,12 +202,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
 <script>
 // ─── STATE ───────────────────────────────────────────────────────────────────
 var currentType = 'home';
 var currentFile = null;
 var allFiles    = [];
-var rawSponsors = [];
+var rawSponsors   = [];
+var mdeInstances  = {};
 
 // ─── FORM DEFINITIONS ────────────────────────────────────────────────────────
 var FORM_DEFS = {
@@ -229,14 +234,14 @@ var FORM_DEFS = {
     { id:'affiliation', label:'Affiliation',       type:'textarea', rows:3 },
     { id:'image',       label:'Photo URL',         type:'url' },
     { id:'weight',      label:'Sort Weight',       type:'number' },
-    { id:'body',        label:'Abstract',          type:'textarea', rows:8 }
+    { id:'body',        label:'Abstract',          type:'textarea', rows:8,  editor:true }
   ],
   authors: [
     { id:'title',       label:'Full Name',         type:'text',     required:true },
     { id:'author_id',   label:'Author ID (slug)',  type:'text',     hint:'Auto-generated from name', autoSlugFrom:'title' },
     { id:'affiliation', label:'Affiliation',       type:'text' },
     { id:'image',       label:'Photo URL',         type:'url' },
-    { id:'body',        label:'Biography',         type:'textarea', rows:8 }
+    { id:'body',        label:'Biography',         type:'textarea', rows:8,  editor:true }
   ],
   sponsors: [
     { id:'name',        label:'Sponsor Name',      type:'text',     required:true },
@@ -251,7 +256,23 @@ var FORM_DEFS = {
     { id:'date',        label:'Date',              type:'date' },
     { id:'description', label:'Description (SEO)', type:'text' },
     { id:'draft',       label:'Draft (not published)', type:'checkbox' },
-    { id:'body',        label:'Page Content',      type:'textarea', rows:12, hint:'Markdown supported' }
+    { id:'body',        label:'Page Content',      type:'textarea', rows:12, editor:true }
+  ],
+  proceedings: [
+    { id:'title',      label:'Title',            type:'text',     required:true },
+    { id:'author',     label:'Author',           type:'text' },
+    { id:'author_id',  label:'Author ID',        type:'text',     hint:'Auto-generated from author name', autoSlugFrom:'author' },
+    { id:'year',       label:'Year',             type:'text' },
+    { id:'date',       label:'Date',             type:'date' },
+    { id:'start_time', label:'Start Time',       type:'text',     hint:'e.g. 9:00 AM' },
+    { id:'end_time',   label:'End Time',         type:'text',     hint:'e.g. 10:30 AM' },
+    { id:'location',   label:'Room / Location',  type:'text' },
+    { id:'track',      label:'Track',            type:'text',     hint:'e.g. Workshop' },
+    { id:'publicity',  label:'Publicity',        type:'select',   options:['public','private',''] },
+    { id:'slides_url', label:'Slides URL',       type:'url' },
+    { id:'paper_url',  label:'Paper URL',        type:'url' },
+    { id:'video_url',  label:'Video URL',        type:'url' },
+    { id:'body',       label:'Abstract',         type:'textarea', rows:8, editor:true }
   ]
 };
 
@@ -286,6 +307,15 @@ function loadList(type) {
       .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; loadSponsorDetails(files); })
       .withFailureHandler(onError)
       .listContentFiles(type);
+  } else if (type === 'proceedings') {
+    google.script.run
+      .withSuccessHandler(function(files) {
+        hideSpinner();
+        allFiles = files.map(function(f) { return { name: f.name, path: f.path, fm: {} }; });
+        renderFileList(allFiles, type);
+      })
+      .withFailureHandler(onError)
+      .listContentFiles(type);
   } else {
     google.script.run
       .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; renderFileList(files, type); })
@@ -317,6 +347,7 @@ function getPrimaryLabel(file, type) {
   var fm = file.fm || {};
   var slug = file.name.replace(/\.md$/, '').replace(/-/g, ' ');
   if (type === 'conferences') return fm.year   || slug;
+  if (type === 'proceedings') return fm.title  || slug;
   if (type === 'plenaries')   return fm.author || slug;
   if (type === 'authors')     return fm.title  || slug;
   if (type === 'pages')       return fm.title  || slug;
@@ -440,7 +471,7 @@ function editSponsor(idx) {
 // ─── FORM ────────────────────────────────────────────────────────────────────
 function showNewForm() {
   currentFile = null;
-  var label = { conferences:'Conference', plenaries:'Plenary', authors:'Author', sponsors:'Sponsor', pages:'Page' }[currentType] || currentType;
+  var label = { conferences:'Conference', proceedings:'Proceeding', plenaries:'Plenary', authors:'Author', sponsors:'Sponsor', pages:'Page' }[currentType] || currentType;
   document.getElementById('form-heading').textContent = 'New ' + label;
   document.getElementById('view-list').classList.add('d-none');
   renderForm(currentType, {});
@@ -461,7 +492,7 @@ function loadFileForEdit(path) {
         var m = parsed.body.match(/## Theme\n#[^\n]*\n\n?([\s\S]*?)\n\n## Plenaries/);
         if (m) data.description = m[1].trim();
       }
-      var label = { conferences:'Conference', plenaries:'Plenary', authors:'Author', pages:'Page' }[currentType] || currentType;
+      var label = { conferences:'Conference', proceedings:'Proceeding', plenaries:'Plenary', authors:'Author', pages:'Page' }[currentType] || currentType;
       document.getElementById('form-heading').textContent = 'Edit ' + label;
       document.getElementById('view-list').classList.add('d-none');
       renderForm(currentType, data);
@@ -472,6 +503,11 @@ function loadFileForEdit(path) {
 }
 
 function renderForm(type, data) {
+  Object.keys(mdeInstances).forEach(function(k) {
+    try { mdeInstances[k].toTextArea(); } catch(e) {}
+  });
+  mdeInstances = {};
+
   var defs = FORM_DEFS[type];
   if (!defs) return;
 
@@ -504,6 +540,19 @@ function renderForm(type, data) {
 
   document.getElementById('form-fields').innerHTML = html;
 
+  defs.forEach(function(f) {
+    if (!f.editor) return;
+    var el = document.getElementById('f_' + f.id);
+    if (!el) return;
+    mdeInstances[f.id] = new EasyMDE({
+      element: el,
+      toolbar: ['bold','italic','|','heading-2','heading-3','|','unordered-list','ordered-list','|','link','|','preview'],
+      spellChecker: false,
+      status: false,
+      minHeight: ((f.rows || 4) * 24) + 'px'
+    });
+  });
+
   // Wire up auto-slug fields
   defs.forEach(function(f) {
     if (!f.autoSlugFrom) return;
@@ -523,7 +572,11 @@ function collectFormData() {
   defs.forEach(function(f) {
     var el = document.getElementById('f_' + f.id);
     if (!el) return;
-    data[f.id] = f.type === 'checkbox' ? el.checked : el.value.trim();
+    if (f.editor && mdeInstances[f.id]) {
+      data[f.id] = mdeInstances[f.id].value();
+    } else {
+      data[f.id] = f.type === 'checkbox' ? el.checked : el.value.trim();
+    }
   });
   return data;
 }
@@ -538,8 +591,9 @@ function saveContent(branch) {
     }
   }
 
-  var fnMap = { conferences:'webSaveConference', plenaries:'webSavePlenary',
-                authors:'webSaveAuthor', sponsors:'webSaveSponsor', pages:'webSavePage' };
+  var fnMap = { conferences:'webSaveConference', proceedings:'webSaveProceeding',
+                plenaries:'webSavePlenary', authors:'webSaveAuthor',
+                sponsors:'webSaveSponsor', pages:'webSavePage' };
   var fn = fnMap[currentType];
   if (!fn) return;
 

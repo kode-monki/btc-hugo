@@ -518,6 +518,7 @@ function esc(val) {
 
 var CONTENT_DIRS = {
   conferences: 'content/english/conferences',
+  proceedings: 'content/english/proceedings',
   plenaries:   'content/english/plenaries',
   authors:     'content/english/authors',
   pages:       'content/english/pages'
@@ -665,6 +666,15 @@ function webSaveAuthor(data, branch) {
   return file.path;
 }
 
+function webSaveProceeding(data, branch) {
+  branch = branch || 'dev';
+  data.abstract = data.abstract || data.body || '';
+  var file = generateProceeding(data);
+  if (!file) throw new Error('Title is required.');
+  commitFiles([file], branch, 'Update proceeding (' + (data.title || '') + ') via web CMS');
+  return file.path;
+}
+
 function webSaveSponsor(data, branch) {
   branch = branch || 'dev';
   var year = String(data.year || '');
@@ -750,8 +760,7 @@ function getWebAppSettings() {
 
 // ─── RICH LIST WITH METADATA ─────────────────────────────────────────────────
 
-// Fetches all files in a content directory in parallel and returns frontmatter
-// metadata for each so the list view can show real names, years, etc.
+// Fetches file metadata in batches of 10 to avoid UrlFetch rate limits.
 function listContentFilesWithMeta(type) {
   var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
   if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
@@ -759,33 +768,39 @@ function listContentFilesWithMeta(type) {
   var files = listContentFiles(type);
   if (!files.length) return [];
 
-  var requests = files.map(function (f) {
-    return {
-      url: API_BASE + '/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
-           '/contents/' + f.path + '?ref=main',
-      headers: makeHeaders(pat),
-      muteHttpExceptions: true
-    };
-  });
+  var BATCH   = 10;
+  var results = [];
 
-  var responses = UrlFetchApp.fetchAll(requests);
-
-  return files.map(function (f, i) {
-    var fm = {};
-    try {
-      if (responses[i].getResponseCode() === 200) {
-        var data = JSON.parse(responses[i].getContentText());
-        if (data.content) {
-          var decoded = Utilities.newBlob(
-            Utilities.base64Decode(data.content.replace(/\n/g, ''))
-          ).getDataAsString();
-          var fmMatch = decoded.match(/^---\n([\s\S]*?)\n---/);
-          if (fmMatch) fm = parseSimpleYaml(fmMatch[1]);
+  for (var b = 0; b < files.length; b += BATCH) {
+    if (b > 0) Utilities.sleep(1000);
+    var batch    = files.slice(b, b + BATCH);
+    var requests = batch.map(function (f) {
+      return {
+        url: API_BASE + '/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+             '/contents/' + f.path + '?ref=main',
+        headers: makeHeaders(pat),
+        muteHttpExceptions: true
+      };
+    });
+    var responses = UrlFetchApp.fetchAll(requests);
+    batch.forEach(function (f, i) {
+      var fm = {};
+      try {
+        if (responses[i].getResponseCode() === 200) {
+          var data = JSON.parse(responses[i].getContentText());
+          if (data.content) {
+            var decoded = Utilities.newBlob(
+              Utilities.base64Decode(data.content.replace(/\n/g, ''))
+            ).getDataAsString();
+            var fmMatch = decoded.match(/^---\n([\s\S]*?)\n---/);
+            if (fmMatch) fm = parseSimpleYaml(fmMatch[1]);
+          }
         }
-      }
-    } catch (e) {}
-    return { name: f.name, path: f.path, fm: fm };
-  });
+      } catch (e) {}
+      results.push({ name: f.name, path: f.path, fm: fm });
+    });
+  }
+  return results;
 }
 
 // Minimal YAML key:value parser — handles the flat scalar fields we need.
