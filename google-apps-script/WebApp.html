@@ -417,7 +417,7 @@ function renderSponsorRows(sponsors) {
   document.getElementById('list-empty').classList.add('d-none');
   el.innerHTML = sponsors.map(function(s, i) {
     var idx = rawSponsors.indexOf(s);
-    var levelColor = { Gold:'warning', Silver:'secondary', Bronze:'warning-emphasis', Partner:'info', Exhibitor:'light' }[s.level] || 'secondary';
+    var levelColor = { Gold:'warning', Silver:'secondary', Bronze:'warning', Partner:'info', Exhibitor:'light' }[s.level] || 'secondary';
     return '<div class="list-row" onclick="editSponsor(' + idx + ')">' +
            '<span>' + eh(s.name || '(unnamed)') + '</span>' +
            '<div class="d-flex align-items-center gap-2">' +
