@@ -1,36 +1,69 @@
-{{ $targetYear := print .year }}
-{{ $layout := .layout | default "horizontal" }}
-{{ $allProceedings := where site.RegularPages "Section" "proceedings" }}
-{{ $isPlenary := where $allProceedings "Params.is_plenary" true }}
-{{ $filtered := where $isPlenary "Params.year" $targetYear }}
+{{ $targetYear    := print .year }}
+{{ $targetYearInt := .year | int }}
+{{ $layout        := .layout | default "horizontal" }}
+
+{{/* New-style: proceedings with is_plenary=true (2025+) */}}
+{{ $newPlenaries := where (where site.RegularPages "Section" "proceedings") "Params.is_plenary" true }}
+{{ $newPlenaries  = where $newPlenaries "Params.year" $targetYear }}
+
+{{/* Legacy-style: plenaries section (2021, 2023) */}}
+{{ $legacyPlenaries := where (where site.RegularPages "Section" "plenaries") "Params.year" $targetYearInt }}
+
+{{/* Normalise both into a flat slice of dicts for uniform rendering */}}
+{{ $items := slice }}
+
+{{ range $newPlenaries }}
+  {{- $authorPage  := site.GetPage (printf "/authors/%s" (.Params.author_id | urlize)) -}}
+  {{- $authorURL   := cond (ne $authorPage nil) $authorPage.RelPermalink .RelPermalink -}}
+  {{- $imgSrc      := cond (and (ne $authorPage nil) (ne $authorPage.Params.image "")) $authorPage.Params.image "" -}}
+  {{- $affiliation := cond (ne $authorPage nil) ($authorPage.Params.affiliation | default "") "" -}}
+  {{- $items = $items | append (dict
+      "author"      .Params.author
+      "authorURL"   $authorURL
+      "talkURL"     .RelPermalink
+      "imgSrc"      $imgSrc
+      "affiliation" $affiliation
+      "lecture"     .Params.lecture
+      "weight"      (.Params.plenary_weight | int)
+  ) -}}
+{{ end }}
+
+{{ range $legacyPlenaries }}
+  {{- $items = $items | append (dict
+      "author"      .Params.author
+      "authorURL"   (.Params.author_link | default .RelPermalink)
+      "talkURL"     .RelPermalink
+      "imgSrc"      .Params.image
+      "affiliation" .Params.affiliation
+      "lecture"     .Params.lecture
+      "weight"      (.Weight | int)
+  ) -}}
+{{ end }}
+
+{{ $sorted := sort $items "weight" "asc" }}
 
 <div class="container mx-auto">
   <div class="{{ if eq $layout "horizontal" }}grid grid-cols-1 md:grid-cols-5 gap-8 text-center{{ else }}flex flex-col gap-4{{ end }}">
 
-    {{ range sort $filtered "Params.plenary_weight" "asc" }}
-      {{- $authorPage := site.GetPage (printf "/authors/%s" (.Params.author_id | urlize)) -}}
-      {{- $authorURL := cond (ne $authorPage nil) $authorPage.RelPermalink .RelPermalink -}}
-      {{- $imgSrc := cond (and (ne $authorPage nil) (ne $authorPage.Params.image "")) $authorPage.Params.image "" -}}
-      {{- $affiliation := cond (ne $authorPage nil) ($authorPage.Params.affiliation | default "") "" -}}
-
+    {{ range $sorted }}
       <div class="bg-white dark:bg-darkmode-theme-light rounded-lg shadow-md p-6 flex flex-col {{ if eq $layout "horizontal" }}items-center{{ else }}items-start{{ end }}">
 
         {{ if eq $layout "horizontal" }}
         <div class="flex-none mb-6">
-          <a href="{{ $authorURL }}"
+          <a href="{{ .authorURL }}"
              style="width: 128px; height: 128px;"
              class="flex overflow-hidden rounded-full border-4 border-gray-100 shadow-sm">
-            {{ with $imgSrc }}
-              {{ partial "image" (dict "Src" . "Alt" $.Params.author "Class" "w-full h-full object-cover block !m-0 !p-0") }}
+            {{ with .imgSrc }}
+              {{ partial "image" (dict "Src" . "Alt" $.author "Class" "w-full h-full object-cover block !m-0 !p-0") }}
             {{ end }}
           </a>
         </div>
         {{ end }}
 
         <div class="w-full">
-          <a href="{{ $authorURL }}" class="text-primary hover:underline no-underline block">
-            <h3 class="font-bold text-2xl mb-1 leading-tight">{{ .Params.author }}</h3>
-            {{ with $affiliation }}
+          <a href="{{ .authorURL }}" class="text-primary hover:underline no-underline block">
+            <h3 class="font-bold text-2xl mb-1 leading-tight">{{ .author }}</h3>
+            {{ with .affiliation }}
             <p class="text-base text-gray-500 mb-4 leading-tight">
               {{ . | replaceRE "\n" "<br>" | safeHTML }}
             </p>
@@ -38,9 +71,9 @@
           </a>
 
           <div class="border-t border-gray-100 pt-4">
-            <a href="{{ .RelPermalink }}" class="text-primary hover:underline no-underline">
+            <a href="{{ .talkURL }}" class="text-primary hover:underline no-underline">
               <h4 class="text-lg font-medium italic text-dark dark:text-white leading-snug">
-                {{ .Params.lecture }}
+                {{ .lecture }}
               </h4>
             </a>
           </div>
