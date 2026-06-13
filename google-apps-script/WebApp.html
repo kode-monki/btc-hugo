@@ -67,7 +67,6 @@
     <div class="pt-2 pb-1 px-3 text-uppercase" style="font-size:.68rem;color:rgba(255,255,255,.35);letter-spacing:.07em;">Content</div>
     <a href="#" class="nav-link" id="nav-conferences"  onclick="navigate('conferences');return false;">Conferences</a>
     <a href="#" class="nav-link" id="nav-proceedings" onclick="navigate('proceedings');return false;">Proceedings</a>
-    <a href="#" class="nav-link" id="nav-plenaries"   onclick="navigate('plenaries');return false;">Plenaries</a>
     <a href="#" class="nav-link" id="nav-sponsors"    onclick="navigate('sponsors');return false;">Sponsors</a>
     <a href="#" class="nav-link" id="nav-authors"     onclick="navigate('authors');return false;">Authors</a>
     <a href="#" class="nav-link" id="nav-pages"       onclick="navigate('pages');return false;">Pages</a>
@@ -93,7 +92,6 @@
     <div class="row g-3">
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('conferences')"><div class="fw-semibold">Conferences</div><div class="text-muted small mt-1">Conference year pages</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('proceedings')"><div class="fw-semibold">Proceedings</div><div class="text-muted small mt-1">Session papers &amp; abstracts</div></div></div>
-      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('plenaries')"><div class="fw-semibold">Plenaries</div><div class="text-muted small mt-1">Keynote speaker entries</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('sponsors')"><div class="fw-semibold">Sponsors</div><div class="text-muted small mt-1">Sponsor listings by year</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('authors')"><div class="fw-semibold">Authors</div><div class="text-muted small mt-1">Speaker &amp; author profiles</div></div></div>
       <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('pages')"><div class="fw-semibold">Pages</div><div class="text-muted small mt-1">Static content pages</div></div></div>
@@ -308,7 +306,7 @@ var FORM_DEFS = {
     { id:'end_time',   label:'End Time',         type:'text',     hint:'e.g. 10:30 AM' },
     { id:'location',   label:'Room / Location',  type:'text' },
     { id:'track',      label:'Track',            type:'text',     hint:'e.g. Workshop' },
-    { id:'publicity',  label:'Publicity',        type:'select',   options:['public','private',''] },
+    { id:'publicity',  label:'Publicity',        type:'select',   options:['', 'abstract-only'], hint:'abstract-only = hide video/slides/paper but show abstract' },
     { id:'slides_url', label:'Slides URL',       type:'url' },
     { id:'paper_url',  label:'Paper URL',        type:'url' },
     { id:'video_url',  label:'Video URL',        type:'url' },

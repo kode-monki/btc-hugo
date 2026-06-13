@@ -15,7 +15,6 @@ function onOpen() {
     .addSeparator()
     .addItem('Push Proceedings → Dev',    'pushProceedingsDev')
     .addItem('Push Authors → Dev',        'pushAuthorsDev')
-    .addItem('Push Plenaries → Dev',      'pushPlenariesDev')
     .addItem('Push Sponsors → Dev',       'pushSponsorsDev')
     .addItem('Push Conference Info → Dev','pushConferencesDev')
     .addItem('Push ALL → Dev',            'pushAllDev')
@@ -53,11 +52,16 @@ function previewSelected() {
   var headers = getHeaders(sheet);
   var rows    = range.getValues();
 
+  var presentersMap = {};
+  if (tabName.indexOf('proceeding') !== -1) {
+    presentersMap = buildPresentersMap(SpreadsheetApp.getActiveSpreadsheet());
+  }
+
   var previews = [];
   for (var i = 0; i < rows.length; i++) {
     var data = rowToObject(headers, rows[i]);
     if (!hasData(data)) continue;
-    var result = generateFile(tabName, data);
+    var result = generateFile(tabName, data, presentersMap);
     if (result && result.content) previews.push(result);
   }
 
@@ -85,7 +89,6 @@ function getPreviewData() {
 
 function pushProceedingsDev()  { pushContentType('proceedings',  'dev'); }
 function pushAuthorsDev()      { pushContentType('authors',      'dev'); }
-function pushPlenariesDev()    { pushContentType('plenaries',    'dev'); }
 function pushSponsorsDev()     { pushContentType('sponsors',     'dev'); }
 function pushConferencesDev()  { pushContentType('conferences',  'dev'); }
 function pushAllDev()          { pushAll('dev'); }
@@ -102,8 +105,8 @@ function pushAllProduction() {
 
 function pushAll(branch) {
   var types = branch === 'main'
-    ? ['proceedings', 'authors', 'plenaries', 'sponsors']
-    : ['proceedings', 'authors', 'plenaries', 'sponsors', 'conferences'];
+    ? ['proceedings', 'authors', 'sponsors']
+    : ['proceedings', 'authors', 'sponsors', 'conferences'];
   var totalFiles = 0;
   var errors = [];
 
@@ -161,6 +164,11 @@ function pushSheetToBranch(sheet, type, branch) {
   var headers = getHeaders(sheet);
   var allRows = sheet.getDataRange().getValues().slice(1); // skip header
 
+  var presentersMap = {};
+  if (type === 'proceedings') {
+    presentersMap = buildPresentersMap(SpreadsheetApp.getActiveSpreadsheet());
+  }
+
   var files         = [];
   var sponsorsByYear = {};
 
@@ -168,7 +176,7 @@ function pushSheetToBranch(sheet, type, branch) {
     var data = rowToObject(headers, allRows[i]);
     if (!hasData(data)) continue;
 
-    var result = generateFile(type, data);
+    var result = generateFile(type, data, presentersMap);
     if (!result) continue;
 
     if (result.isYaml) {
@@ -207,22 +215,42 @@ function pushSheetToBranch(sheet, type, branch) {
 
 // ─── MARKDOWN GENERATORS ─────────────────────────────────────────────────────
 
-function generateFile(tabName, data) {
+function generateFile(tabName, data, presentersMap) {
   var t = tabName.toLowerCase();
-  if (t.indexOf('proceeding') !== -1) return generateProceeding(data);
+  if (t.indexOf('proceeding') !== -1) return generateProceeding(data, presentersMap || {});
   if (t.indexOf('author')     !== -1) return generateAuthor(data);
-  if (t.indexOf('plenar')     !== -1) return generatePlenary(data);
   if (t.indexOf('sponsor')    !== -1 || t.indexOf('exhib') !== -1) return generateSponsor(data);
   if (t.indexOf('conference') !== -1) return generateConference(data);
   return null;
 }
 
-function generateProceeding(d) {
-  var slug = slugify(d.title || '');
+function generateProceeding(d, presentersMap) {
+  var slug = toStr(d.slug) || slugify(d.title || '');
   if (!slug) return null;
 
   var trackVal = d.track ? '["' + esc(d.track) + '"]' : '[]';
-  var content = [
+
+  // Build presenter_ids and author_ids from the Presenters junction table
+  var presenterIds = [];
+  var authorIds    = [];
+  var entries      = (presentersMap && presentersMap[slug]) || [];
+  for (var i = 0; i < entries.length; i++) {
+    var e = entries[i];
+    if (!e.author_id) continue;
+    var role = (e.role || '').toLowerCase();
+    if (role === 'presenter'       || role === 'author-presenter') presenterIds.push(e.author_id);
+    if (role === 'author'          || role === 'author-presenter') authorIds.push(e.author_id);
+  }
+  var presenterIdsVal = presenterIds.length
+    ? '["' + presenterIds.map(function(id) { return esc(id); }).join('", "') + '"]'
+    : '[]';
+  var authorIdsVal = authorIds.length
+    ? '["' + authorIds.map(function(id) { return esc(id); }).join('", "') + '"]'
+    : '[]';
+
+  var isPlenary = (d.is_plenary === true || d.is_plenary === 'true' || d.is_plenary === 'TRUE');
+
+  var lines = [
     '---',
     'title: "' + esc(d.title) + '"',
     'date: "' + esc(d.date) + '"',
@@ -237,12 +265,33 @@ function generateProceeding(d) {
     'slides_url: "' + esc(d.slides_url) + '"',
     'paper_url: "' + esc(d.paper_url) + '"',
     'video_url: "' + esc(d.video_url) + '"',
+    'is_plenary: ' + (isPlenary ? 'true' : 'false'),
+    'lecture: "' + esc(d.lecture) + '"',
+    'plenary_weight: ' + (parseInt(d.plenary_weight) || 0),
+    'presenter_ids: ' + presenterIdsVal,
+    'author_ids: ' + authorIdsVal,
     '---',
     '',
     d.abstract || ''
-  ].join('\n');
+  ];
 
-  return { path: 'content/english/proceedings/' + slug + '.md', content: content };
+  return { path: 'content/english/proceedings/' + slug + '.md', content: lines.join('\n') };
+}
+
+function buildPresentersMap(ss) {
+  var sheet = findSheet(ss, 'presenter');
+  if (!sheet) return {};
+  var headers = getHeaders(sheet);
+  var rows    = sheet.getDataRange().getValues().slice(1);
+  var map     = {};
+  for (var i = 0; i < rows.length; i++) {
+    var d    = rowToObject(headers, rows[i]);
+    var slug = toStr(d.proceeding_slug).toLowerCase().trim();
+    if (!slug) continue;
+    if (!map[slug]) map[slug] = [];
+    map[slug].push({ author_id: toStr(d.author_id), role: toStr(d.role) });
+  }
+  return map;
 }
 
 function generateAuthor(d) {
@@ -264,32 +313,6 @@ function generateAuthor(d) {
   return { path: 'content/english/authors/' + slug + '.md', content: content };
 }
 
-function generatePlenary(d) {
-  var slug = slugify(d.author_id || d.author || '');
-  if (!slug) return null;
-
-  var affLines = (d.affiliation || '').split(/\n|\r\n?/).map(function(l) { return '  ' + l; }).join('\n');
-  var authorLink = '/authors/' + slugify(d.author_id || d.author) + '/';
-
-  var content = [
-    '---',
-    'title: "' + esc(d.title) + '"',
-    'year: ' + (d.year || ''),
-    'affiliation: |',
-    affLines,
-    'lecture: "' + esc(d.lecture) + '"',
-    'image: "' + esc(d.image) + '"',
-    'author: "' + esc(d.author) + '"',
-    'author_link: "' + authorLink + '"',
-    'plenary_id: "' + slug + '"',
-    'weight: ' + (d.weight || 1),
-    '---',
-    '',
-    d.abstract || ''
-  ].join('\n');
-
-  return { path: 'content/english/plenaries/' + slug + '.md', content: content };
-}
 
 function generateSponsor(d) {
   if (!d.year && !d.name) return null;
@@ -653,15 +676,6 @@ function webSaveConference(data, branch) {
   return file.path;
 }
 
-function webSavePlenary(data, branch) {
-  branch = branch || 'dev';
-  data.abstract = data.abstract || data.body || '';
-  var file = generatePlenary(data);
-  if (!file) throw new Error('Speaker name (Author) is required.');
-  commitFiles([file], branch, 'Update plenary (' + (data.author || '') + ') via web CMS');
-  syncRowToSheet('plenaries', data, 'author_id');
-  return file.path;
-}
 
 function webSaveAuthor(data, branch) {
   branch = branch || 'dev';
