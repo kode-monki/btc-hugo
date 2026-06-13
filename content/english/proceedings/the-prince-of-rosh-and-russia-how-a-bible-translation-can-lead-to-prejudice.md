@@ -12,6 +12,11 @@ track: ["Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=uq_YgukJWWI"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>The way exegetes and translators deal with biblical texts may have unexpected and even unwanted consequences in the future. It is, therefore, important to pay close attention to the manner we read and interpret biblical texts and render them in different languages. <br>  <br> The current study presents a particular case in the history of Bible translation. It is based on the Septuagint translation of Ezekiel’s eschatological prophecy about “Gog, of the land of Magog, the chief prince of Meshech and Tubal” (ch. 38-39, RSV). The ancient translators took the Hebrew word rosh (in English commonly rendered here as “chief prince”) for a geographical name and further adapted it to Greek alphabetic conventions. This resulted in rosh becoming Rōs (Ρως) which resembled the name of Early Rus’ and then Russia. The uncertainty about the person of Gog made him more distant, mysterious and even threatening. Thus, from as early as the 10th century AD these presuppositions led to certain politically charged and even xenophobic interpretations of Ezekiel’s prophecy, which in one form or another continue to this day.</p>

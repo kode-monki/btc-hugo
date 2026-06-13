@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Phil King"
-author_id: "#N/A"
+author_id: "phil-king"
 year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=npXwSoD9X1o"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 

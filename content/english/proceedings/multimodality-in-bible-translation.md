@@ -11,7 +11,12 @@ year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=VL4GuMQvWBk"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 The purpose of this paper is to contribute to the global conversation on Bible translation quality by demystifying some of the concepts and ideas from the ETEN Innovations Lab – Quality Assurance group.  Multimodal Bible translation is defined as translation and scripture engagement taking advantage of a wider range of inter-semiotic (signing) systems simultaneously, that is sound, writing, still and moving images, gestures, digital, and performance in a variety of multimedia bouquets. 

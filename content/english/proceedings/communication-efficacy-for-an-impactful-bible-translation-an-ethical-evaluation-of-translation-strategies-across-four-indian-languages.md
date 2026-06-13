@@ -12,6 +12,11 @@ track: ["Communication and Context"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=QIXxHED-JvE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>The message of the Bible is the message that brings transformation; the message which presents God as one who has come into the midst of people for the purpose of an interactive relationship. This principle of incarnation permeates the entire Canon, forcing God to use human, context-specific settings to communicate. Translating the message of the Bible is missional and follows God’s example, crossing boundaries and drawing people into God’s kingdom.</p>

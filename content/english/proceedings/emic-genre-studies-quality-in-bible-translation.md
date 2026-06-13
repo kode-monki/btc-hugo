@@ -11,7 +11,12 @@ year: "2023"
 track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 How an emic understanding of target language (TL) genre classifications can impact the quality of Bible translation and scripture engagement (SE): a case study from a Tibetic language.

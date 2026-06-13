@@ -11,7 +11,12 @@ year: "2023"
 track: ["Theology and hermeneutics"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=xq5hSEPFiKE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 This paper proposes that the contribution of hermeneutics and theology to Bible translation quality lies neither in “neutralizing” its effects nor in determining the “best” lens for exegeting Scripture, but rather in empowering translators as self-reflective participants in the missio dei, whose work facilitates local theologizing within their communities.

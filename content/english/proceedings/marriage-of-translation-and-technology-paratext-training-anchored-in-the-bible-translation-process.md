@@ -11,7 +11,12 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=kXRkNZyJt_k"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Bible translation thrives on technology. Powerful software tools speed Bible translation, but misuse of these tools can have a negative impact on translation quality. Carefully-designed training can help translators apply the right tools at the right time for improved quality.

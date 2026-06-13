@@ -11,7 +11,12 @@ year: "2023"
 track: ["Anthropology"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=McXcmS74mOk"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Current anthropology contributes to quality in Bible translation by providing new ideas, approaches and methods. We start with a theologically engaged anthropology, which takes biblical texts and spiritual realities seriously. We then look at reflexivity, the critique of culture and the turn to ontology. These anthropological developments permit us to move away from a structured approach that studies culture to one that focuses on people and communities, and more specifically, the different actors involved in Bible translation.

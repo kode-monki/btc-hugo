@@ -12,6 +12,11 @@ track: ["Discussion Group (Onsite only)"]
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Diaspora issues are all around us. If you are involved in a language project: Have you considered where throughout the world the people who speak this language are, how they could benefit from the materials your team produces, and what the unique needs are that they face? If you have diaspora neighbors in your city: Have you thought about the benefits of connecting with these newcomers and the practicalities of how you could engage with them? Join John Watters to discuss strategies for engaging diaspora communities in this modern age. Hear from a panel of people engaging diaspora communities in a variety of ways and consider innovative strategies for engaging diaspora communities connected to your sphere of influence.</p>

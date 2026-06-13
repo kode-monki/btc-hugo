@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Trevor Deck"
-author_id: "#N/A"
+author_id: "trevor-deck"
 year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=sTHiAeeu0gQ"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 It is now more acceptable for Bible translation projects to start and/or continue with diaspora communities outside of the homeland area. But it is just as important to assess the migration history and flow of communities with ongoing projects, so dispersed members of the language community can be included as contributors or end users of all Bible translation work, including materials and Scripture engagement. 

@@ -5,13 +5,18 @@ start_time: "9:15 AM"
 end_time: "11:20 AM"
 publicity: ""
 location: "Grand Hall"
-author: "Jeff Shrum - Part of AI Panel"
-author_id: "#N/A"
+author: "Jeff Shrum"
+author_id: "jeff-shrum"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality;Technology and Resources;AI Panel"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=eQLRZvPK--0"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Artificial Intelligence (AI) is transforming Bible translation, and SIL’s Scripture Forge is at the forefront of this innovation. It offers preliminary drafts of Old Testament books based on existing New Testament translations and a model text and can also generate New Testament from O.T. material. This paper provides a practical orientation for Bible translation consultants and project decision-makers seeking to integrate Scripture Forge into their workflows to meet their translation goals. <br>  <br> The paper explores three primary applications of Scripture Forge: (1) generating initial drafts of Old Testament books that teams can refine into first drafts, (2) creating vernacular resource texts to support translators by suggesting alternative renderings and highlighting overlooked elements, and (3) producing back-translations for consultant checks. Key implementation factors are discussed, including the importance of high-quality New Testament texts, model text selection, a thorough team check, and strategies for iterative improvement of AI outputs. <br>  <br> The paper also addresses common misconceptions about Scripture Forge, potential risks such as over-reliance on technology, and practical approaches for fostering team collaboration.  <br>  <br> Additionally, practical guidance is provided for integrating Scripture Forge drafts into Paratext, ensuring high-quality, culturally appropriate translations while maintaining translator ownership of the process. <br>  <br> This paper also explores the need to balance machine-assisted drafts with human translation expertise. AI does not eliminate the need to develop translators’ skills. Ethical use of AI depends on skilled translators to ensure that translations are faithful, accurate, acceptable, and owned by the language community. Use if AI is inappropriate where it is a barrier to this acceptance and ownership.</p>

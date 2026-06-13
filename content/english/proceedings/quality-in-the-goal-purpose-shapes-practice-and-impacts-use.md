@@ -11,7 +11,12 @@ year: "2023"
 track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=XJTb0rNmatU"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 How do you hope the translated Scriptures will be used? 

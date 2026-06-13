@@ -11,7 +11,12 @@ year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=sstxExM7Tu0"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 PROBLEM: “All the [translation team members] did whatever seemed right in their own eyes” (Judges 21: 25b, NLT, adapted).

@@ -12,6 +12,11 @@ track: ["Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: "https://drive.google.com/file/d/1xhhwVAv0BgvMLqGggi8ESf_t06xhG9F9/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=f2JXPrYBeLg"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Ever since Vision 2025 was articulated in 1999, there has been a remarkable and steady increase in the number of translation projects taken up in India. The setting up of US-based funding agencies and the involvement of many more Indian organizations in the translation task have resulted in an acceleration in the completion rates of these projects. At the same time I, along with many of my colleagues, have noticed new problems that have arisen, which compromise the utility of the translations that are being published, including audio scriptures and scripture-based audiovisual materials. I will cite instances of two kinds of problems being observed in many projects that have begun in the last 20 years (without revealing names of languages and persons or agencies involved). One has to do with the decline in quality and comprehensibility of the finished product. The other has to do with duplication of projects in many languages. I hypothesize that these observed practices are outcomes of a complex interplay of Western funding methodologies and aspects of Indian culture, such as hierarchy and honor-shame, where transparency and accountability are not highly valued. It is also the case that relationships with people are more highly valued than merit or performance in carrying out the difficult academic work of translation. Finally I will also look at the pros and cons of Vision 2025 and other similar statements through a missiological lens so that policy makers and practitioners alike can evaluate which aspects of these statements are valuable and need to be retained, whereas others may need to be discarded as being unfruitful.</p>

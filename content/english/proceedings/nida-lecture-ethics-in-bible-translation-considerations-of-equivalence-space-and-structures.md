@@ -12,6 +12,11 @@ track: ["Plenary"]
 slides_url: ""
 paper_url: "https://drive.google.com/file/d/1BcPzQb1IZEKApYeBTHTxgnk575nItAW0/view?usp=drive_link"
 video_url: ""
+is_plenary: true
+lecture: "Nida"
+plenary_weight: 3
+presenter_ids: []
+author_ids: []
 ---
 
-<p>My talk will draw on translation studies debates on ethics in translation to address themes and issues in Bible translation. Questions of ethics have featured in the discourse on Bible translation in one way or other in the past and continue to do so in the present. However, ethics is not a universal category or consideration and it is important to take into account that definitions and understandings of what should be considered ethical change from one historical period and cultural space to another. I will bring two overlapping aspects of Bible translation history to bear on the other—a consideration of the conceptual along with processes and implementation—that is, how do approaches to translational equivalence relate to the multiple and competing structures that make Bible translation possible in the first place? Using examples primarily from South Asia but also from various other locations of Bible translation from across the globe, my talk will encompass the history of the proliferation of the translated Bible outside Europe from the early eighteenth-century onwards, to the nineteenth and twentieth centuries. I will end with some questions of ethics for consideration for the future of Bible translation scholarship and translators.</p>
+<p>My talk brings decolonial thinking and theology to the question of ethics in Bible translation. I start my discussion with a few models on ethical approaches to translation which primarily focus on a text-context binary, where scholarly arguments have emphasised a need to expand focus on texts to taking contexts into consideration, thereby leading to ‘contextualised translation’ and a ‘contextualised translation ethics’. However, bringing decolonial approaches to ethics, I propose that rather than continuing to call merely for an inclusion of linguistic and cultural contexts, there is a need to expand and connect contexts when considering Bible translation. My argument, therefore, is that it would be worthwhile to expand our definition of ‘context’ and that ‘an expanded contextualised approach’ to Bible translation opens up new questions for a committed biblical translational ethics.</p>

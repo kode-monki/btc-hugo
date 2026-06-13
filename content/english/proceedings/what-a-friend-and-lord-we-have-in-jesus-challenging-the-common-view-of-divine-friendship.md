@@ -11,7 +11,12 @@ year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis;Remote Presenter;Live Only"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://drive.google.com/file/d/1QZBdj3GCeRhLpcmstST_lXtW7k0z6YEN/view?usp=drive_link"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>What is your primary definition of your relationship with Jesus? Is He your Friend or your Lord? You might think your answer is simply reflecting your theology, or even the “truth” of the Bible. However, perhaps this is just reflecting your cultural values deeply rooted in your society. “Friendship over lordship” is a common pattern that I see among my Western Christian friends. On the other hand, the pattern is reversed amongst my Eastern Christian friends back home. Easterners tend to place “lordship” over “friendship.”

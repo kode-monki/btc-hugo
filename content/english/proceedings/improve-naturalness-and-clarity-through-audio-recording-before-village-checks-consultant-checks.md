@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=SWtD1bFsd-4"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Problem: After very carefully following the 10 Steps of Bible translation, we sent “clear, accurate, natural” text to the printer, and then began recording the audio version of the text. The recording process itself uncovered errors in naturalness and clarity that somehow slipped past all the other checks. But it was too late to make revisions! If we had done audio recording much earlier, the result would have been a translation of higher quality. We propose doing a draft audio recording of translated text BEFORE village checking and consultant checking.

@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation resources"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=tX-iKJs_--E"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 A study of English translations of the Old Testament shows that, with regard to underlying textual choices, translations tend to differ one from another, sometimes markedly. Clearly, Old Testament translation teams will sometimes encounter textual differences, if not in model translations, then in other references: commentaries, handbooks, HOTTP/CTAT, or critical editions. Philosophically, when teams recognize textual issues, gather information about them, and make their choices, they are exercising independent eclecticism, and independent eclecticism leads to inadvertent variety.

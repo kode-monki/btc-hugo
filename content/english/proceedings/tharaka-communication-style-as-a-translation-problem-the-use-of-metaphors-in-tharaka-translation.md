@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=rZDWCm5DDPI"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Translation is a kind of communication. A translation is done because there is a need to communicate to the target audience the contents of the text that is being translated. A good translation should be accurate, clear, natural and acceptable to the audience. A natural translation should take into consideration the style of communication of the target culture. The aim of my study was to investigate the communication style of Kîîtharaka and determine how much this style is a translation problem. The research objective was to investigate whether Tharaka people use metaphors in discourse in general and especially in argumentation. 

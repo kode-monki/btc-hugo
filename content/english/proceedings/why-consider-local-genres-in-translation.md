@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=NhBkIl6xkeE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 From a literary perspective, the notion of genres in the original biblical texts has been established for years (e.g., Alter and Kermode 1990; Ryken and Longman 2010). Scholars and practitioners in the Bible translation world also advocate for the consideration of familiar genres in the translation process (e.g., Boerger 2016; Dickie 2022; Green 2007; Salisbury 2014, 2015; Stark 2011; Unseth 2006; Wendland 2011, 2017; Wilt & Wendland 2008). Several quality-related motivations emerge from these appeals for the use of familiar genres in translation: (1) increased faithfulness to the original text; (2) the improved reception of translations in communities; and (3) a more efficient and enjoyable translation process.

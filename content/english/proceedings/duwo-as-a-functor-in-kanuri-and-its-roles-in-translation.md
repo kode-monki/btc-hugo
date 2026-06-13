@@ -5,13 +5,18 @@ start_time: "10:45 AM"
 end_time: "11:20 AM"
 publicity: ""
 location: "Room 1"
-author: "Plangtong Joshua"
-author_id: "#N/A"
+author: "Plangtong  Favour Uneke Joshua"
+author_id: "plangton-favour-uneke-joshua"
 year: "2025"
 track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=FcLto6x2mpk"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <h1>Abstract</h1>

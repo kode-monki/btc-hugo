@@ -11,7 +11,12 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=jwMLj8oj5x4"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Emotions are critical for human cognition and decision-making, impacting memory and interactions. In Bible translations, capturing emotions is essential for effective communication (Larson 1998). The Forum of Bible Agencies International recognizes this, having included emotion as their 2nd core translation principle since 2006.

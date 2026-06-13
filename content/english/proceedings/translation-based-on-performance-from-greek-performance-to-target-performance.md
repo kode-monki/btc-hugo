@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Randall Buth"
-author_id: "#N/A"
+author_id: "randall-buth"
 year: "2023"
 track: ["Performance and arts"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Oral Bible Translation based on Performance brings new questions. When we prepare a Performance, we may start with our common sense of the world and our knowledge of the ancient world. We do not choreograph or re-format according to our personal feelings. We carefully let all of the cues in the original text inform all of the aspects of our Performances. These cues in a Greek text are many and more than might be anticipated by focusing on intermediate written translations. Original word choices, implicit and explicit choices, default Comment material, staging or Topical material, specially marked Focal material, pace, afterthought, unit-chunking, repetition, parenthesis, ambiguities, specificity, conciseness, sound patterns, comparison, antithesis, cultural background, and exegetical resolutions of meaning, text, and punctuation, are some of these cues found in a canonical, Greek New Testament text. A Performance in Greek John 1:1-18 will embody this.

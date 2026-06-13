@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation resources"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=rWVxsbtr0Ck"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Information on Hebrew conditionals are not readily available to the translator or researcher wishing to study them.  Sometimes these constructions are referred to as “hypothetical” or “if…then” constructions.  One of the issues that translators face is that of hypotheticality.  In some languages hypothetical constructions can only be used for something that could possibly happen and express standard conditionals.  They do not allow for the impossible use of conditionals such as “If you could count the stars in the sky”, which is impossible to do.  Since it is impossible to change the past, many languages would have trouble translating statements like “If only we had died in the desert”.  Hebrew conditionals can have a wide range of different illocutionary forces: swear an oath, promise, warn, command, request a favor, question for information, assert, lament, mock/scorn and many others.  Translators and exegetes need to be aware of the pragmatic effects of a conditional and not treat them all as standard conditionals.

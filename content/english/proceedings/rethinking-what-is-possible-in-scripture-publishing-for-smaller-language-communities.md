@@ -11,7 +11,12 @@ year: "2023"
 track: ["Language technology and Artificial Intelligence"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=UszEH7ge-_M"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Specialty Bibles with advanced formatting and study content are usually only available in major languages, due to the high cost and effort required to prepare, format, and print them. This means that smaller language communities, who could greatly benefit from the additional study content, can rarely afford to produce Study Bibles, Greek Interlinear New Testaments, Children's Bibles, or other themed Bibles with print runs of less than 10,000 copies. Unfortunately, these communities have little exposure to additional biblical research and study content in a language they understand.

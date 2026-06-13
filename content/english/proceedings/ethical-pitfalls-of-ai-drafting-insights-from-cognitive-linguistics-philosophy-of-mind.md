@@ -12,6 +12,11 @@ track: ["Communication and Context;Methodologies, Media, and Multimodality;Techn
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=yEK0zuJ-dLg"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Because of ontological distinctions between humans and computers, human linguistic meaning is distinct and separate from computational representations of it. Drawing on insights from cognitive linguistics and philosophy of mind, I demonstrate there is an irreconcilable disparity between human linguistic meaning and the outputs of computers. If we neglect this disparity, we are exposed to significant perils and proclivities toward poverty in the areas of ethics, epistemology and more.  <br>  <br> Christiane Nord reframed the discussion of translation quality using the term ‘loyalty’, which emphasizes the relational nature of translation as a form of communication. Building on Nord’s articulation of loyalty, I argue loyal translation can only be achieved by humans: conscious, embodied agents. The implications of this distinction cast a huge warning signal in the context of AI drafting and the uncritical (or under-critical) adoption of AI in other steps of the translation process. This does not mean AI should be avoided altogether. However, extra wisdom and discretion are required especially in translating the Bible, which is the work of God through the Spirit-filled church. This theological dimension casts an even greater shadow of doubt on the value of AI in some areas of translation. </p>

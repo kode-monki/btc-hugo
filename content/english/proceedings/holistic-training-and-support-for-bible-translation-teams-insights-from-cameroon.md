@@ -11,7 +11,12 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=e1GwtKqjHjE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Which translation would you rather check: one done by a team experiencing tensions in their relationships or one done by a team that appreciates and draws on each other’s strengths, praying together for God’s wisdom as they work?

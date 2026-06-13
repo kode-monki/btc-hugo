@@ -11,7 +11,12 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Although the Shema (Deut. 6:4) is a mere six words and has doubtless been recited more than any other verse in the Bible, its grammar has been described as “resist[ing] any simple resolution” (Miller 2000:2). The basic problem with analyzing the verse has been how to parse the string of nouns—either as nouns in apposition or as verbless predicates—and this has led to a wide variety of translations. The key to solving this syntactic problem lies in a semantic analysis of the last word אֶחָד ‘one.’ As noted by Borer (2005), ‘one’ in Hebrew has a number of peculiar syntactic and semantic features, and it behaves more like an adjective than a quantifier. As such, it can be used to refer to specific entities just like adjectives in English in the Determiner + Adjective construction (Glass 2019). I show that in Biblical Hebrew, this requirement for the determiner does not hold for adjectives and bare singulars to refer to specific entities, so אֶחָד can be equivalent to ‘the one.’ This, I suggest, is the best translation of אֶחָד: ‘Listen, Israel! YHWH is our God; YHWH is the one.’

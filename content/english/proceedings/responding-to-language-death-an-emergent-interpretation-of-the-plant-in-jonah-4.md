@@ -12,6 +12,11 @@ track: ["Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=tF2nAtDa024"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Drawing on African tripolar hermeneutical theory, this paper describes an emergent and contextual interpretation of the conflict between God and Jonah in Jonah 4 regarding the dying plant. The contextual background of this interpretation stems from the Evangelical Lutheran Church of Papua New Guinea’s (ELC-PNG) 2024 synodical resolution to make Bible Translation a church ministry.  Subsequently, the leadership of the ELC-PNG participated in a forum to learn about and discuss how they might engage in Church Bible Translation (CBT), focusing on the theme of Bible translation as pastoral care. <br>  <br> While studying Jonah, motivated by the theme of Bible translation as pastoral care, the story of Jonah and the plant struck a chord. What are the ethical, theological, and pastoral implications of comparing the experience of Jonah and his care for a dying plant as analogous to the church’s call to care for people and communities facing the possibility of various kinds of death, including language death? Why does God seem to care (more) about the repentance of people and animals in the great city? How might this emergent interpretation of the dying plant as a potentially dying language/culture help interpreters and translators more deeply relate to the conflict built into the Jonah narrative? Is this interpretation ethical? What other analogous situations might offer further theological and pastoral resources for the ELC-PNG to reflect upon as they consider how to ethically engage in Bible translation as a ministry that serves a diversity of contexts with differing (competing?) translation needs?</p>

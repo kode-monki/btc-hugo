@@ -11,7 +11,12 @@ year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=zbrk_KFowyU"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 This paper explores how the churches in Madagascar have taken up the task to translate the Bible in the twelve remaining indigenous languages. The churches’ initial goal is to finish all the New Testaments (NTs) with some Old Testament portions by 2032. It further discusses how the church reached out to partnering organizations, like SIL, to assist with the capacity building needed to complete this task. In a timely manner with quality, the churches’ desire is to translate the whole Bible.

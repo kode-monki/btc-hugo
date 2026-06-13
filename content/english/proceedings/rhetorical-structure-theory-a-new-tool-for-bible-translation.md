@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=XsHOI31tg9A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Rhetorical structure theory (RST) came into being for the analysis of natural texts to determine their discourse structure and function, originally as a means of allowing computer generation of texts. Since then, its usefulness as a linguistic tool has been established independent of its use for computer text generation. The theory analyzes texts as having basically nuclear statements and satellite statements linked to them, with the satellite statements having a variety of definable relations to their respective nuclei. The theory is primarily based on semantics rather than grammar, since these relations are not consistently signaled by grammar elements. It thus serves as a complement to discourse analyses based primarily on grammar, and as a possibly more universal analysis method for diverse languages.

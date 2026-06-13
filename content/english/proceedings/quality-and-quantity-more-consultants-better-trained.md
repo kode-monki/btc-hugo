@@ -11,7 +11,12 @@ year: "2023"
 track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=S6kMaOZpT9g"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 The making of a consultant is the practicum, as a trainee repeatedly hones her consulting facilitation skills under wise mentorship. However, confident, competent mentor consultants are not always available.

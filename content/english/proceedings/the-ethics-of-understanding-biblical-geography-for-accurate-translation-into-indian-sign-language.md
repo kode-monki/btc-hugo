@@ -11,7 +11,12 @@ year: "2025"
 track: ["Communication and Context;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://youtu.be/fJrgI2ERANg"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Translating the Bible into a spoken (written) language allows readers to use their imagination with the geographical features described in the Biblical text. However, in the context of translating the Bible into sign language, it is important for translators to communicate these geographical elements explicitly. <br>  <br> Indian Sign Language (ISL) is a developing language, just like most of the other sign languages of the world; linguistic research on ISL has recently gained attention. Christianity and Christian Scriptures are relatively new concepts for the Deaf community in India. Many geographical terms and their specific meanings are unfamiliar to the community and the translators. <br>  <br> This paper will explain the importance of understanding and accurately translating geographical features in the Bible into Indian Sign Language. It will explore how these understandings of geographical features affect the use of implications, the orientation of locations, the placement of characters within the signing space and their movements, and the selection semantic range related to a geographical location. <br>  <br> This paper will also look into the specific challenges faced in translating these geographical features. It will explain innovative ideas and strategies the Indian Sign Language translation team has implemented to overcome these challenges. This will demonstrate how addressing these issues can significantly enhance translation accuracy.</p>

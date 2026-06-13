@@ -11,7 +11,12 @@ year: "2023"
 track: ["Language technology and Artificial Intelligence"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://www.youtube.com/watch?v=uM70KL_6NfQ"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Much excitement has gathered around Artificial Intelligence (AI) and Natural Language Processing (NLP) approaches to assist Bible translation.  However, when evaluating new approaches, it is essential to place them in context with approaches that already exist, recognizing the different benefits and costs that each involves.  Similarly, the settings of the translation projects that may benefit from assistance are not all the same. This paper surveys the landscape and situates each approach relative to the contexts in which it may be helpful.
