@@ -12,6 +12,11 @@ track: ["Theology, Hermeneutics, and Exegesis;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=iaOqaAjS92U"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>The new translation project model 1) puts undue pressure on the consultant and 2) lends itself to finished translations still leaving much to be desired. We can do better and have done better.

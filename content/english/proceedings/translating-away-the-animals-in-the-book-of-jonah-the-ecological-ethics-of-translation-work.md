@@ -12,6 +12,11 @@ track: ["Church and Community;Communication and Context;Methodologies, Media, an
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=FvhiFlauCgI"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Pollution … Biodiversity loss … Climate change. Environmental crises are already affecting those in translation ministry, the communities we seek to serve, and those who support our work. According to a recent Lancet study, 84% of young people globally report being worried about the environment. Many use words like “grief” and “despair” to describe their feelings. </p>

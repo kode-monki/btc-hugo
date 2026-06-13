@@ -12,6 +12,11 @@ track: ["Church and Community;Communication and Context;Theology, Hermeneutics, 
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Z2J3-OObDN8"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Bible translation requires a strong ethical foundation, since it involves the Bible itself, which is the basis of ethics. Checking is a very important step that crowns Bible translation itself. Most often, it tends to be carried out lightly, just to “confirm” the exegesis, which is then given more value. In general, there is a need for ethics in the consultant's work. In fact, ethics influence decision-making and the consultant's attitude towards the people involved in the translation process. The theme of this article is “Ethics in a checking session”. It draws its inspiration from a personal experience as a female consultant working in a predominantly male world, both with regard to fellow consultants on one hand and the translators we accompany in the field, on the other hand.

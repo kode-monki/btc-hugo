@@ -12,6 +12,11 @@ track: ["Translation resources"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=HgrdU9VxLQA"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Translators need to understand many things that are traditionally locked up in inaccessible scholarly materials. Translation consultants often provide a bridge to scholarship and its insights on biblical culture, worldview, biblical languages and linguistics, history, and geography. Both translation teams and translation consultants need easy ways to find the right information for translating a given passage.

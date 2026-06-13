@@ -12,6 +12,11 @@ track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=RUVu1HEZXwM"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Nigeria remains the country with the highest Bible translation need in Africa. Nigeria has about 192 languages that need Bible translation to start and about 202 Bible translation projects in progress (Progress Bible website). The Theological College of Northern Nigeria (TCNN) offers Bachelor of Arts and Master’s degree courses in Linguistics and Translation. TCNN has become a place for raising and reskilling local translators and upcoming consultants, and preparing people for other areas of Bible translation. 

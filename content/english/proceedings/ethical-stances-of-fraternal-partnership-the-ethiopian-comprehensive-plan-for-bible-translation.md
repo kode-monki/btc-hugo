@@ -12,6 +12,11 @@ track: ["Church and Community;Communication and Context;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=WO-4AwPq_hM"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>The Ethiopian Comprehensive Plan for Bible Translation (CP) is part of Vision 2025. The target was to start Bible translation in twenty-seven Ethiopian languages that had no single Bible text translated by 2008. The Ethiopian CP was established by six partners, comprising churches  and Bible agencies. Leaders of these organizations formed a fraternal partnership, which required extensive consultation. This was reinforced by a strong code of conduct. A conducive context was created by a Memorandum of Understanding between the organizations. The leadership interaction required high-level ethical practices that went beyond the traditional approach, which had elements of paternalism. 

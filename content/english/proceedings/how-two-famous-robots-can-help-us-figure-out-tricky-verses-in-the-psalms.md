@@ -12,6 +12,11 @@ track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=R8315NGJ-P4"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Quality translations follow reliable exegesis. Good exegesis is especially needed for the poetic parts of the Bible, where existing translations sometimes vary widely from each other and the resources offer differing views about the meaning of certain problematic verses. In such cases, we need to study the whole psalm to see which option best fits the overall message. This can be a real challenge – even for those with advanced Hebrew, which is ideal but not always possible. All the same, even those with little or no Hebrew can learn to apply most of the commonly accepted principles for exegeting a psalm. 

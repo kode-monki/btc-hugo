@@ -12,6 +12,11 @@ track: ["Church and Community;Technology and Resources"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=n1hNWdE48uQ"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>For most language communities around the world, the copyright for their language’s Scripture is held by an outside agency. No representative body from their community holds copyright over their Scriptures. This means that they: <br> <br> -cannot print, cannot digitize print-only translations, cannot develop apps, and cannot block the owner’s printings or apps without permission from the outside agency owner; <br> <br> -cannot develop derivative Sunday School or other materials without permission from the outside agency owner; <br> <br> -cannot revise their translation as they would like (one group was recently told to wait 20 years!), despite revision being a standard and necessary step of Bible translation, even from the days before digital publishing; <br> <br> -cannot make their own choices about audio recording timing, method, and distribution; <br> <br> -cannot revise their Bible text during audio Bible recording, which is when many errors and unnaturalness are detected; <br> </p>

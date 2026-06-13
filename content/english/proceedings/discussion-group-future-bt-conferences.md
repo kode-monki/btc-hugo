@@ -12,6 +12,11 @@ track: ["Discussion Group (Onsite only)"]
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>The next international BT conference is planned for Cape Town in 2027. What input would you like to give to that or other future conferences? Topics might include:</p>

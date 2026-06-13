@@ -5,13 +5,18 @@ start_time: "2:40 PM"
 end_time: "3:15 PM"
 publicity: ""
 location: "Room 4"
-author: "Andy Warren-Rothlin"
+author: "Dr. Andy Warren-Rothlin"
 author_id: "andy-warren-rothlin"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis;Neurodiversity"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=UWCkRgF6pBo"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Justice demands that the Church work towards Bible access for linguistic, sensory and neurotype minorities. And yet the latter, though they have contributed much, have received little attention from the global Bible translation movement. Building on research in non-neurotypicals’ engagement with literature (e.g. Grandin, Chapple) and religious experience (e.g. the work of the University of Aberdeen’s Centre for Autism and Theology), a concept of neurodiverse Bible translation is here elaborated in the terms of existing Bible translation standards and specialisms, using well-known concepts such as high-/low-context cultures, explicitation, and the resolution or substitution of metaphors. Non-neurotypical readings of figurative language, irony, hyperbole, constructio ad sensum, etc., are considered, as well as theory of mind and emotional exegesis. Distinctive strengths of non-neurotypical readers (e.g. pattern recognition) are also highlighted, with suggestions for how these can be engaged by Bible translations. It is hoped that this work, and that of colleagues currently developing the field, will increase awareness of this minority’s needs and distinctive contribution to the Church’s engagement with the Bible and with God Himself.</p>

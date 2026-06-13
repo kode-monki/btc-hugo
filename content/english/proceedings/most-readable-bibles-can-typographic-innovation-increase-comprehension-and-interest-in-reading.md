@@ -12,6 +12,11 @@ track: ["Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=U8E7MDwR0DI"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>If we want to produce the most readable Bible text possible for a given language, we need to be aware of modern formatting research regarding what makes a text easily readable. These characteristics of readable text can be implemented in our Scripture publications. The integration of modern typography and readability studies with Bible publication has been attempted for English with the The Readable Bible. The Readable Bible has also pushed the envelope on what can be done regarding making Biblical information easy to process and access through innovations like presenting inventories and census information as charts, genealogies as family trees, laws in legal document format, and propositional content in epistles with subordinate indentation. These are not just additions to the text; in many cases they are the text. This publication raises these questions:<br> <br>1) What might modern typography standards for readability suggest for the design of the ideal Scripture text?</p>

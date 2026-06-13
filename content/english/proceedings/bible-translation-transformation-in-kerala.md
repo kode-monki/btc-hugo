@@ -12,6 +12,11 @@ track: ["Linguistics"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Bsr0sWu4Yrg"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Kerala, the southernmost state of India witnessed the greatest impact by Bible translators in making it the most developed modern region in the country. Their influence on the State language, Malayalam, is seen in its various aspects including orthography, morphology, lexicon, phrases, idioms, literature and education. Several Biblical terms from Hebrew, Greek, or Aramaic, have found their way into the Malayalam lexicon, as cognates, or adapted according to the phonology of Malayalam, thus enriching the vocabulary of the language. Several people from overseas influenced Kerala including the Portuguese, Dutch, French, and the English. The Bible translators among them triggered immense socio-economic and cultural transformation of the society, liberating people from slavery, caste discrimination, superstitious rituals, offering human dignity and identity. 

@@ -12,6 +12,11 @@ track: ["Linguistics"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=x6MRwWjk2SY"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 In this paper I look at three case studies of large language communities in Africa where orthography development failed to have a good outcome for aspiring readers. Two evidences of orthographic adequacy for the user, comprehension and fluent decoding, often suggest remedies as we study the linguistic details of a language. We will examine these, because good orthography outcomes are rarely accidental. They are more often the result of timely intervention by knowledgeable experts who do the hard work required to devise a strong orthography. 

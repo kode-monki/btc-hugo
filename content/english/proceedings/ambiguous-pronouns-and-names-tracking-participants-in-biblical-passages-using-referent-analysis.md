@@ -12,6 +12,11 @@ track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=zxT96mNA6qk"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Tracking participants in most cases is a fairly straightforward task with names and explicit modes of reference unambiguously identifying the participants in the passage. However, some passages pose challenges due to common names, ambiguous pronoun usage, and alternate methods of referring to participants. These complexities can pose a significant burden for translators, who must decide when to instantiate participants, reiterate their presence, or use pronouns or other referring expressions. As Chafe notes: “The preferences for the frequency and amount of overt reference also vary from language to language, further complicating the matter for translators” (Chafe 1980).

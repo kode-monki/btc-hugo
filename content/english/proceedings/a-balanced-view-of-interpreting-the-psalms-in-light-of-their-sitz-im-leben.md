@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Milton Watt"
-author_id: "#N/A"
+author_id: "milton-watt"
 year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Bpib1LDtWWY"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 The Sitz im Leben is the “Life Setting” of a Psalm. The term was popularized by Gunkel (1926) and subsequent scholars like Mowinckel (1962). It has been a useful concept for exploring the overall context of a psalm to understand it better.

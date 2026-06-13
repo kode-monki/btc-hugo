@@ -12,6 +12,11 @@ track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=xaCAbggYPgs"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 People in folk-Islamic societies are influenced by many felt needs. These include the need to avoid the influence of the evil eye, the jinn, and the spirits of those who have recently passed. To achieve these goals, they often resort to the use of charms and amulets, visiting a fortune teller at a ‘holy place’ (where a ‘saint’ is buried), or seeing a folk healer or Mullah. If we, in the Bible translation world, ignore these felt needs we will find that those attending local communities of believers will tend to continue with their previous folk-Islamic practices. 

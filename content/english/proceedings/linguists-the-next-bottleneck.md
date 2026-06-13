@@ -12,6 +12,11 @@ track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=2OywQBX32Gs"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 About ten years ago, the BT movement was caught off guard by the consultant shortage. We are about to face another shortage, this time of linguists. Linguistics is an essential component of BT activities in minority language communities, and SIL cooperative training programs have played an important role in preparing workers for this task. Since 2000, however, the number of training programs in the USA and Canada has halved from six to just three, and the number of students from these remaining schools has dropped. Similarly, last year Wycliffe USA took on just 52 new members, and only 8 joined Wycliffe Canada. As Stephen Coertze, executive director of the Wycliffe Global Alliance, notes, some Alliance organizations “are not seeing themselves as resource organisations anymore, but more as influencers of the church to get involved in mission or Bible translation... This raises the question: Is there still space for foreigners to move to another country and serve in mission, especially in Bible translation? My response is yes, but we need to have a discussion around this.”

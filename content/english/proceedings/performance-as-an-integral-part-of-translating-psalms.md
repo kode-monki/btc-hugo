@@ -11,7 +11,12 @@ year: "2023"
 track: ["Performance and arts"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Psalms were composed to be orally performed. Consequently the translator needs to be cognizant of the paralinguistic features of spoken (or chanted/sung) language, as well as the extra-linguistic elements of performance. Paralinguistic features include those related to the delivery (pace, intonation, volume, the use of pauses) and those involving body movement (gestures, facial expressions, and direction of the speech – to indicate the addressee). Extra-linguistic elements include props, costume, as well as the place and time of the performance. All of these contribute to the message communicated, and consequently need to be carefully considered. 

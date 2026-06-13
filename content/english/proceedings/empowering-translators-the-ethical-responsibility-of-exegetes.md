@@ -12,6 +12,11 @@ track: ["Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exe
 slides_url: "https://drive.google.com/file/d/1iOlpd9cq7IFFq6e2Cvyj7miB2RGEnr90/view?usp=drive_link"
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=tloyZ6vOsKE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>A central challenge in Bible translation is how to strengthen translators’ ability to do exegesis—independently discerning the biblical author’s intended meaning as the first step in translation. Traditionally, this gap has been addressed by assigning an exegete or translation advisor to review drafts at later stages. While effective in safeguarding meaning, this model raises ethical questions. Does it unintentionally foster dependency on external specialists? Is it a just use of limited financial and human resources in contexts where translators themselves could be equipped to handle exegesis from the beginning?</p>

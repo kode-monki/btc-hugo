@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Translation typically is a performance-based discipline that has a theoretical and a practical core. Theory and practice cannot be easily and clearly defined, the boundaries are somewhat fuzzy.  Several translation theories have evolved, and each one determines practice in some way, although no translation theory in the scientific sense of ‘theory’ really exists, most of these have the character of models that provide principles for translation.

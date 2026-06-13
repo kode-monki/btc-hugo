@@ -12,6 +12,11 @@ track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=vwBrbLh-ce4"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Putting together a translation team for quality Bible translation work, given our inexperience and without any basic resources can cause such a vibrant and award-winning journey to get dumped and buried. Bible and Literature translation Association, passed through such a dilemma but by the grace of God we emerged victorious.

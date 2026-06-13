@@ -12,6 +12,11 @@ track: ["Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=U7uOm5Rrh8A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Jean-Paul Sartre said, "No finite point has any meaning unless it has an infinite reference point" (cited by Schaeffer in ‘He is There and He is Not Silent,’ 277). This is an excellent starting point for exploring theological and ethical dimensions of the Imago Dei. The first part of this paper proposes that the creation of finite humans in the image and likeness of the infinite God not only gives meaning to human existence, but forms the theological basis for ethics and loving our neighbors as ourselves. Part 1 ends with discussion of how the imago Dei should be seen as the essence of human identity and a key component of any consideration of ethical norms or practices.

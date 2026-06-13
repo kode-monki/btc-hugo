@@ -12,6 +12,11 @@ track: ["Methodologies, Media, and Multimodality"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=pN4ZqNAst7g"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Funding pressures and recent innovations have added significant pressures to produce a translation in less time. Intrinsic to these proposals is the assumption of a highly efficient, straight-line path from initial interest in the translated Scriptures to production and distribution of the final product. Enforcing these practices, places experts, who are often outside the language community, in positions with inordinate control over both process and product. Compressing the timeline of a project significantly reduces opportunities for community interaction during the process of the translation. This, in turn, decreases the probability that the translation will communicate accurately, and that the language community will have confidence in the quality of the final product. These issues are illustrated with examples from translation projects within Southeast Asia, and suggestions are given for achieving a reasonably efficient and fully effective translation process.</p>
