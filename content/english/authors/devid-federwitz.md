@@ -6,6 +6,3 @@ affiliation: "Lutheran Bible Translators"
 author_id: "devid-federwitz"
 ---
 
-
-
-

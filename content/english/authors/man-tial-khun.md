@@ -6,6 +6,3 @@ affiliation: "LSDO"
 author_id: "man-tial-khun"
 ---
 
-
-
-

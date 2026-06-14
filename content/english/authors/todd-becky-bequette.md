@@ -6,6 +6,3 @@ affiliation: ""
 author_id: "todd-becky-bequette"
 ---
 
-
-
-
