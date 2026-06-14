@@ -12,6 +12,11 @@ track: ["Church and Community;Communication and Context;Theology, Hermeneutics, 
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=WfF1g3cPI_A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>A journal article based on this presentation has been published in the December 2025 issue of <em>The Bible Translator: </em><a href="https://doi.org/10.1177/20516770251391456" target="_blank">https://doi.org/10.1177/20516770251391456</a></p>

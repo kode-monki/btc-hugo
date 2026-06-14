@@ -12,6 +12,11 @@ track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=h-sKB9D1GHs"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 It has been said, a hurting heart will hurt people. Hurt people hurt others and everything within their reach. It is possible that a healed  heart will share healing with people and that will result in a healthy community that seeks to restore everything to God’s intended state. A healthy environment results in a healthy community physically which contributes to peace in the community. 

@@ -12,6 +12,11 @@ track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=9jY5aNekOEQ"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Acceptability is a more recent addition to measures of quality in Bible translation; it has been variously framed as authenticity, acceptability, or appropriateness (Anderson 1998; Chemorian 2009; Daams 2015; Dye 2009; Gross 2003; Larsen 2001; Mudge 1997). These various lenses have appropriately focused on community agency, the skopos of translation programs, and other elements that influence acceptability of Bible translations. Multiple theological issues are also interwoven within the dimension of acceptability. It is essential to take into consideration a host community’s theology of the Bible, theology of translation, theology of language, and intertextual issues (i.e. comparative theologies of sacred texts). 

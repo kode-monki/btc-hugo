@@ -12,6 +12,11 @@ track: ["Discussion Group (Onsite only)"]
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>What ideas are there for sustainable resource mobilisation? How can current funding models integrate with ongoing, community-driven BT? Any success stories to learn from?</p>

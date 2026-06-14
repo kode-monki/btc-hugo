@@ -12,6 +12,11 @@ track: []
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p></p>

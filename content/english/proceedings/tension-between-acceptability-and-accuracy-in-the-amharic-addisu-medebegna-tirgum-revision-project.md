@@ -12,6 +12,11 @@ track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=UbHkhsOVfOs"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 The inconsistency in translating the names of God, Elohim and YHWH has been identified as a major element for revision by the Revision Team of the Amharic Addisu Medebegna Tirgum (AMT) translation first published in 2010 by Biblica. The proposed revision suggests using አምላክ (‘mlak) for Elohim and እግዚአብሔር (‘gzi’bher) for YHWH based on religious, theological, and linguistic arguments. However, as the inconsistency is not unique for AMT, this proposal has raised concerns among believers who have been using the AMT and other Amharic translations for decades and even centuries.

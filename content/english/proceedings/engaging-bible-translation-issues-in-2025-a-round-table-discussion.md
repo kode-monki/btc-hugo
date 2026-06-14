@@ -12,6 +12,11 @@ track: ["Church and Community;Communication and Context;Training and Mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>From OT exegesis to orality to considerations for reaching Muslims with video-based Scripture, Bible translation issues predominate in reaching our world today. From training indigenous translations to considerations of AI aids for translation consultants, and implications for administrators encouraging translation projects, ethical issues prevail. A group of Doctoral Students at Fuller Seminary take on these issues in a four-year study program to make a difference in their ministry context. All these issues have ethical considerations that impact the way each student processes their research and data analysis. Each student’s short presentation is shaped by understanding their research context and how research findings enable people to lead for change. Students will give a brief overview of their research and its implications for Translation and Scripture Engagement in their context. These presentations will launch an open discussion led by Dan Shaw (SIL-PNG and long-time Professor at Fuller) and Jonathan Grimes (SIL-Nepal and Translation Consultant). The impact of these projects on Scripture engagement will provide insight into both panel and audience concerns that reflect the state of Bible Translation in today’s world. Come and hear what’s happening as Doctoral students research the state of Bible translation in 2025 and beyond. The objective is to experience the joy of learning, explore research needs, and meet those needs with doctoral research that makes a difference. Come and experience serious research and the transformation that comes from applying research findings to effective translation-focused ministry. Might you be in the next cohort, exploring how Bible translation, in all its manifestations, can make a difference in your ministry? </p>

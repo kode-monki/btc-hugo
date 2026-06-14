@@ -11,7 +11,12 @@ year: "2025"
 track: ["Methodologies, Media, and Multimodality;Technology and Resources;Live Only"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://youtu.be/Hq62bEJlvWU"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Translating from translations has become widespread in the current Bible translation movement. There is the ideological assumption that deep knowledge of the original languages is not so necessary any more, we now have enough knowledge of the meaning through centuries of studies and resources. However, translation consultants are still required to have at least a working knowledge of the Greek or the Hebrew to be able to authenticate a translation. But a church or community without the ability to translate from the original is also not able to fulfill its role as the rightful authenticator of its own translations. And what is more, it is not able to do that for revisions or new translations over the long term, all of which in turn exposes the community to ongoing dependence on outside expertise and limits their own processes of ongoing theologizing and revising/re-translating needs.

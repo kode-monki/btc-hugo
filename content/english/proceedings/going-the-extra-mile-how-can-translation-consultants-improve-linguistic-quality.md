@@ -12,6 +12,11 @@ track: ["Linguistics"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=SZwPrtWJuSg"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 In the 21st century, the rise in mother-tongue speaker driven projects has led to the downplaying of the

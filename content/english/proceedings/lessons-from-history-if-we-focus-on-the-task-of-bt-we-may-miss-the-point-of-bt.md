@@ -12,6 +12,11 @@ track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=udwdX_Dw4tE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 “It was a truly excellent translation …but nobody really used it.”

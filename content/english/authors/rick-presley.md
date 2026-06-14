@@ -6,6 +6,3 @@ affiliation: "unfoldingWord"
 author_id: "rick-presley"
 ---
 
-
-
-

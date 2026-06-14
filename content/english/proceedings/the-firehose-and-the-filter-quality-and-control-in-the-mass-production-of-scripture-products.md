@@ -12,6 +12,11 @@ track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=HAVerl2Eb1M"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 In exploring possible products and strategies using the gospel of Luke it was quickly apparent that there are hundreds of things that could be done with even a single book of scripture. In just a couple of weeks 100+ prototype resources could be made available in 1000+ languages. Some would be instantly usable straight away, some would need polishing and refining and some would be of little interest to the intended audience and might feel a complete waste of several minutes of work. 

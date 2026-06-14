@@ -11,7 +11,12 @@ year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Gird up your loins and answer God like the “hero” (geber) you claim to be! According to some scholars in both divine speeches God challenges Job to get ready and reply, according to his personal claim of being geber, a hero of faith. If it is true that Job being a geber, means he is a hero of faith, then a whole new dimension can be brought to light in the translation of the Hebrew lexeme geber in Job. This also has implications of how to translate Job 3:3 where Job is referring to himself, cursing the night he, being a geber, was born. This study contests the claim that this reference would be the only instance in the Bible where geber would mean baby boy.

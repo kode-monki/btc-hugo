@@ -12,6 +12,11 @@ track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Fpk9AWSQPuM"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 The Bible Translation movement (BTM) has expanded greatly over the last quarter century with its focus on starting a translation for every remaining need (aka, Vision2025). Perhaps the most significant outcome of this period has been a massive acceleration of partnerships among translation agencies, national churches, and local communities.

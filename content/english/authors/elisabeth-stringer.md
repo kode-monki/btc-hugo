@@ -7,5 +7,3 @@ author_id: "elisabeth-stringer"
 ---
 
 <p>Elisabeth Stringer, MA, works as the Testing and Research Coordinator for the FIA Project. </p>
-
-

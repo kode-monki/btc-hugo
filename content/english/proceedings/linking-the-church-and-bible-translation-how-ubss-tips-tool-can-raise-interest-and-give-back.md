@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Jost Zetzsche"
-author_id: "#N/A"
+author_id: "jost-zetzsche"
 year: "2023"
 track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=JYdMY7dH-MM"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Translation Insights & Perspectives or TIPs (https://tips.translation.bible) is a tool that has been built and curated for the last 8 years under the auspices of UBS, with representation of WGA, SIL, PBT, and LBT on its board. It presents data from Bible translations that show examples of how translators for other languages selected to translate a given concept or passage while at the same time enriching the biblical text in ways that are unique to their languages. Its target audience are Bible translation experts who are engaged with active Bible translations as well as Bible readers and researchers who do not have any specific expertise in linguistics or translation. 

@@ -5,13 +5,18 @@ start_time: ""
 end_time: ""
 publicity: ""
 location: ""
-author: "Freddy Boswell"
-author_id: "#N/A"
+author: "Dr. Freddy Boswell"
+author_id: "freddy-boswell"
 year: "2023"
 track: ["Translation principles"]
 slides_url: ""
 paper_url: ""
-video_url: "https://www.youtube.com/watch?v=Aqhyewt-Vro"
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Anglican priest J.B. Phillips was the solo translator of The New Testament in Modern English, first published in 1958 with at least 17 printings, and followed by two revisions. It was an unquestioned success in the English-speaking world, urged to publication by C.S. Lewis, endorsed by F.F. Bruce, and lauded long after Phillips’ death by Eugene Peterson. Why was it considered successful, and what are the indicators of its quality? And importantly, what can current translators learn from the academically under-studied effort by Phillips? 

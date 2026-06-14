@@ -6,12 +6,17 @@ end_time: "11:20 AM"
 publicity: ""
 location: "Room 2"
 author: "Judy Heath, et al"
-author_id: "judy-heath"
+author_id: "#N/A"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality;Technology and Resources;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=xtLGYkvVnIE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>The considerable power of Artificial Intelligence (AI) intrigues those eager to see the Bible accessible to all peoples. Scripture Forge, an AI drafting tool, builds a parallel language model from existing vernacular Scripture and a reference translation, then uses that model to generate drafts of other biblical books.</p>

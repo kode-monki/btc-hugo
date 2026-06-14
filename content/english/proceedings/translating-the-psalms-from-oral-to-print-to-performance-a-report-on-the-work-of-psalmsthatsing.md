@@ -11,7 +11,12 @@ year: "2023"
 track: ["Performance and arts"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 PsalmsThatSing is a small inter-agency working group with the goal to develop a workflow and curriculum for the translation of the Psalms. Its distinctives are various: it follows a 10-step methodology starting with oral familiarization and internalization processes that then proceeds to oral drafting and transcribing. Incorporating local poetic features by verbal artist-translators is another methodology of this initiative. The multimodal interface between the oral, the print, and visual performance is yet another. This presentation will first explain the vision, mission, distinctives, and methodologies of PsalmsThatSing, including the 10-step method. The second part will be a presentation of one psalm guide with photos and video footage from actual pilot workshops.

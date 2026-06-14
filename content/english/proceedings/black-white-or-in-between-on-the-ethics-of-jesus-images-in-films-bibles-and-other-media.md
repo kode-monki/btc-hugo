@@ -3,7 +3,7 @@ title: "Black, White or In Between? On the Ethics of Jesus Images in Films, Bibl
 date: "2025-10-29T11:00:00Z"
 start_time: "10:00 AM"
 end_time: "10:35 AM"
-publicity: ""
+publicity: "abstract-only"
 location: "Room 3"
 author: "Johannes Merz & Sharon Merz"
 author_id: "merz-merz"
@@ -11,7 +11,12 @@ year: "2025"
 track: ["Communication and Context;Methodologies, Media, and Multimodality;Live Only"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "https://drive.google.com/file/d/12W6bUtATS4ytmOwxiciC-lsvOoXnq83J/view?usp=drive_link"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>Everybody knows what Jesus looks like. In this presentation we discuss Jesus’ portrayal as a white man, which has become his globally recognised “true” likeness. This distorts the gospel on both biblical and historical grounds and affects people’s understanding of Christianity. We discuss where white Jesus images come from, how they developed over the centuries and why they continue to be perpetuated in films, illustrated Bibles, apps and other media. Each image of a white Jesus contributes to maintaining Jesus’ “true” likeness.</p>

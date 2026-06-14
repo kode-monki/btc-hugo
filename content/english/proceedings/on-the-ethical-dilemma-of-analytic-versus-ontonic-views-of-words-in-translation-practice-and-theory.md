@@ -12,6 +12,11 @@ track: ["Communication and Context"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=bl9zNzxD_1Y"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>What are words? How do they behave? What are the implications for <strong>written</strong>, <strong>oral</strong> and <strong>multimodal</strong> approaches to translation?</p>

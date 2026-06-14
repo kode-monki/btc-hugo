@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Daniel Paul"
-author_id: "#N/A"
+author_id: "daniel-paul"
 year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 An acceptable translation wins support and use by local leaders when it is perceived as authentic, doctrinally correct and in an appropriate style, and when key biblical terms are widely agreed (Larsen 2001; Dye 2009). But what happens when, despite years of engagement with these leaders and approval for publication, the level of acceptability still varies widely across key stakeholders? And when this variety is driven by different, even contradictory positions across multiple parameters?

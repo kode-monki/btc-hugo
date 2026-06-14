@@ -13,12 +13,14 @@ function onOpen() {
     .createMenu('BTC Website')
     .addItem('Preview Selected Row(s)', 'previewSelected')
     .addSeparator()
-    .addItem('Push Proceedings → Dev',    'pushProceedingsDev')
-    .addItem('Push Authors → Dev',        'pushAuthorsDev')
-    .addItem('Push Plenaries → Dev',      'pushPlenariesDev')
-    .addItem('Push Sponsors → Dev',       'pushSponsorsDev')
-    .addItem('Push Conference Info → Dev','pushConferencesDev')
-    .addItem('Push ALL → Dev',            'pushAllDev')
+    .addItem('Push Proceedings → Dev',         'pushProceedingsDev')
+    .addItem('Push ALL Proceedings → Dev',     'pushAllProceedingsDev')
+    .addItem('Push Authors → Dev',             'pushAuthorsDev')
+    .addItem('[Debug] Author Image Values',    'debugAuthorImageValues')
+    .addItem('[Debug] Push Dry Run',           'debugPushDryRun')
+    .addItem('Push Sponsors → Dev',            'pushSponsorsDev')
+    .addItem('Push Conference Info → Dev',     'pushConferencesDev')
+    .addItem('Push ALL → Dev',                 'pushAllDev')
     .addSeparator()
     .addItem('🚀 Push ALL → Production',  'pushAllProduction')
     .addSeparator()
@@ -53,11 +55,16 @@ function previewSelected() {
   var headers = getHeaders(sheet);
   var rows    = range.getValues();
 
+  var presentersMap = {};
+  if (tabName.indexOf('proceeding') !== -1) {
+    presentersMap = buildPresentersMap(SpreadsheetApp.getActiveSpreadsheet());
+  }
+
   var previews = [];
   for (var i = 0; i < rows.length; i++) {
     var data = rowToObject(headers, rows[i]);
     if (!hasData(data)) continue;
-    var result = generateFile(tabName, data);
+    var result = generateFile(tabName, data, presentersMap);
     if (result && result.content) previews.push(result);
   }
 
@@ -83,12 +90,78 @@ function getPreviewData() {
 
 // ─── PUSH HANDLERS ───────────────────────────────────────────────────────────
 
-function pushProceedingsDev()  { pushContentType('proceedings',  'dev'); }
-function pushAuthorsDev()      { pushContentType('authors',      'dev'); }
-function pushPlenariesDev()    { pushContentType('plenaries',    'dev'); }
-function pushSponsorsDev()     { pushContentType('sponsors',     'dev'); }
-function pushConferencesDev()  { pushContentType('conferences',  'dev'); }
-function pushAllDev()          { pushAll('dev'); }
+function pushProceedingsDev() {
+  var ss      = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet   = findSheet(ss, 'proceedings');
+  if (!sheet) { SpreadsheetApp.getUi().alert('No sheet tab found matching "proceedings".'); return; }
+  var defaultYear = getDefaultYear(sheet, 'year');
+  var ui   = SpreadsheetApp.getUi();
+  var resp = ui.prompt(
+    'Push Proceedings → Dev',
+    'Year to push (press OK to use ' + defaultYear + '):',
+    ui.ButtonSet.OK_CANCEL
+  );
+  if (resp.getSelectedButton() !== ui.Button.OK) return;
+  var year = resp.getResponseText().trim() || defaultYear;
+  pushContentType('proceedings', 'dev', year);
+}
+function pushAllProceedingsDev() { pushContentType('proceedings', 'dev'); }
+function pushAuthorsDev()        { pushContentType('authors',      'dev'); }
+function pushSponsorsDev()       { pushContentType('sponsors',     'dev'); }
+function pushConferencesDev()    { pushContentType('conferences',  'dev'); }
+function pushAllDev()            { pushAll('dev'); }
+
+function debugPushDryRun() {
+  var ss     = SpreadsheetApp.getActiveSpreadsheet();
+  var active = ss.getActiveSheet();
+  var sheet  = (active.getName().toLowerCase().indexOf('author') !== -1)
+    ? active : findSheet(ss, 'authors');
+  var headers = getHeaders(sheet);
+  var allRows = sheet.getDataRange().getValues().slice(1);
+
+  var withImage = [], withoutImage = 0;
+  for (var i = 0; i < allRows.length; i++) {
+    var data = rowToObject(headers, allRows[i]);
+    if (!hasData(data)) continue;
+    var file = generateFile('authors', data, {});
+    if (!file) continue;
+    if (file.content.indexOf('image: ""') === -1) {
+      var m = file.content.match(/image: "([^"]+)"/);
+      withImage.push((m ? m[1] : '?') + ' → ' + file.path.split('/').pop());
+    } else {
+      withoutImage++;
+    }
+  }
+  var msg = 'Files with non-empty image: ' + withImage.length + '\n';
+  msg += 'Files with image="": ' + withoutImage + '\n\n';
+  msg += withImage.slice(0, 15).join('\n');
+  SpreadsheetApp.getUi().alert(msg);
+}
+
+function debugAuthorImageValues() {
+  var ss      = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet   = ss.getActiveSheet();
+  var headers = getHeaders(sheet);
+  var allRows = sheet.getDataRange().getValues();
+  var imgIdx  = headers.indexOf('image');
+  var msg = 'Sheet: "' + sheet.getName() + '"\n';
+  msg += 'Headers (' + headers.length + '): ' + headers.slice(0, 8).join(', ') + '\n';
+  msg += 'image col index: ' + imgIdx + '\n';
+  msg += 'Total rows (incl header): ' + allRows.length + '\n\n';
+  msg += 'Rows with non-empty image:\n';
+  var found = 0;
+  for (var i = 1; i < allRows.length; i++) {
+    var row    = allRows[i];
+    var imgVal = imgIdx >= 0 ? row[imgIdx] : '';
+    if (imgVal !== '' && imgVal !== null && imgVal !== undefined) {
+      var title = row[0] ? row[0].toString().substring(0, 30) : '(empty)';
+      msg += '  row ' + (i+1) + ': ' + title + ' → "' + imgVal + '"\n';
+      found++;
+    }
+  }
+  if (found === 0) msg += '  (none found)\n';
+  SpreadsheetApp.getUi().alert(msg);
+}
 
 function pushAllProduction() {
   var ui = SpreadsheetApp.getUi();
@@ -102,8 +175,8 @@ function pushAllProduction() {
 
 function pushAll(branch) {
   var types = branch === 'main'
-    ? ['proceedings', 'authors', 'plenaries', 'sponsors']
-    : ['proceedings', 'authors', 'plenaries', 'sponsors', 'conferences'];
+    ? ['proceedings', 'authors', 'sponsors']
+    : ['proceedings', 'authors', 'sponsors', 'conferences'];
   var totalFiles = 0;
   var errors = [];
 
@@ -135,9 +208,12 @@ function pushAll(branch) {
 
 // ─── CORE PUSH LOGIC ─────────────────────────────────────────────────────────
 
-function pushContentType(type, branch) {
-  var ss    = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = findSheet(ss, type);
+function pushContentType(type, branch, filterYear) {
+  var ss     = SpreadsheetApp.getActiveSpreadsheet();
+  var active = ss.getActiveSheet();
+  var sheet  = (active.getName().toLowerCase().indexOf(type.toLowerCase()) !== -1)
+    ? active
+    : findSheet(ss, type);
   if (!sheet) {
     SpreadsheetApp.getUi().alert(
       'No sheet tab found matching "' + type + '".\n\n' +
@@ -147,9 +223,10 @@ function pushContentType(type, branch) {
   }
 
   try {
-    var count = pushSheetToBranch(sheet, type, branch);
+    var count = pushSheetToBranch(sheet, type, branch, filterYear);
+    var yearNote = filterYear ? ' (' + filterYear + ')' : '';
     SpreadsheetApp.getUi().alert(
-      '✓ Pushed ' + count + ' ' + type + ' file(s) to the ' + branch + ' branch.' +
+      '✓ Pushed ' + count + ' ' + type + yearNote + ' file(s) to the ' + branch + ' branch.' +
       (branch === 'dev' ? '\n\nTo pull locally:\n\ngit fetch origin dev && git checkout dev && git pull' : '')
     );
   } catch (e) {
@@ -157,9 +234,14 @@ function pushContentType(type, branch) {
   }
 }
 
-function pushSheetToBranch(sheet, type, branch) {
+function pushSheetToBranch(sheet, type, branch, filterYear) {
   var headers = getHeaders(sheet);
   var allRows = sheet.getDataRange().getValues().slice(1); // skip header
+
+  var presentersMap = {};
+  if (type === 'proceedings') {
+    presentersMap = buildPresentersMap(SpreadsheetApp.getActiveSpreadsheet());
+  }
 
   var files         = [];
   var sponsorsByYear = {};
@@ -167,8 +249,9 @@ function pushSheetToBranch(sheet, type, branch) {
   for (var i = 0; i < allRows.length; i++) {
     var data = rowToObject(headers, allRows[i]);
     if (!hasData(data)) continue;
+    if (filterYear && String(data.year || '').trim() !== String(filterYear)) continue;
 
-    var result = generateFile(type, data);
+    var result = generateFile(type, data, presentersMap);
     if (!result) continue;
 
     if (result.isYaml) {
@@ -207,22 +290,42 @@ function pushSheetToBranch(sheet, type, branch) {
 
 // ─── MARKDOWN GENERATORS ─────────────────────────────────────────────────────
 
-function generateFile(tabName, data) {
+function generateFile(tabName, data, presentersMap) {
   var t = tabName.toLowerCase();
-  if (t.indexOf('proceeding') !== -1) return generateProceeding(data);
+  if (t.indexOf('proceeding') !== -1) return generateProceeding(data, presentersMap || {});
   if (t.indexOf('author')     !== -1) return generateAuthor(data);
-  if (t.indexOf('plenar')     !== -1) return generatePlenary(data);
   if (t.indexOf('sponsor')    !== -1 || t.indexOf('exhib') !== -1) return generateSponsor(data);
   if (t.indexOf('conference') !== -1) return generateConference(data);
   return null;
 }
 
-function generateProceeding(d) {
-  var slug = slugify(d.title || '');
+function generateProceeding(d, presentersMap) {
+  var slug = toStr(d.slug) || slugify(d.title || '');
   if (!slug) return null;
 
   var trackVal = d.track ? '["' + esc(d.track) + '"]' : '[]';
-  var content = [
+
+  // Build presenter_ids and author_ids from the Presenters junction table
+  var presenterIds = [];
+  var authorIds    = [];
+  var entries      = (presentersMap && presentersMap[slug]) || [];
+  for (var i = 0; i < entries.length; i++) {
+    var e = entries[i];
+    if (!e.author_id) continue;
+    var role = (e.role || '').toLowerCase();
+    if (role === 'presenter'       || role === 'author-presenter') presenterIds.push(e.author_id);
+    if (role === 'author'          || role === 'author-presenter') authorIds.push(e.author_id);
+  }
+  var presenterIdsVal = presenterIds.length
+    ? '["' + presenterIds.map(function(id) { return esc(id); }).join('", "') + '"]'
+    : '[]';
+  var authorIdsVal = authorIds.length
+    ? '["' + authorIds.map(function(id) { return esc(id); }).join('", "') + '"]'
+    : '[]';
+
+  var isPlenary = (d.is_plenary === true || d.is_plenary === 'true' || d.is_plenary === 'TRUE');
+
+  var lines = [
     '---',
     'title: "' + esc(d.title) + '"',
     'date: "' + esc(d.date) + '"',
@@ -237,16 +340,37 @@ function generateProceeding(d) {
     'slides_url: "' + esc(d.slides_url) + '"',
     'paper_url: "' + esc(d.paper_url) + '"',
     'video_url: "' + esc(d.video_url) + '"',
+    'is_plenary: ' + (isPlenary ? 'true' : 'false'),
+    'lecture: "' + esc(d.lecture) + '"',
+    'plenary_weight: ' + (parseInt(d.plenary_weight) || 0),
+    'presenter_ids: ' + presenterIdsVal,
+    'author_ids: ' + authorIdsVal,
     '---',
     '',
     d.abstract || ''
-  ].join('\n');
+  ];
 
-  return { path: 'content/english/proceedings/' + slug + '.md', content: content };
+  return { path: 'content/english/proceedings/' + slug + '.md', content: lines.join('\n') };
+}
+
+function buildPresentersMap(ss) {
+  var sheet = findSheet(ss, 'presenter');
+  if (!sheet) return {};
+  var headers = getHeaders(sheet);
+  var rows    = sheet.getDataRange().getValues().slice(1);
+  var map     = {};
+  for (var i = 0; i < rows.length; i++) {
+    var d    = rowToObject(headers, rows[i]);
+    var slug = toStr(d.proceeding_slug).toLowerCase().trim();
+    if (!slug) continue;
+    if (!map[slug]) map[slug] = [];
+    map[slug].push({ author_id: toStr(d.author_id), role: toStr(d.role) });
+  }
+  return map;
 }
 
 function generateAuthor(d) {
-  var slug = slugify(d.title || d.name || '');
+  var slug = toStr(d.author_id) || slugify(d.title || d.name || '');
   if (!slug) return null;
 
   var content = [
@@ -264,32 +388,6 @@ function generateAuthor(d) {
   return { path: 'content/english/authors/' + slug + '.md', content: content };
 }
 
-function generatePlenary(d) {
-  var slug = slugify(d.author_id || d.author || '');
-  if (!slug) return null;
-
-  var affLines = (d.affiliation || '').split(/\n|\r\n?/).map(function(l) { return '  ' + l; }).join('\n');
-  var authorLink = '/authors/' + slugify(d.author_id || d.author) + '/';
-
-  var content = [
-    '---',
-    'title: "' + esc(d.title) + '"',
-    'year: ' + (d.year || ''),
-    'affiliation: |',
-    affLines,
-    'lecture: "' + esc(d.lecture) + '"',
-    'image: "' + esc(d.image) + '"',
-    'author: "' + esc(d.author) + '"',
-    'author_link: "' + authorLink + '"',
-    'plenary_id: "' + slug + '"',
-    'weight: ' + (d.weight || 1),
-    '---',
-    '',
-    d.abstract || ''
-  ].join('\n');
-
-  return { path: 'content/english/plenaries/' + slug + '.md', content: content };
-}
 
 function generateSponsor(d) {
   if (!d.year && !d.name) return null;
@@ -311,6 +409,7 @@ function generateConference(d) {
     'location: "' + esc(d.location) + '"',
     'status: "' + esc(d.status) + '"',
     'theme: "' + esc(d.theme) + '"',
+    'description: "' + esc(d.description) + '"',
     'proceedings_url: "' + esc(d.proceedings_url) + '"',
     'weight: ' + (d.weight || 10),
     'year: ' + year,
@@ -438,6 +537,19 @@ function githubPatch(endpoint, pat, body) {
 
 // ─── SHEET HELPERS ───────────────────────────────────────────────────────────
 
+function getDefaultYear(sheet, yearCol) {
+  var headers = getHeaders(sheet);
+  var idx     = headers.indexOf(yearCol);
+  if (idx === -1) return '';
+  var rows    = sheet.getDataRange().getValues().slice(1);
+  var max     = '';
+  for (var i = 0; i < rows.length; i++) {
+    var y = String(rows[i][idx] || '').trim();
+    if (y && y > max) max = y;
+  }
+  return max;
+}
+
 function findSheet(ss, keyword) {
   var sheets = ss.getSheets();
   for (var i = 0; i < sheets.length; i++) {
@@ -511,4 +623,304 @@ function formatTime(val) {
 
 function esc(val) {
   return toStr(val).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+}
+
+// ─── WEB APP ─────────────────────────────────────────────────────────────────
+
+var CONTENT_DIRS = {
+  conferences: 'content/english/conferences',
+  proceedings: 'content/english/proceedings',
+  plenaries:   'content/english/plenaries',
+  authors:     'content/english/authors',
+  pages:       'content/english/pages'
+};
+
+function doGet(e) {
+  return HtmlService.createHtmlOutputFromFile('WebApp')
+    .setTitle('BTC Website Admin')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+// ─── ACCESS CONTROL ──────────────────────────────────────────────────────────
+
+function getAllowedEmails() {
+  var stored = PropertiesService.getScriptProperties().getProperty('ALLOWED_EMAILS');
+  if (!stored) return [];
+  try { return JSON.parse(stored); } catch (e) { return []; }
+}
+
+function saveAllowedEmails(emails) {
+  if (!Array.isArray(emails)) throw new Error('Expected array of emails.');
+  PropertiesService.getScriptProperties().setProperty('ALLOWED_EMAILS', JSON.stringify(emails));
+  return 'Saved ' + emails.length + ' email(s).';
+}
+
+function getCurrentUserEmail() {
+  return Session.getActiveUser().getEmail();
+}
+
+// ─── SHEET SYNC ──────────────────────────────────────────────────────────────
+
+function getSheetId() {
+  return PropertiesService.getScriptProperties().getProperty('SHEET_ID') || '';
+}
+
+function saveSheetId(id) {
+  PropertiesService.getScriptProperties().setProperty('SHEET_ID', (id || '').trim());
+  return 'Sheet ID saved.';
+}
+
+function getLinkedSpreadsheet() {
+  var id = getSheetId();
+  if (!id) return null;
+  try { return SpreadsheetApp.openById(id); } catch (e) { return null; }
+}
+
+function syncRowToSheet(type, data, keyField) {
+  var ss = getLinkedSpreadsheet();
+  if (!ss) return;
+  var sheet = findSheet(ss, type);
+  if (!sheet) return;
+
+  var headers = getHeaders(sheet);
+  var keyIdx  = headers.indexOf(keyField);
+  if (keyIdx === -1) return;
+
+  var keyVal  = toStr(data[keyField] || '').toLowerCase();
+  var allRows = sheet.getDataRange().getValues();
+  var values  = headers.map(function (h) { return data[h] !== undefined ? data[h] : ''; });
+
+  for (var i = 1; i < allRows.length; i++) {
+    if (toStr(allRows[i][keyIdx]).toLowerCase() === keyVal) {
+      sheet.getRange(i + 1, 1, 1, values.length).setValues([values]);
+      return;
+    }
+  }
+  sheet.appendRow(values);
+}
+
+// ─── GITHUB READ FUNCTIONS ────────────────────────────────────────────────────
+
+function listContentFiles(type) {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
+  if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
+
+  if (type === 'sponsors') {
+    var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                         '/contents/data/sponsors?ref=main', pat);
+    if (resp.status === 404 || !Array.isArray(resp)) return [];
+    return resp
+      .filter(function (f) { return f.type === 'file' && /\.ya?ml$/.test(f.name); })
+      .map(function (f) { return { name: f.name, path: f.path, sha: f.sha }; })
+      .sort(function (a, b) { return b.name.localeCompare(a.name); });
+  }
+
+  var dir = CONTENT_DIRS[type];
+  if (!dir) throw new Error('Unknown content type: ' + type);
+  var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                       '/contents/' + dir + '?ref=main', pat);
+  if (resp.status === 404 || !Array.isArray(resp)) return [];
+  var files = resp
+    .filter(function (f) { return f.type === 'file' && f.name !== '_index.md'; })
+    .map(function (f) { return { name: f.name, path: f.path, sha: f.sha }; });
+  var dirs = resp
+    .filter(function (f) { return f.type === 'dir'; })
+    .map(function (f) { return { name: f.name + '.md', path: f.path + '/_index.md', sha: f.sha }; });
+  return files.concat(dirs)
+    .sort(function (a, b) { return a.name.localeCompare(b.name); });
+}
+
+function getContentFile(filePath) {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
+  if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
+  var resp = githubGet('/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                       '/contents/' + filePath + '?ref=main', pat);
+  if (resp.status === 404 || !resp.content) throw new Error('File not found: ' + filePath);
+  return Utilities.newBlob(
+    Utilities.base64Decode(resp.content.replace(/\n/g, ''))
+  ).getDataAsString();
+}
+
+// ─── WEB SAVE WRAPPERS ────────────────────────────────────────────────────────
+
+function webSaveConference(data, branch) {
+  branch = branch || 'dev';
+  var file = generateConference(data);
+  if (!file) throw new Error('Year is required.');
+
+  // If editing a branch bundle (_index.md), preserve the existing body
+  var currentPath = data._currentPath || '';
+  if (currentPath.indexOf('/_index.md') !== -1) {
+    var bundlePath   = 'content/english/conferences/' + data.year + '/_index.md';
+    var existing     = '';
+    try { existing = getContentFile(currentPath); } catch (e) {}
+    var existingBody = existing ? existing.replace(/^---[\s\S]*?\n---\n?/, '') : '';
+    var fmEnd        = file.content.indexOf('\n---\n');
+    file = { path: bundlePath, content: file.content.substring(0, fmEnd + 5) + '\n' + existingBody };
+  }
+
+  commitFiles([file], branch, 'Update conference (' + (data.year || '') + ') via web CMS');
+  syncRowToSheet('conferences', data, 'year');
+  return file.path;
+}
+
+
+function webSaveAuthor(data, branch) {
+  branch = branch || 'dev';
+  data.bio = data.bio || data.body || '';
+  var file = generateAuthor(data);
+  if (!file) throw new Error('Author name is required.');
+  commitFiles([file], branch, 'Update author (' + (data.title || '') + ') via web CMS');
+  syncRowToSheet('authors', data, 'author_id');
+  return file.path;
+}
+
+function webSaveProceeding(data, branch) {
+  branch = branch || 'dev';
+  data.abstract = data.abstract || data.body || '';
+  var file = generateProceeding(data);
+  if (!file) throw new Error('Title is required.');
+  commitFiles([file], branch, 'Update proceeding (' + (data.title || '') + ') via web CMS');
+  return file.path;
+}
+
+function webSaveSponsor(data, branch) {
+  branch = branch || 'dev';
+  var year = String(data.year || '');
+  if (!year || !data.name) throw new Error('Sponsor name and year are required.');
+  var sponsorPath = 'data/sponsors/' + year + '.yaml';
+
+  var existing = [];
+  try {
+    existing = parseSponsorYaml(getContentFile(sponsorPath));
+  } catch (e) {}
+
+  var found = false;
+  for (var i = 0; i < existing.length; i++) {
+    if ((existing[i].name || '').toLowerCase() === data.name.toLowerCase()) {
+      existing[i] = data;
+      found = true;
+      break;
+    }
+  }
+  if (!found) existing.push(data);
+
+  var lines = existing.map(function (s) {
+    return (
+      '- name: "' + esc(s.name || '') + '"\n' +
+      '  year: ' + (s.year || year) + '\n' +
+      '  level: "' + esc(s.level || '') + '"\n' +
+      '  website: "' + esc(s.website || '') + '"\n' +
+      '  logo: "' + esc(s.logo || '') + '"\n' +
+      '  description: "' + esc(s.description || '') + '"'
+    );
+  });
+
+  commitFiles([{ path: sponsorPath, content: lines.join('\n') }], branch,
+              'Update sponsors (' + year + ') via web CMS');
+  syncRowToSheet('sponsors', data, 'name');
+  return sponsorPath;
+}
+
+function parseSponsorYaml(content) {
+  var sponsors = [], current = null;
+  content.split('\n').forEach(function (line) {
+    var t = line.trim();
+    if (!t) return;
+    if (t.startsWith('- name:')) {
+      if (current) sponsors.push(current);
+      current = { name: t.replace(/^-\s*name:\s*["']?(.*?)["']?\s*$/, '$1') };
+    } else if (current) {
+      var m = t.match(/^(\w+):\s*["']?(.*?)["']?\s*$/);
+      if (m) current[m[1]] = m[2];
+    }
+  });
+  if (current) sponsors.push(current);
+  return sponsors;
+}
+
+function webSavePage(data, branch) {
+  branch = branch || 'dev';
+  var slug = slugify(data.title || '');
+  if (!slug) throw new Error('Title is required.');
+  var content = [
+    '---',
+    'title: "' + esc(data.title) + '"',
+    'date: "' + esc(data.date || toStr(new Date())) + '"',
+    'description: "' + esc(data.description || '') + '"',
+    'draft: ' + (data.draft ? 'true' : 'false'),
+    '---',
+    '',
+    data.body || ''
+  ].join('\n');
+  commitFiles([{ path: 'content/english/pages/' + slug + '.md', content: content }],
+              branch, 'Update page (' + data.title + ') via web CMS');
+  return 'content/english/pages/' + slug + '.md';
+}
+
+function getWebAppSettings() {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT') || '';
+  return {
+    pat:     pat ? '••••' + pat.slice(-4) : '(not set)',
+    sheetId: getSheetId(),
+    emails:  getAllowedEmails()
+  };
+}
+
+// ─── RICH LIST WITH METADATA ─────────────────────────────────────────────────
+
+// Fetches file metadata in batches of 10 to avoid UrlFetch rate limits.
+function listContentFilesWithMeta(type) {
+  var pat = PropertiesService.getScriptProperties().getProperty('GITHUB_PAT');
+  if (!pat) throw new Error('GitHub PAT not set. Go to Settings.');
+
+  var files = listContentFiles(type);
+  if (!files.length) return [];
+
+  var BATCH   = 10;
+  var results = [];
+
+  for (var b = 0; b < files.length; b += BATCH) {
+    if (b > 0) Utilities.sleep(1000);
+    var batch    = files.slice(b, b + BATCH);
+    var requests = batch.map(function (f) {
+      return {
+        url: API_BASE + '/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+             '/contents/' + f.path + '?ref=main',
+        headers: makeHeaders(pat),
+        muteHttpExceptions: true
+      };
+    });
+    var responses = UrlFetchApp.fetchAll(requests);
+    batch.forEach(function (f, i) {
+      var fm = {};
+      try {
+        if (responses[i].getResponseCode() === 200) {
+          var data = JSON.parse(responses[i].getContentText());
+          if (data.content) {
+            var decoded = Utilities.newBlob(
+              Utilities.base64Decode(data.content.replace(/\n/g, ''))
+            ).getDataAsString();
+            var fmMatch = decoded.match(/^---\n([\s\S]*?)\n---/);
+            if (fmMatch) fm = parseSimpleYaml(fmMatch[1]);
+          }
+        }
+      } catch (e) {}
+      results.push({ name: f.name, path: f.path, fm: fm });
+    });
+  }
+  return results;
+}
+
+// Minimal YAML key:value parser — handles the flat scalar fields we need.
+// Skips multiline blocks (| and >) and nested keys.
+function parseSimpleYaml(text) {
+  var result = {};
+  text.split('\n').forEach(function (line) {
+    var m = line.match(/^([\w_]+):\s*(.*?)\s*$/);
+    if (!m) return;
+    var v = m[2].replace(/^["'](.*)["']$/, '$1').trim();
+    if (v !== '|' && v !== '>') result[m[1]] = v;
+  });
+  return result;
 }

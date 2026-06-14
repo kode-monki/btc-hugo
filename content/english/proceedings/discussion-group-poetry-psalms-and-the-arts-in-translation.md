@@ -12,6 +12,11 @@ track: ["Discussion Group (Onsite only)"]
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>A discussion led by Sebastian Floor on topics connected to conveying Hebrew Psalms poetically and the broader role of poetry and the arts in BT.</p>

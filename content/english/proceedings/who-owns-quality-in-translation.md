@@ -12,6 +12,11 @@ track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=ZTCss82Kh3E"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 This paper will attempt to identify who owns or is responsible for quality in translation and the limitations and levels of that ownership and responsibility. This paper will also discuss what “ownership” means, categories of ownership, as well as the influence of local theology on quality.

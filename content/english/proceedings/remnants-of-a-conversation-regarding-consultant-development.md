@@ -12,6 +12,11 @@ track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=whkEEVB5FZE"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Bible translations do not appear ready for use. Bible translations are produced by people. A dedicated Bible translation team and capable Bible translation consultants cooperate to produce them.

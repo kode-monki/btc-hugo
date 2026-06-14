@@ -12,6 +12,11 @@ track: ["Discussion Group (Onsite only);Neurodiversity"]
 slides_url: ""
 paper_url: ""
 video_url: ""
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 <p>A discussion led by Andy Warren-Rothlin, offering a chance to discuss topics like:</p>

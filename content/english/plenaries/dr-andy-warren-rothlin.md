@@ -4,7 +4,7 @@ year: 2023
 affiliation: |
   United Bible Societies
 lecture: "Beekman Lecture"
-image: "warren-rothlin.webp"
+image: "images/authors/andy-warren-rothlin.webp"
 author: "Dr. Andy Warren-Rothlin"
 author_link: "/authors/dr-andy-warren-rothlin/"
 plenary_id: "dr-andy-warren-rothlin"

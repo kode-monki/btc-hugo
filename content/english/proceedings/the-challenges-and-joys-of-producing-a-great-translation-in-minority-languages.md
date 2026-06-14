@@ -11,7 +11,12 @@ year: "2023"
 track: ["Translation resources"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Quality Bible translation is crucial for minority language communities, as it enables them to access and understand the Scriptures in their own language. However, producing a high-quality translation requires more than just linguistic knowledge; it also requires a deep understanding of the cultural nuances and contexts that shape the language. Minority language translators may be fluent in their own language and the LWC, but they often lack formal training in translation. The focus of this presentation is on the involvement of the linguists in translation projects. Linguists doing research in a language can give input as to how the language is used, what the needs of the community are and how the translation project along with language development work can meet those needs.

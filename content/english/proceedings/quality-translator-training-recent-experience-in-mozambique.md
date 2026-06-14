@@ -12,6 +12,11 @@ track: ["Training and mentoring"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=d8WXpEAYxTA"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 During the pandemic aftermath in 2021 and 2022, with its attendant restrictions, the Mozambique Bible Society needed to train 15 Bible translators from 5 neglected, minority languages, scattered in four locations remote from the capital. Was in-person training possible? Was it worth the cost? Could on-line remote learning do all or part of the job? Which parts, and how well? What resources could be made available? This paper sets the debate in our Mozambican context and reflects on the issues as well as the actual training experience from the point of view of those responsible for teaching along with feedback from those trained, arguing that in our situation face-to-face, in-person learning is essential despite the elevated cost.

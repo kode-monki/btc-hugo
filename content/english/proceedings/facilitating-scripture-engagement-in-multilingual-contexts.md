@@ -6,12 +6,17 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Michelle Petersen"
-author_id: "#N/A"
+author_id: "michelle-petersen"
 year: "2023"
 track: ["Scripture engagement"]
 slides_url: ""
 paper_url: ""
-video_url: ""
+video_url: "#N/A"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 In what variety of ways can all participants in multilingual contexts engage with Scripture in the languages and communication styles each understands well? What part does the language of worship play in the language of Scripture engagement? The gospel typically arrives in a Language of Wider Communication (LWC) garbed in the foreign attire of another culture’s literature, hymns, music, arts, and communication styles. People can begin to own their faith more fully as they begin to express it in their own languages and cultural forms. In what ways can we who value local language Scripture engagement facilitate these transformations? 

@@ -12,6 +12,11 @@ track: ["Bible translation in sign languages"]
 slides_url: ""
 paper_url: ""
 video_url: "https://www.youtube.com/watch?v=OleIQKEN5bY"
+is_plenary: false
+lecture: ""
+plenary_weight: 0
+presenter_ids: []
+author_ids: []
 ---
 
 Bible translation for sign languages utilizes video as the primary medium for the translated text. Video has its own unique challenges. Before 2018, translation teams and professionals working with them created their best processes using off-the-shelf software. While quality assurance happened, it was not entirely efficient.

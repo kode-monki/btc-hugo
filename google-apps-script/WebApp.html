@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTC Website Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css" rel="stylesheet">
+  <link rel="icon" href="https://btconference.org/images/favicon_hu_56284728a90af56d.png">
+  <style>
+    :root { --sidebar: 230px; --brand: #1c2951; }
+    body { background: #f1f5f9; min-height: 100vh; margin: 0; }
+
+    #sidebar {
+      position: fixed; top: 0; left: 0; bottom: 0; width: var(--sidebar);
+      background: var(--brand); display: flex; flex-direction: column; z-index: 100;
+      overflow-y: auto;
+    }
+    .sidebar-brand {
+      color: #fff; font-weight: 700; font-size: 1rem;
+      padding: 1.1rem 1.25rem .9rem; border-bottom: 1px solid rgba(255,255,255,.12);
+      line-height: 1.3;
+    }
+    .sidebar-brand small { display: block; font-weight: 400; font-size: .72rem; color: rgba(255,255,255,.5); margin-top: 2px; }
+    .sidebar-user { color: rgba(255,255,255,.45); font-size: .72rem; padding: .75rem 1.25rem; border-top: 1px solid rgba(255,255,255,.1); word-break: break-all; }
+    .nav-link {
+      color: rgba(255,255,255,.65); padding: .55rem 1.25rem; border-left: 3px solid transparent;
+      border-radius: 0; font-size: .9rem; display: block; text-decoration: none;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,.07); }
+    .nav-link.active { color: #fff; background: rgba(255,255,255,.12); border-left-color: #7fa8f5; }
+
+    #main { margin-left: var(--sidebar); padding: 2rem; min-height: 100vh; }
+
+    .card { border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+    .card-title { font-size: 1rem; font-weight: 600; }
+
+    .list-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .6rem 1rem; border-bottom: 1px solid #f1f5f9;
+      cursor: pointer; background: #fff;
+    }
+    .list-row:hover { background: #f8fafc; }
+    .list-row:last-child { border-bottom: none; }
+
+    .page-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem; }
+
+    #spinner { display: none; padding: 3rem; text-align: center; }
+    .spin-overlay {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(255,255,255,.55); align-items: center; justify-content: center;
+    }
+    .spin-overlay.active { display: flex; }
+
+    .badge-level { font-size: .7rem; }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav id="sidebar">
+  <div class="sidebar-brand">
+    BTC Website Admin
+    <small>btconference.org</small>
+  </div>
+  <div class="flex-grow-1">
+    <div class="pt-2 pb-1 px-3 text-uppercase" style="font-size:.68rem;color:rgba(255,255,255,.35);letter-spacing:.07em;">Content</div>
+    <a href="#" class="nav-link" id="nav-conferences"  onclick="navigate('conferences');return false;">Conferences</a>
+    <a href="#" class="nav-link" id="nav-proceedings" onclick="navigate('proceedings');return false;">Proceedings</a>
+    <a href="#" class="nav-link" id="nav-sponsors"    onclick="navigate('sponsors');return false;">Sponsors</a>
+    <a href="#" class="nav-link" id="nav-authors"     onclick="navigate('authors');return false;">Authors</a>
+    <a href="#" class="nav-link" id="nav-pages"       onclick="navigate('pages');return false;">Pages</a>
+  </div>
+  <div>
+    <a href="#" class="nav-link" id="nav-settings" onclick="navigate('settings');return false;">⚙ Settings</a>
+    <div class="sidebar-user" id="userEmail">Loading…</div>
+  </div>
+</nav>
+
+<!-- Main area -->
+<main id="main">
+
+  <!-- Overlay spinner -->
+  <div class="spin-overlay" id="spinOverlay">
+    <div class="spinner-border text-secondary"></div>
+  </div>
+
+  <!-- Home -->
+  <div id="view-home">
+    <div class="page-title">Welcome</div>
+    <p class="text-muted mb-4">Select a content type from the sidebar to browse and edit entries. Changes are committed directly to GitHub and trigger a site rebuild (~2 min to go live).</p>
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('conferences')"><div class="fw-semibold">Conferences</div><div class="text-muted small mt-1">Conference year pages</div></div></div>
+      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('proceedings')"><div class="fw-semibold">Proceedings</div><div class="text-muted small mt-1">Session papers &amp; abstracts</div></div></div>
+      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('sponsors')"><div class="fw-semibold">Sponsors</div><div class="text-muted small mt-1">Sponsor listings by year</div></div></div>
+      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('authors')"><div class="fw-semibold">Authors</div><div class="text-muted small mt-1">Speaker &amp; author profiles</div></div></div>
+      <div class="col-sm-6 col-lg-4"><div class="card p-3 h-100" style="cursor:pointer" onclick="navigate('pages')"><div class="fw-semibold">Pages</div><div class="text-muted small mt-1">Static content pages</div></div></div>
+    </div>
+  </div>
+
+  <!-- List -->
+  <div id="view-list" class="d-none">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div class="page-title mb-0" id="list-heading"></div>
+      <button class="btn btn-primary btn-sm" onclick="showNewForm()">+ New</button>
+    </div>
+    <div class="card">
+      <div class="card-body pb-2 pt-3">
+        <input type="text" id="search-input" class="form-control form-control-sm" placeholder="Search…" oninput="filterList()">
+      </div>
+      <div id="list-items"></div>
+      <div id="list-empty" class="d-none text-muted p-3 small">No entries found.</div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div id="view-form" class="d-none">
+    <div class="d-flex align-items-center gap-2 mb-3">
+      <button class="btn btn-sm btn-outline-secondary" onclick="navigate(currentType)">← Back</button>
+      <div class="page-title mb-0" id="form-heading"></div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <form id="content-form" onsubmit="return false">
+          <div id="form-fields"></div>
+          <div class="d-flex flex-wrap gap-2 mt-4 pt-3 border-top">
+            <button class="btn btn-outline-primary" onclick="saveContent('dev')">Save to Dev</button>
+            <button class="btn btn-danger" onclick="confirmPublish()">Publish to Production</button>
+            <button class="btn btn-outline-secondary ms-auto" onclick="navigate(currentType)">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings -->
+  <div id="view-settings" class="d-none">
+    <div class="page-title">Settings</div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="card-title">GitHub Token</div>
+        <p class="text-muted small mb-2">Current: <span id="s-pat" class="font-monospace">…</span></p>
+        <label class="form-label small">New token</label>
+        <input type="password" id="s-pat-input" class="form-control form-control-sm mb-2" placeholder="ghp_…">
+        <button class="btn btn-sm btn-primary" onclick="savePat()">Save Token</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="card-title">Google Sheet ID</div>
+        <p class="text-muted small mb-2">Paste the ID from your Sheet's URL to keep it in sync when editing here.<br>
+        URL format: <code>docs.google.com/spreadsheets/d/<b>[ID]</b>/edit</code></p>
+        <label class="form-label small">Sheet ID</label>
+        <input type="text" id="s-sheet-id" class="form-control form-control-sm mb-2" placeholder="1BxiMVs0XRA5…">
+        <button class="btn btn-sm btn-primary" onclick="saveSheetId()">Save</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="card-title">Authorized Editors</div>
+        <p class="text-muted small mb-2">One Google email per line. Leave empty to allow any Google account.</p>
+        <textarea id="s-emails" class="form-control form-control-sm mb-2" rows="5" placeholder="editor@example.com"></textarea>
+        <button class="btn btn-sm btn-primary" onclick="saveEmails()">Save</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1200">
+  <div id="liveToast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive">
+    <div class="d-flex">
+      <div class="toast-body" id="toast-msg"></div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Publish confirm modal -->
+<div class="modal fade" id="publishModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Publish to Production?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-muted">
+        This commits to the <code>main</code> branch and triggers a live site rebuild at btconference.org. The site updates in approximately 2 minutes.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-danger" id="publishBtn">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+<script>
+// ─── STATE ───────────────────────────────────────────────────────────────────
+var currentType = 'home';
+var currentFile = null;
+var allFiles    = [];
+var rawSponsors   = [];
+var mdeInstances  = {};
+
+// ─── TABLE COLUMN DEFINITIONS ────────────────────────────────────────────────
+var TABLE_COLS = {
+  conferences: [
+    { label:'Year',     fn: function(f) { return eh(String(f.fm.year || '')); } },
+    { label:'Dates',    fn: function(f) { var s = f.fm.date_start || '', e = f.fm.date_end || ''; return eh(s ? (e && e !== s ? s + ' – ' + e : s) : ''); } },
+    { label:'Theme',    fn: function(f) { var t = f.fm.theme || ''; return eh(t.length > 50 ? t.substring(0,50)+'…' : t); } },
+    { label:'Location', fn: function(f) { return eh(f.fm.location || ''); } },
+    { label:'Status',   fn: function(f) { var s = f.fm.status || ''; return s ? '<span class="badge ' + (s==='published'?'bg-success':'bg-secondary') + '">' + eh(s) + '</span>' : ''; } }
+  ],
+  proceedings: [
+    { label:'Title',  fn: function(f) { return eh(f.fm.title || f.name.replace(/\.md$/,'').replace(/-/g,' ')); } },
+    { label:'Author', fn: function(f) { return eh(f.fm.author || ''); } },
+    { label:'Year',   fn: function(f) { return eh(String(f.fm.year || '')); } }
+  ],
+  plenaries: [
+    { label:'Speaker',    fn: function(f) { return eh(f.fm.author || f.name.replace(/\.md$/,'').replace(/-/g,' ')); } },
+    { label:'Year',       fn: function(f) { return eh(String(f.fm.year || '')); } },
+    { label:'Talk Title', fn: function(f) { var t = f.fm.title || ''; return eh(t.length > 60 ? t.substring(0,60)+'…' : t); } }
+  ],
+  authors: [
+    { label:'Name',        fn: function(f) { return eh(f.fm.title || f.name.replace(/\.md$/,'').replace(/-/g,' ')); } },
+    { label:'Affiliation', fn: function(f) { var a = f.fm.affiliation || ''; return eh(a.length > 50 ? a.substring(0,50)+'…' : a); } }
+  ],
+  pages: [
+    { label:'Title', fn: function(f) { return eh(f.fm.title || f.name.replace(/\.md$/,'')); } },
+    { label:'Date',  fn: function(f) { return eh(f.fm.date || ''); } },
+    { label:'',      fn: function(f) { return f.fm.draft === 'true' ? '<span class="badge bg-warning text-dark">draft</span>' : ''; } }
+  ]
+};
+
+// Key: type → comparator fn. Returning negative means a comes first.
+var TABLE_SORT = {
+  conferences: function(a, b) {
+    var ay = String(a.fm.year || a.name).replace(/\.md$/, '');
+    var by = String(b.fm.year || b.name).replace(/\.md$/, '');
+    return by.localeCompare(ay); // descending — newest first
+  }
+};
+
+// ─── FORM DEFINITIONS ────────────────────────────────────────────────────────
+var FORM_DEFS = {
+  conferences: [
+    { id:'year',            label:'Year',             type:'text',     required:true, hint:'e.g. 2026',            col:'col-sm-2' },
+    { id:'date_start',      label:'Start Date',       type:'date',                                                 col:'col-sm-3' },
+    { id:'date_end',        label:'End Date',         type:'date',                                                 col:'col-sm-3' },
+    { id:'location',        label:'Location',         type:'text',     hint:'City, Country',                       col:'col-sm-4' },
+    { id:'theme',           label:'Conference Theme', type:'text' },
+    { id:'status',          label:'Status',           type:'toggle',   options:['published','draft'],              col:'col-auto' },
+    { id:'image',           label:'Banner Image URL', type:'url' },
+    { id:'proceedings_url', label:'Proceedings URL',  type:'url' },
+    { id:'weight',          label:'Sort Weight',      type:'number',   hint:'Lower = appears first. Default: 10',  col:'col-sm-3' },
+    { id:'description',     label:'Description',      type:'textarea', rows:5 }
+  ],
+  plenaries: [
+    { id:'author',      label:'Speaker Name',      type:'text',     required:true },
+    { id:'author_id',   label:'Speaker ID (slug)', type:'text',     hint:'Auto-generated; override only if needed', autoSlugFrom:'author' },
+    { id:'title',       label:'Talk Title',        type:'text' },
+    { id:'year',        label:'Year',              type:'number' },
+    { id:'lecture',     label:'Lecture Label',     type:'text',     hint:'e.g. Keynote Address' },
+    { id:'affiliation', label:'Affiliation',       type:'textarea', rows:3 },
+    { id:'image',       label:'Photo URL',         type:'url' },
+    { id:'weight',      label:'Sort Weight',       type:'number' },
+    { id:'body',        label:'Abstract',          type:'textarea', rows:8,  editor:true }
+  ],
+  authors: [
+    { id:'title',       label:'Full Name',         type:'text',     required:true },
+    { id:'author_id',   label:'Author ID (slug)',  type:'text',     hint:'Auto-generated from name', autoSlugFrom:'title' },
+    { id:'affiliation', label:'Affiliation',       type:'text' },
+    { id:'image',       label:'Photo URL',         type:'url' },
+    { id:'body',        label:'Biography',         type:'textarea', rows:8,  editor:true }
+  ],
+  sponsors: [
+    { id:'name',        label:'Sponsor Name',      type:'text',     required:true },
+    { id:'year',        label:'Year',              type:'number',   required:true },
+    { id:'level',       label:'Sponsorship Level', type:'select',   options:['Gold','Silver','Bronze','Partner','Exhibitor'] },
+    { id:'website',     label:'Website URL',       type:'url' },
+    { id:'logo',        label:'Logo URL',          type:'url' },
+    { id:'description', label:'Description',       type:'textarea', rows:3 }
+  ],
+  pages: [
+    { id:'title',       label:'Title',             type:'text',     required:true },
+    { id:'date',        label:'Date',              type:'date' },
+    { id:'description', label:'Description (SEO)', type:'text' },
+    { id:'draft',       label:'Draft (not published)', type:'checkbox' },
+    { id:'body',        label:'Page Content',      type:'textarea', rows:12, editor:true }
+  ],
+  proceedings: [
+    { id:'title',      label:'Title',            type:'text',     required:true },
+    { id:'author',     label:'Author',           type:'text' },
+    { id:'author_id',  label:'Author ID',        type:'text',     hint:'Auto-generated from author name', autoSlugFrom:'author' },
+    { id:'year',       label:'Year',             type:'text' },
+    { id:'date',       label:'Date',             type:'date' },
+    { id:'start_time', label:'Start Time',       type:'text',     hint:'e.g. 9:00 AM' },
+    { id:'end_time',   label:'End Time',         type:'text',     hint:'e.g. 10:30 AM' },
+    { id:'location',   label:'Room / Location',  type:'text' },
+    { id:'track',      label:'Track',            type:'text',     hint:'e.g. Workshop' },
+    { id:'publicity',  label:'Publicity',        type:'select',   options:['', 'abstract-only'], hint:'abstract-only = hide video/slides/paper but show abstract' },
+    { id:'slides_url', label:'Slides URL',       type:'url' },
+    { id:'paper_url',  label:'Paper URL',        type:'url' },
+    { id:'video_url',  label:'Video URL',        type:'url' },
+    { id:'body',       label:'Abstract',         type:'textarea', rows:8, editor:true }
+  ]
+};
+
+// ─── NAVIGATION ──────────────────────────────────────────────────────────────
+function navigate(type) {
+  currentType = type;
+  document.querySelectorAll('.nav-link').forEach(function(a){ a.classList.remove('active'); });
+  var nav = document.getElementById('nav-' + type);
+  if (nav) nav.classList.add('active');
+
+  ['home','list','form','settings'].forEach(function(v){
+    document.getElementById('view-' + v).classList.add('d-none');
+  });
+
+  if (type === 'home') {
+    document.getElementById('view-home').classList.remove('d-none');
+  } else if (type === 'settings') {
+    document.getElementById('view-settings').classList.remove('d-none');
+    loadSettings();
+  } else {
+    document.getElementById('view-list').classList.remove('d-none');
+    document.getElementById('list-heading').textContent = capitalize(type);
+    loadList(type);
+  }
+}
+
+// ─── LIST VIEW ───────────────────────────────────────────────────────────────
+function loadList(type) {
+  showSpinner();
+  if (type === 'sponsors') {
+    google.script.run
+      .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; loadSponsorDetails(files); })
+      .withFailureHandler(onError)
+      .listContentFiles(type);
+  } else {
+    google.script.run
+      .withSuccessHandler(function(files) { hideSpinner(); allFiles = files; renderFileList(files, type); })
+      .withFailureHandler(onError)
+      .listContentFilesWithMeta(type);
+  }
+}
+
+function renderFileList(files, type) {
+  var el   = document.getElementById('list-items');
+  var cols = TABLE_COLS[type];
+  if (files && TABLE_SORT[type]) files = files.slice().sort(TABLE_SORT[type]);
+  if (!files || !files.length) {
+    el.innerHTML = '';
+    document.getElementById('list-empty').classList.remove('d-none');
+    return;
+  }
+  document.getElementById('list-empty').classList.add('d-none');
+  if (cols) {
+    var thead = '<thead class="table-light"><tr>' +
+      cols.map(function(c) { return '<th class="small fw-semibold py-2">' + eh(c.label) + '</th>'; }).join('') +
+      '</tr></thead>';
+    var tbody = '<tbody>' + files.map(function(f) {
+      return '<tr style="cursor:pointer" onclick="loadFileForEdit(\'' + ea(f.path) + '\')">' +
+        cols.map(function(c) { return '<td class="small py-2">' + c.fn(f) + '</td>'; }).join('') +
+        '</tr>';
+    }).join('') + '</tbody>';
+    el.innerHTML = '<table class="table table-hover table-sm mb-0">' + thead + tbody + '</table>';
+  } else {
+    el.innerHTML = files.map(function(f) {
+      var primary = getPrimaryLabel(f, type);
+      var badges  = getMetaBadges(f, type);
+      return '<div class="list-row" onclick="loadFileForEdit(\'' + ea(f.path) + '\')">' +
+             '<span class="fw-medium">' + eh(primary) + '</span>' +
+             '<div class="d-flex align-items-center gap-2 flex-shrink-0 ms-2">' + badges +
+             '<span class="text-muted small font-monospace d-none d-md-inline">' + eh(f.name) + '</span>' +
+             '</div></div>';
+    }).join('');
+  }
+}
+
+function getPrimaryLabel(file, type) {
+  var fm = file.fm || {};
+  var slug = file.name.replace(/\.md$/, '').replace(/-/g, ' ');
+  if (type === 'conferences') return fm.year   || slug;
+  if (type === 'proceedings') return fm.title  || slug;
+  if (type === 'plenaries')   return fm.author || slug;
+  if (type === 'authors')     return fm.title  || slug;
+  if (type === 'pages')       return fm.title  || slug;
+  return slug;
+}
+
+function getMetaBadges(file, type) {
+  var fm = file.fm || {};
+  var parts = [];
+  if (type === 'conferences') {
+    if (fm.location) parts.push('<span class="text-muted small">' + eh(fm.location) + '</span>');
+    if (fm.status)   parts.push('<span class="badge badge-level ' + (fm.status === 'published' ? 'bg-success' : 'bg-secondary') + '">' + eh(fm.status) + '</span>');
+  } else if (type === 'plenaries') {
+    if (fm.year)  parts.push('<span class="badge bg-secondary badge-level">' + eh(String(fm.year)) + '</span>');
+    if (fm.title) parts.push('<span class="text-muted small d-none d-lg-inline">' + eh(fm.title.substring(0, 50)) + (fm.title.length > 50 ? '…' : '') + '</span>');
+  } else if (type === 'authors') {
+    if (fm.affiliation) parts.push('<span class="text-muted small d-none d-md-inline">' + eh(fm.affiliation.substring(0, 40)) + (fm.affiliation.length > 40 ? '…' : '') + '</span>');
+  } else if (type === 'pages') {
+    if (fm.date)             parts.push('<span class="text-muted small">' + eh(fm.date) + '</span>');
+    if (fm.draft === 'true') parts.push('<span class="badge bg-warning text-dark badge-level">draft</span>');
+  }
+  return parts.join('');
+}
+
+function filterList() {
+  var q = document.getElementById('search-input').value.toLowerCase();
+  if (!q) { renderFileList(allFiles, currentType); return; }
+  if (currentType === 'sponsors') {
+    renderSponsorRows(rawSponsors.filter(function(s) {
+      return (s.name||'').toLowerCase().includes(q) ||
+             String(s.year||'').includes(q) ||
+             (s.level||'').toLowerCase().includes(q) ||
+             (s.description||'').toLowerCase().includes(q);
+    }));
+    return;
+  }
+  var filtered = allFiles.filter(function(f) {
+    if (f.name.toLowerCase().includes(q)) return true;
+    var fm = f.fm || {};
+    return Object.keys(fm).some(function(k) {
+      return String(fm[k] || '').toLowerCase().includes(q);
+    });
+  });
+  renderFileList(filtered, currentType);
+}
+
+// ─── SPONSOR LIST (special case: load YAML per year) ─────────────────────────
+function loadSponsorDetails(yearFiles) {
+  if (!yearFiles || !yearFiles.length) {
+    document.getElementById('list-items').innerHTML = '';
+    document.getElementById('list-empty').classList.remove('d-none');
+    return;
+  }
+  var pending = yearFiles.length, results = {};
+  yearFiles.forEach(function(f) {
+    var yr = f.name.replace(/\.ya?ml$/, '');
+    google.script.run
+      .withSuccessHandler(function(content){ results[yr] = content; if(!--pending) buildSponsorList(yearFiles, results); })
+      .withFailureHandler(function(){       results[yr] = '';      if(!--pending) buildSponsorList(yearFiles, results); })
+      .getContentFile(f.path);
+  });
+}
+
+function buildSponsorList(yearFiles, contentMap) {
+  rawSponsors = [];
+  yearFiles.forEach(function(f) {
+    var yr = f.name.replace(/\.ya?ml$/, '');
+    parseSponsorYaml(contentMap[yr] || '').forEach(function(s) {
+      s._filePath = f.path; s._year = yr;
+      rawSponsors.push(s);
+    });
+  });
+  renderSponsorRows(rawSponsors);
+}
+
+function parseSponsorYaml(content) {
+  var sponsors = [], current = null;
+  content.split('\n').forEach(function(line) {
+    var t = line.trim();
+    if (!t) return;
+    if (t.startsWith('- name:')) {
+      if (current) sponsors.push(current);
+      current = { name: t.replace(/^-\s*name:\s*["']?(.*?)["']?\s*$/, '$1') };
+    } else if (current) {
+      var m = t.match(/^(\w+):\s*["']?(.*?)["']?\s*$/);
+      if (m) current[m[1]] = m[2];
+    }
+  });
+  if (current) sponsors.push(current);
+  return sponsors;
+}
+
+function renderSponsorRows(sponsors) {
+  var el = document.getElementById('list-items');
+  if (!sponsors || !sponsors.length) {
+    el.innerHTML = ''; document.getElementById('list-empty').classList.remove('d-none'); return;
+  }
+  document.getElementById('list-empty').classList.add('d-none');
+  var levelColor = { Gold:'warning', Silver:'secondary', Bronze:'warning', Partner:'info', Exhibitor:'light' };
+  var thead = '<thead class="table-light"><tr>' +
+    '<th class="small fw-semibold py-2">Name</th>' +
+    '<th class="small fw-semibold py-2">Year</th>' +
+    '<th class="small fw-semibold py-2">Level</th>' +
+    '</tr></thead>';
+  var tbody = '<tbody>' + sponsors.map(function(s) {
+    var idx   = rawSponsors.indexOf(s);
+    var color = levelColor[s.level] || 'secondary';
+    return '<tr style="cursor:pointer" onclick="editSponsor(' + idx + ')">' +
+           '<td class="small py-2">' + eh(s.name || '(unnamed)') + '</td>' +
+           '<td class="small py-2">' + eh(s._year || '') + '</td>' +
+           '<td class="small py-2">' + (s.level ? '<span class="badge bg-' + color + ' text-dark">' + eh(s.level) + '</span>' : '') + '</td>' +
+           '</tr>';
+  }).join('') + '</tbody>';
+  el.innerHTML = '<table class="table table-hover table-sm mb-0">' + thead + tbody + '</table>';
+}
+
+function editSponsor(idx) {
+  var s = rawSponsors[idx];
+  if (!s) return;
+  currentFile = s._filePath;
+  document.getElementById('form-heading').textContent = 'Edit Sponsor';
+  document.getElementById('view-list').classList.add('d-none');
+  renderForm('sponsors', s);
+  document.getElementById('view-form').classList.remove('d-none');
+}
+
+// ─── FORM ────────────────────────────────────────────────────────────────────
+function showNewForm() {
+  currentFile = null;
+  var label = { conferences:'Conference', proceedings:'Proceeding', plenaries:'Plenary', authors:'Author', sponsors:'Sponsor', pages:'Page' }[currentType] || currentType;
+  document.getElementById('form-heading').textContent = 'New ' + label;
+  document.getElementById('view-list').classList.add('d-none');
+  renderForm(currentType, {});
+  document.getElementById('view-form').classList.remove('d-none');
+}
+
+function loadFileForEdit(path) {
+  showSpinner();
+  currentFile = path;
+  google.script.run
+    .withSuccessHandler(function(content) {
+      hideSpinner();
+      var parsed = parseFrontmatter(content);
+      var data = parsed.fm || {};
+      data.body = parsed.body;
+      // For conferences, fall back to extracting description from body
+      if (currentType === 'conferences' && !data.description) {
+        var m = parsed.body.match(/## Theme\n#[^\n]*\n\n?([\s\S]*?)\n\n## Plenaries/);
+        if (m) data.description = m[1].trim();
+      }
+      var label = { conferences:'Conference', proceedings:'Proceeding', plenaries:'Plenary', authors:'Author', pages:'Page' }[currentType] || currentType;
+      document.getElementById('form-heading').textContent = 'Edit ' + label;
+      document.getElementById('view-list').classList.add('d-none');
+      renderForm(currentType, data);
+      document.getElementById('view-form').classList.remove('d-none');
+    })
+    .withFailureHandler(onError)
+    .getContentFile(path);
+}
+
+function renderForm(type, data) {
+  Object.keys(mdeInstances).forEach(function(k) {
+    try { mdeInstances[k].toTextArea(); } catch(e) {}
+  });
+  mdeInstances = {};
+
+  var defs = FORM_DEFS[type];
+  if (!defs) return;
+
+  var html = '<div class="row g-2">' + defs.map(function(f) {
+    var val      = data[f.id] !== undefined ? data[f.id] : '';
+    var colClass = f.col || 'col-12';
+    var inp = '';
+
+    if (f.type === 'textarea') {
+      inp = '<textarea id="f_' + f.id + '" class="form-control form-control-sm" rows="' + (f.rows||4) + '">' + eh(String(val)) + '</textarea>';
+    } else if (f.type === 'select') {
+      inp = '<select id="f_' + f.id + '" class="form-select form-select-sm">' +
+            (f.options||[]).map(function(o){ return '<option' + (val==o?' selected':'') + '>' + eh(o) + '</option>'; }).join('') +
+            '</select>';
+    } else if (f.type === 'toggle') {
+      inp = '<div class="btn-group btn-group-sm" role="group">' +
+            (f.options||[]).map(function(o) {
+              var btnClass = o === 'published' ? 'btn-outline-success' : 'btn-outline-secondary';
+              return '<input type="radio" class="btn-check" name="f_' + f.id + '" id="f_' + f.id + '_' + o + '" value="' + ea(o) + '" autocomplete="off"' + (String(val) === o ? ' checked' : '') + '>' +
+                     '<label class="btn btn-sm ' + btnClass + '" for="f_' + f.id + '_' + o + '">' + eh(o) + '</label>';
+            }).join('') + '</div>';
+    } else if (f.type === 'checkbox') {
+      return '<div class="mb-3 ' + colClass + '"><div class="form-check mt-4">' +
+             '<input type="checkbox" id="f_' + f.id + '" class="form-check-input"' + (val?' checked':'') + '>' +
+             '<label class="form-check-label" for="f_' + f.id + '">' + eh(f.label) + '</label></div></div>';
+    } else {
+      inp = '<input type="' + f.type + '" id="f_' + f.id + '" class="form-control form-control-sm" value="' + ea(String(val)) + '"' +
+            (f.required?' required':'') + '>';
+    }
+
+    return '<div class="mb-3 ' + colClass + '">' +
+           '<label class="form-label fw-semibold small"' + (f.type !== 'toggle' ? ' for="f_' + f.id + '"' : '') + '>' + eh(f.label) +
+           (f.required ? ' <span class="text-danger">*</span>' : '') + '</label>' +
+           inp +
+           (f.hint ? '<div class="form-text">' + eh(f.hint) + '</div>' : '') +
+           '</div>';
+  }).join('') + '</div>';
+
+  document.getElementById('form-fields').innerHTML = html;
+
+  defs.forEach(function(f) {
+    if (!f.editor) return;
+    var el = document.getElementById('f_' + f.id);
+    if (!el) return;
+    mdeInstances[f.id] = new EasyMDE({
+      element: el,
+      toolbar: ['bold','italic','|','heading-2','heading-3','|','unordered-list','ordered-list','|','link','|','preview'],
+      spellChecker: false,
+      status: false,
+      minHeight: ((f.rows || 4) * 24) + 'px'
+    });
+  });
+
+  // Wire up auto-slug fields
+  defs.forEach(function(f) {
+    if (!f.autoSlugFrom) return;
+    var src = document.getElementById('f_' + f.autoSlugFrom);
+    var tgt = document.getElementById('f_' + f.id);
+    if (!src || !tgt) return;
+    src.addEventListener('input', function() {
+      if (!tgt.dataset.userEdited) tgt.value = slugify(src.value);
+    });
+    tgt.addEventListener('input', function() { tgt.dataset.userEdited = '1'; });
+  });
+}
+
+function collectFormData() {
+  var defs = FORM_DEFS[currentType] || [];
+  var data = {};
+  defs.forEach(function(f) {
+    if (f.type === 'toggle') {
+      var checked = document.querySelector('input[name="f_' + f.id + '"]:checked');
+      data[f.id] = checked ? checked.value : '';
+    } else if (f.editor && mdeInstances[f.id]) {
+      data[f.id] = mdeInstances[f.id].value();
+    } else {
+      var el = document.getElementById('f_' + f.id);
+      if (!el) return;
+      data[f.id] = f.type === 'checkbox' ? el.checked : el.value.trim();
+    }
+  });
+  return data;
+}
+
+// ─── SAVE ────────────────────────────────────────────────────────────────────
+function saveContent(branch) {
+  var data = collectFormData();
+  if (currentFile) data._currentPath = currentFile;
+  var defs = FORM_DEFS[currentType] || [];
+  for (var i = 0; i < defs.length; i++) {
+    if (defs[i].required && !data[defs[i].id]) {
+      showToast(defs[i].label + ' is required.', 'warning'); return;
+    }
+  }
+
+  var fnMap = { conferences:'webSaveConference', proceedings:'webSaveProceeding',
+                plenaries:'webSavePlenary', authors:'webSaveAuthor',
+                sponsors:'webSaveSponsor', pages:'webSavePage' };
+  var fn = fnMap[currentType];
+  if (!fn) return;
+
+  showSpinner();
+  google.script.run
+    .withSuccessHandler(function(path) {
+      hideSpinner();
+      showToast('Saved to ' + branch + ' branch', 'success');
+      setTimeout(function(){ navigate(currentType); }, 1200);
+    })
+    .withFailureHandler(onError)
+    [fn](data, branch);
+}
+
+function confirmPublish() {
+  var modal = new bootstrap.Modal(document.getElementById('publishModal'));
+  document.getElementById('publishBtn').onclick = function() {
+    modal.hide();
+    saveContent('main');
+  };
+  modal.show();
+}
+
+// ─── SETTINGS ────────────────────────────────────────────────────────────────
+function loadSettings() {
+  google.script.run
+    .withSuccessHandler(function(s) {
+      document.getElementById('s-pat').textContent     = s.pat;
+      document.getElementById('s-sheet-id').value      = s.sheetId || '';
+      document.getElementById('s-emails').value         = (s.emails || []).join('\n');
+    })
+    .withFailureHandler(onError)
+    .getWebAppSettings();
+}
+
+function savePat() {
+  var v = document.getElementById('s-pat-input').value.trim();
+  if (!v) { showToast('Enter a token.', 'warning'); return; }
+  google.script.run
+    .withSuccessHandler(function(){ showToast('Token saved.', 'success'); document.getElementById('s-pat-input').value=''; loadSettings(); })
+    .withFailureHandler(onError)
+    .saveSettings(v);
+}
+
+function saveSheetId() {
+  google.script.run
+    .withSuccessHandler(function(){ showToast('Sheet ID saved.', 'success'); })
+    .withFailureHandler(onError)
+    .saveSheetId(document.getElementById('s-sheet-id').value.trim());
+}
+
+function saveEmails() {
+  var emails = document.getElementById('s-emails').value.split('\n')
+               .map(function(e){ return e.trim(); }).filter(Boolean);
+  google.script.run
+    .withSuccessHandler(function(msg){ showToast(msg, 'success'); })
+    .withFailureHandler(onError)
+    .saveAllowedEmails(emails);
+}
+
+// ─── UTILITIES ───────────────────────────────────────────────────────────────
+function parseFrontmatter(content) {
+  if (!content || !content.startsWith('---')) return { fm: {}, body: content || '' };
+  var end = content.indexOf('\n---', 3);
+  if (end === -1) return { fm: {}, body: content };
+  var fmStr = content.substring(4, end);
+  var body  = content.substring(end + 4).replace(/^\n/, '').trim();
+  var fm    = {};
+  try { fm = jsyaml.load(fmStr) || {}; } catch(e) {}
+  return { fm: fm, body: body };
+}
+
+function slugify(text) {
+  return String(text).toLowerCase()
+    .replace(/[àáâãäå]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i')
+    .replace(/[òóôõö]/g,'o').replace(/[ùúûü]/g,'u').replace(/[ñ]/g,'n').replace(/[ç]/g,'c')
+    .replace(/[^a-z0-9\s-]/g,'').trim().replace(/[\s_]+/g,'-').replace(/-+/g,'-');
+}
+
+function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+function eh(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function ea(s) { return eh(s); }
+
+function showToast(msg, type) {
+  var t  = document.getElementById('liveToast');
+  var bg = { success:'bg-success', danger:'bg-danger', warning:'bg-warning text-dark' }[type] || 'bg-success';
+  t.className = 'toast align-items-center text-white border-0 ' + bg;
+  if (type === 'warning') t.classList.remove('text-white');
+  document.getElementById('toast-msg').textContent = msg;
+  bootstrap.Toast.getOrCreateInstance(t, { delay: 3500 }).show();
+}
+
+function showSpinner() { document.getElementById('spinOverlay').classList.add('active'); }
+function hideSpinner() { document.getElementById('spinOverlay').classList.remove('active'); }
+
+function onError(e) {
+  hideSpinner();
+  showToast('Error: ' + (e && e.message ? e.message : String(e)), 'danger');
+}
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+window.addEventListener('load', function() {
+  google.script.run
+    .withSuccessHandler(function(email){ document.getElementById('userEmail').textContent = email; })
+    .getCurrentUserEmail();
+  navigate('home');
+});
+</script>
+</body>
+</html>
