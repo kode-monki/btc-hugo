@@ -4,7 +4,7 @@ year: 2023
 affiliation: |
   Wycliffe Global Alliance
 lecture: "Sanneh Lecture"
-image: "Kimbi.webp"
+image: "images/authors/paul-kimbi.webp"
 author: "Dr. Paul Kimbi"
 author_link: "/authors/dr-paul-kimbi/"
 plenary_id: "dr-paul-kimbi"

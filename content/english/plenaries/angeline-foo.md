@@ -4,7 +4,7 @@ year: 2023
 affiliation: |
   SIL International
 lecture: "Inspirational Address"
-image: "Foo.webp"
+image: "images/authors/angeline-foo.webp"
 author: "Angeline Foo"
 author_link: "/authors/angeline-foo/"
 plenary_id: "angeline-foo"
