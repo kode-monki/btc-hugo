@@ -13,7 +13,7 @@ track: ["Plenary"]
 slides_url: ""
 paper_url: ""
 video_url: "https://drive.google.com/open?id=1rPVmrTSGGfHTQufQKHpQGT6GF3CVPivV"
-is_plenary: false
+is_plenary: true
 lecture: ""
 plenary_weight: 0
 presenter_ids: []
