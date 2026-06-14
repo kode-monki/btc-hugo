@@ -13,11 +13,12 @@ function onOpen() {
     .createMenu('BTC Website')
     .addItem('Preview Selected Row(s)', 'previewSelected')
     .addSeparator()
-    .addItem('Push Proceedings → Dev',    'pushProceedingsDev')
-    .addItem('Push Authors → Dev',        'pushAuthorsDev')
-    .addItem('Push Sponsors → Dev',       'pushSponsorsDev')
-    .addItem('Push Conference Info → Dev','pushConferencesDev')
-    .addItem('Push ALL → Dev',            'pushAllDev')
+    .addItem('Push Proceedings → Dev',         'pushProceedingsDev')
+    .addItem('Push ALL Proceedings → Dev',     'pushAllProceedingsDev')
+    .addItem('Push Authors → Dev',             'pushAuthorsDev')
+    .addItem('Push Sponsors → Dev',            'pushSponsorsDev')
+    .addItem('Push Conference Info → Dev',     'pushConferencesDev')
+    .addItem('Push ALL → Dev',                 'pushAllDev')
     .addSeparator()
     .addItem('🚀 Push ALL → Production',  'pushAllProduction')
     .addSeparator()
@@ -87,11 +88,26 @@ function getPreviewData() {
 
 // ─── PUSH HANDLERS ───────────────────────────────────────────────────────────
 
-function pushProceedingsDev()  { pushContentType('proceedings',  'dev'); }
-function pushAuthorsDev()      { pushContentType('authors',      'dev'); }
-function pushSponsorsDev()     { pushContentType('sponsors',     'dev'); }
-function pushConferencesDev()  { pushContentType('conferences',  'dev'); }
-function pushAllDev()          { pushAll('dev'); }
+function pushProceedingsDev() {
+  var ss      = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet   = findSheet(ss, 'proceedings');
+  if (!sheet) { SpreadsheetApp.getUi().alert('No sheet tab found matching "proceedings".'); return; }
+  var defaultYear = getDefaultYear(sheet, 'year');
+  var ui   = SpreadsheetApp.getUi();
+  var resp = ui.prompt(
+    'Push Proceedings → Dev',
+    'Year to push (press OK to use ' + defaultYear + '):',
+    ui.ButtonSet.OK_CANCEL
+  );
+  if (resp.getSelectedButton() !== ui.Button.OK) return;
+  var year = resp.getResponseText().trim() || defaultYear;
+  pushContentType('proceedings', 'dev', year);
+}
+function pushAllProceedingsDev() { pushContentType('proceedings', 'dev'); }
+function pushAuthorsDev()        { pushContentType('authors',      'dev'); }
+function pushSponsorsDev()       { pushContentType('sponsors',     'dev'); }
+function pushConferencesDev()    { pushContentType('conferences',  'dev'); }
+function pushAllDev()            { pushAll('dev'); }
 
 function pushAllProduction() {
   var ui = SpreadsheetApp.getUi();
@@ -138,9 +154,12 @@ function pushAll(branch) {
 
 // ─── CORE PUSH LOGIC ─────────────────────────────────────────────────────────
 
-function pushContentType(type, branch) {
-  var ss    = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = findSheet(ss, type);
+function pushContentType(type, branch, filterYear) {
+  var ss     = SpreadsheetApp.getActiveSpreadsheet();
+  var active = ss.getActiveSheet();
+  var sheet  = (active.getName().toLowerCase().indexOf(type.toLowerCase()) !== -1)
+    ? active
+    : findSheet(ss, type);
   if (!sheet) {
     SpreadsheetApp.getUi().alert(
       'No sheet tab found matching "' + type + '".\n\n' +
@@ -150,9 +169,10 @@ function pushContentType(type, branch) {
   }
 
   try {
-    var count = pushSheetToBranch(sheet, type, branch);
+    var count = pushSheetToBranch(sheet, type, branch, filterYear);
+    var yearNote = filterYear ? ' (' + filterYear + ')' : '';
     SpreadsheetApp.getUi().alert(
-      '✓ Pushed ' + count + ' ' + type + ' file(s) to the ' + branch + ' branch.' +
+      '✓ Pushed ' + count + ' ' + type + yearNote + ' file(s) to the ' + branch + ' branch.' +
       (branch === 'dev' ? '\n\nTo pull locally:\n\ngit fetch origin dev && git checkout dev && git pull' : '')
     );
   } catch (e) {
@@ -160,7 +180,7 @@ function pushContentType(type, branch) {
   }
 }
 
-function pushSheetToBranch(sheet, type, branch) {
+function pushSheetToBranch(sheet, type, branch, filterYear) {
   var headers = getHeaders(sheet);
   var allRows = sheet.getDataRange().getValues().slice(1); // skip header
 
@@ -175,6 +195,7 @@ function pushSheetToBranch(sheet, type, branch) {
   for (var i = 0; i < allRows.length; i++) {
     var data = rowToObject(headers, allRows[i]);
     if (!hasData(data)) continue;
+    if (filterYear && String(data.year || '').trim() !== String(filterYear)) continue;
 
     var result = generateFile(type, data, presentersMap);
     if (!result) continue;
@@ -461,6 +482,19 @@ function githubPatch(endpoint, pat, body) {
 }
 
 // ─── SHEET HELPERS ───────────────────────────────────────────────────────────
+
+function getDefaultYear(sheet, yearCol) {
+  var headers = getHeaders(sheet);
+  var idx     = headers.indexOf(yearCol);
+  if (idx === -1) return '';
+  var rows    = sheet.getDataRange().getValues().slice(1);
+  var max     = '';
+  for (var i = 0; i < rows.length; i++) {
+    var y = String(rows[i][idx] || '').trim();
+    if (y && y > max) max = y;
+  }
+  return max;
+}
 
 function findSheet(ss, keyword) {
   var sheets = ss.getSheets();
