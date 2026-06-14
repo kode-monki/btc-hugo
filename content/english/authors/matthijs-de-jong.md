@@ -1,6 +1,6 @@
 ---
 title: Prof. dr. Matthijs J. de Jong
-image: ""
+image: "images/authors/matthijs-de-jong.webp"
 description: "Prof. dr. Matthijs J. de Jong"
 affiliation: "Bible Society for the Netherlands and Flanders"
 author_id: "matthijs-de-jong"
