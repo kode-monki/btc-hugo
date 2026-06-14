@@ -16,6 +16,8 @@ function onOpen() {
     .addItem('Push Proceedings → Dev',         'pushProceedingsDev')
     .addItem('Push ALL Proceedings → Dev',     'pushAllProceedingsDev')
     .addItem('Push Authors → Dev',             'pushAuthorsDev')
+    .addItem('[Debug] Author Image Values',    'debugAuthorImageValues')
+    .addItem('[Debug] Push Dry Run',           'debugPushDryRun')
     .addItem('Push Sponsors → Dev',            'pushSponsorsDev')
     .addItem('Push Conference Info → Dev',     'pushConferencesDev')
     .addItem('Push ALL → Dev',                 'pushAllDev')
@@ -108,6 +110,58 @@ function pushAuthorsDev()        { pushContentType('authors',      'dev'); }
 function pushSponsorsDev()       { pushContentType('sponsors',     'dev'); }
 function pushConferencesDev()    { pushContentType('conferences',  'dev'); }
 function pushAllDev()            { pushAll('dev'); }
+
+function debugPushDryRun() {
+  var ss     = SpreadsheetApp.getActiveSpreadsheet();
+  var active = ss.getActiveSheet();
+  var sheet  = (active.getName().toLowerCase().indexOf('author') !== -1)
+    ? active : findSheet(ss, 'authors');
+  var headers = getHeaders(sheet);
+  var allRows = sheet.getDataRange().getValues().slice(1);
+
+  var withImage = [], withoutImage = 0;
+  for (var i = 0; i < allRows.length; i++) {
+    var data = rowToObject(headers, allRows[i]);
+    if (!hasData(data)) continue;
+    var file = generateFile('authors', data, {});
+    if (!file) continue;
+    if (file.content.indexOf('image: ""') === -1) {
+      var m = file.content.match(/image: "([^"]+)"/);
+      withImage.push((m ? m[1] : '?') + ' → ' + file.path.split('/').pop());
+    } else {
+      withoutImage++;
+    }
+  }
+  var msg = 'Files with non-empty image: ' + withImage.length + '\n';
+  msg += 'Files with image="": ' + withoutImage + '\n\n';
+  msg += withImage.slice(0, 15).join('\n');
+  SpreadsheetApp.getUi().alert(msg);
+}
+
+function debugAuthorImageValues() {
+  var ss      = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet   = ss.getActiveSheet();
+  var headers = getHeaders(sheet);
+  var allRows = sheet.getDataRange().getValues();
+  var imgIdx  = headers.indexOf('image');
+  var msg = 'Sheet: "' + sheet.getName() + '"\n';
+  msg += 'Headers (' + headers.length + '): ' + headers.slice(0, 8).join(', ') + '\n';
+  msg += 'image col index: ' + imgIdx + '\n';
+  msg += 'Total rows (incl header): ' + allRows.length + '\n\n';
+  msg += 'Rows with non-empty image:\n';
+  var found = 0;
+  for (var i = 1; i < allRows.length; i++) {
+    var row    = allRows[i];
+    var imgVal = imgIdx >= 0 ? row[imgIdx] : '';
+    if (imgVal !== '' && imgVal !== null && imgVal !== undefined) {
+      var title = row[0] ? row[0].toString().substring(0, 30) : '(empty)';
+      msg += '  row ' + (i+1) + ': ' + title + ' → "' + imgVal + '"\n';
+      found++;
+    }
+  }
+  if (found === 0) msg += '  (none found)\n';
+  SpreadsheetApp.getUi().alert(msg);
+}
 
 function pushAllProduction() {
   var ui = SpreadsheetApp.getUi();
@@ -316,7 +370,7 @@ function buildPresentersMap(ss) {
 }
 
 function generateAuthor(d) {
-  var slug = slugify(d.title || d.name || '');
+  var slug = toStr(d.author_id) || slugify(d.title || d.name || '');
   if (!slug) return null;
 
   var content = [
