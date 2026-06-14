@@ -1,11 +1,8 @@
 ---
-title: Joshua Nemecek & Cassie Weishaupt
+title: Joshua Nemecek & 
 image: ""
-description: "Joshua Nemecek & Cassie Weishaupt"
+description: "Joshua Nemecek &"
 affiliation: ""
 author_id: "nemecek-weishaupt"
 ---
-
-
-
 
