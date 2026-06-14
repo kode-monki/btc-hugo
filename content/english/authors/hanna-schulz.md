@@ -6,6 +6,3 @@ affiliation: "Fuller Theological Seminary"
 author_id: "hanna-schulz"
 ---
 
-
-
-

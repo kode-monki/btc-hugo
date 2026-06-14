@@ -6,6 +6,3 @@ affiliation: "Fuller Seminary"
 author_id: "devin-schlote"
 ---
 
-
-
-
