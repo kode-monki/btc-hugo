@@ -1,11 +1,8 @@
 ---
-title: Maik Gibson & Ken Dekker
+title: Ken Decker, Maik Gibson
 image: ""
-description: "Maik Gibson & Ken Dekker"
+description: "Ken Decker, Maik Gibson"
 affiliation: ""
 author_id: "ken-decker-maik-gibson"
 ---
-
-
-
 

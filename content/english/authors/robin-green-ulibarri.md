@@ -7,5 +7,3 @@ author_id: "robin-green-ulibarri"
 ---
 
 <p>Robin Green Ulibarri is a Consultant in Training with Seed Company and an advocate for OBT. She lives with her family in East Tennessee.</p>
-
-
