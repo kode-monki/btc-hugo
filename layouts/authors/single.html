@@ -8,9 +8,16 @@
         <h2 class="h3 text-muted mb-6">{{ .Params.affiliation }}</h2>
       {{ end }}
 
+      {{ if .Params.image }}
+        <div class="float-right ml-8 mb-4">
+          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Size" "200x200" "Command" "Fill" "Class" "rounded-full") }}
+        </div>
+      {{ end }}
+
       <div class="content text-lg leading-relaxed">
         {{ .Content }}
       </div>
+      <div class="clear-both"></div>
 
       {{ $currentAuthorID := .Params.author_id }}
       {{ if $currentAuthorID }}
