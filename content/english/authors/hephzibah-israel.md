@@ -5,6 +5,8 @@ description: "Dr. Hephzibah Israel"
 affiliation: "Senior Lecturer in Translation Studies
 The University of Edinburgh"
 author_id: "hephzibah-israel"
+aliases:
+  - /plenaries/hephzibah-israel/
 ---
 
 <p>Hephzibah’s research intersects translation, religion, history, and postcolonial studies. She has a keen interest in the way ideas, texts or objects considered sacred are translated across language cultures and history. She retains a strong research interest in South Asian literary and translation cultures.</p>
