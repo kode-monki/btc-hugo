@@ -18,6 +18,9 @@ function onOpen() {
     .addItem('Push Authors → Dev',             'pushAuthorsDev')
     .addItem('[Debug] Author Image Values',    'debugAuthorImageValues')
     .addItem('[Debug] Push Dry Run',           'debugPushDryRun')
+    .addSeparator()
+    .addItem('Fill Missing IDs / Slugs',       'fillMissingIds')
+    .addItem('Populate Presenters from Proceedings', 'populatePresentersFromProceedings')
     .addItem('Push Sponsors → Dev',            'pushSponsorsDev')
     .addItem('Push Conference Info → Dev',     'pushConferencesDev')
     .addItem('Push ALL → Dev',                 'pushAllDev')
@@ -657,6 +660,117 @@ function saveAllowedEmails(emails) {
 
 function getCurrentUserEmail() {
   return Session.getActiveUser().getEmail();
+}
+
+// ─── ID / SLUG FILL ──────────────────────────────────────────────────────────
+
+function fillMissingIds() {
+  var sheet   = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var name    = sheet.getName().toLowerCase();
+  var headers = getHeaders(sheet);
+  var allRows = sheet.getDataRange().getValues();
+  var filled  = 0;
+
+  var isAuthors     = name.indexOf('author') !== -1;
+  var isProceedings = name.indexOf('proceeding') !== -1;
+
+  if (!isAuthors && !isProceedings) {
+    SpreadsheetApp.getUi().alert('Please run this from the Authors or Proceedings sheet.');
+    return;
+  }
+
+  if (isAuthors) {
+    var idIdx    = headers.indexOf('author_id');
+    var titleIdx = headers.indexOf('title');
+    var nameIdx  = headers.indexOf('name');
+    if (idIdx === -1) { SpreadsheetApp.getUi().alert('No "author_id" column found.'); return; }
+
+    for (var i = 1; i < allRows.length; i++) {
+      var row = allRows[i];
+      if (toStr(row[idIdx])) continue; // already has an ID
+      var source = toStr(titleIdx >= 0 ? row[titleIdx] : '') ||
+                   toStr(nameIdx  >= 0 ? row[nameIdx]  : '');
+      if (!source) continue;
+      var slug = slugify(source);
+      if (!slug) continue;
+      sheet.getRange(i + 1, idIdx + 1).setValue(slug);
+      filled++;
+    }
+    SpreadsheetApp.getUi().alert('Filled ' + filled + ' missing author_id value(s).');
+  }
+
+  if (isProceedings) {
+    var slugIdx  = headers.indexOf('slug');
+    var titleIdx = headers.indexOf('title');
+    if (slugIdx === -1) { SpreadsheetApp.getUi().alert('No "slug" column found.'); return; }
+
+    for (var i = 1; i < allRows.length; i++) {
+      var row = allRows[i];
+      if (toStr(row[slugIdx])) continue; // already has a slug
+      var title = toStr(titleIdx >= 0 ? row[titleIdx] : '');
+      if (!title) continue;
+      var slug = slugify(title);
+      if (!slug) continue;
+      sheet.getRange(i + 1, slugIdx + 1).setValue(slug);
+      filled++;
+    }
+    SpreadsheetApp.getUi().alert('Filled ' + filled + ' missing slug value(s).');
+  }
+}
+
+function populatePresentersFromProceedings() {
+  var ss   = SpreadsheetApp.getActiveSpreadsheet();
+  var ui   = SpreadsheetApp.getUi();
+
+  var procSheet = findSheet(ss, 'proceeding');
+  if (!procSheet) { ui.alert('No sheet tab found matching "proceedings".'); return; }
+
+  var headers  = getHeaders(procSheet);
+  var slugIdx  = headers.indexOf('slug');
+  var titleIdx = headers.indexOf('title');
+  var authIdx  = headers.indexOf('author_id');
+  if (authIdx === -1) { ui.alert('No "author_id" column found in Proceedings sheet.'); return; }
+
+  var allRows = procSheet.getDataRange().getValues().slice(1);
+
+  // Find or create Presenters sheet
+  var presSheet = findSheet(ss, 'presenter');
+  if (!presSheet) {
+    presSheet = ss.insertSheet('Presenters');
+    presSheet.getRange(1, 1, 1, 3).setValues([['proceeding_slug', 'author_id', 'role']]);
+    presSheet.getRange(1, 1, 1, 3).setFontWeight('bold');
+  }
+
+  // Build set of existing entries to avoid duplicates
+  var existingData = presSheet.getDataRange().getValues().slice(1);
+  var existing     = {};
+  for (var i = 0; i < existingData.length; i++) {
+    var key = toStr(existingData[i][0]) + '||' + toStr(existingData[i][1]);
+    if (key !== '||') existing[key] = true;
+  }
+
+  var newRows = [];
+  for (var i = 0; i < allRows.length; i++) {
+    var row      = allRows[i];
+    var authorId = toStr(authIdx >= 0 ? row[authIdx] : '');
+    if (!authorId) continue;
+
+    var procSlug = toStr(slugIdx >= 0 ? row[slugIdx] : '') ||
+                   slugify(toStr(titleIdx >= 0 ? row[titleIdx] : ''));
+    if (!procSlug) continue;
+
+    var key = procSlug + '||' + authorId;
+    if (existing[key]) continue;
+    newRows.push([procSlug, authorId, 'author-presenter']);
+    existing[key] = true;
+  }
+
+  if (newRows.length > 0) {
+    var lastRow = presSheet.getLastRow();
+    presSheet.getRange(lastRow + 1, 1, newRows.length, 3).setValues(newRows);
+  }
+
+  ui.alert('Done. Added ' + newRows.length + ' new row(s) to the Presenters sheet.');
 }
 
 // ─── SHEET SYNC ──────────────────────────────────────────────────────────────
