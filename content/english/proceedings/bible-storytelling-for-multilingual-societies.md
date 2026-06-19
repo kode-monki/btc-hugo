@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jim-stahl"]
+author_ids: ["jim-stahl"]
 ---
 
 Bible storytelling is a live performance and communication event, an iterative relationship between the story, storyteller, and audience. The story itself is molded by the language repertoire of the storyteller and audience. The audience gives immediate feedback to the storyteller about the story.  

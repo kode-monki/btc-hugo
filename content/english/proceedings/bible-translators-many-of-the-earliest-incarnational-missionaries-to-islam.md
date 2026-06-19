@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["scott-smith"]
+author_ids: ["scott-smith"]
 ---
 
 **Ramón Lull, Morning Star of Bible Translation**

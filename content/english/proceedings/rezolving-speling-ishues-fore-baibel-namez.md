@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Scripture embodiment in a culture can be hampered by Bible proper names which are either difficult to pronounce or are too much influenced by a language of wider circulation (LWC), making the translation too foreign sounding. Completely transforming names to adapt to the host culture is not historically advisable or even possible in most cases, but working out the best possible spellings for Bible names in the host language has many difficulties.  

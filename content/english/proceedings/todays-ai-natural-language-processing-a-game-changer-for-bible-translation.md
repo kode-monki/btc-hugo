@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=ktyhcCG_prk"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["gilles-gravelle"]
+author_ids: ["gilles-gravelle"]
 ---
 
 Automated Bible translation has been attempted by many people over the last nearly five decades. Early attempts used rule-based learning, and that had some positive results with closely related dialect adaptations. Google’s statistical approach to translation requires a very large corpus, usually millions of words. 

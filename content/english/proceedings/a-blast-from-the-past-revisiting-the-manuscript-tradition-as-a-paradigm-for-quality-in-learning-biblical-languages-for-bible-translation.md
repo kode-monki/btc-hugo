@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: true
 lecture: "Nida"
 plenary_weight: 3
-presenter_ids: []
-author_ids: []
+presenter_ids: ["edgar-ebojo"]
+author_ids: ["edgar-ebojo"]
 ---
 
 The widely recognised quality assurance pillars of modern Bible translation include the components of fidelity (accuracy/faithfulness), naturalness, and acceptability. Accordingly, it is commonly assumed that to satisfy the rigid requirements of fidelity in translation, appeal to and use of the original biblical languages have to be made as part of our translation process — which in practice actually refers to the critical text editions of Hebrew (and Greek) OT and Greek NT. This means that our working concept of fidelity to the original biblical languages is essentially based on the scientifically reconstructed critical editions of OT and NT texts, brought about by carefully comparing and analysing surviving manuscripts of the Bible. Hence, it is the text of these critical editions that we are patiently and deliberately learning to help us in our Bible translation task. But how do we guarantee quality learning of biblical languages in this context?

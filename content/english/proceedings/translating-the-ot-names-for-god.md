@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jim-zvara"]
+author_ids: ["jim-zvara"]
 ---
 
 In the past much attention has been given to NT translation issues, but increasingly translation organizations are recognizing the importance of OT translation, particularly for Muslim audiences. When I was serving as the coordinator of an OT translation project, one significant issue the team wrestled with was how to translate the various names for God and their combinations in OT texts. In the process we discovered that it is important to carefully consider not only how to translate the key terms YHWH, Elohim and Adonai, but also how to apply a consistent approach to translating them in their various combinations with one another and with other terms.  

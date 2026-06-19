@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["matt-crosland"]
+author_ids: ["matt-crosland"]
 ---
 
 How do we know that the training we are providing for mother tongue translators is relevant, appropriate and actually meeting felt needs? This paper will provide a case study for a new approach the Academic Training Department of SIL-PNG is developing to provide more culturally appropriate training by including end users in curriculum design and development.  

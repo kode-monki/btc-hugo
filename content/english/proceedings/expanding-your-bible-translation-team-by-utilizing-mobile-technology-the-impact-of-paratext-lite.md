@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=Iepuh7GNWAI"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 One challenge with modern Bible Translation is the dearth of major participants. Paratext Lite, available for mobile phones and tablets and integrating seamlessly with Paratext Projects, enables the target community to get more involved. This presentation looks at creative applications for back translation and community review through notes.

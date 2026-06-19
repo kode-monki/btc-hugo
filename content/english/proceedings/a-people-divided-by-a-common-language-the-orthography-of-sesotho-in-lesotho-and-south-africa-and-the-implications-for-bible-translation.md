@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=-Nw55Z26Ttk"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["tshokolo-makutoane"]
+author_ids: ["tshokolo-makutoane"]
 ---
 
 The Basotho of Lesotho and South Africa speak the same language but do not use the same orthography when writing Sesotho. This orthographic difference poses significant challenges when Bible translators translate into Sesotho. This paper provides a historical examination of the problem beginning with early French missionary efforts, and explores possible scenarios for resolving the problem.

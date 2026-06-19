@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=yi5VeRvhQ2s"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["roman-stefaniw"]
+author_ids: ["roman-stefaniw"]
 ---
 
 This paper questions the usefulness of using growth plans as evaluative instruments. After discussing problems with this approach, it suggests an alternative by locating the standard of performance for consultants in the result of their activity, rather than in a list of capabilities, and discusses criteria for people without customary academic qualifications.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["larry-burk"]
+author_ids: ["larry-burk"]
 ---
 
 According to the International Orality Network, there are 5.7 billion oral learners in today’s world—over 80% of the world’s population. When people think about orality, they tend to limit it to the communications process (how people receive, process, remember and pass on information). Oral communities, however, share much more in common. Not only are they unique in the way the communicate, but also in how they relate to one another and how they learn. In order to maximize the impact of our scripture engagement programs today, it is important to understand the key characteristics of oral communities and adapt our scripture engagement strategies accordingly.  

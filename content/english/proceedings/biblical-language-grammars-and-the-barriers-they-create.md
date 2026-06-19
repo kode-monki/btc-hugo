@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Michael Aubrey"
-author_id: "#N/A"
+author_id: "michael-aubrey"
 year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["fred-madden"]
+author_ids: ["fred-madden"]
 ---
 
 Since the inception of Oral Bible Translation strategies, there has been a need for independent authentication of the results of these projects by recognized translation consultants.  This paper is based on a series of recorded interviews with consultants with first-hand experience in these projects, and highlights different impressions they have of their experiences in these projects.  

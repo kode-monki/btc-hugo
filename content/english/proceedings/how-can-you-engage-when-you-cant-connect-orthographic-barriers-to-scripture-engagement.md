@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=8br8vqGdLR0"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michael-cahill"]
+author_ids: ["michael-cahill"]
 ---
 
 Even with increasing use of oral Bible translation, a print version is commonly the end goal. Sometimes adequate attention is not paid to orthography until near publication, resulting in Scripture that is unreadable. This paper proposes early consideration of orthography as standard practice and presents case studies from several languages.

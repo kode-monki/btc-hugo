@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=PC6BtpshiYE"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 This presentation follows the diverse development of Christological dogma from the time of Jesus to early Islam, examining those views which prevailed in Arabia and are most relevant to the perception of Christ in early Islam. The study applies findings to the work of Bible translators and to the wider conversation of the Christian church with members of the Muslim community.

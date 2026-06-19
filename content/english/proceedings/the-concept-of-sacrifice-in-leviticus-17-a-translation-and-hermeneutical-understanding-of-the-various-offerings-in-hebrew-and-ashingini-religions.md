@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["benjamin-gimba"]
+author_ids: ["benjamin-gimba"]
 ---
 
 Human beings mechanically sacrifice and there is always something deep within their nature that compels them to do so. Sacrifice has come to mean surrendering something of value for the benefit of another person or perhaps a community. History has it that to sacrifice was to make an offering, usually a costly one, to a deity or a king. It still carries this meaning today in many culture and religion including the three Kambari people -A̱shingini.  

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Different communities and individuals have different expectations regarding what Bible translation is and how it should be done. This paper explores the paradigm behind the paradigms—the assumptions behind translation principles—focusing on Relevance Theory as a paradigm for Bible translation and how a deepened understanding can help overcome different expectations.

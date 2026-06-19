@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["deborah-conwell"]
+author_ids: ["deborah-conwell"]
 ---
 
 I recall checking Obadiah for a language group from a small Pacific Island wondering how this ancient Middle Eastern text could ever be useful for the community. Were we wasting our time?  

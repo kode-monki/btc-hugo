@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=ZCpsV4v3p84"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 This paper proposes an alignment that overcomes polarization between author-focused and audience-focused translation by arguing that a translation is accurate when it conveys the full meaning intended by the author in ways the recipient accurately understands. Six different parameters for examining different translation paradigms are presented.

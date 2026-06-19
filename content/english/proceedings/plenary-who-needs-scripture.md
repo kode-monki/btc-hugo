@@ -16,8 +16,8 @@ video_url: "https://drive.google.com/open?id=11Nu8QiXBvLq1Yt-glTyPIgAbKPsPvKB0"
 is_plenary: true
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michel-kenmogne"]
+author_ids: ["michel-kenmogne"]
 ---
 
 #N/A

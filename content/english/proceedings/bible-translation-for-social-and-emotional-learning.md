@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=_PUpvTIhDvs"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["harry-harm"]
+author_ids: ["harry-harm"]
 ---
 
 Deaf children mostly are born into families where no one knows a sign language.  Often no one but the Deaf child learns a sign language and that does not happen until the child begins school.  Non-Deaf children acquire language from their families and neighbours.  They learn theory of mind, social norms and about the emotions they and others are experiencing.  Deaf children learn from what they are able to observe but with no explanation.  So Deaf children begin school far behind their non-Deaf peers in such skills.

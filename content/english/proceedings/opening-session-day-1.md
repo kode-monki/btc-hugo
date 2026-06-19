@@ -12,11 +12,11 @@ track: ["Plenary"]
 slides_url: ""
 paper_url: "https://www.btconference.org/proceedings-2021/day-1"
 video_url: "https://www.youtube.com/watch?v=81oHnoQQvgw"
-is_plenary: true
+is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 BTC 2021 Opening Session - Day 1 (Friday October 15)

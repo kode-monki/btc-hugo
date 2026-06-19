@@ -5,7 +5,7 @@ start_time: "9:15 AM"
 end_time: "9:50 AM"
 publicity: ""
 location: "Room 4"
-author: "Mark Wannemacher & Steve Doty"
+author: ""
 author_id: "#N/A"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality"]

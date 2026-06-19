@@ -15,7 +15,7 @@ video_url: "https://www.youtube.com/watch?v=Cmp-OGyxRbg"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["teryl-gonzalez"]
+author_ids: ["teryl-gonzalez"]
 ---
 
 Leaders in the global Bible translation movement have lacked a comprehensive view of consultant recruitment, training, management, and compensation, both within their own entities, and across organizational and geographical boundaries. This study focuses on global Bible translation quality assurance personnel practices, seen through the lens of Supply Chain Management theory. The question was posed, “What does it take to successfully move a person from potential recruit to fully employed translation consultant?”  

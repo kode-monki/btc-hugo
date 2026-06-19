@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["ho-koon-wei"]
+author_ids: ["ho-koon-wei"]
 ---
 
 Sign languages are different from spoken/written languages in communicating form. For example, sign language uses hands, face, space and body role shift meanwhile spoken language uses words/sounds from vocal cords. And sign language uses hands (manual) and facial expression (non-manual) the same time. Translating Bible text into a sign language has been a challenge for many Deaf translators in Asia. There are many changes faced by SLBT translators, but for our purpose, we would like to focus on two areas: idiom and dialogue within a dialogue. Deaf from different countries do have their own idioms but Bible idioms are difficult to be understood by the Deaf not only because of cultural differences but also because of differences between the Hearing world and Deaf world. Deaf people are usually very direct in their communication. Similar to challenges faced by many spoken languages in Asia, Deaf translation teams have to deal with idioms of a culture which they are not familiar with. For many spoken languages, dialogue within a dialogue is usually marked with symbols understood by the readers. Sign languages usually do not have such written symbolic markers. Based on our research on the published translation works in five different sign languages in Asia, we found various ways of handling idioms and dialogue within dialogue, which we intent to discuss on this paper.

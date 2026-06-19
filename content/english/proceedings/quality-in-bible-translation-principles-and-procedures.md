@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: true
 lecture: "Beekman #1"
 plenary_weight: 1
-presenter_ids: []
-author_ids: []
+presenter_ids: ["andy-warren-rothlin"]
+author_ids: ["andy-warren-rothlin"]
 ---
 
 Quality assurance criteria, standards and processes vary widely between Bible translation organisations. And new personnel, methods, technologies, urgencies and funding models are demanding new characterisations and prioritisations of quality. The object of quality assurance may be personnel, process, product or a range of other features of a project. But the agent, for most of the last century’s Bible translation boom, has usually been an elite cadre of white Anglo-Saxon Protestants, increasingly working through digital tools, with little community review and testing.

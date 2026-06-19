@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["daniel-paul"]
+author_ids: ["daniel-paul"]
 ---
 
 Fruitful Bible translation requires two activities which are often siloed: determining appropriate speech varieties in which to work – “language assessment”, and creating the best climate for translated material to be transformative – part of “Scripture engagement” (SE). We propose an integrated approach which overcomes the dichotomy between sociolinguistic and missional programs. Using the same set of research tools provides a unified conceptual framework and promotes synergy between translation and church growth.  

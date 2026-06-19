@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michael-jemphrey"]
+author_ids: ["michael-jemphrey"]
 ---
 
 Cet exposé porte sur l'importance d'un système de mentorat solide pour permettre aux conseillers en formation de s'épanouir. Il explique les quatre phases d'un mentorat formel: Négociation, Contrat formel, Mise en œuvre, et Terminaison, et discute de stratégies pour rendre l'encadrement des conseillers en formation plus solide.

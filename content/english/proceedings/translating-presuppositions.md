@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["paul-kroeger"]
+author_ids: ["paul-kroeger"]
 ---
 
 Informative presuppositions (information linguistically encoded as part of the common ground, but not actually known to the addressee) can cause confusion in translated material. A common solution in meaning-based translations is to restate the presupposed information as a separate assertion, but this approach distorts the information structure of the text, foregrounding material that was backgrounded in the source. I propose an alternative solution using conventional implicatures.  

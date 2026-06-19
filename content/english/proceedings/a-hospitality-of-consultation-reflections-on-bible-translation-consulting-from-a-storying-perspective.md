@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["tricia-stringer"]
+author_ids: ["tricia-stringer"]
 ---
 
 Some translation scholars have been reflecting on what it might mean to reframe the task of translation through the metaphor of hospitality. Storying practitioners are uniquely qualified to contribute to the discussion. Story crafting, story consulting methods, and healthy environment building in storying already include basic hospitality principles. This paper will address the question of how aspects of hospitality in storying might contribute positively towards naturalness, accuracy, community engagement and impact in a Bible translation project.   

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["margaret-doll"]
+author_ids: ["margaret-doll"]
 ---
 
 Digital media, including audio/visual media, has been effectively used in iterative scripture publishing, and in not a few cases has aided in the clarification of key terms. It has enabled agile publishing of scripture revisions, and discourse reframing. The processes involved in providing audio/visual and digital media resources for language communities are an effective opportunity for enhancing local ownership and building relationships with the local community, the essence of embodiment.  

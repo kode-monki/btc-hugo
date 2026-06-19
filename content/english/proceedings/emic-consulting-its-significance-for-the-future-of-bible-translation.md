@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 “Emic consulting” is a term coined by the author to indicate translation consulting led by a language and cultural insider. This is defined further as someone who has been certified as a translation consultant and who has both a demonstrated proficiency in the receptor language (up to native speaker level, in some cases) and a deep cultural awareness, usually resulting from extended residency among the language community. Major language translations have utilized with great success emic consulting services, but this approach is of lesser frequency in minority languages.  

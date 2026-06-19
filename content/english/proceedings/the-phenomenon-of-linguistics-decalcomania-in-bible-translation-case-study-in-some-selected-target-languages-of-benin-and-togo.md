@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["prosper-nongnide"]
+author_ids: ["prosper-nongnide"]
 ---
 
 In most translation teams in French-speaking countries in Africa, the source text from which the translation is done is the French versions of the Bible. As a result, the translation done in the target languages are very much influenced by the French language structure. In order words, the translators are victims of a tracing tendency and therefore decal the grammatical structures and collocations of the French language into their translations. This “loan-translation” phenomenon is what we try to describe in this paper as “linguistics decalcomania”.      

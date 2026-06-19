@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["doug-trick"]
+author_ids: ["doug-trick"]
 ---
 
 A discourse genre that has become particularly popular in the past two decades (particularly in the West) is characterized by strong polarization (either-or positions, in contrast with a both-and approach), "straw man" arguments, caricature, and other features.  This is the prominent genre in talk shows and social media, and increasingly so in journalism.  

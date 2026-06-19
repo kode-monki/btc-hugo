@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=vPb3eCl_5Nw"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 There is a significant tradition of translating the Psalms in metrical form meant to be sung. This paper traces this tradition from the 1500s through the Bay Psalm Book (1649) and considers what can be learned for Bible translation and Scripture engagement globally, including lessons from early struggles with the tension between fidelity and singability.

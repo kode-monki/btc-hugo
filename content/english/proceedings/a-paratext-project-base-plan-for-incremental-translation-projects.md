@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["kent-spielmann"]
+author_ids: ["kent-spielmann"]
 ---
 
 We will present a five-stage Paratext Project Base Plan designed to guide an incremental translation program from initiation though initial publication. This plan improves project completion rates and translation quality, and it provides relevant project progress reporting data. The Biblica Base Plan was developed in cooperation with project team members, area translation consultants, and the typesetting and publishing team. Key features of this plan include:  

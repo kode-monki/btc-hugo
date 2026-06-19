@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=npXwSoD9X1o"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["phil-king"]
+author_ids: ["phil-king"]
 ---
 
 

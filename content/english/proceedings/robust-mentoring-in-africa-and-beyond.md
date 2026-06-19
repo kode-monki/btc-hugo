@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michael-jemphrey"]
+author_ids: ["michael-jemphrey"]
 ---
 
 Robust mentoring is vital for our consultants and trainee consultants to grow and flourish.Our record of mentoring, though, has been patchy: some consultants in training receive excellent mentoring, while others receive virtually none. Some consultants have never been mentored and consequently do not know how to mentor others. This paper will present the steps that are been taken in Africa to address the situation.  

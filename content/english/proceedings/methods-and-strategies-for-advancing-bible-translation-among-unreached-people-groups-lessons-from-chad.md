@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Many Bible translation discussions focus on language groups that have at least a fledgling church. This paper addresses challenges of BT among unreached groups who have no church, covering different goals, the role of LWCs, creative approaches to opposition, and methods for publishing and distributing translation. Case studies draw from two projects in Chad.

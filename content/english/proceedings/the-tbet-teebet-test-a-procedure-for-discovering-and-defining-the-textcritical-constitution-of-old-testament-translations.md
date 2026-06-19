@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["steve-daley"]
+author_ids: ["steve-daley"]
 ---
 
 Using the TEV as an example, this paper will demonstrate that analyzing a translation’s response to 430 Old Testament textual issues may be adequate for discovering and defining its text-critical constitution.     

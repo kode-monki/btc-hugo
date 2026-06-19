@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 This paper investigates honorifics in Bible translation, including brief history of honorific studies, definition of key terms, difficulties and challenges, sociolinguistic factors in Japanese honorifics, how honorifics are reflected in the Japanese Bible, and proposals for honorific problems found in the Japanese Bible.

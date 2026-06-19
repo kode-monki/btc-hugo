@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jost-zetzsche"]
+author_ids: ["jost-zetzsche"]
 ---
 
 While all languages are competent in expressing the message of the Bible, each language has particular and sometimes unique capacities to communicate certain biblical messages in exceptionally enriching ways. Translation Insights and Perspectives (TIPs) at tips.translation.bible is a tool that collects these outstanding translation insights and makes them available to Bible translators, to the church in general, and to researchers and other interested parties.  

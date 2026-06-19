@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["katharine-hoogerheide"]
+author_ids: ["katharine-hoogerheide"]
 ---
 
 Teams and organizations continue to explore the implications of rendering the Word according to local communication conventions. In order to craft passages in a meaningful way, translators, artist-creators, and performers need resources to unlock the high points, connections, and other types of meaning embedded in the structures and aesthetic features of the original text. Given that the extant scholarship on Old Testament poetry has not yet been solidified or synthesized for these purposes, we are conducting additional research in the biblical Hebrew text of the Psalms and beginning to develop representative exegetical resources.  

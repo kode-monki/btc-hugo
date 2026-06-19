@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Attempts to build machine translation (MT) systems often founder when faced with low-resource languages. Neural and Statistical MT solutions require vast resources of example/training data or extensive knowledge/rule bases. Only a small proportion of bible translation projects have access to a coherent linguistic dataset. The UBS Glossing Technologies team are developing a language analyser designed to overcome some of these fundamental limitations. The objective of the work is to provide linguistic analysis for current and future computer assisted translation systems to enable them to contribute to a project at a much earlier stage.   

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["craig-soderberg"]
+author_ids: ["craig-soderberg"]
 ---
 
 The Jesus Film is one of the most powerful scripture engagement tools available. But in many languages, the film is not being fully utilized. In our context, Jesus Film usage dropped to zero because of lack of funding to pay the Jesus Film teams, threats of violence from those opposed to the gospel, and eventually from the national sensor board disapproving the film.   

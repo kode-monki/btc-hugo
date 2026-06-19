@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["kathy-taber"]
+author_ids: ["kathy-taber"]
 ---
 
 Bible translation consultants not only help ensure that the Scriptures they check are accurate, clear, and natural; they also have the unique opportunity of seeing the living and active Word of God speak to the hearts of those involved in the checking process.  This paper demonstrates how a consultant check can be an opportunity for scripture impact where participants reflect on what they have learned and want to apply to their lives, even as it also accomplishes the technical process of checking to ensure that a translation is well done.   

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=mr0IHT13lTs"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 Vernacular Bible translation arguably contributes to spiritual transformation and human flourishing. This paper explores the concepts of human flourishing and spiritual transformation, discusses models for measuring these variables in relation to vernacular Bible translation, and provides data from a remote community in Papua, Indonesia.

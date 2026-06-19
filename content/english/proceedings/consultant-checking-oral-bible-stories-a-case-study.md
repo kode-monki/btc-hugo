@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=KKA_pVTSLZQ"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Oral Bible Stories (OBS) are re-tellings of biblical stories. This paper explores the consultant checking of a small language's OT stories, examining the boundaries of what changes are permissible. When are omissions not acceptable? When are additions unwarranted? The paper examines several gray-area situations.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Come for the rare chance to see a Torah scroll up close. Handwritten Hebrew letters flow in a continuous, unending storyline that unrolls and rerolls with each passing year. The story ends at the end of time.  

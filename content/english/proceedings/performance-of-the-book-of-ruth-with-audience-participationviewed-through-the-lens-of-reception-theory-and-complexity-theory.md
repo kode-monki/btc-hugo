@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["june-dickie"]
+author_ids: ["june-dickie"]
 ---
 
 The book of Ruth is largely dialogue and thus lends itself to dramatic performance. However, the biblical text has many “gaps”, particularly being silent on the motivations of the characters. The audience is thus obliged to bring its own context and experience into its understanding of the story. This study seeks to understand how different members of a given audience interpret such gaps. Reception Theory (e.g. Darr 1998) and Complexity Theory (e.g. Cilliers 1998) both offer a lens to help explain the process.  

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 #N/A

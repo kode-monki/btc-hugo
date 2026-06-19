@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["andy-bowling"]
+author_ids: ["andy-bowling"]
 ---
 
 Through the whole history of Conservative Evangelical thought one could conclude that Genesis 1 has been taken as Story Discourse, i.e. past narrative. But there are structural, literary features that could point towards a different notional intent for this chapter. Most of these features fall into two categories:   

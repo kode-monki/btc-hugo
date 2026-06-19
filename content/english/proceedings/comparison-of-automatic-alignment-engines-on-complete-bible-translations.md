@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=EEIQ5djs_r4"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Six alignment engines (5 statistical, 1 hybrid) were used to align 13 complete Bible translations from 6 different languages. IBM-4 had the highest F-score, precision, and recall of statistical aligners. ClearEngine had similar F-scores but higher precision. This paper reports comparative results and implications for field use.

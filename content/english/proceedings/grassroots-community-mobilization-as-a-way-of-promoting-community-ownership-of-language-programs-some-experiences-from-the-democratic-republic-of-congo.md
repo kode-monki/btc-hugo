@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["bagamba-araali"]
+author_ids: ["bagamba-araali"]
 ---
 
 For many years, Eastern Congo Group (ECG) sought to promote community ownership of translation programs by engaging high-level church leadership. Throughout that time, the projects received only minimal local financial support, and barely functioned or stopped altogether when SIL members were no longer locally resident.  

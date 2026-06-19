@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["sebastian-floor"]
+author_ids: ["sebastian-floor"]
 ---
 
 The fronting of elements before the verb in Biblical Hebrew is a complex marked word-order feature which received attention in some recent works on the information structure (Heimerdinger, 1999; Van der Merwe and Talstra, 2002/3; Shimakazi, 2002; Floor, 2003, 2004, 2006; Mochavie, 2009). The most comprehensive study of marked word-order in Hebrew poetry is that of Nicolas Lunn (2006). Lunn reported that marked word-order in Hebrew OT is somewhat productive in narrative (13%), but a lot more productive in poetry (34%) - a third of all poetic lines in his sample. However, in spite of the frequent occurrence of this feature in Hebrew poetry, it is often not reflected in translation. This paper will give an overview of fronting in a sample of 40 Psalms in Hebrew, doing two things:   

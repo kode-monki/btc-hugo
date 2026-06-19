@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=LnUhtNmOf6A"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["eshinee-veith"]
+author_ids: ["eshinee-veith"]
 ---
 
 This session introduces 'Living Bible Translation Stories,' one of 12 modules in the 'Foundations in Bible Translation' certificate for the Digital Training Library. Applied history involves looking at past events and identifying ways they are analogous to current situations. The module uses stories crafted from historical BT work to help translators see themselves in the global BT story.

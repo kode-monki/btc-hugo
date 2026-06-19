@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["bryan-harmelink"]
+author_ids: ["bryan-harmelink"]
 ---
 
 “They will call him Immanuel, which means God with us” (Matthew 1:23) and, in John 1:14, “the Word became human and made his home among us.” Christians through the ages have recognized the Incarnation as a core belief. The introduction to this paper will explore theological understandings of the Incarnation and connections authors like Sanneh and Walls have made between the Incarnation and translation. These connections will then be evaluated through historical, theological, and missiological reflections.  

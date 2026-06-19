@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 The goal of Bible translation is that people would engage with God through Scripture so as to know him and experience authentic life transformation. A common expectation is that this will happen through various kinds of intentional Scripture use programs, especially after final publication, and that would be managed by specialists as a separate program track. This would seem to protect the translators from interruptions by people with concerns other than the translation. But what if throughout the translation process, interruptions could actually be opportunities for Scripture engagement that would have a synergistic relationship with the translation as well as jump start engagement for a well used translation?  In this seminar, we will describe how this process works. Our special focus will be on facilitating conversations in which people discover that the Scriptures are immediately relevant good news for them. We will also discuss the challenge in this to the faith and attitudes of Christian workers.

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=_lqgbH0-6gA"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Multiple paradigms within Bible translation have led to significant dichotomies: church-based vs. missionary translation; experts-driven vs. participatory; quality-driven vs. acceleration-driven. This paper examines Church-Centric Bible Translation research across three case studies asking whether these dichotomies require either/or choices.

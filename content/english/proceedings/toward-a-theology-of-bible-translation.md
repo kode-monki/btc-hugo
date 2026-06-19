@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["roman-stefaniw"]
+author_ids: ["roman-stefaniw"]
 ---
 
 Bible translation is a missiological enterprise, advancing the mission of God. This paper presents Bible translation as a theological undertaking, and outlines an initial theology of Bible translation. Theological studies discuss the nature of God, humanity, sin, incarnation, salvation, the Holy Spirit, the church, and the last things.  

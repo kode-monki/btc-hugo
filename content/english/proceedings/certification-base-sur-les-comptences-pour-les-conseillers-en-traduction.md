@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michael-jemphrey"]
+author_ids: ["michael-jemphrey"]
 ---
 
 Cet exposé porte sur un système de certification de conseillers basé sur les compétences: sa logique, ses avantages et ses défis. En mars 2020, un certain nombre d'agences de traduction se sont réunies en Irlande pour réfléchir ensemble sur ces défis.

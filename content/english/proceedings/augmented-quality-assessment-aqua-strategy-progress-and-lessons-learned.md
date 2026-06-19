@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=iCC9rZQgwh0"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 The AQuA project uses AI to automatically and objectively assess multiple facets of translation quality. This paper introduces the strategy, technology, initial results, and lessons learned, covering: power tools for translation consultants; an early warning system for translators; and an equalizer for administrators to compare innovative methodologies.

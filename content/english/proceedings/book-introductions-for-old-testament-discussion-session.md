@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["ronnie-sim"]
+author_ids: ["ronnie-sim"]
 ---
 
 An increasing number of first-time Old Testaments are being published \[full Bibles\]. Most of these include short book-by-book Introductions. The terse Introductions available in international versions are often translated into each language/project.   

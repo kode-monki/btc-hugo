@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["randall-buth"]
+author_ids: ["randall-buth"]
 ---
 
 The veqatal is widely acknowledged as forming a contrasting pair with vayyiqtol. Their functions within time, mood, and aspect are generally recognized, although a question about veqatal as a volitional perfective aspect has been raised. That perfective proposal for veqatal conflicts with the data. In past contexts both veqatal and yiqtol default to habitual and imperfectivity. Ironically, in future contexts, both yiqtol and veqatal default to perfective along a future-modal continuum. ¶  

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=1dxOnScJii4"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 The Ancient Near Eastern worldview underlying Genesis is a strange and confusing place for new readers. Muslim readers often find additional difficulties. This paper examines three concepts that Arab readers find confusing—the firmament, God's rest on the seventh day, and humans created in God's image—asking whether ancient eastern sources can illuminate them.

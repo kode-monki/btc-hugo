@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 Recent insights in meaning and cognition highlight the fact that meaning is often multifaceted, ambiguous, and to a certain degree constructed by hearers and readers. These insights have undermined the myth of objectivity in translation, which is inherent to both literal and functional approaches to translation. Accordingly, some translation theorists have moved away from the principle of  ‘equivalence’, while articulating alternative concepts like ‘skopos’ and ‘hospitality’.   

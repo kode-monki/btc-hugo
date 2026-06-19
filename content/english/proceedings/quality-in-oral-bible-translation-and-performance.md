@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: true
 lecture: "Beekman #2"
 plenary_weight: 2
-presenter_ids: []
-author_ids: []
+presenter_ids: ["tshokolo-makutoane"]
+author_ids: ["tshokolo-makutoane"]
 ---
 
 The process of all translation, including oral translation, is not simply the transference of linguistic items from a source text into a target text across linguistic, cultural, and semiotic barriers; but rather all translation involves a meaning-making product which must satisfy the needs of the audience. From a complexity point of view (Marais 2014, 2019, forthcoming), the term incipient sign system(s) is used instead of source text to refer to all the multifaceted, complex, and emergent semiotic features that provide input into the translation process. Similarly, subsequent sign system(s) is used instead of target text(s) to include all the texts, written or oral, that emerge out of the translation process.

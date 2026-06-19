@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 The Hebrew word hesed poses one of the most challenging problems for exegetes and translators of the Old Testament. A wide range of renderings has been suggested for this elusive term, including ‘loving kindness’, ‘grace’, ‘loyal love’, and ‘obligation’. Most Bible translations use multiple words to render this term in different contexts, but they seem to be inconsistent in the way they render it.   

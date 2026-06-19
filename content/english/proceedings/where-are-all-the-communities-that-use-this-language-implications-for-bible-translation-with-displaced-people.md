@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["trevor-deck"]
+author_ids: ["trevor-deck"]
 ---
 
 SIL’s Multilingualism, Urbanization and Scripture Engagement (MUSE) task force has offered two guiding questions to be asked for all Bible translation programs. The first is “What are all the languages this community uses?” The second, “Where are all the communities that use this language?” is the topic for this paper. This second question becomes increasingly important as more and more language communities become dispersed and displaced.  

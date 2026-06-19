@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Discourse analysis of the emic structures of Biblical Hebrew is a greatly underdeveloped area of Hebrew linguistics. This lack of a linguistic examination has resulted in translators and Hebrew scholars relying upon form criticism, which, though helpful, is lacking in objectivity and precision. This paper offers a discourse analysis of the emic structures of three prophetic oracle types: woe, indictment, and hope. Through a modified approach to Longacre’s etic discourse structures, this paper examines the oracles’ emic structures within Amos and Micah. Not only does this analysis provide an objective process and precise criteria for identifying these genres, but it also reveals otherwise overlooked discourse features such as skewing and peak marking elements.

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=fpjXBvwJrsA"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jackob-bullock"]
+author_ids: ["jackob-bullock"]
 ---
 
 This paper argues that in language communities with previous exposure to translated scripture, the value of acceptability often constrains translators to bypass advances in Biblical studies and privilege less viable text-critical readings in order to please the target community. Examples from three published translations are examined.

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=S7q-qe6G2l0"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 This paper assesses the validity of Rapid Appraisal surveys using the Yaawo context of Mozambique as a case study and cautions against their use in isolation. A more comprehensive survey alternative is proposed that, though involving more time and resources, will result in more appropriate responses to actual translation needs.

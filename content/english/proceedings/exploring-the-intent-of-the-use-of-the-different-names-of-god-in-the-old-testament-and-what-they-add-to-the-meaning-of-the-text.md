@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=7wdo_1k9ONc"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["deborah-conwell"]
+author_ids: ["deborah-conwell"]
 ---
 
 The name we choose when we address a family member or friend, a colleague, associate or stranger reflects our relationship with that person. Not everyone is entitled to call someone else ‘son’ or ‘darling’. The way we refer to someone may also indicate something about who they are. Not very many are entitled to be referred to as ‘doctor’ or ‘sir’. Names, often used without conscious thought, can indicate a surprising amount of information.

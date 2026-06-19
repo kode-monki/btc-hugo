@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["lynell-marchese-zogbo"]
+author_ids: ["lynell-marchese-zogbo"]
 ---
 
 Ecclesiastes or Qoheleth, one of the most enigmatic books of the Old Testament, poses many challenges for exegetes and translators.  One of the major difficulties is the meaning of the key term "hevel" (הֶבֶל), literally “vapor”, rendered in a multitude of ways in English and other languages: “vanity”, “absurd”, “meaningless”, “incomprehensible”, etc.  As a leitmotiv, the word colors the entire book and is considered the key to understanding and translating book of wisdom literature (Fox, 1989; Ogden, 1987; Seow, 1997; Ogden and Zogbo, 1997).   

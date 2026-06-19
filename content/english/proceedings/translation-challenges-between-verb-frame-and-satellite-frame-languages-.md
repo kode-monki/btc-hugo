@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["helga-schroder"]
+author_ids: ["helga-schroder"]
 ---
 
 #N/A

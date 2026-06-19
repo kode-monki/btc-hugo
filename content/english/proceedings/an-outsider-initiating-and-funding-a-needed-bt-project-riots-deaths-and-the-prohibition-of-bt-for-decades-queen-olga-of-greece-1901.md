@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=4vczE3rrMJY"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["pete-unseth"]
+author_ids: ["pete-unseth"]
 ---
 
 Queen Olga of Greece initiated a NT translation into spoken Greek without understanding the local language situation or having ties with the local church. The result was riots with 8 killed, the cabinet and bishop of Athens forced to resign, and a constitutional prohibition on BT. This paper shows how this prevented future translations for many years.

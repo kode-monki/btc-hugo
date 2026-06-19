@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=VAPqvGnPmQ8"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["nathan-esala"]
+author_ids: ["nathan-esala"]
 ---
 
 This paper analyzes how colonial practices of translation in northern Ghana supported indirect rule and strengthened a patriarchal royal class system contributing to intertribal conflicts. A Contextual Bible Study of Judges 6-9 is offered to prompt community dialogue and re-translations for liberation.

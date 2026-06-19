@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["kris-toler"]
+author_ids: ["kris-toler"]
 ---
 
 There are four widely accepted qualities of a good Bible translation - accuracy, clarity, naturalness and acceptability. This paper will explore how the internalization step of oral Bible translation is a key component in achieving a natural translation. This will be done by reviewing the process of internalization and discussing how it was implemented in the Central Pame project as they translated the book of Jonah using the RENDER software. The Central Pame translation project is the first OBT project in Mexico and is a partnership program between SIL, UNTI (a national indigenous translation organization in Mexico) and The Seed Company.

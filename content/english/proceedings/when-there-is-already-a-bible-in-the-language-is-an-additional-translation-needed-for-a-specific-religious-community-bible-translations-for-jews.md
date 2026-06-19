@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["pete-unseth"]
+author_ids: ["pete-unseth"]
 ---
 
 There are many Bible translations available in English, yet some have felt a strong need for additional translations specifically prepared for Jewish audiences. This has led to translations being prepared in English (and other   

@@ -5,7 +5,7 @@ start_time: "9:15 AM"
 end_time: "9:50 AM"
 publicity: "abstract-only"
 location: "Room 3"
-author: "Vinod Wilson Varkey & Dhulipala Balaji"
+author: ""
 author_id: "#N/A"
 year: "2025"
 track: ["Communication and Context;Other;Theology, Hermeneutics, and Exegesis;Live Only"]

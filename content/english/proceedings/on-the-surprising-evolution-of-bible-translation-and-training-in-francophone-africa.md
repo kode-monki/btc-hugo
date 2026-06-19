@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=kiVi7AXj8Bc"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Crushed by a strong anti-mother tongue colonial policy, the Francophone region lagged behind Anglophone Africa in BT. This paper surveys important recent developments: specialized BT training in French at university level, involvement of Catholics, growing interest in Hebrew, and the rising influence of performance criticism for rendering OT poetry.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["sunny-hong"]
+author_ids: ["sunny-hong"]
 ---
 
 A recent study (Hong, 2018) indicated that at least half of the remaining 2,000 languages that need the Bible translated exist in the places where foreign cross-cultural workers cannot live due to political or religious reasons. This situation presents challenges for Scripture translation. Diaspora persons who are coming out of their homelands may be the resource people to do Scripture translations. There are several types of diaspora: immigrants, foreign workers, international students, and refugees. Most of the minority language groups around the world are not affluent enough to emigrate, to get a job in a foreign country or to send their children as international students. This leaves refugees as prime candidates. Therefore, it is very important to understand how to work with refugees to translate the remaining languages.  

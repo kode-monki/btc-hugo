@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=twxWNZbHmUY"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 La traversée du désert dans l'Ancien Testament est un événement majeur dans l'histoire du peuple hébreu. Les auteurs du Nouveau Testament y font référence dans leurs écrits. Cet article examine comment ces passages doivent être interprétés et traduits, en considérant l'arrière-plan et les intertextualités.

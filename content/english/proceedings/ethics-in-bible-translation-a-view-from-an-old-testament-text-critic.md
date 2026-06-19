@@ -10,7 +10,7 @@ author_id: "bradley-marsh-jr"
 year: "2025"
 track: ["Church and Community;Theology, Hermeneutics, and Exegesis;Training and Mentoring"]
 slides_url: ""
-paper_url: ""
+paper_url: "https://drive.google.com/file/d/10tjVvh2uFJ49LPLMB2ofFJK3aiOSf8G4/view?usp=drive_link"
 video_url: "https://youtu.be/knC3-yj2IwY"
 is_plenary: false
 lecture: ""

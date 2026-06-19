@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jeff-shrum"]
+author_ids: ["jeff-shrum"]
 ---
 
 Translating durative-time terms such as "eternal", "forever", "with out end", and "age" are difficult in many Bantu languages.  Various solutions have been used to translate these terms.  Some using phrases such as "all days" or "days without end" which do not adequately capture some of the important characteristics of these terms.  This paper will show a rigorous comparison of the New Testament in three major Chichewa/Nyanja translations to give concrete solutions to rendering this complex of durative-time words.  The translations analyzed are:  

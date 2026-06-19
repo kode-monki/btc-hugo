@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 The Aitape West Translation Programme (AWTP), which includes 10 languages in 3 language families in Papua New Guinea, now publishes all printed copies of their translations as diglots, with the vernacular translation in parallel with a readable back translation (BT) in the LWC, Tok Pisin.   

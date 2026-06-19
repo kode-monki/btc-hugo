@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["josphen-weinberg"]
+author_ids: ["josphen-weinberg"]
 ---
 
 The words of Dt 6:4, שמע ישראל יהוה אלהינו יהוה אחד, have indisputable and foundational importance for both Jewish and Christian theology. Yet with this great centrality comes a surprising ambiguity. What exactly do these words mean? How might they be translated into idiomatic English? The verse’s ambiguity has given rise to a bewildering number of translations, ranging from "The LORD our God, The LORD is one" to "The LORD is our God, The LORD alone".  

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=Nt9C5wB3GFo"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jennifer-brassington"]
+author_ids: ["jennifer-brassington"]
 ---
 
 <p>Significant resources are invested in translating the Bible into languages identified as ‘needing’ a translation. However, ethical concerns arise regarding decision-making processes, community agency, and the intended versus actual outcomes of translation projects. Who determines a community’s needs? How are cost-benefit analyses conducted? And how is the long-term use and impact of a translation considered throughout the project?</p>

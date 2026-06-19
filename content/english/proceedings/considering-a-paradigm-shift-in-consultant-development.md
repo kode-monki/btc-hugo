@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["scott-smith"]
+author_ids: ["scott-smith"]
 ---
 
 It has been said that the principal bottleneck in Bible translation today is our lack of available consultants. This presentation outlines 28 different ideas as to how you might be more involved in helping to alleviate this problem, including:  

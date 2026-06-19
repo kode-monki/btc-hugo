@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["chuck-tessaro"]
+author_ids: ["chuck-tessaro"]
 ---
 
 Throughout the Common Era, there have been discussions as to whether the pre-incarnate Christ was “present” in the Hebrew Bible accounts. The relatively recent reading of UBS5/NA28 at Jude 5 helps one to remember those discussions. This study takes a selective look a some of the passages frequently mentioned as relevant.

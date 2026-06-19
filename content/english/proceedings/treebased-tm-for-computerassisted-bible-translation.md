@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["andi-wu"]
+author_ids: ["andi-wu"]
 ---
 
 TM (translation memory) is a database that stores the translation units that have been previously translated.  It can be used in computer-assisted Bible translation to provide suggestions when new texts are translated, thus improving efficiency and consistency in translation.  This paper presents an automatic way of incrementally creating a TM in real time as a translation project goes on.  What is required in this approach is (1) an automatic word aligner, and (2) syntactic treebanks of the original Hebrew and Greek texts.  After each verse is translated, the auto-aligner is used to align the translation words to their corresponding Hebrew/Greek words which are the leaf nodes in a syntactic tree.  Since each node in the tree (a subtree) represents a word, phrase, or clause, phrase/clause alignment can also be automatically created by mapping the sequence of leaf nodes in the subtree to the translation words aligned to these nodes, resulting in a TM that contains linguistically valid translation units of any textual size.  As such a TM grows, Bible translators get increasing better suggestions.  

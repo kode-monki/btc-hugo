@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 En-gannim is a site name meaning 'Spring of Gardens' that attests to the existence of the irrigation system in ancient Israel. Existing translations of verses related to springs, pools, channels, and gardens often vary. This paper explains the ancient Israelite irrigation system cognitive frame and its implications for translation.

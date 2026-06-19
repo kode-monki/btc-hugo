@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=0xWqk4LEIN8"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 One of the very first times the Bible was translated, the product was interpreting. In Nehemiah 8, as Ezra read the Law, Levites interpreted it, resulting in remarkable scripture engagement. This paper examines the related history of interpreting and translation and proposes ways they can work together, drawing on research into church interpreting.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["thangi-chhangte"]
+author_ids: ["thangi-chhangte"]
 ---
 
 During the course of a translation consultant session, one of the most common questions I am asked is about locations of places.  The translators want to know whether people are going up or down, whether or not they are going very far and sometimes whether or not they are returning.  This is a pertinent question for translators who come from rugged mountainous regions and who generally go on foot for days.  However, very few available resources provide details in this regard.    

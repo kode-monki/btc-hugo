@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=yNkQw4diyNo"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["eric-fields"]
+author_ids: ["eric-fields"]
 ---
 
 This paper surveys Discourse Analysis (DA) as a methodology for studying NT texts. Eight approaches that have emerged as most influential in NT Studies are presented and compared. The paper concludes with pointers to new models of DA enriched by insights from cognitive linguistics.

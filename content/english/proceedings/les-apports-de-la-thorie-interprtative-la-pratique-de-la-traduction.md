@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=XAzoyllrMtM"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Cet article présente les apports de la théorie interprétative de la traduction (développée par Seleskovitch et Lederer) sur la question de l'idéal en traduction. Cette théorie définit le SENS comme objet au cœur de la traduction et met sur pieds un processus en trois étapes: comprendre, déverbaliser et réexprimer.

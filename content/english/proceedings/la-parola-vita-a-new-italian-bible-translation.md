@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["stefan-cotrozzi"]
+author_ids: ["stefan-cotrozzi"]
 ---
 
 A new translation of the Bible into Italian has been commissioned by Biblica (Colorado Springs, USA). The goal of this project is to produce an idiomatic, easily comprehensible translation of the Bible primarily geared towards the younger generations and the unchurched. The first text to be published in this new functional-equivalent translation, called La Parola è Vita, will be the Gospel of Luke (2019). This article discusses some of its features and compares it with other Italian Bible versions available on the market.

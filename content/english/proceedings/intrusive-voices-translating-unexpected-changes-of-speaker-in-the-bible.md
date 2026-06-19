@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["vitaly-voinov"]
+author_ids: ["vitaly-voinov"]
 ---
 
 In many languages, a change of speaker in a text is usually introduced by a speech orienter (Dooley\&Levinsohn 2000:50). It is therefore challenging for translators and readers when they encounter “intrusive” speech (Culpepper 1983:17) by speakers that have not been explicitly introduced. I survey texts with an unexpected change of speaker, such as:  

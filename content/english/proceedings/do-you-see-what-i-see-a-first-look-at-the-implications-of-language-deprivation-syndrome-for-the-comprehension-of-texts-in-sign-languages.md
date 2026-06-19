@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["rachel-miles"]
+author_ids: ["rachel-miles"]
 ---
 
 The comprehension of text is key to its efficacy. For this reason, comprehension tests with selected members of the target audience is a key quality control step before the publication of texts, including the translation of texts from the Bible. While lack of comprehension can be due to a number of factors, when translating sign language texts many difficulties can arise because of language deprivation syndrome.   

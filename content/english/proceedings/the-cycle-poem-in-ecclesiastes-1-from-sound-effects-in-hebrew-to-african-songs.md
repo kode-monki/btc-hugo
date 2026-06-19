@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["lynell-marchese-zogbo"]
+author_ids: ["lynell-marchese-zogbo"]
 ---
 
 In Ecclesiastes 1.4-13, the author presents a beautiful poem describing recurring cycles in nature: generations come and go, as do the wind, the sea, and the rivers.  The Hebrew poet uses binary rhythm, rhyme, word repetition as well as remarkable cases of alliteration and assonance (repetitive fricative consonants, full round vowels, etc.) to portray these unending cycles, showing “there is nothing new under the sun”.    

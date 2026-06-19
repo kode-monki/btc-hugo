@@ -5,7 +5,7 @@ start_time: ""
 end_time: ""
 publicity: ""
 location: ""
-author: "Ervais  Fotso Noumsi"
+author: "Ervais Fotso Noumsi"
 author_id: "#N/A"
 year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]

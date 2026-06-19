@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["peter-knapp"]
+author_ids: ["peter-knapp"]
 ---
 
 Healthy review procedures are vital for a translation to be viewed by the community as their own, or as a truly embodied scripture.  My own training has prepared me to identify WHAT may need to be changed in the review process, but finding the way HOW to change has been a bumpy road. Certainly, there may be more than one good way of doing it and but we need to tune the procedure to best serve the specific situation.  

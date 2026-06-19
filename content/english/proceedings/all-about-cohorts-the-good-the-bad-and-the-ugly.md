@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=AYGx3jDf5Do"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["teryl-gonzalez"]
+author_ids: ["teryl-gonzalez"]
 ---
 
 What is good for a cohort and what is a cohort good for? This paper explores best and worst practices in cohort training, drawing on research on peer-group mentoring and collaborative experiential student projects in translator training, and interviews with Bible translation consultants engaged in training CiTs.

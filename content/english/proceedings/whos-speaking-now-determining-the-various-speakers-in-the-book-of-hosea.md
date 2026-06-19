@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["thomas-finley"]
+author_ids: ["thomas-finley"]
 ---
 
 In the book of Hosea, it is often difficult to determine who is speaking. For example, at Hosea 2:2 (Hebrew 2:4), is it the Lord or Hosea who is speaking to the children? Or at 4:4a, is it Hosea, the Lord, or a priest who raises the objection? Then there is 5:1-7, where “\[t\]he changes in the use of the pronouns … seem bewildering” (Andersen and Freedman, Hosea, AB 24). This issue is not limited to Hosea but can be found throughout the Old Testament, especially the Psalms and the prophets.   

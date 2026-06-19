@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=1fMqXGq-Uwc"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jaap-feenstra"]
+author_ids: ["jaap-feenstra"]
 ---
 
 The ETEN partners have observed a lack of clear perspective and limited tools for determining the scope of multilingualism in a community and the degree to which it sets parameters for Scripture use and Bible translation. This paper introduces a simple inter-organizational assessment tool designed to fill this gap.

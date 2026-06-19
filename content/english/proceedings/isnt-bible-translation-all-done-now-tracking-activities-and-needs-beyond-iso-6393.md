@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=uRD4leOOiLc"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 <p>Despite significant progress in Bible translation, with initiatives like Vision 2025 and All Access Goals 2033 aiming to cover all languages, many languages are not included. This presentation examines the reliance on ISO 639-3 as the primary language inventory, highlighting its limitations for Bible translation purposes. ISO 639-3, historically derived from Ethnologue&#x27;s focus on translation needs but now taking a different focus, excludes potentially 500–1,000 spoken languages worldwide, as evidenced by India&#x27;s 200+ non-ISO languages.</p>

@@ -15,7 +15,7 @@ video_url: "https://drive.google.com/open?id=1YOk9xGxWS80cGmmK9a9xJlkOM9a-dfiw\"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 

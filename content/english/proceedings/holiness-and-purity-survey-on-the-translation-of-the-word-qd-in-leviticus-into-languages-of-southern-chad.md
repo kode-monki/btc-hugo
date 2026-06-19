@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["bayamy-tchande"]
+author_ids: ["bayamy-tchande"]
 ---
 
 The translation of words with the root קדשׁ qdš has proved problematic in the languages of southern Chad, and in particular how to distinguish it from טָהוֹר֙ ṭāhôr.  

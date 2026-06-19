@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["lynley-hatcher"]
+author_ids: ["lynley-hatcher"]
 ---
 
 The production and distribution of addictive substances has increased dramatically in recent decades. The WHO states: “Alcohol is a causal factor in 60 types of diseases and injuries and a component cause in 200 others…Alcohol is also associated with many serious social issues, including violence, child neglect and abuse.”  

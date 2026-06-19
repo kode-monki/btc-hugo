@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["hans-combrink"]
+author_ids: ["hans-combrink"]
 ---
 
 There has been a renewed interest in spirituality as a result of the influence of postmodernism. Spirituality is not limited to Christianity, but constitutes a fundamental dimension of the human being, the lived experience of that dimension, and the academic discipline which studies that experience. With regard to Biblical spirituality, it is widely recognized today that there are different spiritualities in the Bible and that these find expression in different spiritualities in the faith community.  

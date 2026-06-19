@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["nathan-esala"]
+author_ids: ["nathan-esala"]
 ---
 
 Skopos theory asserts translation is purposeful interaction based on a source text which attempts to change the state of affairs in the world. Nord recognizes the potential for competing purposes in translational action. This paper reviews a debate in African theology about competing purposes between missionary intentions in Bible translation and African communities’ differing purposes in receiving Bible translation arguing that these competing purposes are entangled—both in the historical form of Bible translation and in the translated Bible’s community receptions. How do African communities negotiate these competing purposes, which may be experienced as cultural domination, on one hand, or cultural synthesis, on the other? Drawing on Deborah Shadd’s BT 2017 plenary paper which discusses the logics of re-translation, this paper argues for the necessity of marginalized groups engaging in re-translation with an emancipatory logic in order to have interactive dialogue in their communities. A case study is offered from northern Ghana which uses the method of Contextual Bible Study to facilitate young women re-translating the narrative of Ruth as they develop dialogical and life-giving theological responses to life-negating conditions.

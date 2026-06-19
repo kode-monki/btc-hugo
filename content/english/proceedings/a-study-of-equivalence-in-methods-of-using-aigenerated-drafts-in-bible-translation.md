@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=_HmmTOkoyuU"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 <p>The rapid development of Artificial Intelligence (AI) is impacting many disciplines, including Bible translation (BT). For any emerging technology, it is crucial to evaluate its appropriate use, seeking maximum benefit while mitigating unintended adverse effects. Ethical adoption of technology requires consideration not only of efficiency, but also all potential impacts on the beneficiaries. This research explores the use of AI in Bible translation with the goal of providing insights into how AI-generated drafts can best be used.</p>

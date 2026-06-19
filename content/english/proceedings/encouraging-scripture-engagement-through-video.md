@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=tzGEusetatw"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 This presentation aims to encourage and equip Bible translators and SE workers to produce Scripture-infused works in video format, including Scripture engagement videos prepared by means of dubbing, ready-made templates, and simple videos using editing software. Examples are given from the Nuaulu language in eastern Indonesia.

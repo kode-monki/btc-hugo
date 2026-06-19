@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["tim-stirtz"]
+author_ids: ["tim-stirtz"]
 ---
 
 Scripture translations published with inconsistent writing are unclear and inaccurate. More than one spelling of the same word form causes slower word recognition and slower reading, making understanding more difficult, such as when Scripture is read to a church congregation. Some writing inconsistencies in Scripture unavoidably give the wrong meaning, such as two words with similar spelling that are confused in contexts where both meanings are equally possible.   

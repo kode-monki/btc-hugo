@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=9NpzpnyISwg"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 La traduction biblique est une activité qui fait intervenir plusieurs disciplines notamment l'anthropologie. Le temps des fiançailles chez les Ngomba est célébré presque de la même façon que chez les Juifs dans Matthieu 1.18, mais des similitudes n'empêchent pas des différences importantes pour la traduction.

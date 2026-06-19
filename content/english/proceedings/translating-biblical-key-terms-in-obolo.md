@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["enene-naaman-enene"]
+author_ids: ["enene-naaman-enene"]
 ---
 
 The Obolo translators are not exceptions in the difficulties translators often face in the translation of Biblical key terms.  These terms are words that refer to Jewish and Christian beliefs and religious systems and may have been unknown in the receptor language area before the introduction of Christianity.  Though cultural similarities may exist, these terms constitute most serious problems for translators and have produced misunderstanding among readers when the translation does not communicate accurately the meaning of the term in the source language.  This paper tries to review some of them and how the Obolo translators have handled them.  

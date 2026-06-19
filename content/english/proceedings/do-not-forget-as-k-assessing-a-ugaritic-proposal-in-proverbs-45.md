@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["christopher-tachick"]
+author_ids: ["christopher-tachick"]
 ---
 
 The prohibition אַל־תִּשְׁכַּח (“do not forget”) in the Hebrew text of Proverbs 4:5c does not have a direct object, and so many scholars consider this a syntactic problem requiring a resolution. This presentation examines and critiques a proposed solution by Mitchell J. Dahood, who argues that this occurrence of the Hebrew verb draws from a verbal root found in a Ugaritic text and suggests a translation value of “do not become weary.”   

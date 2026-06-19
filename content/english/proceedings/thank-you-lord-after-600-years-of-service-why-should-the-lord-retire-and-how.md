@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["john-bainbridge"]
+author_ids: ["john-bainbridge"]
 ---
 
 Outside of Scripture citation, today’s younger generations seem to use ‘the Lord’ less, especially when engaging the unbelieving world. We simply prefer ‘Jesus’ or ‘God’, and with good reason. According to various metrics, ‘Lord’ usage has significantly decreased since its medieval root and is perceived with a historical and/or religious gloss (besides some sinister exceptions). A second problem compounds the first: the English ‘Lord’ is necessarily ‘arthrous’: ‘the Lord’. We now know κύριος was not.   

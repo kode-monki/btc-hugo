@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=F09GBkhcgms"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 A part of all translation is coming on difficult and obscure passages. This paper explores use and abuse of commentaries, the interpretive matrix, brainstorming multiple possibilities, comparing translations for rare terms, and grammatical and lexical issues. The purpose is to help translators make the interpretation and translation process more objective, diverse, and thorough.

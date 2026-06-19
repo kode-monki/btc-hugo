@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["phil-king"]
+author_ids: ["phil-king"]
 ---
 
 Names of characters in literature are frequently used as ‘dense signifiers’, conveying messages from the author to the reader beyond the identification of a particular individual, and offering clues about the character’s destiny or how a storyline may develop. This paper explores how the potential semantic connections evoked by names in Old Testament literature are exploited by Hebrew narrators as they craft their stories, contributing to characterisation, plot structure, leitworter, wordplays and dramatic irony. For example, Laban (‘white’) is caught up in trickery with white goats and white sticks; Micah (‘who is like Yahweh’) has an idol in his house; and Mahlon and Chilion (whose names could evoke links to being ‘sick’ and ‘finished’) are dead within three verses of being introduced.    

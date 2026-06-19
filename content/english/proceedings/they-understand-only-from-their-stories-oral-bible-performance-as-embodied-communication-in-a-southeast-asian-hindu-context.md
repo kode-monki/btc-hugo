@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["timothy-hatcher"]
+author_ids: ["timothy-hatcher"]
 ---
 
 Primary research conducted in a Southeast Asian Hindu context found an atypically high percentage of Christian workers, both local and expatriate, prefered using oral Bible storying in evangelism and discipleship. This finding was made more surprising by the diversity of denominations and ministries employing multimodal oral approaches. Explanations for this phenomenon differed. Expatriate missionaries appealed to pragmatism, observing that oral methods seemed to function well when other strategies had not. Hindu background believers, however, concluded that oral delivery of Scripture was effective due to the religious context and specifically Southeast Asian Hindu views of sacred texts.  

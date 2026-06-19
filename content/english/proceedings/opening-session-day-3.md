@@ -12,11 +12,11 @@ track: ["Plenary"]
 slides_url: ""
 paper_url: "https://www.btconference.org/proceedings-2021/day-3"
 video_url: "https://www.youtube.com/watch?v=PBCeGQqoTvc"
-is_plenary: true
+is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["dick-kroneman"]
+author_ids: ["dick-kroneman"]
 ---
 
 BTC 2021 Opening Session - Day 3 (Monday October 18)

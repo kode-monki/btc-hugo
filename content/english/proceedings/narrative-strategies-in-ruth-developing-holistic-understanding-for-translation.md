@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=e2loY2FdSSw"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["bryan-harmelink"]
+author_ids: ["bryan-harmelink"]
 ---
 
 This paper proposes an embodied approach to internalization using integrated processes of holistic exegesis, semantic priming, and internalization/performance techniques. Applying this to the book of Ruth, it demonstrates how the narrative strategies can be uncovered and used to produce a more natural, faithful translation.

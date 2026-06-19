@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jeffrey-feinberg"]
+author_ids: ["jeffrey-feinberg"]
 ---
 
 The paper applies an honor-shame lens from social anthropology to the blessings and curses in Deuteronomy, to better understand how they function to elicit emotions and shape moral behaviors. The perspective illuminates a fundamental dimension of the divine-human relationship in Israel’s covenant, including New Covenant relationships as well.  

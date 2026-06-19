@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=zRTABDCXE6U"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 This paper examines body-part idioms in the Hebrew Bible, especially those using the Hebrew word for heart (lev/levav), analyzing their translation in Spanish and English Bibles and showing inconsistencies. Recommendations are given to help Bible teams achieve consistency in translating idioms.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 The masoretic tradition forms the foundation of the vast majority of Hebrew manuscripts that survive to the present era. This reading tradition extends back to the time of Ezra, the great scribe of Israel, and was encoded by the Tiberian Masoretes. Many modern interpreters hold the rigor and faithfulness of these men in high regard, yet, far too often, they overlook the accents when reading the Hebrew text. They miss out on the historic commentary of the Masoretes which confirms the syntactic “sense” of the reading. Further, they fail to take advantage of the semantic highlights provided by the Masoretes. The Masoretic reading tradition found in the accent system provides modern biblical exegetes with a reliable interpretive foundation, confirming and highlighting the sense of the text.  

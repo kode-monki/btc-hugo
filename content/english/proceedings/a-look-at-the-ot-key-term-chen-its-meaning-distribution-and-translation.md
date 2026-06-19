@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["swapna-anna-alexander"]
+author_ids: ["swapna-anna-alexander"]
 ---
 
 What is grace? A charming sound, or a charming object? Translators often get stuck at this key term, trying to find a suitable word or phrase. The Hebrew word chen has a wide range of meanings from ‘finding favor’ to ‘a beautiful adornment.’ It is even translated as ‘loathsome’ in the book of Job.  

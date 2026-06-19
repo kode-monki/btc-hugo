@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michelle-petersen"]
+author_ids: ["michelle-petersen"]
 ---
 
 This paper outlines the application of participatory methods to the “Eight Conditions for Scripture Engagement.” Using the new “Appreciative Inquiry for Scripture Engagement” facilitation tool, translation teams and local leaders explore existing strengths and future hopes for each condition. Together, they prioritize their goals, and make an action plan to achieve them. The eight conditions provide an analytic framework for participants to evaluate strengths and overcome obstacles to their community’s interaction with Scripture. Following appreciative inquiry, the new “Use of Our Arts in Ministry” tool allows teams to expand Scripture use to further artistic domains in ways that strengthen each weak condition. Participatory methods facilitation leads a team to engage their community with their translation in life-changing ways. Participants will receive script outlines explaining how to use the two participatory methods discussed in this presentation.

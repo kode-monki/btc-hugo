@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=MWQbhZrm8Rw"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Up to 80% of the world's population are oral preference learners. This paper offers a performance-based approach to exegeting Psalm 62 and providing supplementary descriptions of the poem's multi-layered meanings, moods, and emotions. Twelve lexical links with its backstory in 1 Samuel reveal where, when, why, and to whom it was originally enacted.

@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=LChNneDTBqM"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 <p>Until recently, drafting Scripture into a minority language mainly involved translators looking at majority language translations and possibly neighboring language translations, if available. Now, with the advent of tools like Scripture Forge, The Bible Translators Assistant (TBTA), FLExTrans, et al, a translation team with a set of finished Scripture, a grammatical analysis of the target language or Scripture in a related language may be able to have access to one or more computer generated drafts in the target language. But none of these Computer Generated Drafts (CGD) can just become the translation. They add a new automated vernacular dimension to the drafting process, which was previously not possible and may potentially be helpful, but they are not the translation. Questions arise as to whether having vernacular CGDs accessible to translators is actually helpful in quality and/or efficiency of translation and if helpful, what combinations of resources are best for helping Mother Tongue Translators (MTT) produce a 1st draft that is clear, accurate, and natural? Discernment is required to know how to capitalize on the strengths and avoid the pitfalls of using these generated drafts.</p>

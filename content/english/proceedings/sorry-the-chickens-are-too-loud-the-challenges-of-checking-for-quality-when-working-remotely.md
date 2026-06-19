@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=4HzC5nOsIqg"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["kathy-taber"]
+author_ids: ["kathy-taber"]
 ---
 
 Have you ever had the niggling thought, Am I missing things I should be catching?  What is the back translation not telling me?  How do you discover what you don’t know and can’t see and sometimes can barely hear? 

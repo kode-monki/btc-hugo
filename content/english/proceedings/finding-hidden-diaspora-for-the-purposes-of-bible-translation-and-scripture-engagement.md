@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=3dVdUhfzdsI"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["peter-brassington"]
+author_ids: ["peter-brassington"]
 ---
 
 Many minority language groups are not limited to one location. Working with SIL's Global Diaspora team, this paper explores identifying languages spoken in diaspora communities and finding possible speakers of a language, and how this data can benefit Bible translation and scripture engagement planning.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jim-courtier"]
+author_ids: ["jim-courtier"]
 ---
 
 Translators can be influenced by assumptions when making exegetical decisions. As a result, important biblical themes may not be adequately communicated. In order to offer methodologies for dealing with specific assumptions, a discourse analysis of the Sinai pericope (Exodus 18-24) will be presented. Useful exegetical tools for determining meaning at the lexical and discourse level will be demonstrated, such as intertextuality, genealogies, poetic sections, ring (chiastic) structures, and repeated words and motifs. A strong case will be made concerning the importance of good knowledge of the Hebrew language and text for doing such analysis. The events narrated in this portion of the Sinai pericope, although often portrayed as confusing and/or contradictory, are, in fact, very carefully composed, and lead to some surprising conclusions. Some often-overlooked messages which can be missed by a cursory, linear reading will be demonstrated, as well as alternate renderings based on the conclusions of this study. The messages of Exodus 18-24, particularly chapters 19-20, are most likely not as positive as most interpreters believe. The theophany was not primarily meant to evoke awe in the Israelites who stood at the foot of the mountain (19:17) and far away (20:18, 21). These chapters lay out a theological pattern for the subsequent OT writings, and substantiate important aspects of New Testament theology.

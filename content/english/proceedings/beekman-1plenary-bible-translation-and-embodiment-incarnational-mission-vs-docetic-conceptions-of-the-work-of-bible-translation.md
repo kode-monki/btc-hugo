@@ -6,8 +6,8 @@ end_time: ""
 publicity: ""
 location: "3-Event Center
 5-Activity Center"
-author: "Roy  Ciampa"
-author_id: "#N/A"
+author: "Roy Ciampa"
+author_id: "roy-ciampa"
 year: "2019"
 track: ["Plenary"]
 slides_url: ""
@@ -16,7 +16,7 @@ video_url: "https://drive.google.com/open?id=1rPVmrTSGGfHTQufQKHpQGT6GF3CVPivV"
 is_plenary: true
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["roy-ciampa"]
+author_ids: ["roy-ciampa"]
 ---
 

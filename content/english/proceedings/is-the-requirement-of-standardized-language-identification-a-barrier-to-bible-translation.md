@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=gxLAw_Rjfso"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 This paper provides an overview of two levels of language variety recognition (ISO 639-3 and dialect-level standards) and explores how seeking recognition can be a barrier—due to complex processes, hegemonic relationships, and community divisions. It examines language assessment's role and proposes ways to mitigate barriers.

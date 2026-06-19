@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=T5uZcpYOS2M"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["milton-watt"]
+author_ids: ["milton-watt"]
 ---
 
 YHWH Tsebaot is used 283 times in the OT and twice in the NT. This paper discusses grammatical arguments, military metaphor arguments, and ancient text usage to arrive at five different translation recommendations depending on whether the translator uses LORD or Yahweh and how meaning-based the translation aims to be.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["rita-ngo-bikai-epse-fotso"]
+author_ids: ["rita-ngo-bikai-epse-fotso"]
 ---
 
 The purpose of translation is to convey the message of the Bible to the speakers of a given language, in their own language of heart, and without twisting its meaning. Some passages in the Bible are more complicated to translate for the reason that they may not have the same impact the original author intended, when literally translated, like the case of Matthew 7:10 in the Basaa language of Cameroon. Our article is a reflection that grew from this difficulty.  

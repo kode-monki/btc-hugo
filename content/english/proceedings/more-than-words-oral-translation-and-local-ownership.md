@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=2in9Ojk5Ork"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["kris-toler"]
+author_ids: ["kris-toler"]
 ---
 
 Local ownership of Bible translation projects is one of five fundamental principles of the Common Framework for best practices in the BT movement. This paper explores how an oral translation can encourage local ownership by engaging the community, illustrated with the Central Pame translation in Mexico.

@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["martin-schoeder"]
+author_ids: ["martin-schoeder"]
 ---
 
 Variation in translation happens at different levels: from fluctuations in the spelling to a range of changes in wording, both for key terms and other recurring terminology. Some of this variation may be introduced inadvertently, some of it may be intentional but might be seen as unacceptable by the translation consultant or the target audience, or both. Other variation may be seen as acceptable or even desirable by all parties involved. Most standard textbooks on Bible translation remain completely quiet on this topic, yet there is a real need to establish what are acceptable or even advisable forms of variation, and what would constitute unacceptable practice.  

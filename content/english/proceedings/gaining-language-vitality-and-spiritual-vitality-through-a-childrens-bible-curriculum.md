@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["roger-van-otterloo"]
+author_ids: ["roger-van-otterloo"]
 ---
 
 Primary level children (ages 6-12) are very impressionable, and it’s easy to teach them Christian values. That’s also a great time to promote reading and writing in the mother tongue, so they can become fluent in the Scriptures of their heart-language.   

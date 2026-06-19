@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=a-2P-3o660c"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jackob-bullock"]
+author_ids: ["jackob-bullock"]
 ---
 
 At times, Biblical literature is shocking, embarrassing, or grotesque. Yet the most offensive passages often communicate theological truth with the most poignancy and urgency. Integrating cognitive science, communication theory, and theology this paper argues for preserving rough edges in translation and proposes a methodology for handling such texts.

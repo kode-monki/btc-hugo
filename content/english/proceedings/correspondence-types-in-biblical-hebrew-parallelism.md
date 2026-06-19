@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=fE8N6i-F0t4"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["jason-sommerlad"]
+author_ids: ["jason-sommerlad"]
 ---
 
 As Adele Berlin showed, parallelism in Hebrew poetry includes not only lexical and semantic correspondences but syntactic, morphological, and phonological ones as well. The author tagged these relationships through all the Psalms and made the data available for viewing. This paper gives examples and cumulative statistics.

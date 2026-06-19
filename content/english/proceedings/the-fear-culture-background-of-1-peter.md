@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["marc-schwab"]
+author_ids: ["marc-schwab"]
 ---
 
 The concepts of guilt and shame cultures are well established. The third cultural type is less known. In fear cultures, fear is the main means of controlling social behavior, and the fear of powerful authorities - whether supernatural beings or human rulers - guides the thinking and decision making of the people. Often, these cultures are mistakenly identified as shame cultures. Animistic cultures are most likely to be fear oriented.  

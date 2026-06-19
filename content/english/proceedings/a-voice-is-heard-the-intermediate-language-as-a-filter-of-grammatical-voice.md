@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["erwin-komen"]
+author_ids: ["erwin-komen"]
 ---
 
 The draft of Romans 10:13 in one language in the Caucasus said that everyone who calls on the name of the Lord ‘will go-from-under’ (that is: will escape). This is an intransitive rendering of a passive voice verb in the Greek (‘will be saved’). The reason for the mistake is that the draft was made on the basis of a Russian translation (the ‘Synodal’), that uses a verb in the middle voice. Russian as intermediate language in this translation project apparently filters the original voice system in a way that is not necessarily understood correctly by translators who use Russian as a second language.  

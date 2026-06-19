@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["paul-orear"]
+author_ids: ["paul-orear"]
 ---
 
 Translation Resources of the Future is concerned with developing new ways of creating translation resources with more immediate accessibility, broader non-Western contribution, and more open access.  

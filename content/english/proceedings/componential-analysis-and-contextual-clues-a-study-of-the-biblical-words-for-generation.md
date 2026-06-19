@@ -15,8 +15,8 @@ video_url: "https://www.youtube.com/watch?v=n_e5655i3yc"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Componential analysis is a way to objectify the components of meaning of a word, and through tree and matrix analysis the components of each sense can be charted. This theory and procedure is tested by the uses of the Hebrew and Greek words commonly translated as 'generation.'

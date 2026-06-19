@@ -5,7 +5,7 @@ start_time: "10:45 AM"
 end_time: "11:20 AM"
 publicity: ""
 location: "Room 5"
-author: "Robin Green Ulibarri, Swapna Alexander"
+author: ""
 author_id: "#N/A"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality"]

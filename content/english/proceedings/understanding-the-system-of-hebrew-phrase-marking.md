@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["allan-johnson"]
+author_ids: ["allan-johnson"]
 ---
 
 The text of the Hebrew Scriptures includes a mark on each word which often hasn't been fully understood. These markings have more than one function. The one I want to focus on here is the matter of defining the phrasing, and how each phrase relates to the others around it, providing us with all the information needed to build a complete phrase structure tree for each verse.  

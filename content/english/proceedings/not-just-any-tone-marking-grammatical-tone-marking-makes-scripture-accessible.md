@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michael-cahill"]
+author_ids: ["michael-cahill"]
 ---
 
 People generally think of tone in a tone language as distinguishing individual words, e.g. Mono áwá ‘diarrhea’ vs. àwà ‘fear.’ This is termed “lexical tone.”  But in many languages, tone also distinguishes different grammatical categories. The absence of marking this grammatical tone in the orthography creates ambiguities, such as:   

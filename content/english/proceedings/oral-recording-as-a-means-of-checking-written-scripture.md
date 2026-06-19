@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["michael-boutin"]
+author_ids: ["michael-boutin"]
 ---
 
 This paper describes differences between the written and oral versions of the gospel of Mark in Bonggi, a minority language of Sabah, Malaysia.  

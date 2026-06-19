@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: []
-author_ids: []
+presenter_ids: ["#N/A"]
+author_ids: ["#N/A"]
 ---
 
 Over the past 20 years, an innovative collaboration has developed between The Evangelical Protestant Church of Timor (Indonesian acronym GMIT), Wycliffe Bible Translators, and the Seed Company. The GMIT Church has become the primary steward of Bible translation efforts in the province of East Nusa Tenggara while actively leveraging the capacity and unique contributions which their Bible translation partners bring to the table. This collaboration under official church leadership has led to a remarkable expansion of the Bible translation effort in this region, out of proportion to the relatively small number of Bible agency staff assigned to support the work.  
