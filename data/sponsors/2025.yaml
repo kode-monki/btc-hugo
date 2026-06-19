@@ -1,0 +1,48 @@
+- name: "SIL Global"
+  year: 2025
+  level: "sponsor"
+  website: "https://sil.org/"
+  logo: "images/sil-white.webp"
+  description: ""
+- name: "Nida"
+  year: 2025
+  level: "sponsor"
+  website: "https://www.nidaschool.org/ma-bible-translation"
+  logo: "images/nida-white.webp"
+  description: ""
+- name: "Payap University"
+  year: 2025
+  level: "sponsor"
+  website: "https://www.payap.ac.th/site/"
+  logo: "images/payap_logo.webp"
+  description: ""
+- name: "Seed Company"
+  year: 2025
+  level: "sponsor"
+  website: "https://seedcompany.com/"
+  logo: "images/seed_co_logo.webp"
+  description: ""
+- name: "Wycliffe Thai Foundation"
+  year: 2025
+  level: "sponsor"
+  website: "https://www.wycliffethai.com/"
+  logo: "images/Wycliffe-Thai-Foundation.webp"
+  description: ""
+- name: "The Word for the World"
+  year: 2025
+  level: "sponsor"
+  website: "https://twftw.org.uk/"
+  logo: "images/twftw.webp"
+  description: ""
+- name: "Dallas International University"
+  year: 2025
+  level: "sponsor"
+  website: "https://www.diu.edu/"
+  logo: "images/DIU-white.webp"
+  description: ""
+- name: "progress.Bible"
+  year: 2025
+  level: "exhibitor"
+  website: ""
+  logo: ""
+  description: ""

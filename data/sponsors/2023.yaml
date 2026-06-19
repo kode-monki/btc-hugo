@@ -1,0 +1,24 @@
+- name: "SIL Global"
+  year: 2023
+  level: "sponsor"
+  website: "https://sil.org/"
+  logo: "images/sil-white.webp"
+  description: ""
+- name: "Nida"
+  year: 2023
+  level: "sponsor"
+  website: "https://www.nidaschool.org/ma-bible-translation"
+  logo: "images/nida-white.webp"
+  description: ""
+- name: "Seed Company"
+  year: 2023
+  level: "sponsor"
+  website: "https://seedcompany.com/"
+  logo: "images/seed_co_logo.webp"
+  description: ""
+- name: "Dallas International University"
+  year: 2023
+  level: "sponsor"
+  website: "https://www.diu.edu/"
+  logo: "images/DIU-white.webp"
+  description: ""
