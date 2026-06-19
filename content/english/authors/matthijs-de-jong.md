@@ -5,8 +5,6 @@ description: "Prof. dr. Matthijs J. de Jong"
 affiliation: "Head of Translation
 Bible Society for the Netherlands and Flanders"
 author_id: "matthijs-de-jong"
-aliases:
-  - /plenaries/matthijs-de-jong/
 ---
 
 <p>Prof. dr. Matthijs J. de Jong (1977, The Netherlands) holds the Chair by Special Appointment of Bible Translation in Contemporary Context at Vrije Universiteit Amsterdam and is head of translation at the Bible Society for the Netherlands and Flanders.</p>

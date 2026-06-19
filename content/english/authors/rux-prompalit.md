@@ -5,8 +5,6 @@ description: "Dr. Rux Prompalit"
 affiliation: "Advisor to the Board
 Payap University"
 author_id: "rux-prompalit"
-aliases:
-  - /plenaries/rux-prompalit/
 ---
 
 "Rux Prompalit is the chairperson of Wycliffe Thai Foundation (since 2017), advisor to the board of Linguistics Institute at Payap University, board member of Thailand Christian Business & Marketplace Connection (CBMC-Thailand), and treasurer of Thailand Community Based Tourism Institute Foundation.

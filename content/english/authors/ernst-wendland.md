@@ -1,6 +1,6 @@
 ---
 title: Dr. Ernst Wendland
-image: "wendland.webp"
+image: "images/authors/ernst-wendland.jpg"
 description: "Dr. Ernst Wendland"
 affiliation: "Translation Consultant
 United Bible Societies"
