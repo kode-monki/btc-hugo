@@ -1,6 +1,6 @@
 ---
 title: Dr. Edgar Ebojo
-image: "images/authors/edgar-ebojo.webp"
+image: "images/authors/edgar-ebojo.jpg"
 description: "Dr. Edgar Ebojo"
 affiliation: "United Bible Societies"
 author_id: "edgar-ebojo"
