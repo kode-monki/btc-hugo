@@ -39,8 +39,9 @@ jobs:
 
       - name: Install Go
         run: |
-          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-arm64.tar.gz \
-          && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
+          wget -O ${{ runner.temp }}/go.tar.gz https://dl.google.com/go/go${GO_VERSION}.linux-arm64.tar.gz \
+          && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.tar.gz \
+          && echo "/usr/local/go/bin" >> $GITHUB_PATH
 
       - name: Checkout
         uses: actions/checkout@v4.2.2
