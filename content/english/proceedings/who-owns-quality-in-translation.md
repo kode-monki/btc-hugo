@@ -9,8 +9,8 @@ author: "Greg Dekker"
 author_id: "#N/A"
 year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
-slides_url: ""
-paper_url: ""
+slides_url: "https://drive.google.com/file/d/1gWLV6iErqfsoM9Qb2L9wR1-vZxSugZCh/view"
+paper_url: "https://drive.google.com/file/d/1CrdgzhCS21Ea-Aj7p4MAoWDA6Py_f45Z/view"
 video_url: "https://www.youtube.com/watch?v=ZTCss82Kh3E"
 is_plenary: false
 lecture: ""
