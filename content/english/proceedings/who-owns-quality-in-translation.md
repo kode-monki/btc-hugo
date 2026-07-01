@@ -11,7 +11,7 @@ year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: "https://drive.google.com/file/d/1gWLV6iErqfsoM9Qb2L9wR1-vZxSugZCh/view"
 paper_url: "https://drive.google.com/file/d/1CrdgzhCS21Ea-Aj7p4MAoWDA6Py_f45Z/view"
-video_url: "https://www.youtube.com/watch?v=ZTCss82Kh3E"
+video_url: "https://www.youtube.com/watch?v=m6GEASpv2sM"
 is_plenary: false
 lecture: ""
 plenary_weight: 0
