@@ -4,11 +4,11 @@ layout: "home"
 type: "home"
 # Banner section
 banner:
-  title: "Chiang Mai, Thailand"
-  content: "Empress Hotel • 28-31 Oct 2025 (Tues-Fri)"
-  image: "/images/2025/BTC25-Logo.webp"
+  title: "Lagoon Beach, Cape Town, South Africa"
+  content: "19–22 Oct 2027"
+  image: "https://d1s3rr7r9dun2n.cloudfront.net/images/conferences/5ca96e32-4cf0-409d-881f-cf2f5b2073e9.webp"
   button:
     enable: true
-    label: "Go to the Proceedings"
-    link: "proceedings"
+    label: "Learn More"
+    link: "conferences/2027"
 ---
