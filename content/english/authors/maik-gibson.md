@@ -1,9 +1,9 @@
 ---
-title: Maik Gibson
+title: "Maik Gibson"
 image: ""
 description: "Maik Gibson"
-affiliation: "SIL Global"
+affiliation: "SIL International"
 author_id: "maik-gibson"
 ---
 
-<p>Maik is SIL’s Sociolinguistics Coordinator, based in the UK. He has previously worked in a Bible translation programme, and been involved in translation and linguistics training in Kenya and the UK. He currently focuses on the impacts of multilingualism and on how members of minority communities interact with Scripture.</p>
+<p>Maik Gibson is SIL's international Sociolinguistics coordinator, with a particular interest in multilingualism and its impact on Scripture Engagement and Language Development. He has field experience from Peru, and North and East Africa, with experience in translation and training others for service.</p>
