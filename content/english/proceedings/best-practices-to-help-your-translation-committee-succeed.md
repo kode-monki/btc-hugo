@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Partnering & Management"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/best-practices-to-help-your-translation-committee-succeed"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=pw3MZlKHA1U"
 is_plenary: false
 lecture: ""

@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Theory & Practice; Scripture Engagement"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/a-tree-planted-by-the-water-christology-in-orthodoxy-and-early-islam"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=PC6BtpshiYE"
 is_plenary: false
 lecture: ""

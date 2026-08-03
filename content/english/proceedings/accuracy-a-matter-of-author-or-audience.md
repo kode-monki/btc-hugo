@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Theory & Practice"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/accuracy-a-matter-of-author-or-audience"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=4WY6GweRDrQ"
 is_plenary: false
 lecture: ""

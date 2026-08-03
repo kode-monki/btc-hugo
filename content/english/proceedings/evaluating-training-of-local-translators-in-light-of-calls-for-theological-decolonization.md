@@ -10,7 +10,7 @@ author_id: "christy-hemphill"
 year: "2021"
 track: ["Training & Mentoring"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/evaluating-training-of-local-translators-in-light-of-calls-for-theological-decolonization"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=RZlbdQOFFws"
 is_plenary: false
 lecture: ""

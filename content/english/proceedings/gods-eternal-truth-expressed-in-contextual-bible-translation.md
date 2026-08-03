@@ -10,7 +10,7 @@ author_id: "dick-kroneman"
 year: "2021"
 track: ["Theory & Practice"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/gods-eternal-truth-expressed-in-contextual-bible-translation"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=ZCpsV4v3p84"
 is_plenary: false
 lecture: ""

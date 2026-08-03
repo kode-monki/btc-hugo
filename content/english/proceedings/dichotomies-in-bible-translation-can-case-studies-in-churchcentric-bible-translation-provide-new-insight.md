@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Theory & Practice; Training & Mentoring; Technology & Innovation; Partnering & Management"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/dichotomies-in-bible-translation-can-case-studies-in-church-centric-bible-translation-provide-new-insight"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=_lqgbH0-6gA"
 is_plenary: false
 lecture: ""
