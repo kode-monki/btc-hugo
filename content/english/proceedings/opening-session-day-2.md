@@ -10,7 +10,7 @@ author_id: "dick-kroneman"
 year: "2021"
 track: ["Plenary"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/day-2"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=gdy_3Fu8WB0"
 is_plenary: false
 lecture: ""

@@ -10,7 +10,7 @@ author_id: "andy-warren-rothlin"
 year: "2021"
 track: ["Theory & Practice"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/like-a-tree-mixed-metaphors-and-miscollocations"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=vGTKn9JwLfA"
 is_plenary: false
 lecture: ""

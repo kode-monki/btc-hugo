@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Scripture Engagement"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/blog-post-title-two-67dfs-kepj2"
+paper_url: ""
 video_url: ""
 is_plenary: false
 lecture: ""

@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Technology & Innovation"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/comparison-of-automatic-alignment-engines-on-complete-bible-translations"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=EEIQ5djs_r4"
 is_plenary: false
 lecture: ""

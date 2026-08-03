@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Francophone"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/la-pratique-culturelle-des-fianailles-dans-la-culture-juive-et-la-culture-gmba-et-ses-implications-pour-la-traduction-de-matthieu-118"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=9NpzpnyISwg"
 is_plenary: false
 lecture: ""

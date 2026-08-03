@@ -10,7 +10,7 @@ author_id: "eric-fields"
 year: "2021"
 track: ["Theory & Practice"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/discourse-analysis-and-new-testament-studies-a-critical-appraisal"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=yNkQw4diyNo"
 is_plenary: false
 lecture: ""

@@ -10,7 +10,7 @@ author_id: "dick-kroneman"
 year: "2021"
 track: ["Scripture Engagement"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/measuring-human-flourishing-and-vernacular-scripture-impact"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=mr0IHT13lTs"
 is_plenary: false
 lecture: ""

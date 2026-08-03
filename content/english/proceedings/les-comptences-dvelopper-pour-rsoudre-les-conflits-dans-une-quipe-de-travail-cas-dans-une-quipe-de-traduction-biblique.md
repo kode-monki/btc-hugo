@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Francophone"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/les-comptences-dvelopper-pour-rsoudre-les-conflits-dans-une-quipe-de-travail-cas-dans-une-quipe-de-traduction-biblique"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=wcXzMkuLPYc"
 is_plenary: false
 lecture: ""

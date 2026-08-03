@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Technology & Innovation"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/expanding-your-bible-translation-team-by-utilizing-mobile-technology-the-impact-of-paratext-lite"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=Iepuh7GNWAI"
 is_plenary: false
 lecture: ""

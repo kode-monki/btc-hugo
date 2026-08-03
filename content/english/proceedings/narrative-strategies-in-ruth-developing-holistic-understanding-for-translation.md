@@ -10,7 +10,7 @@ author_id: "bryan-harmelink"
 year: "2021"
 track: ["Theory & Practice; Training & Mentoring"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/narrative-strategies-in-ruth-developing-holistic-understanding-for-translation"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=e2loY2FdSSw"
 is_plenary: false
 lecture: ""

@@ -10,7 +10,7 @@ author_id: "pete-unseth"
 year: "2021"
 track: ["Partnering & Management"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/an-outsider-initiating-and-funding-a-needed-bt-project-riots-deaths-and-the-prohibition-of-bt-for-decades-queen-olga-of-greece-1901"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=4vczE3rrMJY"
 is_plenary: false
 lecture: ""

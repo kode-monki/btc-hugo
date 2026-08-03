@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Training & Mentoring"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/project-ignite-equipping-teams-for-effective-use-of-bt-and-language-technology-tools"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=xK5qsEessNc"
 is_plenary: false
 lecture: ""

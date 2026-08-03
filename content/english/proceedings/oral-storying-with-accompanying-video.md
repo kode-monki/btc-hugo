@@ -10,7 +10,7 @@ author_id: "#N/A"
 year: "2021"
 track: ["Theory & Practice; Technology & Innovation; Scripture Engagement"]
 slides_url: ""
-paper_url: "https://www.btconference.org/proceedings-2021/oral-storying-with-accompanying-video"
+paper_url: ""
 video_url: "https://www.youtube.com/watch?v=es84I9UrY20"
 is_plenary: false
 lecture: ""
