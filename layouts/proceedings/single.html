@@ -51,7 +51,7 @@
       <div class="w-full lg:w-2/3">
         {{ if and .Params.video_url (ne .Params.publicity "abstract-only") }}
         <div class="ratio ratio-16x9 bg-black rounded shadow-lg overflow-hidden" style="aspect-ratio: 16 / 9;">
-          <iframe src="https://www.youtube.com/embed/{{ replaceRE `.*v=([a-zA-Z0-9_-]+).*` "$1" .Params.video_url }}" allowfullscreen class="w-full h-full border-0"></iframe>
+          <iframe src="https://www.youtube.com/embed/{{ replaceRE `.*(?:v=|youtu\.be/|embed/|shorts/)([a-zA-Z0-9_-]+).*` "$1" .Params.video_url }}" allowfullscreen class="w-full h-full border-0"></iframe>
         </div>
         {{ if .Content | plainify | strings.TrimSpace }}
         <div class="border-t border-border pt-8 mt-8">
