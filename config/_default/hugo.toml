@@ -23,7 +23,7 @@ timeZone = "America/New_York"
 ########################## Permalinks ############################
 [permalinks.page]
 "pages" = "/:slugorcontentbasename/"
-"proceedings" = "/proceedings/:slug/"
+"proceedings" = "/proceedings/:slugorcontentbasename/"
 
 
 ############################# Build ##############################
