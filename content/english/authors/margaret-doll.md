@@ -1,5 +1,5 @@
 ---
-title: Margaret Doll
+title: "Margaret Doll"
 image: ""
 description: "Margaret Doll"
 affiliation: ""
