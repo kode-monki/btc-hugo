@@ -20,6 +20,12 @@ timeZone = "America/New_York"
     weight = 1
 
 
+########################### Security ###############################
+[security]
+[security.exec]
+allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
+
 ########################## Permalinks ############################
 [permalinks.page]
 "pages" = "/:slugorcontentbasename/"
