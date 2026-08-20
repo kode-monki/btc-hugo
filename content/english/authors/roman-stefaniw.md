@@ -1,5 +1,5 @@
 ---
-title: Roman Stefaniw
+title: "Roman Stefaniw"
 image: ""
 description: "Roman Stefaniw"
 affiliation: "Seed Company"
