@@ -1,6 +1,6 @@
 ---
 title: "The hermeneutical burden of making it possible for the modern reader to enter into the literary world created by the original author."
-publicity: "abstract-only"
+publicity: ""
 author: "Roelie Van der Spuy"
 author_id: "roelie-van-der-spuy"
 year: "2021"
