@@ -1,9 +1,9 @@
 ---
-title: Lynley Hatcher
+title: "Lynley Hatcher"
 image: ""
 description: "Lynley Hatcher"
-affiliation: ""
+affiliation: "SIL International"
 author_id: "lynley-hatcher"
 ---
 
-Lynley Hatcher has served with SIL for twenty years. Her current role is the SIL International Scripture Engagement Coordinator. Lynley has led addiction recovery groups for the last six years in her local church. For four years, she has been involved in the Freedom Ascent initiative and leads workshops in Latin America and around the world.
+<p>Lynley Hatcher and her husband, Tim, have been working for SIL International for 21 years. They served in the Russia and Central Asia branch for a decade and have been working in Scripture Engagement training and consulting for the last nine years. Lynley now serves as the SIL International Scripture Engagement Coordinator.</p>
