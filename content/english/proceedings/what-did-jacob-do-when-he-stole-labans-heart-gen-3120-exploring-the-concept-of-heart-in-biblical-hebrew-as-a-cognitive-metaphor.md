@@ -1,6 +1,6 @@
 ---
 title: "What did Jacob do when he stole Laban's heart? (Gen 31:20) Exploring the concept of heart in Biblical Hebrew as a cognitive metaphor."
-publicity: "abstract-only"
+publicity: ""
 author: "Marlute van Dam"
 author_id: "marlute-van-dam"
 year: "2021"
