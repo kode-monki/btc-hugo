@@ -14,7 +14,7 @@ paper_url: ""
 video_url: "https://www.youtube.com/watch?v=uRD4leOOiLc"
 ---
 
-<p>Despite significant progress in Bible translation, with initiatives like Vision 2025 and All Access Goals 2033 aiming to cover all languages, many languages are not included. This presentation examines the reliance on ISO 639-3 as the primary language inventory, highlighting its limitations for Bible translation purposes. ISO 639-3, historically derived from Ethnologue&#x27;s focus on translation needs but now taking a different focus, excludes potentially 500–1,000 spoken languages worldwide, as evidenced by India&#x27;s 200+ non-ISO languages.</p>
+<p>Despite significant progress in Bible translation, with initiatives like Vision 2025 and All Access Goals 2033 aiming to cover all languages, many languages are not included. This presentation examines the reliance on ISO 639-3 as the primary language inventory, highlighting its limitations for Bible translation purposes. ISO 639-3, historically derived from Ethnologue's focus on translation needs but now taking a different focus, excludes potentially 500–1,000 spoken languages worldwide, as evidenced by India's 200+ non-ISO languages.</p>
 <br>
 <p>We trace the evolution from early Ethnologue editions (1950s–1980s), which explicitly served church needs by defining languages based on material requirements and listing agency activities, to the ISO 639-3 era (post-2005), where academic, tech, and government priorities overshadow community and translation demands. Progress.Bible, a collaborative platform aggregating data from Bible agencies, in its monthly Snapshot publications, tracks ETEN goals using ISO 639-3 and omits non-ISO languages except for sign languages, leading to incomplete global tracking.</p>
 <br>
