@@ -1,6 +1,6 @@
 ---
 title: "Is the Holy Ghost in the Machine? Ethical Considerations for Using AI in Bible Translation"
-publicity: "abstract-only"
+publicity: ""
 author: "Damien Daspit"
 author_id: "damien-daspit"
 year: "2025"
