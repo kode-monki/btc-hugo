@@ -34,7 +34,7 @@
       {{ end }}
     </div>
         
-        {{ if and (ne .Params.publicity "abstract-only") (or .Params.slides_url .Params.paper_url) }}
+        {{ if or .Params.slides_url .Params.paper_url }}
         <hr class="my-4 border-border">
         <h4 class="text-sm uppercase tracking-wider text-muted mb-4">Resources</h4>
         <div class="flex gap-3">
