@@ -1,6 +1,6 @@
 ---
 title: "The Universal Apparatus"
-publicity: "abstract-only"
+publicity: ""
 author: "Alan Bunning"
 author_id: "alan-bunning"
 year: "2021"
