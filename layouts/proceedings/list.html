@@ -32,8 +32,14 @@
       </td>
   
       <td class="p-3">
-               <a href="{{ `authors/` | relLangURL }}{{ .Params.author_id | urlize }}/" class="text-primary hover:underline">{{ .Params.author }}</a>
-</td>
+        {{ if .Params.authors }}
+          {{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if $a.author_id }}<a href="{{ `authors/` | relLangURL }}{{ $a.author_id | urlize }}/" class="text-primary hover:underline">{{ $a.name }}</a>{{ else }}{{ $a.name }}{{ end }}{{ end }}
+        {{ else if .Params.author_id }}
+          <a href="{{ `authors/` | relLangURL }}{{ .Params.author_id | urlize }}/" class="text-primary hover:underline">{{ .Params.author }}</a>
+        {{ else }}
+          {{ .Params.author }}
+        {{ end }}
+      </td>
       <td class="p-3">{{ .Params.year }}</td>
     </tr>
    
