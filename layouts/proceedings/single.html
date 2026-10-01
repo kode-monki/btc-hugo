@@ -8,12 +8,13 @@
       <div class="w-full lg:w-1/3 ">
 <div class="bg-theme-light rounded-lg border border-border h-fit p-6">
         <h4 class="text-sm uppercase tracking-wider text-muted mb-4">Details</h4>
-        <p class="mb-2"><strong>Author:</strong> 
-        {{ if .Params.author_id }}
-
-               <a href="{{ `authors/` | relLangURL }}{{ .Params.author_id | urlize }}/" class="text-primary hover:underline">
-            {{ .Params.author }}
-          </a>
+        {{ $authorCount := 0 }}
+        {{ with .Params.authors }}{{ $authorCount = len . }}{{ end }}
+        <p class="mb-2"><strong>Author{{ if gt $authorCount 1 }}s{{ end }}:</strong>
+        {{ if .Params.authors }}
+          {{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if $a.author_id }}<a href="{{ `authors/` | relLangURL }}{{ $a.author_id | urlize }}/" class="text-primary hover:underline">{{ $a.name }}</a>{{ else }}{{ $a.name }}{{ end }}{{ end }}
+        {{ else if .Params.author_id }}
+          <a href="{{ `authors/` | relLangURL }}{{ .Params.author_id | urlize }}/" class="text-primary hover:underline">{{ .Params.author }}</a>
         {{ else }}
           {{ .Params.author }}
         {{ end }}
@@ -71,17 +72,26 @@
       </div>
     </div>
 
-    {{- $authorPage := site.GetPage (printf "/authors/%s" (.Params.author_id | urlize)) -}}
-    {{ if and $authorPage $authorPage.Content }}
-    <div class="border-t border-border pt-8 mt-8">
-      <h3 class="h4 mb-1">About the Author</h3>
-      {{ if $authorPage.Params.affiliation }}
-        <p class="text-sm text-muted mb-4">{{ $authorPage.Params.affiliation }}</p>
-      {{ end }}
-      <div class="content">
-        {{ $authorPage.Content }}
+    {{- $authorIDs := slice -}}
+    {{- if .Params.authors -}}
+      {{- range .Params.authors -}}{{- if .author_id -}}{{- $authorIDs = $authorIDs | append .author_id -}}{{- end -}}{{- end -}}
+    {{- else if .Params.author_id -}}
+      {{- $authorIDs = slice .Params.author_id -}}
+    {{- end -}}
+    {{- range $authorIDs }}
+      {{- $authorPage := site.GetPage (printf "/authors/%s" (. | urlize)) -}}
+      {{ if and $authorPage $authorPage.Content }}
+      <div class="border-t border-border pt-8 mt-8">
+        <h4 class="text-sm uppercase tracking-wider text-muted mb-1">About the Author</h4>
+        <h3 class="h4 mb-1"><a href="{{ $authorPage.RelPermalink }}" class="text-primary hover:underline">{{ $authorPage.Title }}</a></h3>
+        {{ if $authorPage.Params.affiliation }}
+          <p class="text-sm text-muted mb-4">{{ $authorPage.Params.affiliation }}</p>
+        {{ end }}
+        <div class="content">
+          {{ $authorPage.Content }}
+        </div>
       </div>
-    </div>
+      {{ end }}
     {{ end }}
   </div>
 </section>

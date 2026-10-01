@@ -6,7 +6,12 @@ end_time: "2:35 PM"
 publicity: ""
 location: "Room 4"
 author: "Amber Jasa, Thomas Hemphill"
-author_id: "jasa-hemphill"
+author_id: "amber-jasa"
+authors:
+  - name: "Amber Jasa"
+    author_id: "amber-jasa"
+  - name: "Thomas Hemphill"
+    author_id: "thomas-hemphill"
 year: "2025"
 track: ["Training and Mentoring"]
 slides_url: ""

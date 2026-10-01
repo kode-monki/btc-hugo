@@ -22,8 +22,19 @@
 
       {{ $currentAuthorID := .Params.author_id }}
       {{ if $currentAuthorID }}
-        {{ $myPapers := where (where .Site.RegularPages "Section" "proceedings") "Params.author_id" $currentAuthorID }}
-        
+        {{ $myPapers := slice }}
+        {{ range where .Site.RegularPages "Section" "proceedings" }}
+          {{ $ids := slice }}
+          {{ if .Params.authors }}
+            {{ range .Params.authors }}{{ if .author_id }}{{ $ids = $ids | append .author_id }}{{ end }}{{ end }}
+          {{ else if .Params.author_id }}
+            {{ $ids = $ids | append .Params.author_id }}
+          {{ end }}
+          {{ if in $ids $currentAuthorID }}
+            {{ $myPapers = $myPapers | append . }}
+          {{ end }}
+        {{ end }}
+
         {{ if $myPapers }}
           <div class="mt-12 border-t pt-8">
             <h3 class="h4 mb-4">Presentations</h3>

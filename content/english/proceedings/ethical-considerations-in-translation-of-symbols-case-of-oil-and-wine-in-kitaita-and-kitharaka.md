@@ -6,7 +6,12 @@ end_time: "11:20 AM"
 publicity: ""
 location: "Room 1"
 author: "Edward Kireti & Onesmus Kamwara"
-author_id: "kireti-kamwara"
+author_id: "edward-kireti"
+authors:
+  - name: "Edward Kireti"
+    author_id: "edward-kireti"
+  - name: "Onesmus Kamwara"
+    author_id: "onesmus-kamwara"
 year: "2025"
 track: ["Communication and Context;Methodologies, Media, and Multimodality;Theology, Hermeneutics, and Exegesis"]
 slides_url: ""

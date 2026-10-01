@@ -6,7 +6,7 @@ end_time: "3:15 PM"
 publicity: ""
 location: "Room 2"
 author: "Nathaniel Statezni"
-author_id: "nathaniel-statenzi"
+author_id: "nathaniel-statezni"
 year: "2025"
 track: ["Church and Community;Technology and Resources"]
 slides_url: ""

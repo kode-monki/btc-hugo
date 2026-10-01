@@ -6,7 +6,12 @@ end_time: "10:35 AM"
 publicity: "abstract-only"
 location: "Room 3"
 author: "Johannes Merz & Sharon Merz"
-author_id: "merz-merz"
+author_id: "johannes-merz"
+authors:
+  - name: "Johannes Merz"
+    author_id: "johannes-merz"
+  - name: "Sharon Merz"
+    author_id: "sharon-merz"
 year: "2025"
 track: ["Communication and Context;Methodologies, Media, and Multimodality;Live Only"]
 slides_url: ""

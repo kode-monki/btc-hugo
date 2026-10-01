@@ -6,7 +6,12 @@ end_time: "2:10 PM"
 publicity: ""
 location: "Room 3"
 author: "Sharon Merz & Johannes Merz"
-author_id: "merz-merz"
+author_id: "sharon-merz"
+authors:
+  - name: "Sharon Merz"
+    author_id: "sharon-merz"
+  - name: "Johannes Merz"
+    author_id: "johannes-merz"
 year: "2025"
 track: ["Communication and Context"]
 slides_url: ""

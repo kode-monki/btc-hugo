@@ -7,6 +7,11 @@ publicity: ""
 location: "1-Mahler 5,7"
 author: "Fred Madden, David Ross"
 author_id: "fred-madden"
+authors:
+  - name: "Fred Madden"
+    author_id: "fred-madden"
+  - name: "David Ross"
+    author_id: "david-ross"
 year: "2019"
 track: []
 slides_url: ""

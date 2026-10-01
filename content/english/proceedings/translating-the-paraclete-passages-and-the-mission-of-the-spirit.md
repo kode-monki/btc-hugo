@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "2-Mahler Lobby"
 author: "Nathan J. Abdy"
-author_id: "nathan-abdy"
+author_id: "nathan-j-abdy"
 year: "2019"
 track: []
 slides_url: ""
@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: ["nathan-abdy"]
-author_ids: ["nathan-abdy"]
+presenter_ids: ["nathan-j-abdy"]
+author_ids: ["nathan-j-abdy"]
 ---
 
 The Paraclete passages in the Gospel of John give us a wealth of information concerning the work and mission of the Holy Spirit. We see how the Spirit will interact with the disciples after Jesus leaves and how the Spirit will act toward the world. But within these passages there are some difficult translational issues, mainly surrounding the term Paraclete itself. Scholars have long discussed the term, how it relates to others and its background and use. This paper will seek to discuss many of the translation problems surrounding the Paraclete passages, while at the same time giving attention to the passages as a whole and its message of the Spirit and his mission. It will be demonstrated that we see the Spirit-Paraclete taking up many of the activities of Jesus who was the first Paraclete and the Spirit is the “other Paraclete” (John 14:16).  
