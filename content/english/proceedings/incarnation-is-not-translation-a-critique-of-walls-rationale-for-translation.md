@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "2-Mahler Lobby"
 author: "Aaron Shryock"
-author_id: "aaron-shyrock"
+author_id: "aaron-shryock"
 year: "2019"
 track: []
 slides_url: "https://drive.google.com/open?id=0B7RR6AskRWy-VkRsODBuZTNJUWFoc0xFNnp5OEhhUWhtNTVR"
