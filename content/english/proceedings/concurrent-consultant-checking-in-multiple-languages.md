@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "4-Student Center"
 author: "Charles A. Mortensen"
-author_id: "charles-mortensen"
+author_id: "charles-a-mortensen"
 year: "2019"
 track: []
 slides_url: ""
@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: ["charles-mortensen"]
-author_ids: ["charles-mortensen"]
+presenter_ids: ["charles-a-mortensen"]
+author_ids: ["charles-a-mortensen"]
 ---
 
 The development of new consultants in the Bible translation community has not kept up with demand. Our current consultants need a method that yields a greater payoff for their efforts.   

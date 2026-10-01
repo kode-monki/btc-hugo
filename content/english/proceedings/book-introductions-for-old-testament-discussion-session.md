@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "6-Travis"
 author: "Ronald J Sim"
-author_id: "#N/A"
+author_id: "ronnie-j-sim"
 year: "2019"
 track: []
 slides_url: ""
@@ -15,8 +15,8 @@ video_url: ""
 is_plenary: false
 lecture: ""
 plenary_weight: 0
-presenter_ids: ["ronnie-sim"]
-author_ids: ["ronnie-sim"]
+presenter_ids: ["ronnie-j-sim"]
+author_ids: ["ronnie-j-sim"]
 ---
 
 An increasing number of first-time Old Testaments are being published \[full Bibles\]. Most of these include short book-by-book Introductions. The terse Introductions available in international versions are often translated into each language/project.   

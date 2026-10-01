@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "4-Student Center"
 author: "J. Andy Ring"
-author_id: "andy-ring"
+author_id: "j-andy-ring"
 year: "2019"
 track: []
 slides_url: "https://drive.google.com/open?id=1dvMjtLoQ0F5Og398VNDKLsDl7RL4JKem"
@@ -16,7 +16,7 @@ is_plenary: false
 lecture: ""
 plenary_weight: 0
 presenter_ids: ["andy-ring"]
-author_ids: ["andy-ring"]
+author_ids: ["j-andy-ring"]
 ---
 
 #N/A

@@ -3,7 +3,7 @@ title: Ronnie J Sim
 image: ""
 description: "Ronnie J Sim"
 affiliation: ""
-author_id: "ronnie-sim"
+author_id: "ronnie-j-sim"
 ---
 
 Ronald Sim \[PhD Edinburgh\] is an International Translation Consultant with SIL. He was exegete-advisor for Hadiyya and Kambaata translation projects in Ethiopia. Since 1990 he has established formal training programmes for Bible translation in Nairobi, in association with existing theological institutions, at BA, MA and PhD levels.  
