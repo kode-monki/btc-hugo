@@ -6,7 +6,12 @@ end_time: "3:15 PM"
 publicity: ""
 location: "Room 3"
 author: "Onesmus Kamwara & Helga Schroeder"
-author_id: "kamwara-schroder"
+author_id: "onesmus-kamwara"
+authors:
+  - name: "Onesmus Kamwara"
+    author_id: "onesmus-kamwara"
+  - name: "Helga Schroeder"
+    author_id: "helga-schroeder"
 year: "2025"
 track: ["Communication and Context"]
 slides_url: ""

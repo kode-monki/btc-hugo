@@ -7,6 +7,11 @@ publicity: ""
 location: "1-Mahler 5,7"
 author: "Jim Stahl, Janet Stahl"
 author_id: "jim-stahl"
+authors:
+  - name: "Jim Stahl"
+    author_id: "jim-stahl"
+  - name: "Janet Stahl"
+    author_id: "janet-stahl"
 year: "2019"
 track: []
 slides_url: "https://drive.google.com/open?id=0B7RR6AskRWy-dEpTYzlwZHJ2elpXRjlBWDJWRnFhcTBKWjVz"

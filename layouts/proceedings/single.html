@@ -83,7 +83,7 @@
       {{ if and $authorPage $authorPage.Content }}
       <div class="border-t border-border pt-8 mt-8">
         <h4 class="text-sm uppercase tracking-wider text-muted mb-1">About the Author</h4>
-        <h3 class="h4 mb-1">{{ $authorPage.Title }}</h3>
+        <h3 class="h4 mb-1"><a href="{{ $authorPage.RelPermalink }}" class="text-primary hover:underline">{{ $authorPage.Title }}</a></h3>
         {{ if $authorPage.Params.affiliation }}
           <p class="text-sm text-muted mb-4">{{ $authorPage.Params.affiliation }}</p>
         {{ end }}

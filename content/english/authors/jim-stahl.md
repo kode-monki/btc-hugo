@@ -1,7 +1,7 @@
 ---
-title: Jim Stahl, Janet Stahl
+title: Jim Stahl
 image: ""
-description: "Jim Stahl, Janet Stahl"
+description: "Jim Stahl"
 affiliation: ""
 author_id: "jim-stahl"
 ---

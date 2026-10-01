@@ -6,7 +6,12 @@ end_time: "10:35 AM"
 publicity: ""
 location: "Room 5"
 author: "Misikir Mulugeta, John Ferch"
-author_id: "mulugeta-ferch"
+author_id: "misikir-mulugeta"
+authors:
+  - name: "Misikir Mulugeta"
+    author_id: "misikir-mulugeta"
+  - name: "John Ferch"
+    author_id: "john-ferch"
 year: "2025"
 track: ["Church and Community;Methodologies, Media, and Multimodality;Training and Mentoring"]
 slides_url: ""

@@ -7,6 +7,13 @@ publicity: ""
 location: "5-Activity Center"
 author: "Rachel Miles, Teri Miles (Presenter), Harry Harm"
 author_id: "rachel-miles"
+authors:
+  - name: "Rachel Miles"
+    author_id: "rachel-miles"
+  - name: "Teri Miles"
+    author_id: "teri-miles"
+  - name: "Harry Harm"
+    author_id: "harry-harm"
 year: "2019"
 track: []
 slides_url: ""

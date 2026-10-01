@@ -6,7 +6,12 @@ end_time: "10:35 AM"
 publicity: ""
 location: "Room 2"
 author: "Reuben Muraguri & Irene Chemaiyek"
-author_id: "muraguyi-chemaiyek"
+author_id: "reuben-muraguri"
+authors:
+  - name: "Reuben Muraguri"
+    author_id: "reuben-muraguri"
+  - name: "Irene Chemaiyek"
+    author_id: "irene-chemaiyek"
 year: "2025"
 track: ["Church and Community;Technology and Resources"]
 slides_url: ""

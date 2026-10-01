@@ -6,7 +6,12 @@ end_time: "10:35 AM"
 publicity: ""
 location: "Room 4"
 author: "Nikki Mustin, Ervais Fotso"
-author_id: "mustin-fotso"
+author_id: "nikki-mustin"
+authors:
+  - name: "Nikki Mustin"
+    author_id: "nikki-mustin"
+  - name: "Ervais Fotso"
+    author_id: "ervais-fotso"
 year: "2025"
 track: ["Church and Community;Communication and Context;Methodologies, Media, and Multimodality"]
 slides_url: ""
