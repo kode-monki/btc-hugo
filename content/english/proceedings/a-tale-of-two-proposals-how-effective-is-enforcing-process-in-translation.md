@@ -6,7 +6,12 @@ end_time: "2:10 PM"
 publicity: ""
 location: "Room 4"
 author: "Todd Bequette & Becky Bequette"
-author_id: "todd-becky-bequette"
+author_id: "todd-bequette"
+authors:
+  - name: "Todd Bequette"
+    author_id: "todd-bequette"
+  - name: "Becky Bequette"
+    author_id: "becky-bequette"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality"]
 slides_url: ""
