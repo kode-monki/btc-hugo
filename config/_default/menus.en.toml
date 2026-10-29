@@ -43,3 +43,13 @@ name = "About"
 url = "/about"
 weight = 1
 
+
+[[footer]]
+name = "Privacy Policy"
+url = "/privacy"
+weight = 2
+
+[[footer]]
+name = "Terms of Service"
+url = "/terms"
+weight = 3
