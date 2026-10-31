@@ -6,7 +6,7 @@ end_time: "11:20 AM"
 publicity: ""
 location: "Grand Hall"
 author: "Martha Wade"
-author_id: "#N/A"
+author_id: "martha-wade"
 year: "2025"
 track: ["Technology and Resources;AI Panel"]
 slides_url: ""

@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "3-Event Center"
 author: "JoAnna Hoyt"
-author_id: "#N/A"
+author_id: "joanna-hoyt"
 year: "2019"
 track: []
 slides_url: ""

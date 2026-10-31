@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Roelie Van der Spuy"
-author_id: "#N/A"
+author_id: "roelie-van-der-spuy"
 year: "2023"
 track: ["Exegesis and Biblical languages for translators and consultants"]
 slides_url: ""

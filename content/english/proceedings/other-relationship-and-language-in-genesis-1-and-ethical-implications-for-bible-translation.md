@@ -6,7 +6,12 @@ end_time: "3:15 PM"
 publicity: ""
 location: "Room 3"
 author: "Graham Scott & David Nicholls"
-author_id: "#N/A"
+author_id: "graham-scott"
+authors:
+  - name: "Graham Scott"
+    author_id: "graham-scott"
+  - name: "David Nicholls"
+    author_id: "david-nicholls"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
 slides_url: ""

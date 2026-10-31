@@ -6,7 +6,12 @@ end_time: "10:35 AM"
 publicity: ""
 location: "Grand Hall"
 author: "Mark Penny & Martin Hosken"
-author_id: "#N/A"
+author_id: "mark-penny"
+authors:
+  - name: "Mark Penny"
+    author_id: "mark-penny"
+  - name: "Martin Hosken"
+    author_id: "martin-hosken"
 year: "2025"
 track: ["Technology and Resources"]
 slides_url: ""

@@ -7,7 +7,7 @@ publicity: ""
 location: "3-Event Center
 5-Activity Center"
 author: "Marlon  Winedt"
-author_id: "#N/A"
+author_id: "marlon-winedt"
 year: "2019"
 track: ["Plenary"]
 slides_url: "https://drive.google.com/open?id=1aWMrlY03BjV2YkSi-zxYQs7EBQq8Ng4T"

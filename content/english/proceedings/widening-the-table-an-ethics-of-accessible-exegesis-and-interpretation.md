@@ -6,7 +6,12 @@ end_time: "3:15 PM"
 publicity: ""
 location: "Grand Hall"
 author: "Stephen Stringer & Elisabeth Stringer"
-author_id: "#N/A"
+author_id: "stephen-stringer"
+authors:
+  - name: "Stephen Stringer"
+    author_id: "stephen-stringer"
+  - name: "Elisabeth Stringer"
+    author_id: "elisabeth-stringer"
 year: "2025"
 track: ["Theology, Hermeneutics, and Exegesis"]
 slides_url: ""

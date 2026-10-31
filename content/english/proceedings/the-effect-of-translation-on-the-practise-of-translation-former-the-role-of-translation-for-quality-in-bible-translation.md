@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Helga  Schröder"
-author_id: "#N/A"
+author_id: "helga-schroder"
 year: "2023"
 track: ["Translation principles"]
 slides_url: ""

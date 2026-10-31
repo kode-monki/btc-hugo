@@ -6,7 +6,12 @@ end_time: "11:20 AM"
 publicity: ""
 location: "Grand Hall"
 author: "Roger Stone & David Duncan"
-author_id: "#N/A"
+author_id: "roger-stone"
+authors:
+  - name: "Roger Stone"
+    author_id: "roger-stone"
+  - name: "David Duncan"
+    author_id: "david-duncan"
 year: "2025"
 track: ["Methodologies, Media, and Multimodality;Technology and Resources;AI Panel"]
 slides_url: ""

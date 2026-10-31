@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Onesmus  Kamwara"
-author_id: "#N/A"
+author_id: "onesmus-kamwara"
 year: "2023"
 track: ["Translation principles"]
 slides_url: ""
