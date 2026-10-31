@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "5-Activity Center"
 author: "Freddy Boswell"
-author_id: "#N/A"
+author_id: "freddy-boswell"
 year: "2019"
 track: []
 slides_url: ""

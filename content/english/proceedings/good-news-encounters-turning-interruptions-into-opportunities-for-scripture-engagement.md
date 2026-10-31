@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "5-Activity Center"
 author: "Wayne Dye"
-author_id: "#N/A"
+author_id: "wayne-dye"
 year: "2019"
 track: []
 slides_url: "https://drive.google.com/open?id=1XaybCjXQfhgOh6AKzTp8DF6izBSJ9ncM"

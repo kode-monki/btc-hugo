@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "6-Travis"
 author: "John Nystrom"
-author_id: "#N/A"
+author_id: "john-nystrom"
 year: "2019"
 track: []
 slides_url: "https://drive.google.com/open?id=0B7RR6AskRWy-S1VsSHc3M0FBdFpTMkdYb0Z3VUZoSzBKakIw"

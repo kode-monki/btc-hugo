@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "5-Activity Center"
 author: "Larry Jones"
-author_id: "#N/A"
+author_id: "larry-jones"
 year: "2019"
 track: []
 slides_url: ""

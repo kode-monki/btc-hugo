@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "2-Mahler Lobby"
 author: "Marcus Leman"
-author_id: "#N/A"
+author_id: "marcus-leman"
 year: "2019"
 track: []
 slides_url: ""

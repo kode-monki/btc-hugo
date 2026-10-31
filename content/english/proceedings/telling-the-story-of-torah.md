@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "1-Mahler 5,7"
 author: "Jeffrey Feinberg"
-author_id: "#N/A"
+author_id: "jeffrey-feinberg"
 year: "2019"
 track: []
 slides_url: "https://drive.google.com/open?id=1IZ4ad3Y9ESc9icb6HVn7BCDc0gXCmme0"

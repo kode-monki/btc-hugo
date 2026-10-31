@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: ""
 author: "Larry Jones"
-author_id: "#N/A"
+author_id: "larry-jones"
 year: "2023"
 track: ["Language program management, Community engagement, and Project Briefs"]
 slides_url: ""

@@ -6,7 +6,7 @@ end_time: ""
 publicity: "Online"
 location: "Online"
 author: "Connie Champeon"
-author_id: "#N/A"
+author_id: "connie-champeon"
 year: "2021"
 track: ["Theory & Practice; Training & Mentoring; Technology & Innovation; Partnering & Management"]
 slides_url: ""

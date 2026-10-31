@@ -6,7 +6,7 @@ end_time: ""
 publicity: ""
 location: "Online"
 author: "Tshokolo Makutoane"
-author_id: "#N/A"
+author_id: "tshokolo-makutoane"
 year: "2021"
 track: ["History"]
 slides_url: ""
